@@ -704,12 +704,12 @@ body {
 
 /* line 21, sass/base/_base.scss */
 h1 {
-  font-size: 2.25em;
+  font-size: 69px;
 }
 
 /* line 25, sass/base/_base.scss */
 h2 {
-  font-size: 1.625em;
+  font-size: 42px;
 }
 
 /* line 29, sass/base/_base.scss */
@@ -719,23 +719,32 @@ h3 {
 
 /* line 33, sass/base/_base.scss */
 h4 {
-  margin-top: 1.57143em;
-  margin-bottom: 2.28571em;
-  color: palette(grey, x-light);
-  text-transform: uppercase;
-  letter-spacing: 0.01;
-  font-weight: 400;
   font-size: 0.875em;
 }
 
-/* line 43, sass/base/_base.scss */
+/* line 37, sass/base/_base.scss */
+h5 {
+  font-size: 24px;
+}
+
+/* line 41, sass/base/_base.scss */
+.subtitle-din {
+  font-size: 36px;
+}
+
+/* line 45, sass/base/_base.scss */
+.subtitle-leitura {
+  font-size: 30px;
+}
+
+/* line 50, sass/base/_base.scss */
 a {
   color: palette(grey, dark);
   text-decoration: none;
   font-weight: 400;
 }
 
-/* line 49, sass/base/_base.scss */
+/* line 56, sass/base/_base.scss */
 p {
   margin: 0 0 1.66667em;
   font-weight: 300;
@@ -743,7 +752,7 @@ p {
   line-height: 1.5;
 }
 
-/* line 56, sass/base/_base.scss */
+/* line 63, sass/base/_base.scss */
 blockquote {
   font-size: 1.5pxem;
   font-style: italic;
@@ -753,14 +762,14 @@ blockquote {
   border-left: solid 0.33333em palette(grey, xx-light);
 }
 
-/* line 67, sass/base/_base.scss */
+/* line 74, sass/base/_base.scss */
 img {
   margin-bottom: 1.5pxem;
   max-width: 100%;
   height: auto;
 }
 
-/* line 75, sass/base/_base.scss */
+/* line 82, sass/base/_base.scss */
 ul,
 li {
   margin: 0;
@@ -768,7 +777,7 @@ li {
   list-style-type: none;
 }
 
-/* line 84, sass/base/_base.scss */
+/* line 91, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -778,22 +787,22 @@ textarea {
   border: 0;
 }
 
-/* line 93, sass/base/_base.scss */
+/* line 100, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 100, sass/base/_base.scss */
+/* line 107, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 106, sass/base/_base.scss */
+/* line 113, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 108, sass/base/_base.scss */
+/* line 115, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;

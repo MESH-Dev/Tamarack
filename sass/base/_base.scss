@@ -19,11 +19,11 @@ body {
 // Text
 
 h1 {
-	font-size: em(36);
+	font-size: 69px;
 }
 
 h2 {
-	font-size: em(26);
+	font-size: 42px;
 }
 
 h3 {
@@ -31,14 +31,21 @@ h3 {
 }
 
 h4 {
-	margin-top: em(22, 14);
-	margin-bottom: em(32, 14);
-	color: palette(grey, x-light);
-	text-transform: uppercase;
-	letter-spacing: $letter-space;
-	font-weight: $font-weight--medium;
 	font-size: em(14);
 }
+
+h5 {
+	font-size: 24px;
+}
+
+.subtitle-din {
+	font-size: 36px;
+	
+}
+.subtitle-leitura {
+	font-size: 30px;
+}
+
 
 a {
 	color: palette(grey, dark);
