@@ -16,9 +16,6 @@
 <html <?php if( is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo $imageURL; ?>') no-repeat center center fixed;" class="background-fullscreen" <?php } ?>>
 
 <head>
-
-
-<head>
 	<meta charset="utf-8">
 	<title><?php bloginfo('name'); ?></title>
 
@@ -31,7 +28,7 @@
 	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS  
+	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -41,6 +38,7 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<?php wp_head(); ?>
 
@@ -50,38 +48,134 @@
 
 	<div id="page" class='hfeed site <?php if( is_page_template('templates/homepage-fullscreen.php') && is_front_page() ) { echo "content-fullscreen"; } ?>'>
 
-		<header>
+		<?php
+		$image = get_field('masthead_image');
+
+		if( !empty($image) ):
+			$thumb = $image['sizes']['background-fullscreen'];
+		endif; ?>
+
+		<header style='<?php if( is_front_page() ) { ?> background-image: url(<?php echo $thumb; ?>) <?php } ?>'>
 			<div class="container">
-
-				<div class="twelve columns">
-					<div class="logo">
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<div class="row">
+					<div class="utilities-nav">
+							<?php if(has_nav_menu('utilities_nav')){
+								$defaults = array(
+									'theme_location'  => 'utilities_nav',
+									'menu'            => 'utilities_nav',
+									'container'       => false,
+									'container_class' => '',
+									'container_id'    => '',
+									'menu_class'      => 'menu',
+									'menu_id'         => '',
+									'echo'            => true,
+									'fallback_cb'     => 'wp_page_menu',
+									'before'          => '',
+									'after'           => '',
+									'link_before'     => '',
+									'link_after'      => '',
+									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s
+																					<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
+																				</ul>',
+									'depth'           => 0,
+									'walker'          => ''
+								); wp_nav_menu( $defaults );
+							}else{
+								echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
+							} ?>
+							<ul id="login-utilities-nav">
+								<li class="creative-network"><a href="">Join our creative network</a></li>
+								<li><a href="">Artist login</a></li>
+							</ul>
 					</div>
-					<nav class="main-navigation">
-						<?php if(has_nav_menu('main_nav')){
-									$defaults = array(
-										'theme_location'  => 'main_nav',
-										'menu'            => 'main_nav',
-										'container'       => false,
-										'container_class' => '',
-										'container_id'    => '',
-										'menu_class'      => 'menu',
-										'menu_id'         => '',
-										'echo'            => true,
-										'fallback_cb'     => 'wp_page_menu',
-										'before'          => '',
-										'after'           => '',
-										'link_before'     => '',
-										'link_after'      => '',
-										'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-										'depth'           => 0,
-										'walker'          => ''
-									); wp_nav_menu( $defaults );
-								}else{
-									echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
-								} ?>
-					</nav>
 				</div>
-
+				<div class="row">
+					<div class="main-menu-container">
+						<div class="two columns">
+							<div class="logo">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+							</div>
+						</div>
+						<div class="two columns">
+							<a href="">
+								<div class="menu-block">
+									<span class="menu-block-primary-text">Learn</span>
+									<span class="menu-block-secondary-text">New Skills</span>
+								</div>
+							</a>
+						</div>
+						<div class="two columns">
+							<a href="">
+								<div class="menu-block">
+									<span class="menu-block-primary-text">Build</span>
+									<span class="menu-block-secondary-text">Your Business</span>
+								</div>
+							</a>
+						</div>
+						<div class="two columns">
+							<a href="">
+								<div class="menu-block">
+									<span class="menu-block-primary-text">Fund</span>
+									<span class="menu-block-secondary-text">Your Ideas</span>
+								</div>
+							</a>
+						</div>
+						<div class="two columns">
+							<a href="">
+								<div class="menu-block">
+									<span class="menu-block-primary-text">Connect</span>
+									<span class="menu-block-secondary-text">With Creatives</span>
+								</div>
+							</a>
+						</div>
+						<div class="two columns">
+							<a href="">
+								<div class="menu-block-half">
+									Find Artists
+								</div>
+							</a>
+							<a href="">
+								<div class="menu-block-half">
+									Shop Businesses
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="ten columns offset-by-one">
+						<div class="masthead-title">
+							<?php echo get_field("masthead_title"); ?>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="eight columns offset-by-two">
+						<div class="masthead-subtitle">
+							<div class="masthead-subtitle-inner">
+								<?php echo get_field("masthead_subtitle"); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="twelve columns">
+						<div class="masthead-link">
+							<a href="<?php echo get_field('masthead_url') ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="masthead-arrow">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" />
+					</div>
+				</div>
+			</div>
+			<div class="citation">
+				<?php echo get_field('masthead_image_citation'); ?>
 			</div>
 		</header>

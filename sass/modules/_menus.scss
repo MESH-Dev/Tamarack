@@ -1,8 +1,8 @@
-.main-navigation {
+#menu-utilities-nav, #social-utilities-nav, #login-utilities-nav {
+	background: white;
 	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	display: inline-block;
+	margin: 10px 0 0 10px;
 
 	ul {
 		display: none;
@@ -51,6 +51,14 @@
 	li {
 		float: left;
 		position: relative;
+		font-size: em(12);
+		text-transform: uppercase;
+		font-family: $font-family--secondary;
+		padding: 5px 10px;
+
+		&.social-icon {
+			padding: 5px;
+		}
 
 		&:hover > a,
 		&.focus > a {
@@ -59,12 +67,30 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $cod;
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+}
+
+#menu-utilities-nav {
+	padding-right: 5px;
+}
+
+#login-utilities-nav {
+	.creative-network a {
+		color: $crail;
+	}
+}
+
+.creative-network::after {
+	content: "|";
+	position: absolute;
+	right: 0px;
+	top: 4px;
 }
 
 /* Small menu. */
@@ -100,5 +126,44 @@
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+.utilities-nav {
+	float: left;
+	width: 100%;
+	text-align: right;
+}
+
+.menu-block {
+	background-color: white;
+	padding: 10px 65px 50px 10px;
+
+	.menu-block-primary-text {
+		display: block;
+		font-family: $font-family--secondary;
+		text-transform: uppercase;
+		font-size: 24px;
+		line-height: 24px;
+		color: black;
+	}
+	.menu-block-secondary-text {
+		display: block;
+		font-family: $font-family--primary;
+		font-size: 12px;
+		color: black;
+		border-bottom: 2px solid $dove;
+	}
+
+	&:hover {
+		background-color: $purple;
+
+		.menu-block-primary-text {
+			color: white;
+		}
+		.menu-block-secondary-text {
+			color: white;
+			border-bottom: 2px solid white;
+		}
 	}
 }

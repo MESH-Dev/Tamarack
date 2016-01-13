@@ -9,25 +9,30 @@
 // =============
 
 // Descriptive colors:
-$red                          : red;
-$green                        : green;
-$blue                         : blue;
-$gray                         : #666;
 
+
+$crail : #c25543;
+$purple : #b33ed9;
+$matisse : #1b648d;
+$abbey : #3f4042;
+$chateau : #a5a9ab;
+$cod : #131313;
+$dove : #696969;
+$astral : #2e7096;
 
 // Main color palette
-$color-primary                : $red;
-$color-secondary              : $blue;
-$color-accent                 : $blue;
-$color-shadow                 : rgba($blue, .125);
-$color-note                   : $gray;
+$color-primary                : $abbey;
+$color-secondary              : $abbey;
+$color-accent                 : $matisse;
+$color-shadow                 : rgba($chateau, .125);
+$color-note                   : $chateau;
 
-$color-font                   : $green;
+$color-font                   : $abbey;
 
 // Links
 $color-link                   : $color-primary;
-$color-link-hover             : $blue;
-$color-link-visited           : $green;
+$color-link-hover             : $abbey;
+$color-link-visited           : $abbey;
 
 
 
@@ -41,10 +46,8 @@ $trns-duration                 : 1;
 
 
 // Font Stacks
-
-$font-url--google        : 'http://fonts.googleapis.com/css?family=Lora:100,300,400,700,900';
-$font-family--primary    : 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--primary    : 'leitura-news', serif;
+$font-family--secondary  : "din-condensed-web", sans-serif;
 
 
 // Font Weights

@@ -1,0 +1,45 @@
+.masthead-title {
+  color: white;
+  text-align: center;
+  font-size: 69px;
+  margin: 75px 0 15px;
+}
+
+.masthead-subtitle {
+  padding: 5px 0;
+  border-top: 5px solid $astral;
+  border-bottom: 5px solid $astral;
+}
+
+.masthead-subtitle-inner {
+  color: $astral;
+  text-align: center;
+  font-family: $font-family--secondary;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 100px;
+}
+
+.masthead-link {
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-family--secondary;
+
+  a {
+    color: white;
+  }
+}
+
+.citation {
+  text-align: right;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: $font-family--secondary;
+}
+
+.masthead-arrow {
+  text-align: center;
+  margin: 50px 0 15px;
+}

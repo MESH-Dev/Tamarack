@@ -9,12 +9,12 @@ add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 // Add Thumbnail Theme Support
 add_theme_support('post-thumbnails');
 add_image_size('background-fullscreen', 1800, 1200, true);
-add_image_size('short-banner', 1800, 800, true);
+// add_image_size('short-banner', 1800, 800, true);
 
-add_image_size('large', 700, '', true); // Large Thumbnail
-add_image_size('medium', 250, '', true); // Medium Thumbnail
-add_image_size('small', 120, '', true); // Small Thumbnail
-add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+// add_image_size('large', 700, '', true); // Large Thumbnail
+// add_image_size('medium', 250, '', true); // Medium Thumbnail
+// add_image_size('small', 120, '', true); // Small Thumbnail
+// add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
 
 $teacher_permissions = array (
@@ -68,7 +68,8 @@ add_action('save_post', 'create_post_name');
 register_nav_menus(
     array(
         'main_nav' => 'Header and breadcrumb trail heirarchy',
-        'social_nav' => 'Social menu used throughout'
+        'social_nav' => 'Social menu used throughout',
+				'utilities_nav' => 'Utilities nav',
     )
 );
 

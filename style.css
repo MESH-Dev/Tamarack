@@ -18,7 +18,6 @@ Starter is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-@import url("http://fonts.googleapis.com/css?family=Lora:100,300,400,700,900");
 /* BASE GRID
  * ------------------------------------------------ */
 /* line 3, sass/grid/_grid.scss */
@@ -124,47 +123,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-one {
-  padding-left: 90px;
+  margin-left: 90px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-two {
-  padding-left: 180px;
+  margin-left: 180px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-three {
-  padding-left: 270px;
+  margin-left: 270px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-four {
-  padding-left: 360px;
+  margin-left: 360px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-five {
-  padding-left: 450px;
+  margin-left: 450px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-six {
-  padding-left: 540px;
+  margin-left: 540px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-seven {
-  padding-left: 630px;
+  margin-left: 630px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-eight {
-  padding-left: 720px;
+  margin-left: 720px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-nine {
-  padding-left: 810px;
+  margin-left: 810px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-ten {
-  padding-left: 900px;
+  margin-left: 900px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-eleven {
-  padding-left: 990px;
+  margin-left: 990px;
 }
 
 /* TABLET (PORTRAIT)
@@ -266,47 +265,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-one {
-    padding-left: 64px;
+    margin-left: 64px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-two {
-    padding-left: 128px;
+    margin-left: 128px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-three {
-    padding-left: 192px;
+    margin-left: 192px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-four {
-    padding-left: 256px;
+    margin-left: 256px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-five {
-    padding-left: 320px;
+    margin-left: 320px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-six {
-    padding-left: 384px;
+    margin-left: 384px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-seven {
-    padding-left: 448px;
+    margin-left: 448px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eight {
-    padding-left: 512px;
+    margin-left: 512px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-nine {
-    padding-left: 576px;
+    margin-left: 576px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-ten {
-    padding-left: 640px;
+    margin-left: 640px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eleven {
-    padding-left: 704px;
+    margin-left: 704px;
   }
 }
 /*  MOBILE (PORTRAIT)
@@ -696,9 +695,9 @@ th {
 
 /* line 10, sass/base/_base.scss */
 body {
-  color: green;
+  color: #3f4042;
   font-size: 16;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "leitura-news", serif;
   line-height: 1.5;
 }
 
@@ -850,22 +849,29 @@ html, body {
   top: 0;
 }
 
+/* line 1, sass/layout/_header.scss */
+header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* line 1, sass/modules/_menus.scss */
-.main-navigation {
+#menu-utilities-nav, #social-utilities-nav, #login-utilities-nav {
+  background: white;
   clear: both;
-  display: block;
-  float: left;
-  width: 100%;
+  display: inline-block;
+  margin: 10px 0 0 10px;
 }
 /* line 7, sass/modules/_menus.scss */
-.main-navigation ul {
+#menu-utilities-nav ul, #social-utilities-nav ul, #login-utilities-nav ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 /* line 13, sass/modules/_menus.scss */
-.main-navigation ul ul {
+#menu-utilities-nav ul ul, #social-utilities-nav ul ul, #login-utilities-nav ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -874,67 +880,96 @@ html, body {
   z-index: 99999;
 }
 /* line 21, sass/modules/_menus.scss */
-.main-navigation ul ul ul {
+#menu-utilities-nav ul ul ul, #social-utilities-nav ul ul ul, #login-utilities-nav ul ul ul {
   left: -999em;
   top: 0;
 }
 /* line 27, sass/modules/_menus.scss */
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+#menu-utilities-nav ul ul li:hover > ul, #menu-utilities-nav ul ul li.focus > ul, #social-utilities-nav ul ul li:hover > ul, #social-utilities-nav ul ul li.focus > ul, #login-utilities-nav ul ul li:hover > ul, #login-utilities-nav ul ul li.focus > ul {
   left: 100%;
 }
 /* line 33, sass/modules/_menus.scss */
-.main-navigation ul ul a {
+#menu-utilities-nav ul ul a, #social-utilities-nav ul ul a, #login-utilities-nav ul ul a {
   width: 200px;
 }
 /* line 46, sass/modules/_menus.scss */
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+#menu-utilities-nav ul li:hover > ul,
+#menu-utilities-nav ul li.focus > ul, #social-utilities-nav ul li:hover > ul,
+#social-utilities-nav ul li.focus > ul, #login-utilities-nav ul li:hover > ul,
+#login-utilities-nav ul li.focus > ul {
   left: auto;
 }
 /* line 51, sass/modules/_menus.scss */
-.main-navigation li {
+#menu-utilities-nav li, #social-utilities-nav li, #login-utilities-nav li {
   float: left;
   position: relative;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: "din-condensed-web", sans-serif;
+  padding: 5px 10px;
 }
 /* line 59, sass/modules/_menus.scss */
-.main-navigation a {
+#menu-utilities-nav li.social-icon, #social-utilities-nav li.social-icon, #login-utilities-nav li.social-icon {
+  padding: 5px;
+}
+/* line 67, sass/modules/_menus.scss */
+#menu-utilities-nav a, #social-utilities-nav a, #login-utilities-nav a {
   display: block;
   text-decoration: none;
+  color: #131313;
+}
+
+/* line 79, sass/modules/_menus.scss */
+#menu-utilities-nav {
+  padding-right: 5px;
+}
+
+/* line 84, sass/modules/_menus.scss */
+#login-utilities-nav .creative-network a {
+  color: #c25543;
+}
+
+/* line 89, sass/modules/_menus.scss */
+.creative-network::after {
+  content: "|";
+  position: absolute;
+  right: 0px;
+  top: 4px;
 }
 
 /* Small menu. */
-/* line 71, sass/modules/_menus.scss */
+/* line 97, sass/modules/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 77, sass/modules/_menus.scss */
+  /* line 103, sass/modules/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 80, sass/modules/_menus.scss */
+  /* line 106, sass/modules/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 89, sass/modules/_menus.scss */
+/* line 115, sass/modules/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 94, sass/modules/_menus.scss */
+/* line 120, sass/modules/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 99, sass/modules/_menus.scss */
+/* line 125, sass/modules/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -943,9 +978,104 @@ html, body {
   width: 50%;
 }
 
+/* line 132, sass/modules/_menus.scss */
+.utilities-nav {
+  float: left;
+  width: 100%;
+  text-align: right;
+}
+
+/* line 138, sass/modules/_menus.scss */
+.menu-block {
+  background-color: white;
+  padding: 10px 65px 50px 10px;
+}
+/* line 142, sass/modules/_menus.scss */
+.menu-block .menu-block-primary-text {
+  display: block;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  color: black;
+}
+/* line 150, sass/modules/_menus.scss */
+.menu-block .menu-block-secondary-text {
+  display: block;
+  font-family: "leitura-news", serif;
+  font-size: 12px;
+  color: black;
+  border-bottom: 2px solid #696969;
+}
+/* line 158, sass/modules/_menus.scss */
+.menu-block:hover {
+  background-color: #b33ed9;
+}
+/* line 161, sass/modules/_menus.scss */
+.menu-block:hover .menu-block-primary-text {
+  color: white;
+}
+/* line 164, sass/modules/_menus.scss */
+.menu-block:hover .menu-block-secondary-text {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
 /* line 5, sass/modules/_modules.scss */
 .callout {
   text-align: center;
   display: block;
   width: 100%;
+}
+
+/* line 1, sass/modules/_masthead.scss */
+.masthead-title {
+  color: white;
+  text-align: center;
+  font-size: 69px;
+  margin: 75px 0 15px;
+}
+
+/* line 8, sass/modules/_masthead.scss */
+.masthead-subtitle {
+  padding: 5px 0;
+  border-top: 5px solid #2e7096;
+  border-bottom: 5px solid #2e7096;
+}
+
+/* line 14, sass/modules/_masthead.scss */
+.masthead-subtitle-inner {
+  color: #2e7096;
+  text-align: center;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 100px;
+}
+
+/* line 23, sass/modules/_masthead.scss */
+.masthead-link {
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "din-condensed-web", sans-serif;
+}
+/* line 29, sass/modules/_masthead.scss */
+.masthead-link a {
+  color: white;
+}
+
+/* line 34, sass/modules/_masthead.scss */
+.citation {
+  text-align: right;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: "din-condensed-web", sans-serif;
+}
+
+/* line 42, sass/modules/_masthead.scss */
+.masthead-arrow {
+  text-align: center;
+  margin: 50px 0 15px;
 }
