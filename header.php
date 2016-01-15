@@ -40,6 +40,9 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
+
 	<?php wp_head(); ?>
 
 </head>
@@ -55,10 +58,12 @@
 			$thumb = $image['sizes']['background-fullscreen'];
 		endif; ?>
 
-		<header style='<?php if( is_front_page() ) { ?> background-image: url(<?php echo $thumb; ?>) <?php } ?>'>
+		<!-- <header style='<?php if( is_front_page() ) { ?> background-image: url(<?php echo $thumb; ?>) <?php } ?>'> -->
+		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>">
 			<div class="container">
 				<div class="row">
 					<div class="utilities-nav">
+						<div class="twelve columns">
 							<?php if(has_nav_menu('utilities_nav')){
 								$defaults = array(
 									'theme_location'  => 'utilities_nav',
@@ -91,6 +96,7 @@
 								<li class="creative-network"><a href="">Join our creative network</a></li>
 								<li><a href="">Artist login</a></li>
 							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -102,7 +108,7 @@
 						</div>
 						<div class="two columns">
 							<a href="">
-								<div class="menu-block">
+								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Learn</span>
 									<span class="menu-block-secondary-text">New Skills</span>
 								</div>
@@ -110,7 +116,7 @@
 						</div>
 						<div class="two columns">
 							<a href="">
-								<div class="menu-block">
+								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Build</span>
 									<span class="menu-block-secondary-text">Your Business</span>
 								</div>
@@ -118,7 +124,7 @@
 						</div>
 						<div class="two columns">
 							<a href="">
-								<div class="menu-block">
+								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Fund</span>
 									<span class="menu-block-secondary-text">Your Ideas</span>
 								</div>
@@ -126,23 +132,25 @@
 						</div>
 						<div class="two columns">
 							<a href="">
-								<div class="menu-block">
+								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Connect</span>
 									<span class="menu-block-secondary-text">With Creatives</span>
 								</div>
 							</a>
 						</div>
 						<div class="two columns">
-							<a href="">
-								<div class="menu-block-half">
-									Find Artists
-								</div>
-							</a>
-							<a href="">
-								<div class="menu-block-half">
-									Shop Businesses
-								</div>
-							</a>
+							<div class="menu-block-item">
+								<a href="">
+									<div class="menu-block-half">
+										<span class="menu-block-primary-text">Find Artists</span>
+									</div>
+								</a>
+								<a href="">
+									<div class="menu-block-half">
+										<span class="menu-block-primary-text">Shop Businesses</span>
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -179,3 +187,7 @@
 				<?php echo get_field('masthead_image_citation'); ?>
 			</div>
 		</header>
+
+		<div class="tagline">
+			<span class="tagline-attention">Attention: </span><span class="tagline-message">Support our drive for statewide broadband access for creative entrepreneurs.</span>
+		</div>

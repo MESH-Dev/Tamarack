@@ -17,6 +17,16 @@
 
 <?php wp_footer(); ?>
 
+<script>
+
+	jQuery(function() {
+		jQuery('.menu-block-item').matchHeight({
+			byRow: true
+		});
+	});
+
+</script>
+
 <script src="https://use.typekit.net/ofd3xas.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 

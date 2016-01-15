@@ -47,65 +47,65 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 /* line 17, sass/grid/_grid.scss */
 .row {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.3125rem;
 }
 
 /* line 46, sass/grid/_dependencies.scss */
 .container .column,
 .container .columns {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* The Grid */
 /* line 58, sass/grid/_dependencies.scss */
 .container .one.column,
 .container .one.columns {
-  width: 70px;
+  width: 80px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .two.columns {
-  width: 160px;
+  width: 170px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .three.columns {
-  width: 250px;
+  width: 260px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .four.columns {
-  width: 340px;
+  width: 350px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .five.columns {
-  width: 430px;
+  width: 440px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .six.columns {
-  width: 520px;
+  width: 530px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .seven.columns {
-  width: 610px;
+  width: 620px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .eight.columns {
-  width: 700px;
+  width: 710px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .nine.columns {
-  width: 790px;
+  width: 800px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .ten.columns {
-  width: 880px;
+  width: 890px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .eleven.columns {
-  width: 970px;
+  width: 980px;
 }
 /* line 61, sass/grid/_dependencies.scss */
 .container .twelve.columns {
-  width: 1060px;
+  width: 1070px;
 }
 /* line 64, sass/grid/_dependencies.scss */
 .container .one-third.column {
@@ -123,47 +123,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-one {
-  margin-left: 90px;
+  margin-left: 100px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-two {
-  margin-left: 180px;
+  margin-left: 200px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-three {
-  margin-left: 270px;
+  margin-left: 300px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-four {
-  margin-left: 360px;
+  margin-left: 400px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-five {
-  margin-left: 450px;
+  margin-left: 500px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-six {
-  margin-left: 540px;
+  margin-left: 600px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-seven {
-  margin-left: 630px;
+  margin-left: 700px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-eight {
-  margin-left: 720px;
+  margin-left: 800px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-nine {
-  margin-left: 810px;
-}
-/* line 83, sass/grid/_dependencies.scss */
-.container .offset-by-ten {
   margin-left: 900px;
 }
 /* line 83, sass/grid/_dependencies.scss */
+.container .offset-by-ten {
+  margin-left: 1000px;
+}
+/* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-eleven {
-  margin-left: 990px;
+  margin-left: 1100px;
 }
 
 /* TABLET (PORTRAIT)
@@ -195,59 +195,59 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   /* line 46, sass/grid/_dependencies.scss */
   .container .column,
   .container .columns {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   /* The Grid */
   /* line 58, sass/grid/_dependencies.scss */
   .container .one.column,
   .container .one.columns {
-    width: 44px;
+    width: 54px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .two.columns {
-    width: 108px;
+    width: 118px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .three.columns {
-    width: 172px;
+    width: 182px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .four.columns {
-    width: 236px;
+    width: 246px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .five.columns {
-    width: 300px;
+    width: 310px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .six.columns {
-    width: 364px;
+    width: 374px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .seven.columns {
-    width: 428px;
+    width: 438px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .eight.columns {
-    width: 492px;
+    width: 502px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .nine.columns {
-    width: 556px;
+    width: 566px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .ten.columns {
-    width: 620px;
+    width: 630px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .eleven.columns {
-    width: 684px;
+    width: 694px;
   }
   /* line 61, sass/grid/_dependencies.scss */
   .container .twelve.columns {
-    width: 748px;
+    width: 758px;
   }
   /* line 64, sass/grid/_dependencies.scss */
   .container .one-third.column {
@@ -265,47 +265,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-one {
-    margin-left: 64px;
+    margin-left: 74px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-two {
-    margin-left: 128px;
+    margin-left: 148px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-three {
-    margin-left: 192px;
+    margin-left: 222px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-four {
-    margin-left: 256px;
+    margin-left: 296px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-five {
-    margin-left: 320px;
+    margin-left: 370px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-six {
-    margin-left: 384px;
+    margin-left: 444px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-seven {
-    margin-left: 448px;
+    margin-left: 518px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eight {
-    margin-left: 512px;
+    margin-left: 592px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-nine {
-    margin-left: 576px;
+    margin-left: 666px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-ten {
-    margin-left: 640px;
+    margin-left: 740px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eleven {
-    margin-left: 704px;
+    margin-left: 814px;
   }
 }
 /*  MOBILE (PORTRAIT)
@@ -849,6 +849,12 @@ html, body {
   top: 0;
 }
 
+/* line 1, sass/layout/_main.scss */
+.content-half {
+  width: 50%;
+  float: left;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
@@ -988,10 +994,46 @@ header {
 /* line 138, sass/modules/_menus.scss */
 .menu-block {
   background-color: white;
-  padding: 10px 65px 50px 10px;
+  padding: 10px;
 }
 /* line 142, sass/modules/_menus.scss */
-.menu-block .menu-block-primary-text {
+.menu-block:hover {
+  background-color: #b33ed9;
+}
+/* line 145, sass/modules/_menus.scss */
+.menu-block:hover .menu-block-primary-text {
+  color: white;
+}
+/* line 148, sass/modules/_menus.scss */
+.menu-block:hover .menu-block-secondary-text {
+  color: white;
+  border-bottom: 2px solid white;
+  width: 65%;
+}
+
+/* line 156, sass/modules/_menus.scss */
+.menu-block-half {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* line 161, sass/modules/_menus.scss */
+.menu-block-half:hover {
+  background-color: #b33ed9;
+}
+/* line 164, sass/modules/_menus.scss */
+.menu-block-half:hover .menu-block-primary-text {
+  color: white;
+}
+/* line 167, sass/modules/_menus.scss */
+.menu-block-half:hover .menu-block-secondary-text {
+  color: white;
+  border-bottom: 2px solid white;
+  width: 65%;
+}
+
+/* line 175, sass/modules/_menus.scss */
+.menu-block-primary-text {
   display: block;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -999,26 +1041,33 @@ header {
   line-height: 24px;
   color: black;
 }
-/* line 150, sass/modules/_menus.scss */
-.menu-block .menu-block-secondary-text {
+
+/* line 183, sass/modules/_menus.scss */
+.menu-block-secondary-text {
   display: block;
   font-family: "leitura-news", serif;
   font-size: 12px;
   color: black;
   border-bottom: 2px solid #696969;
 }
-/* line 158, sass/modules/_menus.scss */
-.menu-block:hover {
-  background-color: #b33ed9;
+
+/* line 191, sass/modules/_menus.scss */
+.tagline {
+  width: 100%;
+  float: left;
+  padding: 5px;
+  text-align: center;
 }
-/* line 161, sass/modules/_menus.scss */
-.menu-block:hover .menu-block-primary-text {
-  color: white;
+/* line 197, sass/modules/_menus.scss */
+.tagline .tagline-attention {
+  font-family: "leitura-news", serif;
+  color: #5a636e;
 }
-/* line 164, sass/modules/_menus.scss */
-.menu-block:hover .menu-block-secondary-text {
-  color: white;
-  border-bottom: 2px solid white;
+/* line 201, sass/modules/_menus.scss */
+.tagline .tagline-message {
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  color: #3f4143;
 }
 
 /* line 5, sass/modules/_modules.scss */
