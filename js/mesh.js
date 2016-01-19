@@ -5,6 +5,20 @@ jQuery(document).ready(function($){
 
   //Let's do something awesome!
 
+  var divWidth = jQuery('.content-third').width();
+  jQuery('.content-third').height(divWidth);
 
+  jQuery(window).resize(function() {
+    var divWidth = jQuery('.content-third').width();
+    jQuery('.content-third').height(divWidth);
+  });
+
+  var divWidth = jQuery('.content-fourth').width();
+  jQuery('.content-fourth').height(divWidth);
+
+  jQuery(window).resize(function() {
+    var divWidth = jQuery('.content-fourth').width();
+    jQuery('.content-fourth').height(divWidth);
+  })
 
 });

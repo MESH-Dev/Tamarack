@@ -853,6 +853,100 @@ html, body {
 .content-half {
   width: 50%;
   float: left;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 30px;
+}
+/* line 10, sass/layout/_main.scss */
+.content-half .content-text {
+  font-size: 2.25em;
+  line-height: 1.1em;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  color: #c25543;
+  font-weight: 500;
+}
+
+/* line 20, sass/layout/_main.scss */
+.content-third {
+  width: 33.333%;
+  float: left;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 40px;
+}
+
+/* line 30, sass/layout/_main.scss */
+.content-fourth {
+  width: 25%;
+  float: left;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 15px;
+}
+
+/* line 40, sass/layout/_main.scss */
+.content-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 45, sass/layout/_main.scss */
+.content-text .content-text-main {
+  font-size: 1.875em;
+  line-height: 1.1em;
+  font-family: "leitura-news", serif;
+  color: #c25543;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+/* line 54, sass/layout/_main.scss */
+.content-text .content-text-cta {
+  font-size: 0.875em;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  color: #c25543;
+}
+/* line 60, sass/layout/_main.scss */
+.content-text .content-text-cta a {
+  color: #c25543;
+}
+
+/* line 66, sass/layout/_main.scss */
+.content-rectangle-screen {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: table;
+  padding: 10%;
+}
+
+/* line 76, sass/layout/_main.scss */
+.content-circle-screen {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: table;
+  padding: 10%;
+}
+
+/* line 85, sass/layout/_main.scss */
+.white-line {
+  height: 1px;
+  background-color: white;
+  width: 110px;
+  position: relative;
+  margin: 10px auto;
+  display: block;
 }
 
 /* line 1, sass/layout/_header.scss */
