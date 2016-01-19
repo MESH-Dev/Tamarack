@@ -865,11 +865,10 @@ html, body {
   line-height: 1.1em;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
-  color: #c25543;
   font-weight: 500;
 }
 
-/* line 20, sass/layout/_main.scss */
+/* line 19, sass/layout/_main.scss */
 .content-third {
   width: 33.333%;
   float: left;
@@ -880,7 +879,7 @@ html, body {
   padding: 40px;
 }
 
-/* line 30, sass/layout/_main.scss */
+/* line 29, sass/layout/_main.scss */
 .content-fourth {
   width: 25%;
   float: left;
@@ -891,34 +890,33 @@ html, body {
   padding: 15px;
 }
 
-/* line 40, sass/layout/_main.scss */
+/* line 39, sass/layout/_main.scss */
 .content-text {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 45, sass/layout/_main.scss */
+/* line 44, sass/layout/_main.scss */
 .content-text .content-text-main {
   font-size: 1.875em;
   line-height: 1.1em;
   font-family: "leitura-news", serif;
-  color: #c25543;
   font-weight: 500;
   margin-bottom: 40px;
 }
-/* line 54, sass/layout/_main.scss */
+/* line 52, sass/layout/_main.scss */
 .content-text .content-text-cta {
   font-size: 0.875em;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   color: #c25543;
 }
-/* line 60, sass/layout/_main.scss */
+/* line 58, sass/layout/_main.scss */
 .content-text .content-text-cta a {
   color: #c25543;
 }
 
-/* line 66, sass/layout/_main.scss */
+/* line 64, sass/layout/_main.scss */
 .content-rectangle-screen {
   position: relative;
   float: left;
@@ -929,7 +927,7 @@ html, body {
   padding: 10%;
 }
 
-/* line 76, sass/layout/_main.scss */
+/* line 74, sass/layout/_main.scss */
 .content-circle-screen {
   border-radius: 50%;
   width: 100%;
@@ -939,7 +937,7 @@ html, body {
   padding: 10%;
 }
 
-/* line 85, sass/layout/_main.scss */
+/* line 83, sass/layout/_main.scss */
 .white-line {
   height: 1px;
   background-color: white;
@@ -947,6 +945,26 @@ html, body {
   position: relative;
   margin: 10px auto;
   display: block;
+}
+
+/* line 92, sass/layout/_main.scss */
+.red {
+  color: #c25543;
+}
+
+/* line 95, sass/layout/_main.scss */
+.purple {
+  color: #b33ed9;
+}
+
+/* line 98, sass/layout/_main.scss */
+.blue {
+  color: #1b648d;
+}
+
+/* line 101, sass/layout/_main.scss */
+.dark-gray {
+  color: #3f4042;
 }
 
 /* line 1, sass/layout/_header.scss */

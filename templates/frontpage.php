@@ -6,114 +6,125 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
   <div class="row">
-    <div class="content-half" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-1.png)">
-      <div class="content-rectangle-screen">
-        <div class="content-text">
-          <span class="white-line"></span>
-          Build your creative business
-          <span class="white-line"></span>
-        </div>
-      </div>
-    </div>
-    <div class="content-half" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-2.png)">
-      <div class="content-rectangle-screen">
-        <div class="content-text">
-          <span class="white-line"></span>
-          Join our network of creatives
-          <span class="white-line"></span>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="content-third" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-left.png)">
-      <div class="content-circle-screen">
-        <div class="content-text">
-          <div class="content-text-main">
-            This can be a text Call to Action right here
-          </div>
-          <div class="content-text-cta">
-            <a href="">This could link <i class="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-third" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-middle.png)">
-      <div class="content-circle-screen">
-        <div class="content-text">
-          <div class="content-text-main">
-            This can be a text Call to Action right here
-          </div>
-          <div class="content-text-cta">
-            <a href="">This could link <i class="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-third" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-right.png)">
-      <div class="content-circle-screen">
-        <div class="content-text">
-          <div class="content-text-main">
-            This can be a text Call to Action right here
-          </div>
-          <div class="content-text-cta">
-            <a href="">This could link <i class="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <?php
 
-  <div class="row">
-    <div class="content-fourth" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-left.png)">
-      <div class="content-rectangle-screen">
-        <div class="content-text">
-          <div class="content-text-main">
-            This can be a text Call to Action right here
-          </div>
-          <div class="content-text-cta">
-            <a href="">This could link <i class="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-fourth" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-left.png)">
-      <div class="content-rectangle-screen">
-        <div class="content-text">
-          <div class="content-text-main">
-            This can be a text Call to Action right here
-          </div>
-          <div class="content-text-cta">
-            <a href="">This could link <i class="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-fourth" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-left.png)">
-      <div class="content-rectangle-screen">
-        <div class="content-text">
-          <div class="content-text-main">
-            This can be a text Call to Action right here
-          </div>
-          <div class="content-text-cta">
-            <a href="">This could link <i class="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-fourth" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-left.png)">
-      <div class="content-rectangle-screen">
-        <div class="content-text">
-          <div class="content-text-main">
-            This can be a text Call to Action right here
-          </div>
-          <div class="content-text-cta">
-            <a href="">This could link <i class="fa fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
+    // check if the repeater field has rows of data
+    if( have_rows('content_block_section') ):
+     	// loop through the rows of data
+        while ( have_rows('content_block_section') ) : the_row();
+
+          $type = get_sub_field('block_section_type');
+
+          if ($type == "half_width") {
+
+            // check for rows (sub repeater)
+            if( have_rows('half_width') ):
+
+              while( have_rows('half_width') ): the_row();
+
+                $image = get_sub_field('background_image');
+
+                if( !empty($image) ):
+                	$thumb = $image['sizes']['large'];
+                endif;
+
+              ?>
+
+                <div class="content-half" style="background-image: url(<?php echo $thumb; ?>)">
+                  <div class="content-rectangle-screen">
+                    <div class="content-text <?php echo get_sub_field('color'); ?>">
+                      <span class="white-line"></span>
+                        <?php echo get_sub_field('title'); ?>
+                      <span class="white-line"></span>
+                    </div>
+                  </div>
+                </div>
+
+              <?php endwhile;
+
+            endif;
+
+          }
+
+          elseif ($type == "third_width") {
+
+            // check for rows (sub repeater)
+            if( have_rows('third_width') ):
+
+              while( have_rows('third_width') ): the_row();
+
+                $image = get_sub_field('background_image');
+
+                if( !empty($image) ):
+                	$thumb = $image['sizes']['large'];
+                endif;
+
+              ?>
+
+                <div class="content-third" style="background-image: url(<?php echo $thumb; ?>)">
+                  <div class="content-circle-screen">
+                    <div class="content-text <?php echo get_sub_field('color'); ?>">
+                      <div class="content-text-main">
+                        <?php echo get_sub_field('title'); ?>
+                      </div>
+                      <div class="content-text-cta">
+                        <a href="<?php echo get_sub_field('url'); ?>"><?php echo get_sub_field('link_text'); ?> <i class="fa fa-angle-double-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <?php endwhile;
+
+            endif;
+
+          }
+
+          elseif ($type == "fourth_width") {
+
+            // check for rows (sub repeater)
+            if( have_rows('fourth_width') ):
+
+              while( have_rows('fourth_width') ): the_row();
+
+                $image = get_sub_field('background_image');
+
+                if( !empty($image) ):
+                	$thumb = $image['sizes']['large'];
+                endif;
+
+              ?>
+
+                <div class="content-fourth" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-left.png)">
+                  <div class="content-rectangle-screen">
+                    <div class="content-text <?php echo get_sub_field('color'); ?>">
+                      <div class="content-text-main">
+                        <?php echo get_sub_field('title'); ?>
+                      </div>
+                      <div class="content-text-cta">
+                        <a href="<?php echo get_sub_field('url'); ?>"><?php echo get_sub_field('link_text') ?> <i class="fa fa-angle-double-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <?php endwhile;
+
+            endif;
+
+          }
+
+        endwhile;
+
+    else :
+
+        // no rows found
+
+    endif;
+
+    ?>
+
   </div>
 
   <div class="container">

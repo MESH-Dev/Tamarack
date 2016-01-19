@@ -12,7 +12,6 @@
     line-height: 1.1em;
     font-family: $font-family--secondary;
     text-transform: uppercase;
-    color: $crail;
     font-weight: 500;
   }
 }
@@ -46,7 +45,6 @@
     font-size: em(30);
     line-height: 1.1em;
     font-family: $font-family--primary;
-    color: $crail;
     font-weight: 500;
     margin-bottom: 40px;
   }
@@ -89,4 +87,17 @@
   position: relative;
   margin: 10px auto;
   display: block;
+}
+
+.red {
+  color: $crail;
+}
+.purple {
+  color: $purple;
+}
+.blue {
+  color: $matisse;
+}
+.dark-gray {
+  color: $abbey;
 }
