@@ -2,4 +2,22 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &.full {
+    height: 100vh;
+
+    .masthead-title {
+      margin-top: 25%;
+    }
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 75px;
+    left: calc(50% - 23px);
+  }
 }

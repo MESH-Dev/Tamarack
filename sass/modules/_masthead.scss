@@ -2,7 +2,7 @@
   color: white;
   text-align: center;
   font-size: 69px;
-  margin: 75px 0 15px;
+  margin: 75px 0 35px;
 }
 
 .masthead-subtitle {
@@ -41,6 +41,9 @@
   text-transform: uppercase;
   padding: 10px 20px;
   font-family: $font-family--secondary;
+  position: absolute;
+  right: 15px;
+  bottom: -20px;
 }
 
 .masthead-arrow {

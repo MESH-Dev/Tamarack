@@ -1131,6 +1131,24 @@ header {
   background-position: center;
   background-size: cover;
 }
+/* line 6, sass/layout/_header.scss */
+header.full {
+  height: 100vh;
+}
+/* line 9, sass/layout/_header.scss */
+header.full .masthead-title {
+  margin-top: 25%;
+}
+/* line 14, sass/layout/_header.scss */
+header .container {
+  height: 100%;
+}
+/* line 18, sass/layout/_header.scss */
+header .bottom {
+  position: absolute;
+  bottom: 75px;
+  left: calc(50% - 23px);
+}
 
 /* line 1, sass/modules/_menus.scss */
 #menu-utilities-nav, #social-utilities-nav, #login-utilities-nav {
@@ -1353,7 +1371,7 @@ header {
   color: white;
   text-align: center;
   font-size: 69px;
-  margin: 75px 0 15px;
+  margin: 75px 0 35px;
 }
 
 /* line 8, sass/modules/_masthead.scss */
@@ -1396,9 +1414,12 @@ header {
   text-transform: uppercase;
   padding: 10px 20px;
   font-family: "din-condensed-web", sans-serif;
+  position: absolute;
+  right: 15px;
+  bottom: -20px;
 }
 
-/* line 46, sass/modules/_masthead.scss */
+/* line 49, sass/modules/_masthead.scss */
 .masthead-arrow {
   text-align: center;
   margin: 50px 0 15px;

@@ -59,7 +59,7 @@
 		endif; ?>
 
 		<!-- <header style='<?php if( is_front_page() ) { ?> background-image: url(<?php echo $thumb; ?>) <?php } ?>'> -->
-		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>">
+		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
 			<div class="container">
 				<div class="row">
 					<div class="utilities-nav">
@@ -161,27 +161,33 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="eight columns offset-by-two">
-						<div class="masthead-subtitle">
-							<div class="masthead-subtitle-inner">
-								<?php echo get_field("masthead_subtitle"); ?>
+				<?php if (get_field("masthead_subtitle")) { ?>
+					<div class="row">
+						<div class="eight columns offset-by-two">
+							<div class="masthead-subtitle">
+								<div class="masthead-subtitle-inner">
+									<?php echo get_field("masthead_subtitle"); ?>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="twelve columns">
-						<div class="masthead-link">
-							<a href="<?php echo get_field('masthead_url') ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
+				<?php } ?>
+				<?php if(get_field("masthead_url")) { ?>
+					<div class="row">
+						<div class="twelve columns">
+							<div class="masthead-link">
+								<a href="<?php echo get_field('masthead_url') ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="masthead-arrow">
-						<a href="#main"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
+				<?php } ?>
+				<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
+					<div class="row bottom">
+						<div class="masthead-arrow">
+							<a href="#main"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
+						</div>
 					</div>
-				</div>
+				<?php } ?>
 			</div>
 			<div class="citation">
 				<?php echo get_field('masthead_image_citation'); ?>
@@ -189,5 +195,5 @@
 		</header>
 
 		<div class="tagline">
-			<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline'); ?></span>
+			<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
 		</div>
