@@ -85,8 +85,35 @@ register_sidebar( array(
     'after_title' => '</h3>',
 ) );
 
+register_sidebar( array(
+    'name' => __( 'Left Footer', 'Sidebar' ),
+    'id' => 'left-footer',
+    'description' => __( 'The left footer area', 'Sidebar' ),
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+) );
 
+register_sidebar( array(
+    'name' => __( 'Middle Footer', 'Sidebar' ),
+    'id' => 'middle-footer',
+    'description' => __( 'The middle area', 'Sidebar' ),
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+) );
 
+register_sidebar( array(
+    'name' => __( 'Right Footer', 'Sidebar' ),
+    'id' => 'right-footer',
+    'description' => __( 'The right footer area', 'Sidebar' ),
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+) );
 
 
 

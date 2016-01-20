@@ -189,5 +189,5 @@
 		</header>
 
 		<div class="tagline">
-			<span class="tagline-attention">Attention: </span><span class="tagline-message">Support our drive for statewide broadband access for creative entrepreneurs.</span>
+			<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline'); ?></span>
 		</div>

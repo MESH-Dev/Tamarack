@@ -1,1 +1,25 @@
 @include sticky-footer(75px, ".content-fullscreen", "#footer-fullscreen");
+
+footer {
+  background-color: $pampas;
+}
+
+.footer-block {
+  padding: 40px;
+
+  &:before {
+    content: url(img/divider-1.png);
+    position: absolute;
+    left: 0;
+  }
+}
+
+.footer-menu-block {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+
+    .menu-block-secondary-text {
+      width: 65%;
+    }
+}

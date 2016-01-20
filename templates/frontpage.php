@@ -96,7 +96,7 @@ get_header(); ?>
 
               ?>
 
-                <div class="content-fourth" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/background-left.png)">
+                <div class="content-fourth" style="background-image: url(<?php echo $thumb; ?>)">
                   <div class="content-rectangle-screen">
                     <div class="content-text <?php echo get_sub_field('color'); ?>">
                       <div class="content-text-main">
@@ -132,8 +132,6 @@ get_header(); ?>
       <div class="twelve columns">
 
           <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-              <h1><?php the_title(); ?></h1>
 
               <?php the_content(); ?>
 

@@ -834,6 +834,33 @@ html, body {
   height: 75px;
 }
 
+/* line 3, sass/layout/_footer.scss */
+footer {
+  background-color: #f1ede9;
+}
+
+/* line 7, sass/layout/_footer.scss */
+.footer-block {
+  padding: 40px;
+}
+/* line 10, sass/layout/_footer.scss */
+.footer-block:before {
+  content: url(img/divider-1.png);
+  position: absolute;
+  left: 0;
+}
+
+/* line 17, sass/layout/_footer.scss */
+.footer-menu-block {
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 22, sass/layout/_footer.scss */
+.footer-menu-block .menu-block-secondary-text {
+  width: 65%;
+}
+
 /* line 1, sass/layout/_background.scss */
 .background-fullscreen {
   -webkit-background-size: cover;
@@ -1107,20 +1134,20 @@ header {
 .menu-block {
   background-color: white;
   padding: 10px;
+  height: 98px;
 }
-/* line 142, sass/modules/_menus.scss */
+/* line 143, sass/modules/_menus.scss */
 .menu-block:hover {
   background-color: #b33ed9;
 }
-/* line 145, sass/modules/_menus.scss */
+/* line 146, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-primary-text {
   color: white;
 }
-/* line 148, sass/modules/_menus.scss */
+/* line 149, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-secondary-text {
   color: white;
   border-bottom: 2px solid white;
-  width: 65%;
 }
 
 /* line 156, sass/modules/_menus.scss */
@@ -1137,14 +1164,8 @@ header {
 .menu-block-half:hover .menu-block-primary-text {
   color: white;
 }
-/* line 167, sass/modules/_menus.scss */
-.menu-block-half:hover .menu-block-secondary-text {
-  color: white;
-  border-bottom: 2px solid white;
-  width: 65%;
-}
 
-/* line 175, sass/modules/_menus.scss */
+/* line 170, sass/modules/_menus.scss */
 .menu-block-primary-text {
   display: block;
   font-family: "din-condensed-web", sans-serif;
@@ -1154,28 +1175,30 @@ header {
   color: black;
 }
 
-/* line 183, sass/modules/_menus.scss */
+/* line 178, sass/modules/_menus.scss */
 .menu-block-secondary-text {
   display: block;
   font-family: "leitura-news", serif;
   font-size: 12px;
   color: black;
   border-bottom: 2px solid #696969;
+  font-weight: 700;
 }
 
-/* line 191, sass/modules/_menus.scss */
+/* line 187, sass/modules/_menus.scss */
 .tagline {
   width: 100%;
   float: left;
   padding: 5px;
   text-align: center;
+  background-color: white;
 }
-/* line 197, sass/modules/_menus.scss */
+/* line 194, sass/modules/_menus.scss */
 .tagline .tagline-attention {
   font-family: "leitura-news", serif;
   color: #5a636e;
 }
-/* line 201, sass/modules/_menus.scss */
+/* line 198, sass/modules/_menus.scss */
 .tagline .tagline-message {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;

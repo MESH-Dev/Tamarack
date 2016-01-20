@@ -4,6 +4,8 @@ include('functions/start.php');
 
 include('functions/clean.php');
 
+include('functions/widgets.php');
+
 //Custon wp-admin logo
 function my_custom_login_logo() {
   echo '<style type="text/css">
