@@ -179,7 +179,7 @@
 				</div>
 				<div class="row">
 					<div class="masthead-arrow">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" />
+						<a href="#main"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
 					</div>
 				</div>
 			</div>
