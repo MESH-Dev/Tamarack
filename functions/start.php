@@ -70,6 +70,7 @@ register_nav_menus(
     array(
         'main_nav' => 'Header and breadcrumb trail heirarchy',
         'social_nav' => 'Social menu used throughout',
+				'footer_nav' => 'Footer menu',
 				'utilities_nav' => 'Utilities nav',
     )
 );

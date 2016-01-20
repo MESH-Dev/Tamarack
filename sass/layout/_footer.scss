@@ -6,13 +6,90 @@ footer {
 
 .footer-block {
   padding: 40px;
+  float: left;
+  width: 100%;
 
   &:before {
-    content: url(img/divider-1.png);
     position: absolute;
     left: 0;
   }
+  &:after {
+    position: absolute;
+    right: 0;
+  }
 }
+
+.footer-block-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $purple;
+  font-family: $font-family--secondary;
+}
+
+.footer-block-text {
+  font-size: 12px;
+  font-family: $font-family--primary;
+  color: $abbey;
+}
+
+.footer-block-full-width {
+  display: block;
+}
+
+.footer-block-info {
+  line-height: 1em;
+}
+
+.footer-block-newsletter-text {
+  font-size: 12px;
+  font-family: $font-family--primary;
+  font-weight: 700;
+  color: black;
+}
+
+.footer-block-1 {
+  &:before {
+    content: url(img/divider-1.png);
+  }
+}
+
+.footer-block-2 {
+  .menu-block-primary-text {
+    color: $dove;
+  }
+
+  hr {
+    border-color: black;
+  }
+
+  &:before {
+    content: url(img/divider-2.png);
+  }
+ }
+
+ .footer-block-3 {
+   .menu-block-primary-text {
+     color: $dove;
+   }
+
+   hr {
+     border-color: black;
+   }
+
+   p {
+     font-size: 12px;
+     font-weight: 700;
+     color: $dove;
+   }
+
+   &:before {
+     content: url(img/divider-3.png);
+   }
+   &:after {
+     content: url(img/divider-1.png);
+     top: 40px;
+   }
+ }
 
 .footer-menu-block {
     width: 50%;
@@ -22,4 +99,29 @@ footer {
     .menu-block-secondary-text {
       width: 65%;
     }
+}
+
+.footer-navigation {
+  float: left;
+  font-family: $font-family--secondary;
+
+  ul li {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      line-height: 1.1em;
+
+      a {
+        color: $salt-box;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.03em;
+      }
+  }
+  ul li:nth-child(odd) {
+    float: left;
+  }
+  ul li:nth-child(even) {
+    float: right;
+  }
 }
