@@ -40,7 +40,7 @@ h5 {
 
 .subtitle-din {
 	font-size: 36px;
-	
+
 }
 .subtitle-leitura {
 	font-size: 30px;
@@ -51,6 +51,10 @@ a {
 	color: palette(grey, dark);
 	text-decoration: none;
 	font-weight: $font-weight--medium;
+
+	&:hover {
+		color: $purple;
+	}
 }
 
 p {

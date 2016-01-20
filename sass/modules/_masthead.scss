@@ -28,6 +28,10 @@
 
   a {
     color: white;
+
+    &:hover {
+      color: $purple;
+    }
   }
 }
 

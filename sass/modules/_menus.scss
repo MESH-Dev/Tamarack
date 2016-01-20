@@ -68,6 +68,10 @@
 		display: block;
 		text-decoration: none;
 		color: $cod;
+
+		&:hover {
+			color: $purple;
+		}
 	}
 
 	.current_page_item > a,
@@ -139,6 +143,7 @@
 	background-color: white;
 	padding: 10px;
 	height: 98px;
+	margin-bottom: 10px;
 
 	&:hover {
 		background-color: $purple;
