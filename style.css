@@ -1133,17 +1133,17 @@ header {
 }
 /* line 6, sass/layout/_header.scss */
 header.full {
-  height: 100vh;
+  min-height: 100vh;
 }
 /* line 9, sass/layout/_header.scss */
 header.full .masthead-title {
-  margin-top: 25%;
+  margin-bottom: 170px;
 }
-/* line 14, sass/layout/_header.scss */
+/* line 15, sass/layout/_header.scss */
 header .container {
-  height: 100%;
+  min-height: 100vh;
 }
-/* line 18, sass/layout/_header.scss */
+/* line 19, sass/layout/_header.scss */
 header .bottom {
   position: absolute;
   bottom: 75px;

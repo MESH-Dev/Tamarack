@@ -4,16 +4,7 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
-<?php
-
-	if( is_page_template('templates/homepage-fullscreen.php') ) {
-		$imageArray = get_field('background_image');
-		$imageURL = $imageArray['sizes']['background-fullscreen'];
-	}
-
-?>
-
-<html <?php if( is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo $imageURL; ?>') no-repeat center center fixed;" class="background-fullscreen" <?php } ?>>
+<html>
 
 <head>
 	<meta charset="utf-8">
@@ -58,7 +49,6 @@
 			$thumb = $image['sizes']['background-fullscreen'];
 		endif; ?>
 
-		<!-- <header style='<?php if( is_front_page() ) { ?> background-image: url(<?php echo $thumb; ?>) <?php } ?>'> -->
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
 			<div class="container">
 				<div class="row">
@@ -80,12 +70,12 @@
 									'link_before'     => '',
 									'link_after'      => '',
 									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s
-																					<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
-																				</ul>',
+															<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
+															<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+															<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
+															<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
+															<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
+														  </ul>',
 									'depth'           => 0,
 									'walker'          => ''
 								); wp_nav_menu( $defaults );

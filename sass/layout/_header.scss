@@ -4,15 +4,16 @@ header {
   background-size: cover;
 
   &.full {
-    height: 100vh;
+    min-height: 100vh;
 
     .masthead-title {
-      margin-top: 25%;
+    //   margin-top: 25%;
+        margin-bottom: 170px;
     }
   }
 
   .container {
-    height: 100%;
+    min-height: 100vh;
   }
 
   .bottom {
