@@ -776,7 +776,7 @@ img {
 /* line 87, sass/base/_base.scss */
 ul,
 li {
-  margin: 0 0 5px;
+  margin: 0;
 }
 
 /* line 94, sass/base/_base.scss */
@@ -1213,6 +1213,11 @@ header .bottom {
   left: calc(50% - 23px);
 }
 
+/* line 32, sass/layout/_header.scss */
+.home header.full .masthead-title {
+  margin-bottom: 35px;
+}
+
 /* line 1, sass/modules/_menus.scss */
 #menu-utilities-nav, #social-utilities-nav, #login-utilities-nav {
   background: white;
@@ -1220,15 +1225,16 @@ header .bottom {
   display: inline-block;
   margin: 10px 0 0 10px;
   list-style-type: none;
+  padding: 0;
 }
-/* line 8, sass/modules/_menus.scss */
+/* line 9, sass/modules/_menus.scss */
 #menu-utilities-nav ul, #social-utilities-nav ul, #login-utilities-nav ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 14, sass/modules/_menus.scss */
+/* line 15, sass/modules/_menus.scss */
 #menu-utilities-nav ul ul, #social-utilities-nav ul ul, #login-utilities-nav ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -1237,27 +1243,27 @@ header .bottom {
   left: -999em;
   z-index: 99999;
 }
-/* line 22, sass/modules/_menus.scss */
+/* line 23, sass/modules/_menus.scss */
 #menu-utilities-nav ul ul ul, #social-utilities-nav ul ul ul, #login-utilities-nav ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 28, sass/modules/_menus.scss */
+/* line 29, sass/modules/_menus.scss */
 #menu-utilities-nav ul ul li:hover > ul, #menu-utilities-nav ul ul li.focus > ul, #social-utilities-nav ul ul li:hover > ul, #social-utilities-nav ul ul li.focus > ul, #login-utilities-nav ul ul li:hover > ul, #login-utilities-nav ul ul li.focus > ul {
   left: 100%;
 }
-/* line 34, sass/modules/_menus.scss */
+/* line 35, sass/modules/_menus.scss */
 #menu-utilities-nav ul ul a, #social-utilities-nav ul ul a, #login-utilities-nav ul ul a {
   width: 200px;
 }
-/* line 47, sass/modules/_menus.scss */
+/* line 48, sass/modules/_menus.scss */
 #menu-utilities-nav ul li:hover > ul,
 #menu-utilities-nav ul li.focus > ul, #social-utilities-nav ul li:hover > ul,
 #social-utilities-nav ul li.focus > ul, #login-utilities-nav ul li:hover > ul,
 #login-utilities-nav ul li.focus > ul {
   left: auto;
 }
-/* line 52, sass/modules/_menus.scss */
+/* line 53, sass/modules/_menus.scss */
 #menu-utilities-nav li, #social-utilities-nav li, #login-utilities-nav li {
   float: left;
   position: relative;
@@ -1266,32 +1272,32 @@ header .bottom {
   font-family: "din-condensed-web", sans-serif;
   padding: 5px 10px;
 }
-/* line 60, sass/modules/_menus.scss */
+/* line 61, sass/modules/_menus.scss */
 #menu-utilities-nav li.social-icon, #social-utilities-nav li.social-icon, #login-utilities-nav li.social-icon {
   padding: 5px;
 }
-/* line 68, sass/modules/_menus.scss */
+/* line 69, sass/modules/_menus.scss */
 #menu-utilities-nav a, #social-utilities-nav a, #login-utilities-nav a {
   display: block;
   text-decoration: none;
   color: #131313;
 }
-/* line 73, sass/modules/_menus.scss */
+/* line 74, sass/modules/_menus.scss */
 #menu-utilities-nav a:hover, #social-utilities-nav a:hover, #login-utilities-nav a:hover {
   color: #b33ed9;
 }
 
-/* line 84, sass/modules/_menus.scss */
+/* line 85, sass/modules/_menus.scss */
 #menu-utilities-nav {
   padding-right: 5px;
 }
 
-/* line 89, sass/modules/_menus.scss */
+/* line 90, sass/modules/_menus.scss */
 #login-utilities-nav .creative-network a {
   color: #c25543;
 }
 
-/* line 94, sass/modules/_menus.scss */
+/* line 95, sass/modules/_menus.scss */
 .creative-network::after {
   content: "|";
   position: absolute;
@@ -1300,38 +1306,38 @@ header .bottom {
 }
 
 /* Small menu. */
-/* line 102, sass/modules/_menus.scss */
+/* line 103, sass/modules/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 108, sass/modules/_menus.scss */
+  /* line 109, sass/modules/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 111, sass/modules/_menus.scss */
+  /* line 112, sass/modules/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 120, sass/modules/_menus.scss */
+/* line 121, sass/modules/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 125, sass/modules/_menus.scss */
+/* line 126, sass/modules/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 130, sass/modules/_menus.scss */
+/* line 131, sass/modules/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1340,50 +1346,50 @@ header .bottom {
   width: 50%;
 }
 
-/* line 137, sass/modules/_menus.scss */
+/* line 138, sass/modules/_menus.scss */
 .utilities-nav {
   float: left;
   width: 100%;
   text-align: right;
 }
 
-/* line 143, sass/modules/_menus.scss */
+/* line 144, sass/modules/_menus.scss */
 .menu-block {
   background-color: white;
   padding: 10px;
   height: 98px;
   margin-bottom: 10px;
 }
-/* line 149, sass/modules/_menus.scss */
+/* line 150, sass/modules/_menus.scss */
 .menu-block:hover {
   background-color: #b33ed9;
 }
-/* line 152, sass/modules/_menus.scss */
+/* line 153, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-primary-text {
   color: white;
 }
-/* line 155, sass/modules/_menus.scss */
+/* line 156, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-secondary-text {
   color: white;
   border-bottom: 2px solid white;
 }
 
-/* line 162, sass/modules/_menus.scss */
+/* line 163, sass/modules/_menus.scss */
 .menu-block-half {
   background-color: white;
   padding: 10px;
   margin-bottom: 10px;
 }
-/* line 167, sass/modules/_menus.scss */
+/* line 168, sass/modules/_menus.scss */
 .menu-block-half:hover {
   background-color: #b33ed9;
 }
-/* line 170, sass/modules/_menus.scss */
+/* line 171, sass/modules/_menus.scss */
 .menu-block-half:hover .menu-block-primary-text {
   color: white;
 }
 
-/* line 176, sass/modules/_menus.scss */
+/* line 177, sass/modules/_menus.scss */
 .menu-block-primary-text {
   display: block;
   font-family: "din-condensed-web", sans-serif;
@@ -1393,7 +1399,7 @@ header .bottom {
   color: black;
 }
 
-/* line 184, sass/modules/_menus.scss */
+/* line 185, sass/modules/_menus.scss */
 .menu-block-secondary-text {
   display: block;
   font-family: "leitura-news", serif;
@@ -1403,7 +1409,7 @@ header .bottom {
   font-weight: 700;
 }
 
-/* line 193, sass/modules/_menus.scss */
+/* line 194, sass/modules/_menus.scss */
 .tagline {
   width: 100%;
   float: left;
@@ -1412,12 +1418,12 @@ header .bottom {
   background-color: white;
   position: relative;
 }
-/* line 201, sass/modules/_menus.scss */
+/* line 202, sass/modules/_menus.scss */
 .tagline .tagline-attention {
   font-family: "leitura-news", serif;
   color: #5a636e;
 }
-/* line 205, sass/modules/_menus.scss */
+/* line 206, sass/modules/_menus.scss */
 .tagline .tagline-message {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;

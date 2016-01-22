@@ -23,3 +23,15 @@ header {
     left: calc(50% - 23px);
   }
 }
+
+// Ugly  hack, think about this
+
+.home {
+    header {
+        &.full {
+            .masthead-title {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
