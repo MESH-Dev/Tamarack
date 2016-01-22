@@ -179,9 +179,12 @@
 					</div>
 				<?php } ?>
 			</div>
-			<div class="citation">
-				<?php echo get_field('masthead_image_citation'); ?>
-			</div>
+			<?php if (is_page_template('templates/text.php')) { dimox_breadcrumbs(); } ?>
+			<?php if (get_field('masthead_image_citation')) { ?>
+				<div class="citation">
+					<?php echo get_field('masthead_image_citation'); ?>
+				</div>
+			<?php } ?>
 		</header>
 
 		<div class="tagline">

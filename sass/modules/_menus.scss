@@ -3,6 +3,7 @@
 	clear: both;
 	display: inline-block;
 	margin: 10px 0 0 10px;
+	list-style-type: none;
 
 	ul {
 		display: none;
@@ -195,6 +196,7 @@
 	padding: 5px;
 	text-align: center;
 	background-color: white;
+	position: relative;
 
 	.tagline-attention {
 		font-family: $font-family--primary;

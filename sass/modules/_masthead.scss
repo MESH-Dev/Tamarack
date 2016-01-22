@@ -42,8 +42,27 @@
   padding: 10px 20px;
   font-family: $font-family--secondary;
   position: absolute;
-  right: 15px;
-  bottom: -20px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.breadcrumbs {
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-family: $font-family--secondary;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    a {
+        color: white;
+    }
+}
+
+.sep {
+    margin: 0 5px;
 }
 
 .masthead-arrow {
