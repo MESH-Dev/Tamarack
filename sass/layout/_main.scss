@@ -117,3 +117,60 @@
 .dark-gray {
   color: $abbey;
 }
+
+.text-two-columns {
+   -moz-column-count: 2;
+   -moz-column-gap: 20px;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 20px;
+}
+
+blockquote {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	position: relative;
+	width: 100%;
+
+    p {
+        float: left;
+    }
+
+	.quote-text {
+        font-family: $font-family--secondary;
+		font-size: 48px;
+		line-height: 1.2;
+        font-style: normal;
+        text-transform: uppercase;
+        display: block;
+
+		&:before {
+			content: '\201C';
+			position: absolute;
+				top: 0;
+				left: 0;
+		}
+
+		&:after {
+			content: '\201D';
+			position: relative;
+				left: 0;
+		}
+
+	}
+
+	.quote-citation {
+		font-size: 30px;
+		margin-bottom: 0;
+		padding-left: 35px;
+		position: relative;
+        display: block;
+        font-style: normal;
+        float: right;
+
+		&:before {
+			content: '\2014';
+			position: absolute;
+				left: 0;
+		}
+	}
+}

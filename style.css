@@ -776,7 +776,7 @@ img {
 /* line 87, sass/base/_base.scss */
 ul,
 li {
-  margin: 0;
+  margin: 0 0 5px;
 }
 
 /* line 94, sass/base/_base.scss */
@@ -1127,6 +1127,64 @@ footer {
 /* line 117, sass/layout/_main.scss */
 .dark-gray {
   color: #3f4042;
+}
+
+/* line 121, sass/layout/_main.scss */
+.text-two-columns {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+}
+
+/* line 128, sass/layout/_main.scss */
+blockquote {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  width: 100%;
+}
+/* line 134, sass/layout/_main.scss */
+blockquote p {
+  float: left;
+}
+/* line 138, sass/layout/_main.scss */
+blockquote .quote-text {
+  font-family: "din-condensed-web", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-style: normal;
+  text-transform: uppercase;
+  display: block;
+}
+/* line 146, sass/layout/_main.scss */
+blockquote .quote-text:before {
+  content: '\201C';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 153, sass/layout/_main.scss */
+blockquote .quote-text:after {
+  content: '\201D';
+  position: relative;
+  left: 0;
+}
+/* line 161, sass/layout/_main.scss */
+blockquote .quote-citation {
+  font-size: 30px;
+  margin-bottom: 0;
+  padding-left: 35px;
+  position: relative;
+  display: block;
+  font-style: normal;
+  float: right;
+}
+/* line 170, sass/layout/_main.scss */
+blockquote .quote-citation:before {
+  content: '\2014';
+  position: absolute;
+  left: 0;
 }
 
 /* line 1, sass/layout/_header.scss */

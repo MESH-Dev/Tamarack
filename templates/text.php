@@ -13,7 +13,9 @@ get_header(); ?>
 
               <h2><?php the_title(); ?></h2>
 
-              <?php the_content(); ?>
+              <div class="content <?php if(get_field('text_two_columns')) { ?> text-two-columns <?php } ?>">
+                  <?php the_content(); ?>
+              </div>
 
           <?php endwhile; ?>
 
