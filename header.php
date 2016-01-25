@@ -70,12 +70,12 @@
 									'link_before'     => '',
 									'link_after'      => '',
 									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s
-															<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
-															<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
-															<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
-															<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
-															<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
-														  </ul>',
+																					<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
+																			  </ul>',
 									'depth'           => 0,
 									'walker'          => ''
 								); wp_nav_menu( $defaults );
