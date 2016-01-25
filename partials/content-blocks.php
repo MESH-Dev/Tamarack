@@ -22,12 +22,11 @@ if( have_rows('content_block_section') ):
 
           ?>
 
-            <div class="content-half" style="background-image: url(<?php echo $thumb; ?>)">
+            <div class="content-half effect-oscar" style="background-image: url(<?php echo $thumb; ?>)">
               <div class="content-rectangle-screen">
                 <div class="content-text <?php echo get_sub_field('color'); ?>">
-                  <span class="white-line"></span>
-                    <?php echo get_sub_field('title'); ?>
-                  <span class="white-line"></span>
+                    <div class="content-text-title"><?php echo get_sub_field('title'); ?></div>
+                    <div class="content-text-cta"><?php echo get_sub_field('subtitle'); ?></div>
                 </div>
               </div>
             </div>
