@@ -11,6 +11,10 @@
   background-position: center;
   position: relative;
   padding: 30px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 
   @include mq($desktop-width, "max-width") {
     width: 100%;
@@ -216,6 +220,7 @@ blockquote {
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
+  margin-top: -30px;
 }
 
 .effect-oscar .content-text::before,
@@ -225,6 +230,12 @@ blockquote {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(0);
 	transform: scale(0);
+}
+
+.effect-oscar:hover {
+  padding: 5px;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
 }
 
 .effect-oscar:hover .content-text-title {
