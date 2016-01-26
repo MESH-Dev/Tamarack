@@ -96,39 +96,119 @@
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 							</div>
 						</div>
-						<div class="two columns">
+						<div class="two columns menu-item learn">
 							<a href="">
 								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Learn</span>
 									<span class="menu-block-secondary-text">New Skills</span>
 								</div>
 							</a>
+							<div class="sub-menu-block">
+								<div class="sub-menu-block-quote">
+									<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+									<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								</div>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<li>Level 2 Links: Access New Markets
+											<ul>
+												<li>Rural to Urban Markets</li>
+												<li>Find a Sales Representative</li>
+												<li>WV Craft Week</li>
+												<li>Sign up for the "Marketplace"</li>
+												<li>Sign up for the "Trail"</li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="half">
+										<li>Find Support</li>
+											<ul>
+												<li>Coop Business Services</li>
+												<li>Business Education</li>
+											</ul>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="two columns">
+						<div class="two columns menu-item build">
 							<a href="">
 								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Build</span>
 									<span class="menu-block-secondary-text">Your Business</span>
 								</div>
 							</a>
+							<div class="sub-menu-block">
+								<div class="sub-menu-block-quote">
+									<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+									<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								</div>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<li>Rural to Urban Markets</li>
+										<li>Find a Sales Representative</li>
+										<li>WV Craft Week</li>
+										<li>Sign up for the "Markeplace"</li>
+									</ul>
+									<ul class="half">
+										<li>Sign up for the "Trail"</li>
+										<li>Reduced-Rate Business Services</li>
+										<li>Cooperative Business Services</li>
+										<li>Business Education & Service Network</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="two columns">
+						<div class="two columns menu-item fund">
 							<a href="">
 								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Fund</span>
 									<span class="menu-block-secondary-text">Your Ideas</span>
 								</div>
 							</a>
+							<div class="sub-menu-block">
+								<div class="sub-menu-block-quote">
+									<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+									<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								</div>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<li>Emerging Artist Fellowship</li>
+										<li>Master Fellowship</li>
+										<li>Fellowship 3</li>
+									</ul>
+									<ul class="half">
+										<li>Fellowship 4</li>
+										<li>Emergency Relief Fund</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="two columns">
+						<div class="two columns menu-item connect">
 							<a href="">
 								<div class="menu-block menu-block-item">
 									<span class="menu-block-primary-text">Connect</span>
 									<span class="menu-block-secondary-text">With Creatives</span>
 								</div>
 							</a>
+							<div class="sub-menu-block">
+								<div class="sub-menu-block-quote">
+									<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+									<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								</div>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<li>Sign up for the directory</li>
+										<li>Ask for advice</li>
+										<li>Join your local arts council</li>
+									</ul>
+									<ul class="half">
+										<li>Start your local arts council</li>
+										<li>Host a pop-up event</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="two columns">
+						<div class="two columns menu-item">
 							<div class="menu-block-item">
 								<a href="">
 									<div class="menu-block-half">

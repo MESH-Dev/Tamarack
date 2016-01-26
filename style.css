@@ -123,47 +123,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-one {
-  margin-left: 100px;
+  margin-left: 95px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-two {
-  margin-left: 200px;
+  margin-left: 185px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-three {
-  margin-left: 300px;
+  margin-left: 275px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-four {
-  margin-left: 400px;
+  margin-left: 365px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-five {
-  margin-left: 500px;
+  margin-left: 455px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-six {
-  margin-left: 600px;
+  margin-left: 545px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-seven {
-  margin-left: 700px;
+  margin-left: 635px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-eight {
-  margin-left: 800px;
+  margin-left: 725px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-nine {
-  margin-left: 900px;
+  margin-left: 815px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-ten {
-  margin-left: 1000px;
+  margin-left: 905px;
 }
 /* line 83, sass/grid/_dependencies.scss */
 .container .offset-by-eleven {
-  margin-left: 1100px;
+  margin-left: 995px;
 }
 
 /* TABLET (PORTRAIT)
@@ -265,47 +265,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-one {
-    margin-left: 74px;
+    margin-left: 69px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-two {
-    margin-left: 148px;
+    margin-left: 133px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-three {
-    margin-left: 222px;
+    margin-left: 197px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-four {
-    margin-left: 296px;
+    margin-left: 261px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-five {
-    margin-left: 370px;
+    margin-left: 325px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-six {
-    margin-left: 444px;
+    margin-left: 389px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-seven {
-    margin-left: 518px;
+    margin-left: 453px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eight {
-    margin-left: 592px;
+    margin-left: 517px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-nine {
-    margin-left: 666px;
+    margin-left: 581px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-ten {
-    margin-left: 740px;
+    margin-left: 645px;
   }
   /* line 83, sass/grid/_dependencies.scss */
   .container .offset-by-eleven {
-    margin-left: 814px;
+    margin-left: 709px;
   }
 }
 /*  MOBILE (PORTRAIT)
@@ -1440,8 +1440,8 @@ header .bottom {
 .menu-block {
   background-color: white;
   padding: 10px;
-  height: 98px;
-  margin-bottom: 10px;
+  height: 93px;
+  margin-bottom: 5px;
 }
 /* line 150, sass/modules/_menus.scss */
 .menu-block:hover {
@@ -1457,22 +1457,40 @@ header .bottom {
   border-bottom: 2px solid white;
 }
 
-/* line 163, sass/modules/_menus.scss */
+/* line 164, sass/modules/_menus.scss */
+.menu-item:hover .menu-block {
+  background-color: #b33ed9;
+}
+/* line 167, sass/modules/_menus.scss */
+.menu-item:hover .menu-block .menu-block-primary-text {
+  color: white;
+}
+/* line 170, sass/modules/_menus.scss */
+.menu-item:hover .menu-block .menu-block-secondary-text {
+  color: white;
+  border-bottom: 2px solid white;
+}
+/* line 175, sass/modules/_menus.scss */
+.menu-item:hover .sub-menu-block {
+  display: block;
+}
+
+/* line 180, sass/modules/_menus.scss */
 .menu-block-half {
   background-color: white;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
-/* line 168, sass/modules/_menus.scss */
+/* line 185, sass/modules/_menus.scss */
 .menu-block-half:hover {
   background-color: #b33ed9;
 }
-/* line 171, sass/modules/_menus.scss */
+/* line 188, sass/modules/_menus.scss */
 .menu-block-half:hover .menu-block-primary-text {
   color: white;
 }
 
-/* line 177, sass/modules/_menus.scss */
+/* line 194, sass/modules/_menus.scss */
 .menu-block-primary-text {
   display: block;
   font-family: "din-condensed-web", sans-serif;
@@ -1482,7 +1500,7 @@ header .bottom {
   color: black;
 }
 
-/* line 185, sass/modules/_menus.scss */
+/* line 202, sass/modules/_menus.scss */
 .menu-block-secondary-text {
   display: block;
   font-family: "leitura-news", serif;
@@ -1492,7 +1510,7 @@ header .bottom {
   font-weight: 700;
 }
 
-/* line 194, sass/modules/_menus.scss */
+/* line 211, sass/modules/_menus.scss */
 .tagline {
   width: 100%;
   float: left;
@@ -1501,16 +1519,96 @@ header .bottom {
   background-color: white;
   position: relative;
 }
-/* line 202, sass/modules/_menus.scss */
+/* line 219, sass/modules/_menus.scss */
 .tagline .tagline-attention {
   font-family: "leitura-news", serif;
   color: #5a636e;
 }
-/* line 206, sass/modules/_menus.scss */
+/* line 223, sass/modules/_menus.scss */
 .tagline .tagline-message {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   color: #3f4143;
+}
+
+/* line 230, sass/modules/_menus.scss */
+.sub-menu-block {
+  background: white;
+  width: 890px;
+  float: left;
+  border-top: 5px solid #b33ed9;
+  display: none;
+  z-index: 10;
+  position: absolute;
+}
+/* line 239, sass/modules/_menus.scss */
+.sub-menu-block ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 243, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-quote {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+/* line 248, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-text {
+  font-weight: 700;
+  font-size: 24px;
+}
+/* line 252, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-cta {
+  font-size: 14px;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+/* line 259, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-nav {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+/* line 264, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-nav .half {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+}
+/* line 271, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-nav > ul > li {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 277, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-nav > ul ul > li {
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+/* line 290, sass/modules/_menus.scss */
+.learn .sub-menu-block {
+  left: 0;
+}
+
+/* line 296, sass/modules/_menus.scss */
+.build .sub-menu-block {
+  left: -180px;
+}
+
+/* line 302, sass/modules/_menus.scss */
+.fund .sub-menu-block {
+  left: -360px;
+}
+
+/* line 308, sass/modules/_menus.scss */
+.connect .sub-menu-block {
+  left: -540px;
 }
 
 /* line 5, sass/modules/_modules.scss */

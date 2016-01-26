@@ -80,7 +80,7 @@
 		}
 	} @else {
 		@for $i from 1 through ( $colCount - 1 ) {
-			.offset-by-#{numToString($i)} { margin-left: ( $colWidth + 20 ) * $i; }
+			.offset-by-#{numToString($i)} { margin-left: (( $colWidth + $base-gutter-width ) * $i) + ($base-gutter-width/2); }
 		}
 	}
 }
