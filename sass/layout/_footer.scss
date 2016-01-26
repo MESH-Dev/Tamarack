@@ -105,18 +105,21 @@ footer {
   float: left;
   font-family: $font-family--secondary;
 
-  ul li {
-      display: inline-block;
-      float: left;
-      width: 50%;
-      line-height: 1.1em;
+  ul {
+    padding: 0;
+    li {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        line-height: 1.1em;
 
-      a {
-        color: $salt-box;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 0.03em;
-      }
+        a {
+          color: $salt-box;
+          text-transform: uppercase;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+        }
+    }
   }
   ul li:nth-child(odd) {
     float: left;

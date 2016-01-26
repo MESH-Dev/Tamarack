@@ -951,24 +951,28 @@ footer {
   font-family: "din-condensed-web", sans-serif;
 }
 /* line 108, sass/layout/_footer.scss */
+.footer-navigation ul {
+  padding: 0;
+}
+/* line 110, sass/layout/_footer.scss */
 .footer-navigation ul li {
   display: inline-block;
   float: left;
   width: 50%;
   line-height: 1.1em;
 }
-/* line 114, sass/layout/_footer.scss */
+/* line 116, sass/layout/_footer.scss */
 .footer-navigation ul li a {
   color: #726e73;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.03em;
 }
-/* line 121, sass/layout/_footer.scss */
+/* line 124, sass/layout/_footer.scss */
 .footer-navigation ul li:nth-child(odd) {
   float: left;
 }
-/* line 124, sass/layout/_footer.scss */
+/* line 127, sass/layout/_footer.scss */
 .footer-navigation ul li:nth-child(even) {
   float: right;
 }
@@ -1281,6 +1285,38 @@ blockquote .quote-citation:before {
 /* line 257, sass/layout/_main.scss */
 .effect-oscar:hover .content-half {
   opacity: 0.4;
+}
+
+/* line 261, sass/layout/_main.scss */
+.wppb-user-forms {
+  width: 30%;
+  margin: auto;
+}
+/* line 265, sass/layout/_main.scss */
+.wppb-user-forms ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 270, sass/layout/_main.scss */
+.wppb-user-forms .wppb-send-credentials-checkbox {
+  display: none;
+}
+/* line 274, sass/layout/_main.scss */
+.wppb-user-forms .text-input {
+  border: 1px solid #cccccc;
+  margin-bottom: 15px;
+}
+/* line 279, sass/layout/_main.scss */
+.wppb-user-forms .submit {
+  background: #cccccc;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #c25543;
+}
+/* line 286, sass/layout/_main.scss */
+.wppb-user-forms .submit:hover {
+  opacity: 0.7;
 }
 
 /* line 1, sass/layout/_header.scss */

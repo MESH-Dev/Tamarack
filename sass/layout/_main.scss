@@ -257,3 +257,34 @@ blockquote {
 .effect-oscar:hover .content-half {
 	opacity: 0.4;
 }
+
+.wppb-user-forms {
+  width: 30%;
+  margin: auto;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .wppb-send-credentials-checkbox {
+    display: none;
+  }
+
+  .text-input {
+    border: 1px solid $silver;
+    margin-bottom: 15px;
+  }
+
+  .submit {
+    background: $silver;
+    font-family: $font-family--secondary;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $crail;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

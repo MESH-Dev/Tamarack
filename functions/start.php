@@ -17,22 +17,6 @@ add_image_size('background-fullscreen', 1800, 1200, true);
 // add_image_size('small', 120, '', true); // Small Thumbnail
 // add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
-
-$teacher_permissions = array (
-        'read'         => true,  // true allows this capability
-        'edit_posts'   => true,
-        'delete_posts' => false, // Use false to explicitly deny
-	);
-
-add_role( 'facilitator', 'Garden Facilitator', $teacher_permissions);
-add_role( 'teacher', 'Teacher', $teacher_permissions);
-add_role( 'student', 'Student', $teacher_permissions);
-
-remove_role( 'subscriber' );
-remove_role( 'editor' );
-remove_role( 'contributor' );
-remove_role( 'author' );
-
 //Name the post
 
 function create_post_name( $post_id ){
