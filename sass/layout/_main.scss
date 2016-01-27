@@ -259,7 +259,6 @@ blockquote {
 }
 
 .wppb-user-forms {
-  width: 30%;
   margin: auto;
 
   ul {
@@ -287,4 +286,8 @@ blockquote {
       opacity: 0.7;
     }
   }
+}
+
+#wppb_register_pre_form_message {
+  display: none;
 }

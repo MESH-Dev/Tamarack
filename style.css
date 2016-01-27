@@ -1289,24 +1289,23 @@ blockquote .quote-citation:before {
 
 /* line 261, sass/layout/_main.scss */
 .wppb-user-forms {
-  width: 30%;
   margin: auto;
 }
-/* line 265, sass/layout/_main.scss */
+/* line 264, sass/layout/_main.scss */
 .wppb-user-forms ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 270, sass/layout/_main.scss */
+/* line 269, sass/layout/_main.scss */
 .wppb-user-forms .wppb-send-credentials-checkbox {
   display: none;
 }
-/* line 274, sass/layout/_main.scss */
+/* line 273, sass/layout/_main.scss */
 .wppb-user-forms .text-input {
   border: 1px solid #cccccc;
   margin-bottom: 15px;
 }
-/* line 279, sass/layout/_main.scss */
+/* line 278, sass/layout/_main.scss */
 .wppb-user-forms .submit {
   background: #cccccc;
   font-family: "din-condensed-web", sans-serif;
@@ -1314,9 +1313,14 @@ blockquote .quote-citation:before {
   font-size: 12px;
   color: #c25543;
 }
-/* line 286, sass/layout/_main.scss */
+/* line 285, sass/layout/_main.scss */
 .wppb-user-forms .submit:hover {
   opacity: 0.7;
+}
+
+/* line 291, sass/layout/_main.scss */
+#wppb_register_pre_form_message {
+  display: none;
 }
 
 /* line 1, sass/layout/_header.scss */

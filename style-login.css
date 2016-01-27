@@ -1,0 +1,48 @@
+body.login {
+  background-image: url(img/login-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "leitura-news";
+}
+a:hover {
+  color: #c25543 !important;
+  opacity: 0.7 !important;
+}
+.login form {
+  padding-bottom: 0px;
+}
+
+body.login div#login {}
+body.login div#login .message { border-left: 4px solid #c25543; }
+body.login div#login h1 { }
+body.login div#login h1 a {}
+body.login div#login form#loginform { padding-bottom: 25px; margin-bottom: 20px; }
+body.login div#login form#loginform p {  }
+body.login div#login form#loginform p label {  }
+body.login div#login form#loginform input { }
+body.login div#login form#loginform input#user_login:focus { border: 1px solid #ccc; box-shadow: none; }
+body.login div#login form#loginform input#user_pass:focus { border: 1px solid #ccc; box-shadow: none; }
+body.login div#login form#loginform input#user_login { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
+body.login div#login form#loginform input#user_pass { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme { margin-bottom: 0; }
+body.login div#login form#loginform p.submit {}
+#wp-submit {
+  font-family: 'din-condensed-web', sans-serif;
+  text-transform: uppercase;
+  background: #ccc;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  color: #c25543;
+  font-size: 12px;
+  height: auto;
+  padding: 5px 20px;
+}
+body.login div#login form#loginform p.submit input#wp-submit:hover { opacity: 0.7; }
+body.login div#login p#nav { background: white; padding: 20px 25px 0; margin: 0; }
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog { background: white; padding: 10px 25px 20px; margin: 0; }
+body.login div#login p#backtoblog a {}
