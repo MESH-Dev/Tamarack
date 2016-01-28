@@ -76,7 +76,6 @@
 			<div class="four columns">
 				<div class="footer-block footer-block-2">
 					<span class="menu-block-primary-text">Connect with us</span>
-					<hr>
 					<span class="footer-block-title">Follow our day-to-day building the creative economy:</span>
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-twitter"></i> Tweet Us: @tamarackfoundation</span>
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-instagram"></i> Follow Our Instagram: @tamarackfoundation</span>
@@ -96,7 +95,6 @@
 			<div class="four columns">
 				<div class="footer-block footer-block-3">
 					<span class="menu-block-primary-text">Join our conversation</span>
-					<hr>
 					<span class="footer-block-newsletter-text">Sign up for our newsletters:</span>
 					<p>Special message can go across here. Special message can go across here. Copyright 2015 Tamarack Foundation for the Arts.</p>
 				</div>

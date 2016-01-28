@@ -21,13 +21,13 @@ body.login div#login form#loginform { padding-bottom: 25px; margin-bottom: 20px;
 body.login div#login form#loginform p {  }
 body.login div#login form#loginform p label {  }
 body.login div#login form#loginform input { }
-body.login div#login form#loginform input#user_login:focus { border: 1px solid #ccc; box-shadow: none; }
-body.login div#login form#loginform input#user_pass:focus { border: 1px solid #ccc; box-shadow: none; }
-body.login div#login form#loginform input#user_login { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
+body.login div#login form input[type="text"]:focus, body.login div#login form input[type="password"]:focus { border: 1px solid #ccc; box-shadow: none; }
+body.login div#login form input[type="text"], body.login div#login form input[type="password"] { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
 body.login div#login form#loginform input#user_pass { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
 body.login div#login form#loginform p.forgetmenot {}
 body.login div#login form#loginform p.forgetmenot input#rememberme { margin-bottom: 0; }
 body.login div#login form#loginform p.submit {}
+#pass-strength-result { display: none; }
 #wp-submit {
   font-family: 'din-condensed-web', sans-serif;
   text-transform: uppercase;

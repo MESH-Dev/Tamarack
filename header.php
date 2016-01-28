@@ -208,19 +208,29 @@
 								</div>
 							</div>
 						</div>
-						<div class="two columns menu-item">
-							<div class="menu-block-item">
+						<div class="two columns menu-item-half">
 								<a href="">
-									<div class="menu-block-half">
+									<div class="menu-block-half-1">
 										<span class="menu-block-primary-text">Find Artists</span>
 									</div>
 								</a>
 								<a href="">
-									<div class="menu-block-half">
+									<div class="menu-block-half-2">
 										<span class="menu-block-primary-text">Shop Businesses</span>
 									</div>
 								</a>
-							</div>
+								<div class="sub-menu-block-1">
+									<div class="sub-menu-block-quote">
+										<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+										<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+									</div>
+								</div>
+								<div class="sub-menu-block-2">
+									<div class="sub-menu-block-quote">
+										<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+										<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+									</div>
+								</div>
 						</div>
 					</div>
 				</div>

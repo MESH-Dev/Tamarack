@@ -75,11 +75,10 @@
   font-size: 14px;
   font-family: $font-family--secondary;
   text-transform: uppercase;
-  color: $crail;
   display: block;
 
   a {
-    color: $crail;
+
   }
 }
 
@@ -113,15 +112,31 @@
 
 .red {
   color: $crail;
+
+  a {
+    color: $crail;
+  }
 }
 .purple {
   color: $purple;
+
+  a {
+    color: $purple;
+  }
 }
 .blue {
   color: $matisse;
+
+  a {
+    color: $matisse;
+  }
 }
 .dark-gray {
   color: $abbey;
+
+  a {
+    color: $abbey;
+  }
 }
 
 .text-two-columns {
@@ -221,6 +236,11 @@ blockquote {
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
   margin-top: -30px;
+
+  // border-top: 3px solid white;
+  // border-bottom: 3px solid white;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
 }
 
 .effect-oscar .content-text::before,
