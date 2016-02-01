@@ -277,7 +277,7 @@
 			<?php } ?>
 		</header>
 
-		<?php if (is_page_template('templates/text.php')) { ?>
+		<?php if (!is_page_template('templates/text.php')) { ?>
 		<div class="tagline">
 			<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
 		</div>
