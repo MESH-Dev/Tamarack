@@ -84,8 +84,11 @@
 								echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
 							} ?>
 							<ul id="login-utilities-nav">
-								<li class="creative-network"><a href="">Join our creative network</a></li>
-								<li><a href="">Artist login</a></li>
+								<?php if (is_user_logged_in()) { ?>
+									<li class="creative-network"><a href="">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
+								<?php } else { ?>
+									<li class="creative-network"><a href="">Join our creative network</a></li><li><a href="">Artist login</a></li>
+								<?php } ?>
 							</ul>
 						</div>
 					</div>

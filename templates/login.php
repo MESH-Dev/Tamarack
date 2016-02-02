@@ -1,5 +1,5 @@
 <?php /*
-* Template Name: Register
+* Template Name: Login
 */
 get_header(); ?>
 
@@ -29,8 +29,9 @@ get_header(); ?>
 
       <div class="six columns">
 
-        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 6, 'title' => false, 'description' => false ) ); ?>
 
+        <?php echo do_shortcode('[frm-login label_username="email"]') ?>
+        
       </div>
 
   </div>
