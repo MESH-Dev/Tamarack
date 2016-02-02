@@ -21,8 +21,8 @@ body.login div#login form#loginform { padding-bottom: 25px; margin-bottom: 20px;
 body.login div#login form#loginform p {  }
 body.login div#login form#loginform p label {  }
 body.login div#login form#loginform input { }
-body.login div#login form input[type="text"]:focus, body.login div#login form input[type="password"]:focus { border: 1px solid #ccc; box-shadow: none; }
-body.login div#login form input[type="text"], body.login div#login form input[type="password"] { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
+body.login div#login form input[type="text"]:focus, body.login div#login form input[type="password"]:focus, body.login div#login form input[type="email"]:focus { border: 1px solid #ccc; box-shadow: none; }
+body.login div#login form input[type="text"], body.login div#login form input[type="password"], body.login div#login form input[type="email"] { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
 body.login div#login form#loginform input#user_pass { border: 1px solid #ccc; margin-bottom: 15px; background: white; padding: 15px; font-size: 16px; }
 body.login div#login form#loginform p.forgetmenot {}
 body.login div#login form#loginform p.forgetmenot input#rememberme { margin-bottom: 0; }
