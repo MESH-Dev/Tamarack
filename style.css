@@ -1342,6 +1342,33 @@ blockquote .quote-citation:before {
   display: none;
 }
 
+/* line 315, sass/layout/_main.scss */
+#sidebar {
+  position: fixed;
+  background-color: #f1ede9;
+  padding: 20px;
+  z-index: 10;
+}
+/* line 321, sass/layout/_main.scss */
+#sidebar ul {
+  padding: 0;
+}
+/* line 324, sass/layout/_main.scss */
+#sidebar ul li {
+  list-style-type: none;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* line 330, sass/layout/_main.scss */
+#sidebar ul li.active {
+  border-bottom: 3px solid #3f4042;
+}
+/* line 334, sass/layout/_main.scss */
+#sidebar ul li a {
+  color: #3f4042;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;

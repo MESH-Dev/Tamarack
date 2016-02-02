@@ -311,3 +311,29 @@ blockquote {
 #wppb_register_pre_form_message {
   display: none;
 }
+
+#sidebar {
+  position: fixed;
+  background-color: $pampas;
+  padding: 20px;
+  z-index: 10;
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      font-family: $font-family--secondary;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+
+      &.active {
+        border-bottom: 3px solid $abbey;
+      }
+
+      a {
+        color: $abbey;
+      }
+    }
+  }
+}

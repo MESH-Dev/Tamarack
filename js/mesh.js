@@ -36,4 +36,24 @@ jQuery(document).ready(function($){
     });
   });
 
+  var active = 0;
+  var prev = 0;
+
+  console.log($("#0").offset().top);
+
+  $(".sidebar-" + active).addClass('active');
+
+  $(window).scroll(function (event) {
+    $( ".form-section" ).each(function( index ) {
+
+      if ( $(this).offset().top < ($(window).scrollTop() + ($(window).height() * 0.3)) && ($(window).scrollTop() + ($(window).height() * 0.3)) < ($(this).offset().top + $(this).height()) ) {
+        active = index;
+      }
+
+      $(".sidebar-item").removeClass('active');
+      $(".sidebar-" + active).addClass('active');
+
+    });
+  });
+
 });
