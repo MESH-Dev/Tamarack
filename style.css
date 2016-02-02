@@ -1376,26 +1376,22 @@ header {
   background-size: cover;
   position: relative;
 }
-/* line 7, sass/layout/_header.scss */
-header.full {
-  min-height: 100vh;
-}
-/* line 10, sass/layout/_header.scss */
+/* line 9, sass/layout/_header.scss */
 header.full .masthead-title {
   margin-bottom: 170px;
 }
-/* line 15, sass/layout/_header.scss */
+/* line 14, sass/layout/_header.scss */
 header.full .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 34px);
 }
-/* line 20, sass/layout/_header.scss */
+/* line 19, sass/layout/_header.scss */
 header .bottom {
   position: absolute;
   bottom: 75px;
   left: calc(50% - 23px);
 }
 
-/* line 32, sass/layout/_header.scss */
+/* line 31, sass/layout/_header.scss */
 .home header.full .masthead-title {
   margin-bottom: 35px;
 }

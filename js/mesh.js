@@ -39,8 +39,6 @@ jQuery(document).ready(function($){
   var active = 0;
   var prev = 0;
 
-  console.log($("#0").offset().top);
-
   $(".sidebar-" + active).addClass('active');
 
   $(window).scroll(function (event) {

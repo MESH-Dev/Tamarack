@@ -264,7 +264,7 @@
 				<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
 					<div class="row bottom">
 						<div class="masthead-arrow">
-							<a href="#main"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
+							<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
 						</div>
 					</div>
 				<?php } ?>
@@ -275,10 +275,9 @@
 					<?php echo get_field('masthead_image_citation'); ?>
 				</div>
 			<?php } ?>
+			<?php if (!is_page_template('templates/text.php')) { ?>
+			<div class="tagline">
+				<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
+			</div>
+			<?php } ?>
 		</header>
-
-		<?php if (!is_page_template('templates/text.php')) { ?>
-		<div class="tagline">
-			<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
-		</div>
-		<?php } ?>
