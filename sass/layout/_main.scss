@@ -328,7 +328,9 @@ blockquote {
       margin-bottom: 10px;
 
       &.active {
-        border-bottom: 3px solid $abbey;
+        a {
+          border-bottom: 3px solid $abbey;
+        }
       }
 
       a {

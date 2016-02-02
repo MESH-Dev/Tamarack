@@ -1360,11 +1360,11 @@ blockquote .quote-citation:before {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 330, sass/layout/_main.scss */
-#sidebar ul li.active {
+/* line 331, sass/layout/_main.scss */
+#sidebar ul li.active a {
   border-bottom: 3px solid #3f4042;
 }
-/* line 334, sass/layout/_main.scss */
+/* line 336, sass/layout/_main.scss */
 #sidebar ul li a {
   color: #3f4042;
 }
