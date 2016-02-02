@@ -30,6 +30,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/hint.min.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
@@ -263,7 +264,7 @@
 				<?php } ?>
 				<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
 					<div class="row bottom">
-						<div class="masthead-arrow">
+						<div class="masthead-arrow hint--top" data-hint="Scroll Down">
 							<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
 						</div>
 					</div>
