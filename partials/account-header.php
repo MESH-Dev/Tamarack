@@ -13,7 +13,7 @@
         Your Directory Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/directory-profile/">Edit Directory Profile <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/directory-profile/">Join the Directory <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
         Your Marketplace Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/marketplace-profile/">Edit Marketplace Profile <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/marketplace-profile/">Join the Marketplace <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
         Your Trail Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/trail-profile/">Edit Trail Profile <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/trail-profile/">Join a Trail <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
