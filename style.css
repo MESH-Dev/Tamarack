@@ -1417,9 +1417,10 @@ select {
 /* line 12, sass/layout/_input.scss */
 .wp-editor-container {
   border: 1px solid #ccc;
+  margin-bottom: 15px;
 }
 
-/* line 16, sass/layout/_input.scss */
+/* line 17, sass/layout/_input.scss */
 input[type="submit"] {
   font-family: 'din-condensed-web', sans-serif;
   text-transform: uppercase;
@@ -1433,12 +1434,12 @@ input[type="submit"] {
   height: auto;
   padding: 20px;
 }
-/* line 29, sass/layout/_input.scss */
+/* line 30, sass/layout/_input.scss */
 input[type="submit"]:hover {
   opacity: 0.7;
 }
 
-/* line 34, sass/layout/_input.scss */
+/* line 35, sass/layout/_input.scss */
 input[type="tel"] {
   width: 100% !important;
 }
