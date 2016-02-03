@@ -1,3 +1,13 @@
+<?php
+
+  if (is_user_logged_in()) {
+    echo "<h1>test</h1>";
+  } else {
+    echo "<script>window.location = 'http://tamarack.bkfk-t5yk.accessdomain.com/login';</script>";
+  }
+
+?>
+
 <div class="content-third" style="background-image: url('http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png')">
   <div class="content-circle-screen">
     <div class="content-text ">

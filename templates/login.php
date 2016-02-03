@@ -30,8 +30,8 @@ get_header(); ?>
       <div class="six columns">
 
 
-        <?php echo do_shortcode('[frm-login label_username="email"]') ?>
-        
+        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 7, 'title' => false, 'description' => false ) ); ?>
+
       </div>
 
   </div>
