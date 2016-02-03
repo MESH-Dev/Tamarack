@@ -48,17 +48,10 @@ get_header(); ?>
 
   <div class="container">
 
-      <div class="twelve columns">
+      <div class="eight columns offset-by-two">
+
         <h2><?php the_title(); ?></h2>
-      </div>
-
-      <div class="twelve columns">
-
-          <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-              <?php the_content(); ?>
-
-          <?php endwhile; ?>
+        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 8, 'title' => false, 'description' => false ) ); ?>
 
       </div>
 

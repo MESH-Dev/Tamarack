@@ -654,7 +654,7 @@ input[type="search"]::-webkit-search-decoration {
 
 /* line 330, sass/base/_normalize.scss */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -783,28 +783,33 @@ li {
 input,
 textarea {
   display: block;
-  padding: 15px;
   width: 100%;
   outline: 0;
   border: 0;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background: white;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "leitura-news", serif;
 }
 
-/* line 103, sass/base/_base.scss */
+/* line 108, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 110, sass/base/_base.scss */
+/* line 115, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 116, sass/base/_base.scss */
+/* line 121, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 118, sass/base/_base.scss */
+/* line 123, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;
@@ -1394,6 +1399,48 @@ header .bottom {
 /* line 31, sass/layout/_header.scss */
 .home header.full .masthead-title {
   margin-bottom: 35px;
+}
+
+/* line 1, sass/layout/_input.scss */
+label {
+  display: block;
+}
+
+/* line 5, sass/layout/_input.scss */
+select {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* line 12, sass/layout/_input.scss */
+.wp-editor-container {
+  border: 1px solid #ccc;
+}
+
+/* line 16, sass/layout/_input.scss */
+input[type="submit"] {
+  font-family: 'din-condensed-web', sans-serif;
+  text-transform: uppercase;
+  background: #ccc;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  color: #c25543;
+  font-size: 20px;
+  height: auto;
+  padding: 20px;
+}
+/* line 29, sass/layout/_input.scss */
+input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+/* line 34, sass/layout/_input.scss */
+input[type="tel"] {
+  width: 100% !important;
 }
 
 /* line 1, sass/modules/_menus.scss */
