@@ -1449,6 +1449,11 @@ input[type="tel"] {
   width: 100% !important;
 }
 
+/* line 43, sass/layout/_input.scss */
+.frm_ajax_loading {
+  display: none;
+}
+
 /* line 1, sass/modules/_menus.scss */
 #menu-utilities-nav, #social-utilities-nav, #login-utilities-nav {
   background: white;
