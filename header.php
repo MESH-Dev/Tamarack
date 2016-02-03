@@ -85,9 +85,9 @@
 							} ?>
 							<ul id="login-utilities-nav">
 								<?php if (is_user_logged_in()) { ?>
-									<li class="creative-network"><a href="">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
+									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/directory-profile">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
 								<?php } else { ?>
-									<li class="creative-network"><a href="">Join our creative network</a></li><li><a href="<?php echo bloginfo('url'); ?>/directory-profile">Artist login</a></li>
+									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/register">Join our creative network</a></li><li><a href="<?php echo bloginfo('url'); ?>/login">Artist login</a></li>
 								<?php } ?>
 							</ul>
 						</div>

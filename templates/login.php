@@ -17,17 +17,9 @@ get_header(); ?>
         <h2><?php the_title(); ?></h2>
       </div>
 
-      <div class="six columns">
 
-          <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-              <?php the_content(); ?>
-
-          <?php endwhile; ?>
-
-      </div>
-
-      <div class="six columns">
+      <div class="six columns offset-by-three">
 
 
         <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 7, 'title' => false, 'description' => false ) ); ?>
