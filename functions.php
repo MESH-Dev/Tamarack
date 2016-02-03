@@ -106,13 +106,6 @@ function acme_login_redirect( $redirect_to, $request, $user  ) {
 }
 add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
 
-function baw_no_admin_access() {
-  if( !current_user_can( 'administrator' ) ) {
-    wp_redirect( home_url() );
-    die();
-  }
-}
 
-add_action( 'admin_init', 'baw_no_admin_access', 1 );
 
 ?>
