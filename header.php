@@ -225,14 +225,12 @@
 								</a>
 								<div class="sub-menu-block-1">
 									<div class="sub-menu-block-quote">
-										<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-										<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+										<div class="sub-menu-block-quote-text"><span class="purple">Find Artists</span>, creatives, and designers in West Virginia.</div>
 									</div>
 								</div>
 								<div class="sub-menu-block-2">
 									<div class="sub-menu-block-quote">
-										<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-										<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+										<div class="sub-menu-block-quote-text"><span class="purple">Shop Businesses</span> and other things like that in West Virginia.</div>
 									</div>
 								</div>
 						</div>
