@@ -13,10 +13,6 @@ get_header(); ?>
 
   <div class="container">
 
-
-
-
-
       <div class="six columns offset-by-three">
 
         <h2><?php the_title(); ?></h2>

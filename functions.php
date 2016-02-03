@@ -96,5 +96,4 @@ function username_or_email_login() {
 }
 add_action( 'login_form', 'username_or_email_login' );
 
-
 ?>
