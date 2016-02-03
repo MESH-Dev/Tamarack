@@ -13,14 +13,14 @@ get_header(); ?>
 
   <div class="container">
 
-      
+
 
 
 
       <div class="six columns offset-by-three">
 
         <h2><?php the_title(); ?></h2>
-        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 7, 'title' => false, 'description' => false ) ); ?>
+        <?php echo do_shortcode('[frm-login label_username="email"]'); ?>
 
       </div>
 
