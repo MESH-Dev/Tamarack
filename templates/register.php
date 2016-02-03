@@ -13,14 +13,9 @@ get_header(); ?>
 
   <div class="container">
 
-      <div class="twelve columns">
-        <h2><?php the_title(); ?></h2>
-      </div>
-
-
-
       <div class="six columns offset-by-three">
 
+        <h2><?php the_title(); ?></h2>
         <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 6, 'title' => false, 'description' => false ) ); ?>
 
       </div>
