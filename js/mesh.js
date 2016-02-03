@@ -54,4 +54,12 @@ jQuery(document).ready(function($){
     });
   });
 
+  $('.menu-block-half-1').hover(function() {
+    $('.sub-menu-block-1').toggle();
+  });
+
+  $('.menu-block-half-2').hover(function() {
+    $('.sub-menu-block-2').toggle();
+  });
+
 });

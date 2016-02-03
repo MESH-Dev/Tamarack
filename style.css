@@ -1646,10 +1646,6 @@ input[type="tel"] {
   color: white;
   border-bottom: 2px solid white;
 }
-/* line 192, sass/modules/_menus.scss */
-.menu-item-half:hover .sub-menu-block-1, .menu-item-half:hover .sub-menu-block-2 {
-  display: block;
-}
 
 /* line 197, sass/modules/_menus.scss */
 .menu-block-half-1, .menu-block-half-2 {
