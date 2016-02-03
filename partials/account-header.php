@@ -1,8 +1,6 @@
 <?php
 
-  if (is_user_logged_in()) {
-    echo "<h1>test</h1>";
-  } else {
+  if (!is_user_logged_in()) {
     echo "<script>window.location = 'http://tamarack.bkfk-t5yk.accessdomain.com/login';</script>";
   }
 
