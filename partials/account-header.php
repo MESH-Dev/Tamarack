@@ -1,7 +1,7 @@
 <?php
 
   if (!is_user_logged_in()) {
-    echo "<script>window.location = 'http://tamarack.bkfk-t5yk.accessdomain.com/login';</script>";
+    echo "<script>window.location = 'http://tamarack.bkfk-t5yk.accessdomain.com/wp-login.php';</script>";
   }
 
 ?>
