@@ -281,7 +281,7 @@
 			<?php } ?>
 			<?php if (!is_page_template('templates/text.php')) { ?>
 				<div class="tagline">
-					<?php if (get_field('tagline_url')) { ?><a href="<?php echo get_field('tagline_url') ?>"> <?php } ?>
+					<?php if (get_field('tagline_url')) { ?><a href="<?php echo get_field('tagline_url', get_page_by_title('frontpage')->ID) ?>"> <?php } ?>
 						<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
 					<?php if (get_field('tagline_url')) { ?></a><?php } ?>
 				</div>
