@@ -96,4 +96,23 @@ function username_or_email_login() {
 }
 add_action( 'login_form', 'username_or_email_login' );
 
+/**
+ * Redirect non-admins to the homepage after logging into the site.
+ *
+ * @since 	1.0
+ */
+function acme_login_redirect( $redirect_to, $request, $user  ) {
+	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+}
+add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
+
+function baw_no_admin_access() {
+  if( !current_user_can( 'administrator' ) ) {
+    wp_redirect( home_url() );
+    die();
+  }
+}
+
+add_action( 'admin_init', 'baw_no_admin_access', 1 );
+
 ?>

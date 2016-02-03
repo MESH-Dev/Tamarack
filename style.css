@@ -1454,6 +1454,11 @@ input[type="tel"] {
   display: none;
 }
 
+/* line 47, sass/layout/_input.scss */
+.frm_error {
+  margin-bottom: 15px;
+}
+
 /* line 1, sass/modules/_menus.scss */
 #menu-utilities-nav, #social-utilities-nav, #login-utilities-nav {
   background: white;
