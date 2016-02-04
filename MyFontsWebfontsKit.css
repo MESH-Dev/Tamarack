@@ -1,0 +1,39 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3166389, 2016-02-04T13:38:41-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: LeituraDisplay-Swashes by DSType
+ * URL: http://www.myfonts.com/fonts/dstype/leitura-display/swashes/
+ *
+ * Webfont: LeituraDisplay-Roman by DSType
+ * URL: http://www.myfonts.com/fonts/dstype/leitura-display/roman/
+ *
+ * Webfont: LeituraDisplay-Italic by DSType
+ * URL: http://www.myfonts.com/fonts/dstype/leitura-display/italic/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3166389
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2007 by Dino dos Santos _DSType. All rights reserved.
+ *
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3050b5");
+
+
+@font-face {font-family: 'LeituraDisplay-Swashes';src: url('webfonts/3050B5_0_0.eot');src: url('webfonts/3050B5_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3050B5_0_0.woff2') format('woff2'),url('webfonts/3050B5_0_0.woff') format('woff'),url('webfonts/3050B5_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'LeituraDisplay-Roman';src: url('webfonts/3050B5_1_0.eot');src: url('webfonts/3050B5_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3050B5_1_0.woff2') format('woff2'),url('webfonts/3050B5_1_0.woff') format('woff'),url('webfonts/3050B5_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'LeituraDisplay-Italic';src: url('webfonts/3050B5_2_0.eot');src: url('webfonts/3050B5_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3050B5_2_0.woff2') format('woff2'),url('webfonts/3050B5_2_0.woff') format('woff'),url('webfonts/3050B5_2_0.ttf') format('truetype');}
