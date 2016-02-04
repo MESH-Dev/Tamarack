@@ -1852,6 +1852,13 @@ input[type="tel"] {
   left: -540px;
 }
 
+/* line 393, sass/modules/_menus.scss */
+.logo {
+  text-align: right;
+  position: relative;
+  top: -30px;
+}
+
 /* line 5, sass/modules/_modules.scss */
 .callout {
   text-align: center;
