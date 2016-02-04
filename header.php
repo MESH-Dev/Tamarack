@@ -98,7 +98,7 @@
 					<div class="main-menu-container">
 						<div class="two columns">
 							<div class="logo">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a>
 							</div>
 						</div>
 						<div class="two columns menu-item learn">
