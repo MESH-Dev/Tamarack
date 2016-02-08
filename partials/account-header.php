@@ -10,10 +10,10 @@
   <div class="content-circle-screen">
     <div class="content-text ">
       <div class="content-text-main">
-        Your Directory Profile
+        Your Creative Network Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/directory-profile/">Join the Directory <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/directory-profile/">Join the Creative Network <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
@@ -23,7 +23,7 @@
   <div class="content-circle-screen">
     <div class="content-text ">
       <div class="content-text-main">
-        Your Marketplace Profile
+        Your West Virginia Made Profile
       </div>
       <div class="content-text-cta">
         <a href="http://tamarack.bkfk-t5yk.accessdomain.com/marketplace-profile/">Join the Marketplace <i class="fa fa-angle-double-right"></i></a>
