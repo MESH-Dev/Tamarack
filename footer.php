@@ -1,5 +1,7 @@
 <footer id="footer" class="site-footer <?php if( is_page_template('templates/homepage-fullscreen.php') ) { echo "footer-fullscreen"; } ?>">
 
+	<?php if (!is_page(array('Creative Network Profile', 'West Virginia Made Profile', 'Trail Profile'))) { ?>
+
 	<div class="container">
 		<div class="row">
 			<div class="four columns">
@@ -105,6 +107,8 @@
 	<!-- <div class="container">
 		<p>Designed by <a href="http://meshfresh.com" target="_blank">MESH</a></p>
 	</div> -->
+
+	<?php } ?>
 
 </footer>
 
