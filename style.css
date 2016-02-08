@@ -1389,6 +1389,12 @@ blockquote .quote-citation:before {
   height: 98px;
 }
 
+/* line 354, sass/layout/_main.scss */
+.frm_description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
