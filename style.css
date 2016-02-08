@@ -1384,8 +1384,8 @@ blockquote .quote-citation:before {
   margin-top: 50px;
 }
 
-/* line 348, sass/layout/_main.scss */
-.multi-select {
+/* line 349, sass/layout/_main.scss */
+.multi-select select {
   height: 98px;
 }
 

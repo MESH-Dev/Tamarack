@@ -346,5 +346,7 @@ blockquote {
 }
 
 .multi-select {
-  height: 98px;
+  select {
+    height: 98px;
+  }
 }
