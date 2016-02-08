@@ -1384,6 +1384,11 @@ blockquote .quote-citation:before {
   margin-top: 50px;
 }
 
+/* line 348, sass/layout/_main.scss */
+.multi-select {
+  height: 98px;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;

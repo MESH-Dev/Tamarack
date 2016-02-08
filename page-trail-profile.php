@@ -14,6 +14,7 @@ get_header(); ?>
       <div class="eight columns offset-by-two">
 
         <h2><?php the_title(); ?></h2>
+        <?php the_content(); ?>
         <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 10, 'title' => false, 'description' => false ) ); ?>
 
       </div>
