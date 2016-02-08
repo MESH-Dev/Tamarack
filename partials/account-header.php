@@ -13,7 +13,7 @@
         Your Creative Network Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/directory-profile/">Join the Creative Network <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/creative-network-profile/">Join the Creative Network <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
         Your West Virginia Made Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/marketplace-profile/">Join the Marketplace <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/west-virginia-made-profile/">Join West Virginia Made <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
