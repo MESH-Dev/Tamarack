@@ -1395,6 +1395,11 @@ blockquote .quote-citation:before {
   margin: 10px 0;
 }
 
+/* line 359, sass/layout/_main.scss */
+.frm_top_container {
+  margin-bottom: 25px;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
