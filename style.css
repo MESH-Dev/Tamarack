@@ -1379,6 +1379,11 @@ blockquote .quote-citation:before {
   color: #3f4042;
 }
 
+/* line 344, sass/layout/_main.scss */
+.input-form {
+  margin-top: 50px;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
