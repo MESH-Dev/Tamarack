@@ -1405,6 +1405,12 @@ blockquote .quote-citation:before {
   color: #c25543;
 }
 
+/* line 367, sass/layout/_main.scss */
+.frm_message {
+  padding: 25px;
+  border: 1px solid #3f4042;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
