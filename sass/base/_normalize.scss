@@ -290,6 +290,12 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box; // 1
   padding: 0; // 2
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  display: inline;
 }
 
 // Fix the cursor style for Chrome's increment/decrement buttons. For certain
