@@ -1425,16 +1425,17 @@ blockquote .quote-citation:before {
 .frm_checkbox {
   display: inline-block;
 }
-/* line 375, sass/layout/_main.scss */
-.frm_checkbox:last-of-type {
+
+/* line 380, sass/layout/_main.scss */
+#frm_field_152_container .frm_checkbox:last-of-type {
   display: block;
 }
-/* line 378, sass/layout/_main.scss */
-.frm_checkbox:last-of-type label {
+/* line 383, sass/layout/_main.scss */
+#frm_field_152_container .frm_checkbox:last-of-type label {
   display: inline-block;
 }
-/* line 382, sass/layout/_main.scss */
-.frm_checkbox:last-of-type input {
+/* line 387, sass/layout/_main.scss */
+#frm_field_152_container .frm_checkbox:last-of-type input {
   width: inherit;
   display: inline-block;
 }

@@ -371,17 +371,24 @@ blockquote {
 
 .frm_checkbox {
   display: inline-block;
+}
 
-  &:last-of-type {
-    display: block;
+#frm_field_152_container {
 
-    label {
-      display: inline-block;
-    }
+  .frm_checkbox {
 
-    input {
-      width: inherit;
-      display: inline-block;
+    &:last-of-type {
+      display: block;
+
+      label {
+        display: inline-block;
+      }
+
+      input {
+        width: inherit;
+        display: inline-block;
+      }
     }
   }
+
 }
