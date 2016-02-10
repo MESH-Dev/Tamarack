@@ -1425,7 +1425,6 @@ blockquote .quote-citation:before {
 .frm_checkbox {
   margin-bottom: 10px;
   margin-right: 10px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -1459,9 +1458,10 @@ header .bottom {
 /* line 1, sass/layout/_input.scss */
 label {
   display: block;
+  margin-bottom: 10px;
 }
 
-/* line 5, sass/layout/_input.scss */
+/* line 6, sass/layout/_input.scss */
 select {
   display: block;
   margin-bottom: 15px;
@@ -1472,18 +1472,18 @@ select {
   height: 54px;
 }
 
-/* line 15, sass/layout/_input.scss */
+/* line 16, sass/layout/_input.scss */
 option {
   padding: 5px 10px;
 }
 
-/* line 19, sass/layout/_input.scss */
+/* line 20, sass/layout/_input.scss */
 .wp-editor-container {
   border: 1px solid #ccc;
   margin-bottom: 15px;
 }
 
-/* line 24, sass/layout/_input.scss */
+/* line 25, sass/layout/_input.scss */
 input[type="submit"] {
   font-family: 'din-condensed-web', sans-serif;
   text-transform: uppercase;
@@ -1497,22 +1497,22 @@ input[type="submit"] {
   height: auto;
   padding: 20px;
 }
-/* line 37, sass/layout/_input.scss */
+/* line 38, sass/layout/_input.scss */
 input[type="submit"]:hover {
   opacity: 0.7;
 }
 
-/* line 42, sass/layout/_input.scss */
+/* line 43, sass/layout/_input.scss */
 input[type="tel"] {
   width: 100% !important;
 }
 
-/* line 46, sass/layout/_input.scss */
+/* line 47, sass/layout/_input.scss */
 .frm_ajax_loading {
   display: none;
 }
 
-/* line 50, sass/layout/_input.scss */
+/* line 51, sass/layout/_input.scss */
 .frm_error {
   margin-bottom: 15px;
 }
