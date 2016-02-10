@@ -371,4 +371,12 @@ blockquote {
 
 .frm_checkbox {
   display: inline-block;
+
+  &:last-of-type {
+    display: block;
+
+    input {
+      width: inherit;
+    }
+  }
 }

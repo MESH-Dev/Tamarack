@@ -1425,6 +1425,14 @@ blockquote .quote-citation:before {
 .frm_checkbox {
   display: inline-block;
 }
+/* line 375, sass/layout/_main.scss */
+.frm_checkbox:last-of-type {
+  display: block;
+}
+/* line 378, sass/layout/_main.scss */
+.frm_checkbox:last-of-type input {
+  width: inherit;
+}
 
 /* line 1, sass/layout/_header.scss */
 header {
