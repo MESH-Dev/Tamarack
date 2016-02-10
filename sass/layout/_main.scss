@@ -375,6 +375,10 @@ blockquote {
   &:last-of-type {
     display: block;
 
+    label {
+      display: inline-block;
+    }
+
     input {
       width: inherit;
       display: inline-block;

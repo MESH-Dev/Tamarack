@@ -1430,6 +1430,10 @@ blockquote .quote-citation:before {
   display: block;
 }
 /* line 378, sass/layout/_main.scss */
+.frm_checkbox:last-of-type label {
+  display: inline-block;
+}
+/* line 382, sass/layout/_main.scss */
 .frm_checkbox:last-of-type input {
   width: inherit;
   display: inline-block;
