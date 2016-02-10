@@ -1440,6 +1440,11 @@ blockquote .quote-citation:before {
   display: inline-block;
 }
 
+/* line 396, sass/layout/_main.scss */
+.frm_forms fieldset {
+  padding: 0;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
