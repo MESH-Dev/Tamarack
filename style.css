@@ -1443,6 +1443,7 @@ blockquote .quote-citation:before {
 /* line 396, sass/layout/_main.scss */
 .frm_forms fieldset {
   padding: 0;
+  margin: 0;
 }
 
 /* line 1, sass/layout/_header.scss */
