@@ -99,6 +99,7 @@
 					<span class="menu-block-primary-text">Join our conversation</span>
 					<span class="footer-block-newsletter-text">Sign up for our newsletters:</span>
 					<p>Special message can go across here. Special message can go across here. Copyright 2015 Tamarack Foundation for the Arts.</p>
+					<span class="footer-citation"><a href="http://meshfresh.com" target="_blank">website by MESH</a></span>
 				</div>
 			</div>
 		</div>

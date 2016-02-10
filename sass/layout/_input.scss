@@ -52,3 +52,15 @@ input[type="tel"] {
 .frm_error {
   margin-bottom: 15px;
 }
+
+.footer-citation {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  a {
+    color: #646464;
+    font-size: 12px;
+    font-family: $font-family--primary;
+  }
+}

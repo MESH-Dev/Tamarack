@@ -62,4 +62,6 @@ jQuery(document).ready(function($){
     $('.sub-menu-block-2').toggle();
   });
 
+  $(".footer-block").matchHeight();
+
 });
