@@ -43,6 +43,28 @@
   }
 }
 
+.filter-third {
+    width: 33.333%;
+    float: left;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+
+    @include mq($tablet-width, "max-width") {
+      width: 100%;
+    }
+
+    &:nth-of-type(1) {
+        background-color: gray;
+    }
+    &:nth-of-type(2) {
+        background-color: white;
+    }
+    &:nth-of-type(3) {
+        background-color: blue;
+    }
+}
+
 .content-fourth {
   width: 25%;
   float: left;
@@ -397,4 +419,16 @@ blockquote {
     padding: 0;
     margin: 0;
   }
+}
+
+.filter-products, .filter-skills, .filter-counties {
+    display: none;
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+}
+
+.x {
+    position: absolute;
+    right: 10px;
 }

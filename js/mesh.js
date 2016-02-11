@@ -64,4 +64,19 @@ jQuery(document).ready(function($){
 
   $(".footer-block").matchHeight();
 
+  $(".filter-products-button").click(function() {
+     $('.filter').hide();
+     $(".filter-products").show();
+  });
+
+  $(".filter-skills-button").click(function() {
+      $('.filter').hide();
+     $(".filter-skills").show();
+  });
+
+  $(".filter-counties-button").click(function() {
+      $('.filter').hide();
+     $(".filter-counties").show();
+  });
+
 });
