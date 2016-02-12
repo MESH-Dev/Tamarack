@@ -47,61 +47,125 @@ get_header(); ?>
     </div>
 
     <div class="row">
-      <div class="filter-quarter">
+      <div class="filter-quarter filter-business-button filter-button">
         Business
+        <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter">
+      <div class="filter-quarter filter-marketing-and-pr-button filter-button">
         Marketing & PR
+        <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter">
+      <div class="filter-quarter filter-legal-button filter-button">
         Legal
+        <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter">
+      <div class="filter-quarter filter-finance-button filter-button">
         Finance
+        <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
     </div>
 
     <div class="row">
-      <div class="twelve columns">
-
-      </div>
+        <div class="twelve columns">
+            <div class="filter filter-business">
+                <div class="x">x</div>
+                <ul>
+                    <li>Foundation Building</li>
+                    <li>Business Plan</li>
+                    <li>Time Management</li>
+                    <li>Trade Show Markets</li>
+                    <li>Fairs & Festivals Markets</li>
+                    <li>Online Markets</li>
+                    <li>Gallery & Retail Shop Markets</li>
+                    <li>Artist Representatives</li>
+                    <li>Advocacy, Policy & Research</li>
+                </ul>
+            </div>
+            <div class="filter filter-marketing-and-pr">
+                <div class="x">x</div>
+                <ul>
+                    <li>Asset Building</li>
+                    <li>Strategy</li>
+                    <li>Branding</li>
+                    <li>Portfolio</li>
+                    <li>Artist Statement</li>
+                    <li>Social Media</li>
+                    <li>Website</li>
+                    <li>Earned Media / PR</li>
+                    <li>Customer Service</li>
+                    <li>Salesmanship Skills</li>
+                    <li>Email Marketing</li>
+                    <li>Booth Presentation</li>
+                    <li>Print Materials</li>
+                    <li>Advertising</li>
+                </ul>
+            </div>
+            <div class="filter filter-legal">
+                <div class="x">x</div>
+                <ul>
+                    <li>Considerations</li>
+                    <li>Contracts</li>
+                    <li>Trademark, Patent and Copyright</li>
+                </ul>
+            </div>
+            <div class="filter filter-finance">
+                <div class="x">x</div>
+                <ul>
+                    <li>Pricing</li>
+                    <li>Accounting</li>
+                    <li>Revenue Streams</li>
+                    <li>Selling Wholesale</li>
+                    <li>Selling Retail</li>
+                    <li>Grantwriting</li>
+                    <li>Commissions</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="row">
 
       <div class="twelve columns">
 
-          <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+          <div class="resources">
 
-            <?php
+              <?php
 
-            // check if the repeater field has rows of data
-            if( have_rows('form_section') ):
+              // check if the repeater field has rows of data
+              if( have_rows('resource') ):
 
-              $i = 0;
+               	// loop through the rows of data
+                  while ( have_rows('resource') ) : the_row();
+                  ?>
 
-            // loop through the rows of data
-              while ( have_rows('form_section') ) : the_row();
+                      <div class="content-fourth">
+                          <?php
 
-                  // display a sub field value
-                  echo "<div id='" . $i . "' class='form-section'>";
-                  echo "<h2>" . get_sub_field('form_section_title') . "</h2>";
-                  echo "<p>" . get_sub_field('form_section_content') . "</p>";
-                  echo "</div>";
+                          echo get_sub_field('resource_type');
+                          echo "<br/>";
+                          echo get_sub_field('title');
+                          echo "<br/>";
+                          echo get_sub_field('description');
+                          echo "<br/>";
+                          echo get_sub_field('link_text');
+                          echo "<br/>";
+                          echo get_sub_field('link');
 
-                  $i++;
+                          ?>
+                      </div>
 
-              endwhile;
+                  <?php
+                  endwhile;
 
-            else :
+              else :
 
-              // no rows found
+                  // no rows found
 
-            endif;
+              endif;
 
-            ?>
+              ?>
 
-          <?php endwhile; ?>
+          </div>
 
       </div>
 

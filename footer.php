@@ -115,6 +115,8 @@
 
 </div><!-- #page -->
 
+<script src="<?php echo get_template_directory_uri(); ?>/js/masonry.js"></script>
+
 <?php wp_footer(); ?>
 
 <script src="https://use.typekit.net/ofd3xas.js"></script>

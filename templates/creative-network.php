@@ -8,13 +8,13 @@ get_header(); ?>
 
 
       <div class="row">
-          <div class="filter-third filter-products-button">
+          <div class="filter-third filter-products-button filter-button">
             Product
           </div>
-          <div class="filter-third filter-skills-button">
+          <div class="filter-third filter-skills-button filter-button">
             Skills
           </div>
-          <div class="filter-third filter-counties-button">
+          <div class="filter-third filter-counties-button filter-button">
             Location
           </div>
       </div>

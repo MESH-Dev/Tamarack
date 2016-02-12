@@ -13,12 +13,12 @@ jQuery(document).ready(function($){
     jQuery('.content-third').height(divWidth);
   });
 
-  var divWidth = jQuery('.content-fourth').width();
-  jQuery('.content-fourth').height(divWidth);
+  var divWidth = jQuery('footer .content-fourth').width();
+  jQuery('footer .content-fourth').height(divWidth);
 
   jQuery(window).resize(function() {
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
+    var divWidth = jQuery('footer .content-fourth').width();
+    jQuery('footer .content-fourth').height(divWidth);
   });
 
   $(function() {
@@ -70,13 +70,38 @@ jQuery(document).ready(function($){
   });
 
   $(".filter-skills-button").click(function() {
-      $('.filter').hide();
+     $('.filter').hide();
      $(".filter-skills").show();
   });
 
   $(".filter-counties-button").click(function() {
-      $('.filter').hide();
+     $('.filter').hide();
      $(".filter-counties").show();
   });
+
+  $(".filter-business-button").click(function() {
+    $('.filter').hide();
+    $(".filter-business").show();
+  });
+
+  $(".filter-marketing-and-pr-button").click(function() {
+    $('.filter').hide();
+    $(".filter-marketing-and-pr").show();
+  });
+
+  $(".filter-legal-button").click(function() {
+    $('.filter').hide();
+    $(".filter-legal").show();
+  });
+
+  $(".filter-finance-button").click(function() {
+    $('.filter').hide();
+    $(".filter-finance").show();
+  });
+
+  $('.grid').masonry({
+      // options...
+      itemSelector: '.content-fourth'
+    });
 
 });

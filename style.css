@@ -1073,87 +1073,74 @@ footer {
 }
 
 /* line 46, sass/layout/_main.scss */
-.filter-third {
-  width: 33.333%;
-  float: left;
-  position: relative;
-  padding: 40px;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  /* line 46, sass/layout/_main.scss */
-  .filter-third {
-    width: 100%;
-  }
-}
-/* line 57, sass/layout/_main.scss */
-.filter-third:nth-of-type(1) {
-  background-color: gray;
-}
-/* line 60, sass/layout/_main.scss */
-.filter-third:nth-of-type(2) {
-  background-color: white;
-}
-/* line 63, sass/layout/_main.scss */
-.filter-third:nth-of-type(3) {
-  background-color: blue;
-}
-
-/* line 68, sass/layout/_main.scss */
-.filter-quarter {
-  width: 25%;
-  float: left;
-  position: relative;
-  padding: 40px;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  /* line 68, sass/layout/_main.scss */
-  .filter-quarter {
-    width: 100%;
-  }
-}
-/* line 79, sass/layout/_main.scss */
-.filter-quarter:nth-of-type(1) {
-  background-color: gray;
-}
-/* line 82, sass/layout/_main.scss */
-.filter-quarter:nth-of-type(2) {
-  background-color: white;
-}
-/* line 85, sass/layout/_main.scss */
-.filter-quarter:nth-of-type(3) {
-  background-color: blue;
-}
-/* line 88, sass/layout/_main.scss */
-.filter-quarter:nth-of-type(4) {
-  background-color: yellow;
-}
-
-/* line 93, sass/layout/_main.scss */
 .content-fourth {
   width: 25%;
   float: left;
-  height: 250px;
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 15px;
+  padding: 40px;
 }
 @media screen and (max-width: 768px) {
-  /* line 93, sass/layout/_main.scss */
+  /* line 46, sass/layout/_main.scss */
   .content-fourth {
     width: 100%;
   }
 }
 
-/* line 107, sass/layout/_main.scss */
+/* line 59, sass/layout/_main.scss */
+.filter-third {
+  width: 33.333%;
+  float: left;
+  position: relative;
+  padding: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 59, sass/layout/_main.scss */
+  .filter-third {
+    width: 100%;
+  }
+}
+
+/* line 71, sass/layout/_main.scss */
+.filter-quarter {
+  width: 25%;
+  float: left;
+  position: relative;
+  padding: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 71, sass/layout/_main.scss */
+  .filter-quarter {
+    width: 100%;
+  }
+}
+/* line 82, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(1) {
+  background-color: gray;
+}
+/* line 85, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(2) {
+  background-color: white;
+}
+/* line 88, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(3) {
+  background-color: blue;
+}
+/* line 91, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(4) {
+  background-color: yellow;
+}
+
+/* line 96, sass/layout/_main.scss */
 .content-text {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 112, sass/layout/_main.scss */
+/* line 101, sass/layout/_main.scss */
 .content-text .content-text-main {
   font-size: 1.875em;
   line-height: 1.3em;
@@ -1163,7 +1150,7 @@ footer {
   letter-spacing: 0.01em;
 }
 
-/* line 122, sass/layout/_main.scss */
+/* line 111, sass/layout/_main.scss */
 .content-text-cta {
   font-size: 14px;
   font-family: "din-condensed-web", sans-serif;
@@ -1171,7 +1158,7 @@ footer {
   display: block;
 }
 
-/* line 133, sass/layout/_main.scss */
+/* line 122, sass/layout/_main.scss */
 .content-rectangle-screen {
   position: relative;
   float: left;
@@ -1182,7 +1169,7 @@ footer {
   padding: 10%;
 }
 
-/* line 143, sass/layout/_main.scss */
+/* line 132, sass/layout/_main.scss */
 .content-circle-screen {
   border-radius: 50%;
   width: 100%;
@@ -1192,7 +1179,7 @@ footer {
   padding: 10%;
 }
 
-/* line 152, sass/layout/_main.scss */
+/* line 141, sass/layout/_main.scss */
 .white-line {
   height: 1px;
   background-color: white;
@@ -1202,43 +1189,43 @@ footer {
   display: block;
 }
 
-/* line 161, sass/layout/_main.scss */
+/* line 150, sass/layout/_main.scss */
 .red {
   color: #c25543;
 }
-/* line 164, sass/layout/_main.scss */
+/* line 153, sass/layout/_main.scss */
 .red a {
   color: #c25543;
 }
 
-/* line 168, sass/layout/_main.scss */
+/* line 157, sass/layout/_main.scss */
 .purple {
   color: #b33ed9;
 }
-/* line 171, sass/layout/_main.scss */
+/* line 160, sass/layout/_main.scss */
 .purple a {
   color: #b33ed9;
 }
 
-/* line 175, sass/layout/_main.scss */
+/* line 164, sass/layout/_main.scss */
 .blue {
   color: #1b648d;
 }
-/* line 178, sass/layout/_main.scss */
+/* line 167, sass/layout/_main.scss */
 .blue a {
   color: #1b648d;
 }
 
-/* line 182, sass/layout/_main.scss */
+/* line 171, sass/layout/_main.scss */
 .dark-gray {
   color: #3f4042;
 }
-/* line 185, sass/layout/_main.scss */
+/* line 174, sass/layout/_main.scss */
 .dark-gray a {
   color: #3f4042;
 }
 
-/* line 190, sass/layout/_main.scss */
+/* line 179, sass/layout/_main.scss */
 .text-two-columns {
   -moz-column-count: 2;
   -moz-column-gap: 20px;
@@ -1246,18 +1233,18 @@ footer {
   -webkit-column-gap: 20px;
 }
 
-/* line 197, sass/layout/_main.scss */
+/* line 186, sass/layout/_main.scss */
 blockquote {
   margin-bottom: 20px;
   padding-left: 20px;
   position: relative;
   width: 100%;
 }
-/* line 203, sass/layout/_main.scss */
+/* line 192, sass/layout/_main.scss */
 blockquote p {
   float: left;
 }
-/* line 207, sass/layout/_main.scss */
+/* line 196, sass/layout/_main.scss */
 blockquote .quote-text {
   font-family: "din-condensed-web", sans-serif;
   font-size: 48px;
@@ -1266,20 +1253,20 @@ blockquote .quote-text {
   text-transform: uppercase;
   display: block;
 }
-/* line 215, sass/layout/_main.scss */
+/* line 204, sass/layout/_main.scss */
 blockquote .quote-text:before {
   content: '\201C';
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 222, sass/layout/_main.scss */
+/* line 211, sass/layout/_main.scss */
 blockquote .quote-text:after {
   content: '\201D';
   position: relative;
   left: 0;
 }
-/* line 230, sass/layout/_main.scss */
+/* line 219, sass/layout/_main.scss */
 blockquote .quote-citation {
   font-size: 30px;
   margin-bottom: 0;
@@ -1289,14 +1276,14 @@ blockquote .quote-citation {
   font-style: normal;
   float: right;
 }
-/* line 239, sass/layout/_main.scss */
+/* line 228, sass/layout/_main.scss */
 blockquote .quote-citation:before {
   content: '\2014';
   position: absolute;
   left: 0;
 }
 
-/* line 247, sass/layout/_main.scss */
+/* line 236, sass/layout/_main.scss */
 .content-text-title {
   display: block;
 }
@@ -1304,26 +1291,26 @@ blockquote .quote-citation:before {
 /*---------------*/
 /***** Oscar *****/
 /*---------------*/
-/* line 255, sass/layout/_main.scss */
+/* line 244, sass/layout/_main.scss */
 .effect-oscar {
   background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
   background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
 }
 
-/* line 260, sass/layout/_main.scss */
+/* line 249, sass/layout/_main.scss */
 .effect-oscar .content-half {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-/* line 266, sass/layout/_main.scss */
+/* line 255, sass/layout/_main.scss */
 .effect-oscar .content-text {
   -webkit-transition: background-color 0.35s;
   transition: background-color 0.35s;
 }
 
-/* line 271, sass/layout/_main.scss */
+/* line 260, sass/layout/_main.scss */
 .effect-oscar .content-text::before {
   position: absolute;
   top: 30px;
@@ -1334,7 +1321,7 @@ blockquote .quote-citation:before {
   content: '';
 }
 
-/* line 281, sass/layout/_main.scss */
+/* line 270, sass/layout/_main.scss */
 .effect-oscar .content-text-title {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -1343,7 +1330,7 @@ blockquote .quote-citation:before {
   margin-top: -30px;
 }
 
-/* line 294, sass/layout/_main.scss */
+/* line 283, sass/layout/_main.scss */
 .effect-oscar .content-text::before,
 .effect-oscar .content-text-cta {
   opacity: 0;
@@ -1353,7 +1340,7 @@ blockquote .quote-citation:before {
   transform: scale(0);
 }
 
-/* line 303, sass/layout/_main.scss */
+/* line 292, sass/layout/_main.scss */
 .effect-oscar:hover {
   padding: 5px;
   -webkit-transition: width 2s;
@@ -1361,13 +1348,13 @@ blockquote .quote-citation:before {
   transition: width 2s;
 }
 
-/* line 309, sass/layout/_main.scss */
+/* line 298, sass/layout/_main.scss */
 .effect-oscar:hover .content-text-title {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 314, sass/layout/_main.scss */
+/* line 303, sass/layout/_main.scss */
 .effect-oscar:hover .content-text::before,
 .effect-oscar:hover .content-text-cta {
   opacity: 1;
@@ -1375,35 +1362,35 @@ blockquote .quote-citation:before {
   transform: scale(1);
 }
 
-/* line 321, sass/layout/_main.scss */
+/* line 310, sass/layout/_main.scss */
 .effect-oscar:hover .content-text {
   background-color: rgba(58, 52, 42, 0);
 }
 
-/* line 325, sass/layout/_main.scss */
+/* line 314, sass/layout/_main.scss */
 .effect-oscar:hover .content-half {
   opacity: 0.4;
 }
 
-/* line 329, sass/layout/_main.scss */
+/* line 318, sass/layout/_main.scss */
 .wppb-user-forms {
   margin: auto;
 }
-/* line 332, sass/layout/_main.scss */
+/* line 321, sass/layout/_main.scss */
 .wppb-user-forms ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 337, sass/layout/_main.scss */
+/* line 326, sass/layout/_main.scss */
 .wppb-user-forms .wppb-send-credentials-checkbox {
   display: none;
 }
-/* line 341, sass/layout/_main.scss */
+/* line 330, sass/layout/_main.scss */
 .wppb-user-forms .text-input {
   border: 1px solid #cccccc;
   margin-bottom: 15px;
 }
-/* line 346, sass/layout/_main.scss */
+/* line 335, sass/layout/_main.scss */
 .wppb-user-forms .submit {
   background: #cccccc;
   font-family: "din-condensed-web", sans-serif;
@@ -1411,44 +1398,60 @@ blockquote .quote-citation:before {
   font-size: 12px;
   color: #c25543;
 }
-/* line 353, sass/layout/_main.scss */
+/* line 342, sass/layout/_main.scss */
 .wppb-user-forms .submit:hover {
   opacity: 0.7;
 }
 
-/* line 359, sass/layout/_main.scss */
+/* line 348, sass/layout/_main.scss */
 #wppb_register_pre_form_message {
   display: none;
 }
 
-/* line 363, sass/layout/_main.scss */
+/* line 352, sass/layout/_main.scss */
 #sidebar {
   position: fixed;
   background-color: #f1ede9;
   padding: 20px;
   z-index: 10;
 }
-/* line 369, sass/layout/_main.scss */
+/* line 358, sass/layout/_main.scss */
 #sidebar ul {
   padding: 0;
 }
-/* line 372, sass/layout/_main.scss */
+/* line 361, sass/layout/_main.scss */
 #sidebar ul li {
   list-style-type: none;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 379, sass/layout/_main.scss */
+/* line 368, sass/layout/_main.scss */
 #sidebar ul li.active a {
   border-bottom: 3px solid #3f4042;
 }
-/* line 384, sass/layout/_main.scss */
+/* line 373, sass/layout/_main.scss */
 #sidebar ul li a {
   color: #3f4042;
 }
 
-/* line 391, sass/layout/_main.scss */
+/* line 380, sass/layout/_main.scss */
+.filter {
+  padding: 10px 50px;
+}
+/* line 383, sass/layout/_main.scss */
+.filter ul {
+  padding: 0;
+}
+/* line 386, sass/layout/_main.scss */
+.filter ul li {
+  list-style-type: none;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* line 395, sass/layout/_main.scss */
 .filter-products, .filter-skills, .filter-counties {
   display: none;
   -webkit-column-count: 5;
@@ -1458,10 +1461,60 @@ blockquote .quote-citation:before {
   column-count: 5;
 }
 
-/* line 398, sass/layout/_main.scss */
+/* line 402, sass/layout/_main.scss */
+.filter-legal, .filter-finance {
+  display: none;
+  -webkit-column-count: 3;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 3;
+  /* Firefox */
+  column-count: 3;
+}
+
+/* line 409, sass/layout/_main.scss */
+.filter-business, .filter-marketing-and-pr {
+  display: none;
+  -webkit-column-count: 5;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 5;
+  /* Firefox */
+  column-count: 5;
+}
+
+/* line 416, sass/layout/_main.scss */
 .x {
   position: absolute;
   right: 10px;
+}
+
+/* line 421, sass/layout/_main.scss */
+.filter-button {
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  color: #3f4143;
+  cursor: pointer;
+}
+/* line 427, sass/layout/_main.scss */
+.filter-button:nth-of-type(1) {
+  background: #f2f2f2;
+}
+/* line 430, sass/layout/_main.scss */
+.filter-button:nth-of-type(2) {
+  background: #d6d3cf;
+}
+/* line 433, sass/layout/_main.scss */
+.filter-button:nth-of-type(3) {
+  background: #aaaaaa;
+}
+/* line 436, sass/layout/_main.scss */
+.filter-button:nth-of-type(4) {
+  background: #e0e2dc;
+}
+
+/* line 441, sass/layout/_main.scss */
+.down-arrow {
+  position: relative;
+  float: right;
 }
 
 /* line 1, sass/layout/_header.scss */
