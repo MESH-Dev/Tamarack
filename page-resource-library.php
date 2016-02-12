@@ -1,6 +1,4 @@
-<?php /*
-* Template Name: Resource Library
-*/
+<?php
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
