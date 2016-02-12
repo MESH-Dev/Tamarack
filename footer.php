@@ -1,6 +1,6 @@
 <footer id="footer" class="site-footer <?php if( is_page_template('templates/homepage-fullscreen.php') ) { echo "footer-fullscreen"; } ?>">
 
-	<?php if (!is_page(array('Creative Network Profile', 'West Virginia Made Profile', 'Trail Profile'))) { ?>
+	<?php if (!is_page(array('Creative Network Profile', 'West Virginia Made Profile', 'Trail Profile', 'Register'))) { ?>
 
 	<div class="container">
 		<div class="row">
