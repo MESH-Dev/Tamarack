@@ -7,7 +7,7 @@ get_header(); ?>
 
   <div class="row">
 
-        <?php get_template_part('partials/account', 'header'); ?>
+    <?php get_template_part( 'partials/content', 'blocks' ); ?>
 
   </div>
 
