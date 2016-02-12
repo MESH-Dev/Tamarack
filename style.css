@@ -1100,6 +1100,37 @@ footer {
 }
 
 /* line 68, sass/layout/_main.scss */
+.filter-quarter {
+  width: 25%;
+  float: left;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 68, sass/layout/_main.scss */
+  .filter-quarter {
+    width: 100%;
+  }
+}
+/* line 79, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(1) {
+  background-color: gray;
+}
+/* line 82, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(2) {
+  background-color: white;
+}
+/* line 85, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(3) {
+  background-color: blue;
+}
+/* line 88, sass/layout/_main.scss */
+.filter-quarter:nth-of-type(4) {
+  background-color: yellow;
+}
+
+/* line 93, sass/layout/_main.scss */
 .content-fourth {
   width: 25%;
   float: left;
@@ -1110,19 +1141,19 @@ footer {
   padding: 15px;
 }
 @media screen and (max-width: 768px) {
-  /* line 68, sass/layout/_main.scss */
+  /* line 93, sass/layout/_main.scss */
   .content-fourth {
     width: 100%;
   }
 }
 
-/* line 82, sass/layout/_main.scss */
+/* line 107, sass/layout/_main.scss */
 .content-text {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 87, sass/layout/_main.scss */
+/* line 112, sass/layout/_main.scss */
 .content-text .content-text-main {
   font-size: 1.875em;
   line-height: 1.3em;
@@ -1132,7 +1163,7 @@ footer {
   letter-spacing: 0.01em;
 }
 
-/* line 97, sass/layout/_main.scss */
+/* line 122, sass/layout/_main.scss */
 .content-text-cta {
   font-size: 14px;
   font-family: "din-condensed-web", sans-serif;
@@ -1140,7 +1171,7 @@ footer {
   display: block;
 }
 
-/* line 108, sass/layout/_main.scss */
+/* line 133, sass/layout/_main.scss */
 .content-rectangle-screen {
   position: relative;
   float: left;
@@ -1151,7 +1182,7 @@ footer {
   padding: 10%;
 }
 
-/* line 118, sass/layout/_main.scss */
+/* line 143, sass/layout/_main.scss */
 .content-circle-screen {
   border-radius: 50%;
   width: 100%;
@@ -1161,7 +1192,7 @@ footer {
   padding: 10%;
 }
 
-/* line 127, sass/layout/_main.scss */
+/* line 152, sass/layout/_main.scss */
 .white-line {
   height: 1px;
   background-color: white;
@@ -1171,43 +1202,43 @@ footer {
   display: block;
 }
 
-/* line 136, sass/layout/_main.scss */
+/* line 161, sass/layout/_main.scss */
 .red {
   color: #c25543;
 }
-/* line 139, sass/layout/_main.scss */
+/* line 164, sass/layout/_main.scss */
 .red a {
   color: #c25543;
 }
 
-/* line 143, sass/layout/_main.scss */
+/* line 168, sass/layout/_main.scss */
 .purple {
   color: #b33ed9;
 }
-/* line 146, sass/layout/_main.scss */
+/* line 171, sass/layout/_main.scss */
 .purple a {
   color: #b33ed9;
 }
 
-/* line 150, sass/layout/_main.scss */
+/* line 175, sass/layout/_main.scss */
 .blue {
   color: #1b648d;
 }
-/* line 153, sass/layout/_main.scss */
+/* line 178, sass/layout/_main.scss */
 .blue a {
   color: #1b648d;
 }
 
-/* line 157, sass/layout/_main.scss */
+/* line 182, sass/layout/_main.scss */
 .dark-gray {
   color: #3f4042;
 }
-/* line 160, sass/layout/_main.scss */
+/* line 185, sass/layout/_main.scss */
 .dark-gray a {
   color: #3f4042;
 }
 
-/* line 165, sass/layout/_main.scss */
+/* line 190, sass/layout/_main.scss */
 .text-two-columns {
   -moz-column-count: 2;
   -moz-column-gap: 20px;
@@ -1215,18 +1246,18 @@ footer {
   -webkit-column-gap: 20px;
 }
 
-/* line 172, sass/layout/_main.scss */
+/* line 197, sass/layout/_main.scss */
 blockquote {
   margin-bottom: 20px;
   padding-left: 20px;
   position: relative;
   width: 100%;
 }
-/* line 178, sass/layout/_main.scss */
+/* line 203, sass/layout/_main.scss */
 blockquote p {
   float: left;
 }
-/* line 182, sass/layout/_main.scss */
+/* line 207, sass/layout/_main.scss */
 blockquote .quote-text {
   font-family: "din-condensed-web", sans-serif;
   font-size: 48px;
@@ -1235,20 +1266,20 @@ blockquote .quote-text {
   text-transform: uppercase;
   display: block;
 }
-/* line 190, sass/layout/_main.scss */
+/* line 215, sass/layout/_main.scss */
 blockquote .quote-text:before {
   content: '\201C';
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 197, sass/layout/_main.scss */
+/* line 222, sass/layout/_main.scss */
 blockquote .quote-text:after {
   content: '\201D';
   position: relative;
   left: 0;
 }
-/* line 205, sass/layout/_main.scss */
+/* line 230, sass/layout/_main.scss */
 blockquote .quote-citation {
   font-size: 30px;
   margin-bottom: 0;
@@ -1258,14 +1289,14 @@ blockquote .quote-citation {
   font-style: normal;
   float: right;
 }
-/* line 214, sass/layout/_main.scss */
+/* line 239, sass/layout/_main.scss */
 blockquote .quote-citation:before {
   content: '\2014';
   position: absolute;
   left: 0;
 }
 
-/* line 222, sass/layout/_main.scss */
+/* line 247, sass/layout/_main.scss */
 .content-text-title {
   display: block;
 }
@@ -1273,26 +1304,26 @@ blockquote .quote-citation:before {
 /*---------------*/
 /***** Oscar *****/
 /*---------------*/
-/* line 230, sass/layout/_main.scss */
+/* line 255, sass/layout/_main.scss */
 .effect-oscar {
   background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
   background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
 }
 
-/* line 235, sass/layout/_main.scss */
+/* line 260, sass/layout/_main.scss */
 .effect-oscar .content-half {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-/* line 241, sass/layout/_main.scss */
+/* line 266, sass/layout/_main.scss */
 .effect-oscar .content-text {
   -webkit-transition: background-color 0.35s;
   transition: background-color 0.35s;
 }
 
-/* line 246, sass/layout/_main.scss */
+/* line 271, sass/layout/_main.scss */
 .effect-oscar .content-text::before {
   position: absolute;
   top: 30px;
@@ -1303,7 +1334,7 @@ blockquote .quote-citation:before {
   content: '';
 }
 
-/* line 256, sass/layout/_main.scss */
+/* line 281, sass/layout/_main.scss */
 .effect-oscar .content-text-title {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -1312,7 +1343,7 @@ blockquote .quote-citation:before {
   margin-top: -30px;
 }
 
-/* line 269, sass/layout/_main.scss */
+/* line 294, sass/layout/_main.scss */
 .effect-oscar .content-text::before,
 .effect-oscar .content-text-cta {
   opacity: 0;
@@ -1322,7 +1353,7 @@ blockquote .quote-citation:before {
   transform: scale(0);
 }
 
-/* line 278, sass/layout/_main.scss */
+/* line 303, sass/layout/_main.scss */
 .effect-oscar:hover {
   padding: 5px;
   -webkit-transition: width 2s;
@@ -1330,13 +1361,13 @@ blockquote .quote-citation:before {
   transition: width 2s;
 }
 
-/* line 284, sass/layout/_main.scss */
+/* line 309, sass/layout/_main.scss */
 .effect-oscar:hover .content-text-title {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 289, sass/layout/_main.scss */
+/* line 314, sass/layout/_main.scss */
 .effect-oscar:hover .content-text::before,
 .effect-oscar:hover .content-text-cta {
   opacity: 1;
@@ -1344,35 +1375,35 @@ blockquote .quote-citation:before {
   transform: scale(1);
 }
 
-/* line 296, sass/layout/_main.scss */
+/* line 321, sass/layout/_main.scss */
 .effect-oscar:hover .content-text {
   background-color: rgba(58, 52, 42, 0);
 }
 
-/* line 300, sass/layout/_main.scss */
+/* line 325, sass/layout/_main.scss */
 .effect-oscar:hover .content-half {
   opacity: 0.4;
 }
 
-/* line 304, sass/layout/_main.scss */
+/* line 329, sass/layout/_main.scss */
 .wppb-user-forms {
   margin: auto;
 }
-/* line 307, sass/layout/_main.scss */
+/* line 332, sass/layout/_main.scss */
 .wppb-user-forms ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 312, sass/layout/_main.scss */
+/* line 337, sass/layout/_main.scss */
 .wppb-user-forms .wppb-send-credentials-checkbox {
   display: none;
 }
-/* line 316, sass/layout/_main.scss */
+/* line 341, sass/layout/_main.scss */
 .wppb-user-forms .text-input {
   border: 1px solid #cccccc;
   margin-bottom: 15px;
 }
-/* line 321, sass/layout/_main.scss */
+/* line 346, sass/layout/_main.scss */
 .wppb-user-forms .submit {
   background: #cccccc;
   font-family: "din-condensed-web", sans-serif;
@@ -1380,101 +1411,44 @@ blockquote .quote-citation:before {
   font-size: 12px;
   color: #c25543;
 }
-/* line 328, sass/layout/_main.scss */
+/* line 353, sass/layout/_main.scss */
 .wppb-user-forms .submit:hover {
   opacity: 0.7;
 }
 
-/* line 334, sass/layout/_main.scss */
+/* line 359, sass/layout/_main.scss */
 #wppb_register_pre_form_message {
   display: none;
 }
 
-/* line 338, sass/layout/_main.scss */
+/* line 363, sass/layout/_main.scss */
 #sidebar {
   position: fixed;
   background-color: #f1ede9;
   padding: 20px;
   z-index: 10;
 }
-/* line 344, sass/layout/_main.scss */
+/* line 369, sass/layout/_main.scss */
 #sidebar ul {
   padding: 0;
 }
-/* line 347, sass/layout/_main.scss */
+/* line 372, sass/layout/_main.scss */
 #sidebar ul li {
   list-style-type: none;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 354, sass/layout/_main.scss */
+/* line 379, sass/layout/_main.scss */
 #sidebar ul li.active a {
   border-bottom: 3px solid #3f4042;
 }
-/* line 359, sass/layout/_main.scss */
+/* line 384, sass/layout/_main.scss */
 #sidebar ul li a {
   color: #3f4042;
 }
 
-/* line 366, sass/layout/_main.scss */
-.input-form {
-  margin-top: 97px;
-}
-
-/* line 371, sass/layout/_main.scss */
-.multi-select select {
-  height: 98px;
-}
-
-/* line 376, sass/layout/_main.scss */
-.frm_description {
-  font-size: 14px;
-  margin: 10px 0;
-}
-
-/* line 381, sass/layout/_main.scss */
-.frm_top_container {
-  margin-bottom: 25px;
-}
-
-/* line 385, sass/layout/_main.scss */
-.frm_error {
-  color: #c25543;
-}
-
-/* line 389, sass/layout/_main.scss */
-.frm_message {
-  padding: 25px;
-  border: 1px solid #3f4042;
-}
-
-/* line 394, sass/layout/_main.scss */
-.frm_checkbox {
-  display: inline-block;
-}
-
-/* line 402, sass/layout/_main.scss */
-#frm_field_152_container .frm_checkbox:last-of-type {
-  display: block;
-}
-/* line 405, sass/layout/_main.scss */
-#frm_field_152_container .frm_checkbox:last-of-type label {
-  display: inline-block;
-}
-/* line 409, sass/layout/_main.scss */
-#frm_field_152_container .frm_checkbox:last-of-type input {
-  width: inherit;
-  display: inline-block;
-}
-
-/* line 418, sass/layout/_main.scss */
-.frm_forms fieldset {
-  padding: 0;
-  margin: 0;
-}
-
-/* line 424, sass/layout/_main.scss */
+/* line 391, sass/layout/_main.scss */
 .filter-products, .filter-skills, .filter-counties {
   display: none;
   -webkit-column-count: 5;
@@ -1484,7 +1458,7 @@ blockquote .quote-citation:before {
   column-count: 5;
 }
 
-/* line 431, sass/layout/_main.scss */
+/* line 398, sass/layout/_main.scss */
 .x {
   position: absolute;
   right: 10px;
@@ -1591,6 +1565,63 @@ input[type="tel"] {
   color: #646464;
   font-size: 12px;
   font-family: "LeituraDisplay-Roman", serif;
+}
+
+/* line 68, sass/layout/_input.scss */
+.input-form {
+  margin-top: 97px;
+}
+
+/* line 73, sass/layout/_input.scss */
+.multi-select select {
+  height: 98px;
+}
+
+/* line 78, sass/layout/_input.scss */
+.frm_description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* line 83, sass/layout/_input.scss */
+.frm_top_container {
+  margin-bottom: 25px;
+}
+
+/* line 87, sass/layout/_input.scss */
+.frm_error {
+  color: #c25543;
+}
+
+/* line 91, sass/layout/_input.scss */
+.frm_message {
+  padding: 25px;
+  border: 1px solid #3f4042;
+}
+
+/* line 96, sass/layout/_input.scss */
+.frm_checkbox {
+  display: inline-block;
+}
+
+/* line 104, sass/layout/_input.scss */
+#frm_field_152_container .frm_checkbox:last-of-type {
+  display: block;
+}
+/* line 107, sass/layout/_input.scss */
+#frm_field_152_container .frm_checkbox:last-of-type label {
+  display: inline-block;
+}
+/* line 111, sass/layout/_input.scss */
+#frm_field_152_container .frm_checkbox:last-of-type input {
+  width: inherit;
+  display: inline-block;
+}
+
+/* line 120, sass/layout/_input.scss */
+.frm_forms fieldset {
+  padding: 0;
+  margin: 0;
 }
 
 /* line 1, sass/modules/_menus.scss */

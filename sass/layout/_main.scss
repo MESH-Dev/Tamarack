@@ -65,6 +65,31 @@
     }
 }
 
+.filter-quarter {
+    width: 25%;
+    float: left;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+
+    @include mq($tablet-width, "max-width") {
+      width: 100%;
+    }
+    
+    &:nth-of-type(1) {
+        background-color: gray;
+    }
+    &:nth-of-type(2) {
+        background-color: white;
+    }
+    &:nth-of-type(3) {
+        background-color: blue;
+    }
+    &:nth-of-type(4) {
+        background-color: yellow;
+    }
+}
+
 .content-fourth {
   width: 25%;
   float: left;
@@ -360,64 +385,6 @@ blockquote {
         color: $abbey;
       }
     }
-  }
-}
-
-.input-form {
-  margin-top: 97px;
-}
-
-.multi-select {
-  select {
-    height: 98px;
-  }
-}
-
-.frm_description {
-  font-size: 14px;
-  margin: 10px 0;
-}
-
-.frm_top_container {
-  margin-bottom: 25px;
-}
-
-.frm_error {
-  color: $crail;
-}
-
-.frm_message {
-  padding: 25px;
-  border: 1px solid #3f4042;
-}
-
-.frm_checkbox {
-  display: inline-block;
-}
-
-#frm_field_152_container {
-
-  .frm_checkbox {
-
-    &:last-of-type {
-      display: block;
-
-      label {
-        display: inline-block;
-      }
-
-      input {
-        width: inherit;
-        display: inline-block;
-      }
-    }
-  }
-}
-
-.frm_forms {
-  fieldset {
-    padding: 0;
-    margin: 0;
   }
 }
 
