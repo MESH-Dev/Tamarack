@@ -49,7 +49,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 40px;
 
     @include mq($tablet-width, "max-width") {
       width: 100%;
@@ -150,12 +149,20 @@
 .red {
   color: $crail;
 
+  .resource-inner {
+    border-top: 1px solid $crail;
+  }
+
   a {
     color: $crail;
   }
 }
 .purple {
   color: $purple;
+
+  .resource-inner {
+    border-top: 1px solid $purple;
+  }
 
   a {
     color: $purple;
@@ -164,12 +171,20 @@
 .blue {
   color: $matisse;
 
+  .resource-inner {
+    border-top: 1px solid $matisse;
+  }
+
   a {
     color: $matisse;
   }
 }
 .dark-gray {
   color: $abbey;
+
+  .resource-inner {
+    border-top: 1px solid $abbey;
+  }
 
   a {
     color: $abbey;
@@ -378,7 +393,8 @@ blockquote {
 }
 
 .filter {
-    padding: 10px 50px;
+    padding: 50px;
+    position: relative;
 
     ul {
         padding: 0;
@@ -413,9 +429,16 @@ blockquote {
     column-count: 5;
 }
 
+
+
 .x {
     position: absolute;
     right: 10px;
+    top: 10px;
+    font-family: $font-family--secondary;
+    text-transform: uppercase;
+    color: $purple;
+    cursor: pointer;
 }
 
 .filter-button {
@@ -424,21 +447,104 @@ blockquote {
     color: #3f4143;
     cursor: pointer;
 
-    &:nth-of-type(1) {
+    &.filter-business-button {
         background: #f2f2f2;
     }
-    &:nth-of-type(2) {
+    &.filter-marketing-and-pr-button {
         background: #d6d3cf;
     }
-    &:nth-of-type(3) {
+    &.filter-legal-button {
         background: #aaaaaa;
     }
-    &:nth-of-type(4) {
+    &.filter-finance-button {
         background: #e0e2dc;
     }
+}
+
+.filter-business {
+  background: #f2f2f2;
+}
+
+.filter-marketing-and-pr {
+  background: #d6d3cf;
+}
+
+.filter-legal {
+  background: #aaaaaa;
+}
+
+.filter-finance {
+  background: #e0e2dc;
 }
 
 .down-arrow {
     position: relative;
     float: right;
+}
+
+.filter-row {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.resource {
+  padding: 40px 10px;
+
+  .resource-inner {
+    padding: 10px;
+  }
+
+  .resource-title {
+    display: block;
+    font-family: $font-family--primary;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+  }
+
+  .resource-description {
+    display: block;
+    font-family: $font-family--primary;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    margin: 10px 0;
+    color: $abbey;
+  }
+
+  .resource-link {
+    text-align: right;
+    font-family: $font-family--secondary;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .resource-link-image {
+    display: inline;
+    position: relative;
+    padding: 5px;
+    bottom: -7px;
+  }
+
+}
+
+
+.filter-checkbox {
+  height: 15px;
+	width: 15px;
+	position: relative;
+  float: left;
+  border: 1px solid #3f4143;
+  margin-right: 10px;
+  position: relative;
+  bottom: -4px;
+  cursor: pointer;
+}
+
+.checked {
+  background: #3f4143;
+}
+
+.resources .mix {
+  display: none;
 }

@@ -13,12 +13,12 @@ jQuery(document).ready(function($){
     jQuery('.content-third').height(divWidth);
   });
 
-  var divWidth = jQuery('footer .content-fourth').width();
-  jQuery('footer .content-fourth').height(divWidth);
+  var divWidth = jQuery('.content-fourth').width();
+  jQuery('.content-fourth').height(divWidth);
 
   jQuery(window).resize(function() {
-    var divWidth = jQuery('footer .content-fourth').width();
-    jQuery('footer .content-fourth').height(divWidth);
+    var divWidth = jQuery('.content-fourth').width();
+    jQuery('.content-fourth').height(divWidth);
   });
 
   $(function() {
@@ -99,9 +99,13 @@ jQuery(document).ready(function($){
     $(".filter-finance").show();
   });
 
-  $('.grid').masonry({
-      // options...
-      itemSelector: '.content-fourth'
-    });
+  $(".x").click(function() {
+    $('.filter').hide();
+  });
+
+  $(".filter-checkbox").click(function() {
+    $(this).toggleClass("checked");
+  });
+
 
 });

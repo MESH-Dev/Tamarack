@@ -32,9 +32,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/hint.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/MyFontsWebfontsKit.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/animate.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
+	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mixitup.js"></script>
 
 	<?php wp_head(); ?>
 
