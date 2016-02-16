@@ -6,7 +6,31 @@
 
 ?>
 
-<div class="content-third" style="background-image: url('http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png')">
+<?php
+
+$cn_image = get_field('creative_network_profile_image', 'option');
+$wvm_image = get_field('west_virginia_made_profile_image', 'option');
+$t_image = get_field('trail_profile_image', 'option');
+
+if( !empty($cn_image) ):
+	// thumbnail
+	$cn_thumb = $cn_image['sizes']['large'];
+
+endif;
+
+if( !empty($wvm_image) ):
+	// thumbnail
+	$wvm_thumb = $wvm_image['sizes']['large'];
+endif;
+
+if( !empty($t_image) ):
+	// thumbnail
+	$t_thumb = $t_image['sizes']['large'];
+endif;
+
+?>
+
+<div class="content-third" style="background-image: url('<?php echo $cn_thumb; ?>')">
   <div class="content-circle-screen">
     <div class="content-text ">
       <div class="content-text-main">
@@ -19,7 +43,7 @@
   </div>
 </div>
 
-<div class="content-third" style="background-image: url('http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png')">
+<div class="content-third" style="background-image: url('<?php echo $wvm_thumb; ?>')">
   <div class="content-circle-screen">
     <div class="content-text ">
       <div class="content-text-main">
@@ -32,7 +56,7 @@
   </div>
 </div>
 
-<div class="content-third" style="background-image: url('http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png')">
+<div class="content-third" style="background-image: url('<?php echo $t_thumb; ?>')">
   <div class="content-circle-screen">
     <div class="content-text ">
       <div class="content-text-main">
