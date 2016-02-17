@@ -79,19 +79,6 @@
     @include mq($tablet-width, "max-width") {
       width: 100%;
     }
-
-    &:nth-of-type(1) {
-        background-color: gray;
-    }
-    &:nth-of-type(2) {
-        background-color: white;
-    }
-    &:nth-of-type(3) {
-        background-color: blue;
-    }
-    &:nth-of-type(4) {
-        background-color: yellow;
-    }
 }
 
 .content-text {
@@ -410,7 +397,7 @@ blockquote {
     }
 }
 
-.filter-products, .filter-skills, .filter-counties {
+.filter-product, .filter-skills, .filter-location {
     display: none;
     -webkit-column-count: 5; /* Chrome, Safari, Opera */
     -moz-column-count: 5; /* Firefox */
@@ -449,13 +436,13 @@ blockquote {
     color: #3f4143;
     cursor: pointer;
 
-    &.filter-business-button {
+    &.filter-business-button, &.filter-product-button {
         background: #f2f2f2;
     }
-    &.filter-marketing-and-pr-button {
+    &.filter-marketing-and-pr-button, &.filter-skills-button {
         background: #d6d3cf;
     }
-    &.filter-legal-button {
+    &.filter-legal-button, &.filter-location-button {
         background: #aaaaaa;
     }
     &.filter-finance-button {
@@ -463,15 +450,15 @@ blockquote {
     }
 }
 
-.filter-business {
+.filter-business, .filter-product {
   background: #f2f2f2;
 }
 
-.filter-marketing-and-pr {
+.filter-marketing-and-pr, .filter-skills {
   background: #d6d3cf;
 }
 
-.filter-legal {
+.filter-legal, .filter-location {
   background: #aaaaaa;
 }
 
@@ -609,4 +596,40 @@ blockquote {
   top: 8px;
   left: 7px;
   color: #3f4143;
+}
+
+.directorylisting-inner {
+  padding: 25px;
+}
+
+.directorylisting-picture {
+  padding: 25px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.directorylisting-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: $font-family--secondary;
+}
+
+.directorylisting-business-name {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $font-family--secondary;
+  color: $purple;
+}
+
+.directorylisting-skills {
+  font-family: $font-family--primary;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.directorylisting-inner {
+  background: #d6d3cf;
+  margin: 10px;
 }

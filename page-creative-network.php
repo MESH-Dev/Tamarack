@@ -47,28 +47,23 @@ get_header(); ?>
     </div>
 
     <div class="filter-row">
-      <div class="filter-quarter filter-business-button filter-button">
-        Business
+      <div class="filter-third filter-product-button filter-button">
+        Product
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter filter-marketing-and-pr-button filter-button">
-        Marketing & PR
+      <div class="filter-third filter-skills-button filter-button">
+        Skills
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter filter-legal-button filter-button">
-        Legal
-        <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
-      </div>
-      <div class="filter-quarter filter-finance-button filter-button">
-        Finance
+      <div class="filter-third filter-location-button filter-button">
+        Location
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
     </div>
 
     <div class="filter-row">
       <div class="twelve columns">
-        <div class="controls">
-          <div class="filter-box filter-business animated fadeIn">
+          <div class="filter-box filter-product animated fadeIn">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".foundation-building" id="foundation-building"></div><span class="filter-title">Foundation Building</span></li>
@@ -82,7 +77,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".advocacy-policy-and-research" id="advocacy-policy-and-research"></div><span class="filter-title">Advocacy, Policy & Research</span></li>
               </ul>
           </div>
-          <div class="filter-box filter-marketing-and-pr animated fadeIn">
+          <div class="filter-box filter-skills animated fadeIn">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".asset-building"></div><span class="filter-title">Asset Building</span></li>
@@ -101,7 +96,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".advertising"></div><span class="filter-title">Advertising</span></li>
               </ul>
           </div>
-          <div class="filter-box filter-legal animated fadeIn">
+          <div class="filter-box filter-location animated fadeIn">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".considerations"></div><span class="filter-title">Considerations</span></li>
@@ -109,19 +104,6 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".trademark-patent-and-copyright"></div><span class="filter-title">Trademark, Patent and Copyright</span></li>
               </ul>
           </div>
-          <div class="filter-box filter-finance animated fadeIn">
-              <div class="x">x</div>
-              <ul>
-                  <li><div class="filter-checkbox filter" data-filter=".pricing"></div><span class="filter-title">Pricing</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".accounting"></div><span class="filter-title">Accounting</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".revenue-streams"></div><span class="filter-title">Revenue Streams</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".selling-wholesale"></div><span class="filter-title">Selling Wholesale</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".selling-retail"></div><span class="filter-title">Selling Retail</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".grantwriting"></div><span class="filter-title">Grantwriting</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".commissions"></div><span class="filter-title">Commissions</span></li>
-              </ul>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -146,89 +128,52 @@ get_header(); ?>
       <div class="twelve columns">
         <div id="resources">
 
-          <?php
+      		<?php
+            $args = array( 'post_type' => 'directorylisting', 'posts_per_page' => 10 );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-          // check if the repeater field has rows of data
-          if( have_rows('resource') ):
-
-           	// loop through the rows of data
-              while ( have_rows('resource') ) : the_row();
-              ?>
-
-                <?php
-
-                $rand = rand(1, 4);
-                if ($rand == 1) {
-                  $color = "red";
-                }
-                elseif($rand == 2) {
-                  $color = "purple";
-                }
-                elseif($rand == 3) {
-                  $color = "blue";
-                }
-                elseif($rand == 4) {
-                  $color = "dark-gray";
-                }
-                else {
-
-                }
+              <div class="content-fourth directorylisting">
+                <div class="directorylisting-inner">
 
 
-                ?>
+                    <?php
 
-                  <div class="content-fourth resource <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
+                      $image = get_field('artist_image');
 
-                    <div class="resource-inner">
-                      <div class="resource-type">
-                        <?php
-                          echo get_sub_field('resource_type');
-                        ?>
-                      </div>
-                      <div class="resource-title">
-                        <?php
-                          echo get_sub_field('title');
-                        ?>
-                      </div>
-                      <div class="resource-description">
-                        <?php
-                          echo get_sub_field('description');
-                        ?>
-                      </div>
-                      <div class="resource-link">
-                        <a href="<?php echo get_sub_field('url'); ?>">
-                          <?php echo get_sub_field('link_text'); ?>
-                          <span class="resource-link-image">
-                            <?php
-                              if ($rand == 1) {
-                                $arrow = "red-arrow.png";
-                              }
-                              elseif($rand == 2) {
-                                $arrow = "purple-arrow.png";
-                              }
-                              elseif($rand == 3) {
-                                $arrow = "blue-arrow.png";
-                              }
-                              elseif($rand == 4) {
-                                $arrow = "black-arrow.png";
-                              }
-                            ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $arrow; ?>" />
-                          </span>
-                        </a>
-                      </div>
-                    </div>
+                      if( !empty($image) ):
+
+                      	// thumbnail
+                      	$size = 'directorylisting';
+                      	$thumb = $image['sizes'][ $size ];
+                      	?>
+
+                        <div class="directorylisting-picture">
+                      		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
+                        </div>
+
+                    <?php endif; ?>
+
+                  <div class="directorylisting-title">
+                    Testing Testerson
+                  </div>
+                  <div class="directorylisting-business-name">
+                    Business Name
+                  </div>
+                  <div class="directorylisting-skills">
+                    Business, operations, pottery, driving
                   </div>
 
-              <?php
-              endwhile;
+                  <hr/>
 
-          else :
+                  <div class="directorylisting-description">
+                    <p>Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Phasellus viverra nulla ut metus varius laoreet. In ac felis quis tortor malesuada pretium. Donec posuere vulputate arcu. Praesent egestas tristique nibh.</p>
+                  </div>
+                </div>
+              </div>
 
-              // no rows found
-
-          endif;
-
+            <?php
+            endwhile; // end of the loop.
           ?>
 
         </div>
@@ -265,25 +210,6 @@ get_header(); ?>
       }
 
     });
-
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
-
-    jQuery(window).resize(function() {
-      var divWidth = jQuery('.content-fourth').width();
-      jQuery('.content-fourth').height(divWidth);
-    });
-
-    // .each(function() {
-    //   active.push($(this).attr('data-filter'));
-    // });
-
-    // var filtered = active.join(", ");
-    // if(filtered !== '')
-    //   $('.filtered-list').html(filtered);
-    // else{
-    //   $('.filtered-list').html('All');
-    // }
 
 
   });

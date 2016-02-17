@@ -13,14 +13,6 @@ jQuery(document).ready(function($){
     jQuery('.content-third').height(divWidth);
   });
 
-  var divWidth = jQuery('.content-fourth').width();
-  jQuery('.content-fourth').height(divWidth);
-
-  jQuery(window).resize(function() {
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
-  });
-
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -64,9 +56,9 @@ jQuery(document).ready(function($){
 
   $(".footer-block").matchHeight();
 
-  $(".filter-products-button").click(function() {
+  $(".filter-product-button").click(function() {
      $('.filter-box').hide();
-     $(".filter-box-products").show();
+     $(".filter-product").show();
   });
 
   $(".filter-skills-button").click(function() {
@@ -74,9 +66,9 @@ jQuery(document).ready(function($){
      $(".filter-skills").show();
   });
 
-  $(".filter-counties-button").click(function() {
+  $(".filter-location-button").click(function() {
      $('.filter-box').hide();
-     $(".filter-counties").show();
+     $(".filter-location").show();
   });
 
   $(".filter-business-button").click(function() {
