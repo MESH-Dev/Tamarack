@@ -65,47 +65,42 @@ jQuery(document).ready(function($){
   $(".footer-block").matchHeight();
 
   $(".filter-products-button").click(function() {
-     $('.filter').hide();
-     $(".filter-products").show();
+     $('.filter-box').hide();
+     $(".filter-box-products").show();
   });
 
   $(".filter-skills-button").click(function() {
-     $('.filter').hide();
+     $('.filter-box').hide();
      $(".filter-skills").show();
   });
 
   $(".filter-counties-button").click(function() {
-     $('.filter').hide();
+     $('.filter-box').hide();
      $(".filter-counties").show();
   });
 
   $(".filter-business-button").click(function() {
-    $('.filter').hide();
+    $('.filter-box').hide();
     $(".filter-business").show();
   });
 
   $(".filter-marketing-and-pr-button").click(function() {
-    $('.filter').hide();
+    $('.filter-box').hide();
     $(".filter-marketing-and-pr").show();
   });
 
   $(".filter-legal-button").click(function() {
-    $('.filter').hide();
+    $('.filter-box').hide();
     $(".filter-legal").show();
   });
 
   $(".filter-finance-button").click(function() {
-    $('.filter').hide();
+    $('.filter-box').hide();
     $(".filter-finance").show();
   });
 
   $(".x").click(function() {
-    $('.filter').hide();
+    $('.filter-box').hide();
   });
-
-  $(".filter-checkbox").click(function() {
-    $(this).toggleClass("checked");
-  });
-
 
 });

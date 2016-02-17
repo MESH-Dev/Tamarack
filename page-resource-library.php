@@ -67,65 +67,84 @@ get_header(); ?>
 
     <div class="filter-row">
       <div class="twelve columns">
-          <div class="filter filter-business animated fadeIn">
+        <div class="controls">
+          <div class="filter-box filter-business animated fadeIn">
               <div class="x">x</div>
               <ul>
-                  <li><div class="filter-checkbox" data-filter=".foundation-building"></div> Foundation Building</li>
-                  <li><div class="filter-checkbox" data-filter=".business-plan"></div> Business Plan</li>
-                  <li><div class="filter-checkbox" data-filter=".time-management"></div> Time Management</li>
-                  <li><div class="filter-checkbox" data-filter=".trade-show-markets"></div> Trade Show Markets</li>
-                  <li><div class="filter-checkbox" data-filter=".fairs-and-festivals-markets"></div> Fairs & Festivals Markets</li>
-                  <li><div class="filter-checkbox" data-filter=".online-markets"></div> Online Markets</li>
-                  <li><div class="filter-checkbox" data-filter=".gallery-and-retail-shop-markets"></div> Gallery & Retail Shop Markets</li>
-                  <li><div class="filter-checkbox" data-filter=".artists-representatives"></div> Artist Representatives</li>
-                  <li><div class="filter-checkbox" data-filter=".advocacy-policy-and-research"></div> Advocacy, Policy & Research</li>
+                  <li><div class="filter-checkbox filter" data-filter=".foundation-building" id="foundation-building"></div><span class="filter-title">Foundation Building</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".business-plan" id="business-plan"></div><span class="filter-title">Business Plan</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".time-management" id="time-management"></div><span class="filter-title">Time Management</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".trade-show-markets" id="trade-show-markets"></div><span class="filter-title">Trade Show Markets</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".fairs-and-festivals-markets" id="fairs-and-festivals-markets"></div><span class="filter-title">Fairs & Festivals Markets</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".online-markets" id="online-markets"></div><span class="filter-title">Online Markets</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".gallery-and-retail-shop-markets" id="gallery-and-retail-shop-markets"></div><span class="filter-title">Gallery & Retail Shop Markets</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".artists-representatives" id="artists-representatives"></div><span class="filter-title">Artist Representatives</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".advocacy-policy-and-research" id="advocacy-policy-and-research"></div><span class="filter-title">Advocacy, Policy & Research</span></li>
               </ul>
           </div>
-          <div class="filter filter-marketing-and-pr animated fadeIn">
+          <div class="filter-box filter-marketing-and-pr animated fadeIn">
               <div class="x">x</div>
               <ul>
-                  <li><div class="filter-checkbox" data-filter=".asset-building"></div> Asset Building</li>
-                  <li><div class="filter-checkbox" data-filter=".strategy"></div> Strategy</li>
-                  <li><div class="filter-checkbox" data-filter=".branding"></div> Branding</li>
-                  <li><div class="filter-checkbox" data-filter=".portfolio"></div> Portfolio</li>
-                  <li><div class="filter-checkbox" data-filter=".artist-statement"></div> Artist Statement</li>
-                  <li><div class="filter-checkbox" data-filter=".social-media"></div> Social Media</li>
-                  <li><div class="filter-checkbox" data-filter=".website"></div> Website</li>
-                  <li><div class="filter-checkbox" data-filter=".earned-media-pr"></div> Earned Media / PR</li>
-                  <li><div class="filter-checkbox" data-filter=".customer-service"></div> Customer Service</li>
-                  <li><div class="filter-checkbox" data-filter=".salesmanship-skills"></div> Salesmanship Skills</li>
-                  <li><div class="filter-checkbox" data-filter=".email-marketing"></div> Email Marketing</li>
-                  <li><div class="filter-checkbox" data-filter=".booth-presentation"></div> Booth Presentation</li>
-                  <li><div class="filter-checkbox" data-filter=".print-materials"></div> Print Materials</li>
-                  <li><div class="filter-checkbox" data-filter=".advertising"></div> Advertising</li>
+                  <li><div class="filter-checkbox filter" data-filter=".asset-building"></div><span class="filter-title">Asset Building</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".strategy"></div><span class="filter-title">Strategy</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".branding"></div><span class="filter-title">Branding</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".portfolio"></div><span class="filter-title">Portfolio</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".artist-statement"></div><span class="filter-title">Artist Statement</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".social-media"></div><span class="filter-title">Social Media</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".website"></div><span class="filter-title">Website</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".earned-media-pr"></div><span class="filter-title">Earned Media / PR</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".customer-service"></div><span class="filter-title">Customer Service</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".salesmanship-skills"></div><span class="filter-title">Salesmanship Skills</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".email-marketing"></div><span class="filter-title">Email Marketing</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".booth-presentation"></div><span class="filter-title">Booth Presentation</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".print-materials"></div><span class="filter-title">Print Materials</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".advertising"></div><span class="filter-title">Advertising</span></li>
               </ul>
           </div>
-          <div class="filter filter-legal animated fadeIn">
+          <div class="filter-box filter-legal animated fadeIn">
               <div class="x">x</div>
               <ul>
-                  <li><div class="filter-checkbox" data-filter=".considerations"></div> Considerations</li>
-                  <li><div class="filter-checkbox" data-filter=".contracts"></div> Contracts</li>
-                  <li><div class="filter-checkbox" data-filter=".trademark-patent-and-copyright"></div> Trademark, Patent and Copyright</li>
+                  <li><div class="filter-checkbox filter" data-filter=".considerations"></div><span class="filter-title">Considerations</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".contracts"></div><span class="filter-title">Contracts</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".trademark-patent-and-copyright"></div><span class="filter-title">Trademark, Patent and Copyright</span></li>
               </ul>
           </div>
-          <div class="filter filter-finance animated fadeIn">
+          <div class="filter-box filter-finance animated fadeIn">
               <div class="x">x</div>
               <ul>
-                  <li><div class="filter-checkbox" data-filter=".pricing"></div> Pricing</li>
-                  <li><div class="filter-checkbox" data-filter=".accounting"></div> Accounting</li>
-                  <li><div class="filter-checkbox" data-filter=".revenue-streams"></div> Revenue Streams</li>
-                  <li><div class="filter-checkbox" data-filter=".selling-wholesale"></div> Selling Wholesale</li>
-                  <li><div class="filter-checkbox" data-filter=".selling-retail"></div> Selling Retail</li>
-                  <li><div class="filter-checkbox" data-filter=".grantwriting"></div> Grantwriting</li>
-                  <li><div class="filter-checkbox" data-filter=".commissions"></div> Commissions</li>
+                  <li><div class="filter-checkbox filter" data-filter=".pricing"></div><span class="filter-title">Pricing</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".accounting"></div><span class="filter-title">Accounting</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".revenue-streams"></div><span class="filter-title">Revenue Streams</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".selling-wholesale"></div><span class="filter-title">Selling Wholesale</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".selling-retail"></div><span class="filter-title">Selling Retail</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".grantwriting"></div><span class="filter-title">Grantwriting</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".commissions"></div><span class="filter-title">Commissions</span></li>
               </ul>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="filter-row">
       <div class="twelve columns">
-        <div class="resources">
+        <div class="search">
+          <div class="search-title">
+            Current Search
+          </div>
+          <div class="search-items">
+
+          </div>
+          <!-- <div class="search-bar">
+            <input type="text" class="search" placeholder="Search by..." />
+            <div class="search-icon"><i class="fa fa-search"></i></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="twelve columns">
+        <div id="resources">
 
           <?php
 
@@ -158,10 +177,9 @@ get_header(); ?>
 
                 ?>
 
-                  <div class="content-fourth resource mix <?php echo $color; ?> <?php echo get_sub_field('resource_type'); ?> <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
+                  <div class="content-fourth resource <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
 
                     <div class="resource-inner">
-
                       <div class="resource-type">
                         <?php
                           echo get_sub_field('resource_type');
@@ -218,28 +236,49 @@ get_header(); ?>
     </div>
 
 
+</main><!-- #main -->
 
+<script>
+  $(document).ready(function(){
+    $('#sidebar').css('position', 'fixed');
 
-  <script>
-    $(document).ready(function(){
-      $('#sidebar').css('position', 'fixed');
-      console.log('at least');
+    $('#resources').mixItUp({
+      load: {
+        filter: '.all'
+      },
+      controls: {
+        toggleFilterButtons: true
+      }
+    });
 
-      // $('.resources').masonry({
-      //   itemSelector: '.resource'
-      // });
-      //
-      // jQuery(window).resize(function() {
-      //   $('.resources').masonry({
-      //     itemSelector: '.resource'
-      //   });
-      // });
+    var active = [];
+    $('.filter-checkbox').click(function() {
 
-      $('.resources').mixItUp();
+      var item = $(this).next("span").html();
+
+      if(jQuery.inArray(item, active) == -1 ) {
+        active.push(item);
+        $('.search-items').html(active.join(", "));
+      } else {
+        active.splice(jQuery.inArray(item, active), 1);
+        $('.search-items').html(active.join(", "));
+      }
 
     });
-  </script>
 
-</main><!-- #main -->
+    // .each(function() {
+    //   active.push($(this).attr('data-filter'));
+    // });
+
+    // var filtered = active.join(", ");
+    // if(filtered !== '')
+    //   $('.filtered-list').html(filtered);
+    // else{
+    //   $('.filtered-list').html('All');
+    // }
+
+
+  });
+</script>
 
 <?php get_footer(); ?>
