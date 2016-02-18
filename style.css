@@ -1793,6 +1793,11 @@ blockquote .quote-citation:before {
   background: none;
 }
 
+/* line 701, sass/layout/_main.scss */
+.show {
+  display: block !important;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
