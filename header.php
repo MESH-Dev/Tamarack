@@ -248,11 +248,19 @@
 				<?php } ?>
 
 				<div class="row">
-					<div class="ten columns offset-by-one">
+					<div class="eight columns offset-by-two">
 						<div class="masthead-title">
 							<?php echo get_field("masthead_title"); ?>
 						</div>
 					</div>
+					<?php if (is_page("Creative Network")) { ?>
+					<div class="two columns">
+						<div class="join-bubble">
+							<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Our Creative Network</a></span>
+							<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
+						</div>
+					</div>
+					<?php } ?>
 				</div>
 				<?php if (get_field("masthead_subtitle")) { ?>
 					<div class="row">
@@ -283,12 +291,12 @@
 				<?php } ?>
 			</div>
 			<?php if (is_page_template('templates/text.php')) { dimox_breadcrumbs(); } ?>
-			<?php if (get_field('masthead_image_citation')) { ?>
-				<div class="citation">
-					<?php echo get_field('masthead_image_citation'); ?>
-				</div>
-			<?php } ?>
-			<?php if (!is_page_template('templates/text.php') and !(is_page_template('templates/register.php'))) { ?>
+				<?php if (get_field('masthead_image_citation')) { ?>
+					<div class="citation">
+						<?php echo get_field('masthead_image_citation'); ?>
+					</div>
+				<?php } ?>
+			<?php if (!is_page_template('templates/text.php') and !(is_page_template('templates/register.php')) and !(is_page('Creative Network'))) { ?>
 				<div class="tagline">
 					<?php if (get_field('tagline_url', get_page_by_title('frontpage')->ID)) { ?><a href="<?php echo get_field('tagline_url', get_page_by_title('frontpage')->ID) ?>"> <?php } ?>
 						<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
