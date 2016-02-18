@@ -102,10 +102,8 @@ add_action( 'login_form', 'username_or_email_login' );
  * @since 	1.0
  */
 
-$s = site_url() . "/creative-network-profile";
-
 function acme_login_redirect( $redirect_to, $request, $user  ) {
-	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url("/creative-network-profile");
 }
 add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
 
