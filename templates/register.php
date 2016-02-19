@@ -14,7 +14,7 @@ get_header(); ?>
   <div class="container">
       <div class="six columns">
         <h2><?php the_title(); ?></h2>
-        <p>The West Virginia Creative Network, West Virginia Made and Trails are gateways to connect you to fellow artists and creatives, training and business opportunities, new customers, and more. The Creative Network promotes your range of creative skills and abilities to open up new pathways for professional success, and West Virginia Made showcases your creative business by telling the story of how and why your work matters. The Trails bring foot traffic to your shop or studio. </p>
+        <p>The West Virginia Creative Network, Made in West Virginia and Trails are gateways to connect you to fellow artists and creatives, training and business opportunities, new customers, and more. The Creative Network promotes your range of creative skills and abilities to open up new pathways for professional success, and Made in West Virginia showcases your creative business by telling the story of how and why your work matters. The Trails bring foot traffic to your shop or studio. </p>
         <p>Ready to join? Let's go!</p>
       </div>
 

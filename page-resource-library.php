@@ -22,10 +22,10 @@ get_header(); ?>
           <div class="content-circle-screen">
             <div class="content-text ">
               <div class="content-text-main">
-                Your West Virginia Made Profile
+                Your Made in West Virginia Profile
               </div>
               <div class="content-text-cta">
-                <a href="http://tamarack.bkfk-t5yk.accessdomain.com/west-virginia-made-profile/">Join West Virginia Made <i class="fa fa-angle-double-right"></i></a>
+                <a href="http://tamarack.bkfk-t5yk.accessdomain.com/west-virginia-made-profile/">Join Made in West Virginia <i class="fa fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
