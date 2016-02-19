@@ -1691,23 +1691,36 @@ blockquote .quote-citation:before {
   padding: 25px;
 }
 
-/* line 610, sass/layout/_main.scss */
+/* line 612, sass/layout/_main.scss */
+.directorylisting-header:hover img {
+  opacity: 0.7;
+}
+/* line 616, sass/layout/_main.scss */
+.directorylisting-header:hover .directorylisting-title a {
+  opacity: 0.7;
+}
+
+/* line 623, sass/layout/_main.scss */
 .directorylisting-picture {
   padding: 25px;
 }
-/* line 613, sass/layout/_main.scss */
+/* line 626, sass/layout/_main.scss */
 .directorylisting-picture img {
   border-radius: 50%;
 }
 
-/* line 618, sass/layout/_main.scss */
+/* line 631, sass/layout/_main.scss */
 .directorylisting-title {
   font-size: 24px;
   text-transform: uppercase;
   font-family: "din-condensed-web", sans-serif;
 }
+/* line 636, sass/layout/_main.scss */
+.directorylisting-title a {
+  color: #3f4042;
+}
 
-/* line 624, sass/layout/_main.scss */
+/* line 641, sass/layout/_main.scss */
 .directorylisting-business-name {
   font-size: 14px;
   text-transform: uppercase;
@@ -1715,32 +1728,32 @@ blockquote .quote-citation:before {
   color: #b33ed9;
 }
 
-/* line 631, sass/layout/_main.scss */
+/* line 648, sass/layout/_main.scss */
 .directorylisting-skills {
   font-family: "LeituraDisplay-Roman", serif;
   font-style: italic;
   font-size: 14px;
 }
 
-/* line 637, sass/layout/_main.scss */
+/* line 654, sass/layout/_main.scss */
 .directorylisting-inner {
   background: #d6d3cf;
   margin: 10px;
 }
 
-/* line 642, sass/layout/_main.scss */
+/* line 659, sass/layout/_main.scss */
 #directorylistings .mix {
   display: none;
 }
 
-/* line 646, sass/layout/_main.scss */
+/* line 663, sass/layout/_main.scss */
 #directorylistings {
   float: left;
   width: 100%;
   position: relative;
 }
 
-/* line 652, sass/layout/_main.scss */
+/* line 669, sass/layout/_main.scss */
 .join-bubble {
   background: #3f4143;
   color: white;
@@ -1751,19 +1764,19 @@ blockquote .quote-citation:before {
   margin: 35px 0;
 }
 
-/* line 662, sass/layout/_main.scss */
+/* line 679, sass/layout/_main.scss */
 .join-text {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 16px;
 }
-/* line 668, sass/layout/_main.scss */
+/* line 685, sass/layout/_main.scss */
 .join-text a {
   color: #c25543;
 }
 
-/* line 673, sass/layout/_main.scss */
+/* line 690, sass/layout/_main.scss */
 .join-login {
   font-size: 14px;
   text-transform: uppercase;
@@ -1772,12 +1785,12 @@ blockquote .quote-citation:before {
   left: 2px;
   top: -5px;
 }
-/* line 681, sass/layout/_main.scss */
+/* line 698, sass/layout/_main.scss */
 .join-login a {
   color: #b2a2a0;
 }
 
-/* line 686, sass/layout/_main.scss */
+/* line 703, sass/layout/_main.scss */
 .reset-filter {
   position: absolute;
   right: 10px;
@@ -1788,14 +1801,32 @@ blockquote .quote-citation:before {
   color: #b33ed9;
   cursor: pointer;
 }
-/* line 696, sass/layout/_main.scss */
+/* line 713, sass/layout/_main.scss */
 .reset-filter.active {
   background: none;
 }
 
-/* line 701, sass/layout/_main.scss */
+/* line 718, sass/layout/_main.scss */
 .show {
   display: block !important;
+}
+
+/* line 722, sass/layout/_main.scss */
+.directory-single {
+  margin-top: 50px;
+}
+/* line 725, sass/layout/_main.scss */
+.directory-single h2 {
+  font-size: 36px;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  line-height: 36px;
+  margin: 0 0 25px;
+}
+
+/* line 734, sass/layout/_main.scss */
+.directory-sidebar {
+  margin-right: 20px;
 }
 
 /* line 1, sass/layout/_header.scss */

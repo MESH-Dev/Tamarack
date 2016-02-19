@@ -171,30 +171,35 @@ get_header(); ?>
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-              <div class="content-fourth directorylisting show mix <?php echo get_field('county'); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
+              <div class="content-fourth directorylisting show mix animated fadeIn <?php echo get_field('county'); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
                 <div class="directorylisting-inner">
 
+                  <div class="directorylisting-header">
 
-                    <?php
+                      <?php
 
-                      $image = get_field('artist_image');
+                        $image = get_field('artist_image');
 
-                      if( !empty($image) ):
+                        if( !empty($image) ):
 
-                      	// thumbnail
-                      	$size = 'directorylisting';
-                      	$thumb = $image['sizes'][ $size ];
-                      	?>
+                        	// thumbnail
+                        	$size = 'directorylisting';
+                        	$thumb = $image['sizes'][ $size ];
+                        	?>
 
-                        <div class="directorylisting-picture">
-                      		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
-                        </div>
+                          <a href="<?php echo get_permalink(); ?>">
+                            <div class="directorylisting-picture">
+                          		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
+                            </div>
+                          </a>
 
-                    <?php endif; ?>
+                      <?php endif; ?>
 
-                  <div class="directorylisting-title">
-                    Testing Testerson
-                  </div>
+                      <div class="directorylisting-title">
+                        <a href="<?php echo get_permalink(); ?>">Testing Testerson</a>
+                      </div>
+
+                    </div>
                   <div class="directorylisting-business-name">
                     Business Name
                   </div>
@@ -240,7 +245,7 @@ get_header(); ?>
       },
       callbacks: {
         onMixEnd: function(state){
-          
+
         }
       }
     });

@@ -607,6 +607,19 @@ blockquote {
   padding: 25px;
 }
 
+.directorylisting-header {
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+    .directorylisting-title {
+      a {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
 .directorylisting-picture {
   padding: 25px;
 
@@ -619,6 +632,10 @@ blockquote {
   font-size: 24px;
   text-transform: uppercase;
   font-family: $font-family--secondary;
+
+  a {
+    color: #3f4042;
+  }
 }
 
 .directorylisting-business-name {
@@ -700,4 +717,20 @@ blockquote {
 
 .show{
   display: block !important;
+}
+
+.directory-single {
+  margin-top: 50px;
+
+  h2 {
+    font-size: 36px;
+    font-family: $font-family--secondary;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0 0 25px;
+  }
+}
+
+.directory-sidebar {
+  margin-right: 20px;
 }

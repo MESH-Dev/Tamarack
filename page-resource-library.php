@@ -134,6 +134,7 @@ get_header(); ?>
           <div class="search-items">
 
           </div>
+          <div class="reset-filter filter">Reset filter <i class="fa fa-angle-double-right"></i></div>
           <!-- <div class="search-bar">
             <input type="text" class="search" placeholder="Search by..." />
             <div class="search-icon"><i class="fa fa-search"></i></div>
@@ -177,7 +178,7 @@ get_header(); ?>
 
                 ?>
 
-                  <div class="content-fourth resource <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
+                  <div class="content-fourth resource show animated fadeIn <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
 
                     <div class="resource-inner">
                       <div class="resource-type">
@@ -242,20 +243,60 @@ get_header(); ?>
   $(document).ready(function(){
     $('#sidebar').css('position', 'fixed');
 
+    var first = true;
+
     $('#resources').mixItUp({
       load: {
-        filter: '.all'
+        filter: ''
+      },
+      animation: {
+        enable: false
       },
       controls: {
         toggleFilterButtons: true
+      },
+      callbacks: {
+        onMixEnd: function(state){
+
+        }
       }
+    });
+
+    $('.reset-filter').click(function() {
+      $('.resource').addClass('show');
+      $('.filter-checkbox').removeClass('active');
+      active = [];
+      $('.search-items').html("");
+      first = true;
+      $('#resources').mixItUp('destroy', true);
+      $('#resources').mixItUp({
+        load: {
+          filter: ''
+        },
+        animation: {
+          enable: false
+        },
+        controls: {
+          toggleFilterButtons: true
+        },
+        callbacks: {
+          onMixEnd: function(state){
+
+          }
+        }
+      });
     });
 
     var active = [];
     $('.filter-checkbox').click(function() {
 
-      var item = $(this).next("span").html();
+      if (first == true) {
+        $('.resource').removeClass('show');
+        first = false;
+      }
 
+
+      var item = $(this).next("span").html();
       if(jQuery.inArray(item, active) == -1 ) {
         active.push(item);
         $('.search-items').html(active.join(", "));
@@ -265,25 +306,6 @@ get_header(); ?>
       }
 
     });
-
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
-
-    jQuery(window).resize(function() {
-      var divWidth = jQuery('.content-fourth').width();
-      jQuery('.content-fourth').height(divWidth);
-    });
-
-    // .each(function() {
-    //   active.push($(this).attr('data-filter'));
-    // });
-
-    // var filtered = active.join(", ");
-    // if(filtered !== '')
-    //   $('.filtered-list').html(filtered);
-    // else{
-    //   $('.filtered-list').html('All');
-    // }
 
 
   });
