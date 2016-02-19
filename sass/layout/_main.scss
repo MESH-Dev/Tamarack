@@ -900,3 +900,20 @@ blockquote {
   font-family: $font-family--secondary;
   font-size: 14px;
 }
+
+.trail-third {
+  border-top: 1px solid black;
+  width: 33.333%;
+  float: left;
+  position: relative;
+
+  @include mq($tablet-width, "max-width") {
+    width: 100%;
+  }
+}
+
+.trail-description {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}

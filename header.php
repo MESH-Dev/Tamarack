@@ -296,7 +296,7 @@
 						<?php echo get_field('masthead_image_citation'); ?>
 					</div>
 				<?php } ?>
-			<?php if (!is_page_template('templates/text.php') and !(is_page_template('templates/register.php')) and !(is_page('Creative Network')) and (get_post_type() != 'directorylisting') and !(is_page('Made in West Virginia')) and (get_post_type() != 'collection') and (get_post_type() != "marketplacelisting") ) { ?>
+			<?php if (!is_page_template('templates/text.php') and !(is_page_template('templates/register.php')) and !(is_page('Creative Network')) and (get_post_type() != 'directorylisting') and !(is_page('Made in West Virginia')) and (get_post_type() != 'collection') and (get_post_type() != "marketplacelisting") and (get_post_type() != 'trail') ) { ?>
 				<div class="tagline">
 					<?php if (get_field('tagline_url', get_page_by_title('frontpage')->ID)) { ?><a href="<?php echo get_field('tagline_url', get_page_by_title('frontpage')->ID) ?>"> <?php } ?>
 						<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>

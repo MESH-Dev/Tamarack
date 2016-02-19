@@ -2013,6 +2013,27 @@ blockquote .quote-citation:before {
   font-size: 14px;
 }
 
+/* line 904, sass/layout/_main.scss */
+.trail-third {
+  border-top: 1px solid black;
+  width: 33.333%;
+  float: left;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  /* line 904, sass/layout/_main.scss */
+  .trail-third {
+    width: 100%;
+  }
+}
+
+/* line 915, sass/layout/_main.scss */
+.trail-description {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
