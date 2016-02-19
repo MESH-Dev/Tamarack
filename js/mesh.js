@@ -91,6 +91,16 @@ jQuery(document).ready(function($){
     $(".filter-finance").show();
   });
 
+  $(".filter-collections-button").click(function() {
+    $('.filter-box').hide();
+    $(".filter-collections").show();
+  });
+
+  $(".filter-products-button").click(function() {
+    $('.filter-box').hide();
+    $(".filter-products").show();
+  });
+
   $(".x").click(function() {
     $('.filter-box').hide();
   });
