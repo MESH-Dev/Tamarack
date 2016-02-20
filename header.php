@@ -57,7 +57,7 @@
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
 			<div class="container">
 
-				<?php if (!is_page(array('Creative Network Profile', 'West Virginia Made Profile', 'Trail Profile', 'Register'))) { ?>
+				<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
 
 				<div class="row">
 					<div class="utilities-nav">
