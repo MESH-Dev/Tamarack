@@ -212,7 +212,7 @@ get_header(); ?>
                   <hr/>
 
                   <div class="directorylisting-description">
-                    <p><?php the_content(); ?></p>
+                    <p><?php the_excerpt(); ?></p>
                   </div>
                 </div>
               </div>
