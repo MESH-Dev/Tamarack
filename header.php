@@ -50,9 +50,11 @@
 		<?php
 		$image = get_field('masthead_image');
 
-		if( !empty($image) ):
+		if( !empty($image) ) {
 			$thumb = $image['sizes']['background-fullscreen'];
-		endif; ?>
+		} else {
+			$thumb = "http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png";
+		} ?>
 
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
 			<div class="container">
