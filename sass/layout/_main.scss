@@ -978,3 +978,35 @@ blockquote {
   font-size: 15px;
   margin-bottom: 15px;
 }
+
+.collection-inner {
+  background-color: rgba(255, 255, 255, 0.25);
+  display: table;
+}
+
+.collection-header {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 1000;
+  position: relative;
+}
+
+#collections {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.resource-icon {
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.resource-type {
+  width: 30px;
+  position: relative;
+  display: block;
+}

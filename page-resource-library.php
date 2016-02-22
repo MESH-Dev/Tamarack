@@ -48,18 +48,22 @@ get_header(); ?>
 
     <div class="filter-row">
       <div class="filter-quarter filter-business-button filter-button">
+        <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/business.png" /></span>
         Business
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
       <div class="filter-quarter filter-marketing-and-pr-button filter-button">
+        <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/marketing.png" /></span>
         Marketing & PR
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
       <div class="filter-quarter filter-legal-button filter-button">
+        <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/legal.png" /></span>
         Legal
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
       <div class="filter-quarter filter-finance-button filter-button">
+        <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/finance.png" /></span>
         Finance
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
@@ -156,37 +160,41 @@ get_header(); ?>
               while ( have_rows('resource') ) : the_row();
               ?>
 
+
                 <?php
 
-                $rand = rand(1, 4);
-                if ($rand == 1) {
-                  $color = "red";
-                }
-                elseif($rand == 2) {
-                  $color = "purple";
-                }
-                elseif($rand == 3) {
-                  $color = "blue";
-                }
-                elseif($rand == 4) {
-                  $color = "dark-gray";
-                }
-                else {
+                  $randomer = rand(1, 4);
 
-                }
+                  if(get_sub_field('resource_type') == 'Business') {
+                    $n = get_template_directory_uri() . "/img/business.png";
+                    $color = "blue";
+                    $arrow = "blue-arrow.png";
+                  }
+                  elseif(get_sub_field('resource_type') == 'Finance') {
+                    $n = get_template_directory_uri() . "/img/finance.png";
+                    $color = "purple";
+                    $arrow = "purple-arrow.png";
+                  }
+                  elseif(get_sub_field('resource_type') == 'Legal') {
+                    $n = get_template_directory_uri() . "/img/legal.png";
+                    $color = "red";
+                    $arrow = "red-arrow.png";
+                  }
+                  elseif(get_sub_field('resource_type') == 'Marketing and PR') {
+                    $n = get_template_directory_uri() . "/img/marketing.png";
+                    $color = "dark-gray";
+                    $arrow = "black-arrow.png";
+                  }
+                  else {
 
-                $randomer = rand(1, 4);
-
-
+                  }
                 ?>
 
                   <div class="content-fourth resource show animated fadeIn <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
 
                     <div class="resource-inner">
                       <div class="resource-type">
-                        <?php
-                          echo get_sub_field('resource_type');
-                        ?>
+                        <?php echo '<img src="' . $n . '" />'; ?>
                       </div>
                       <div class="resource-title">
                         <?php
@@ -202,20 +210,7 @@ get_header(); ?>
                         <a href="<?php echo get_sub_field('url'); ?>">
                           <?php echo get_sub_field('link_text'); ?>
                           <span class="resource-link-image">
-                            <?php
-                              if ($rand == 1) {
-                                $arrow = "red-arrow.png";
-                              }
-                              elseif($rand == 2) {
-                                $arrow = "purple-arrow.png";
-                              }
-                              elseif($rand == 3) {
-                                $arrow = "blue-arrow.png";
-                              }
-                              elseif($rand == 4) {
-                                $arrow = "black-arrow.png";
-                              }
-                            ?>
+                          
                             <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $arrow; ?>" />
                           </span>
                         </a>
