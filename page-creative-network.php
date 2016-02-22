@@ -294,8 +294,9 @@ get_header(); ?>
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
-
     });
+
+
 
 
   });
