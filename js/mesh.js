@@ -105,12 +105,12 @@ jQuery(document).ready(function($){
     $('.filter-box').hide();
   });
 
-  var divWidth = jQuery('.content-fourth').width();
-  jQuery('.content-fourth').height(divWidth);
-
-  jQuery(window).resize(function() {
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
-  });
+  // var divWidth = jQuery('.content-fourth').width();
+  // jQuery('.content-fourth').height(divWidth);
+  //
+  // jQuery(window).resize(function() {
+  //   var divWidth = jQuery('.content-fourth').width();
+  //   jQuery('.content-fourth').height(divWidth);
+  // });
 
 });

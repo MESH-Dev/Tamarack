@@ -451,32 +451,48 @@ blockquote {
 
     &.filter-business-button, &.filter-product-button {
         background: #f2f2f2;
+        background-image: url(img/FreshSnow.png);
+        background-repeat: repeat;
     }
     &.filter-marketing-and-pr-button, &.filter-skills-button {
         background: #d6d3cf;
+        background-image: url(img/Sandpaper.png);
+        background-repeat: repeat;
     }
     &.filter-legal-button, &.filter-location-button {
         background: #aaaaaa;
+        background-image: url(img/DarkSnow.png);
+        background-repeat: repeat;
     }
     &.filter-finance-button {
         background: #e0e2dc;
+        background-image: url(img/GreenPaper.png);
+        background-repeat: repeat;
     }
 }
 
 .filter-business, .filter-product {
   background: #f2f2f2;
+  background-image: url(img/FreshSnow.png);
+  background-repeat: repeat;
 }
 
 .filter-marketing-and-pr, .filter-skills {
   background: #d6d3cf;
+  background-image: url(img/Sandpaper.png);
+  background-repeat: repeat;
 }
 
 .filter-legal, .filter-location {
   background: #aaaaaa;
+  background-image: url(img/DarkSnow.png);
+  background-repeat: repeat;
 }
 
 .filter-finance {
   background: #e0e2dc;
+  background-image: url(img/GreenPaper.png);
+  background-repeat: repeat;
 }
 
 .down-arrow {
@@ -615,10 +631,6 @@ blockquote {
   color: #3f4143;
 }
 
-.directorylisting-inner {
-  padding: 25px;
-}
-
 .directorylisting-header {
   &:hover {
     img {
@@ -666,10 +678,21 @@ blockquote {
 .directorylisting-inner {
   background: #d6d3cf;
   margin: 10px;
+  padding: 25px;
+  position: relative;
+
+  hr {
+    margin: 45px 0;
+    background: black;
+    border-top: 1px solid black;
+    border-bottom: 0;
+  }
 }
 
 #directorylistings .mix {
   display: none;
+  position: relative;
+  float: left;
 }
 
 #directorylistings {
@@ -916,4 +939,30 @@ blockquote {
   float: left;
   width: 100%;
   margin-top: 50px;
+}
+
+.background-1 {
+  background-image: url(img/FreshSnow.png);
+  background-repeat: repeat;
+}
+.background-2 {
+  background-image: url(img/DarkSnow.png);
+  background-repeat: repeat;
+}
+.background-3 {
+  background-image: url(img/GreenPaper.png);
+  background-repeat: repeat;
+}
+.background-4 {
+  background-image: url(img/Sandpaper.png);
+  background-repeat: repeat;
+}
+
+.directory-sidebar-image {
+  padding: 25px;
+  margin-bottom: 20px;
+  
+  img {
+    border-radius: 50%;
+  }
 }

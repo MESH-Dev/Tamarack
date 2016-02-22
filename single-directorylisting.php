@@ -9,23 +9,47 @@
       <div class="three columns">
 
         <div class="directory-sidebar">
-          <div class="directory-sidebar-image">
-            <img src="" />
+          <div class="directory-sidebar-image background-3">
+            <?php
+              $image = get_field('artist_image');
+              $thumb = $image['sizes']['directorylisting'];
+            ?>
+            <img src="<?php echo $thumb; ?>" />
           </div>
           <div class="directory-sidebar-text">
-            <p>Business Name here</p>
-            <p>medium, multiple mediums</p>
-            <p>25 Normal St. Belvedere, WV 12345-1234</p>
-            <p>555-555-5555</p>
-            <p>test@test.com</p>
-            <p>Master of Studio Art</p>
-            <p><a href="">My Website</a></p>
+            <div class="directorylisting-business-name">
+              <?php echo get_field('business_name'); ?>
+            </div>
+            <div class="directorylisting-skills">
+              <?php echo get_field('primary_creative_practice'); ?>
+            </div>
+            <div class="directorylisting-address">
+              <?php echo get_field('street_address'); ?><br/>
+              <?php echo get_field('city_state_zip'); ?>
+            </div>
+            <div class="directorylisting-phone">
+              <?php echo get_field('phone'); ?>
+            </div>
+            <div class="directorylisting-website">
+              <a href="<?php echo get_field('website'); ?>">My Website</a>
+            </div>
+            <div class="directorylisting-degree">
+              <?php echo get_field('degree_or_certification'); ?>
+            </div>
           </div>
           <div class="directory-sidebar-social">
-            Facebook, Twitter, Instagram
+            <?php if(get_field('facebook')) { ?>
+              <a href="<?php echo get_field('facebook'); ?>"><i class="fa fa-facebook"></i></a>
+            <?php } ?>
+            <?php if(get_field('twitter')) { ?>
+              <a href="<?php echo get_field('twitter'); ?>"><i class="fa fa-twitter"></i></a>
+            <?php } ?>
+            <?php if(get_field('instagram')) { ?>
+              <a href="<?php echo get_field('instagram'); ?>"><i class="fa fa-instagram"></i></a>
+            <?php } ?>
           </div>
           <div class="directory-sidebar-categories">
-            <p>Categories, Tags, Categories, Tags, Categories, Tags, Categories, Tags</p>
+            <?php foreach(get_field("creative_skills") as $c) { echo $c; if ($c == end(get_field("creative_skills"))) {} else { echo ", "; } } ?>
           </div>
         </div>
 

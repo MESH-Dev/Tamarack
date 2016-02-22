@@ -171,8 +171,10 @@ get_header(); ?>
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
+              <?php $rand = rand(1, 4); ?>
+
               <div class="content-fourth directorylisting show mix animated fadeIn <?php echo get_field('county'); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
-                <div class="directorylisting-inner">
+                <div class="directorylisting-inner background-<?php echo $rand; ?>">
 
                   <div class="directorylisting-header">
 
@@ -196,21 +198,21 @@ get_header(); ?>
                       <?php endif; ?>
 
                       <div class="directorylisting-title">
-                        <a href="<?php echo get_permalink(); ?>">Testing Testerson</a>
+                        <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
                       </div>
 
                     </div>
                   <div class="directorylisting-business-name">
-                    Business Name
+                    <?php echo get_field('business_name'); ?>
                   </div>
                   <div class="directorylisting-skills">
-                    Business, operations, pottery, driving
+                    <?php echo get_field('primary_creative_practice'); ?>
                   </div>
 
                   <hr/>
 
                   <div class="directorylisting-description">
-                    <p>Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Phasellus viverra nulla ut metus varius laoreet. In ac felis quis tortor malesuada pretium. Donec posuere vulputate arcu. Praesent egestas tristique nibh.</p>
+                    <p><?php the_content(); ?></p>
                   </div>
                 </div>
               </div>
