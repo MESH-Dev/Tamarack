@@ -30,11 +30,11 @@
             <div class="directorylisting-phone">
               <?php echo get_field('phone'); ?>
             </div>
-            <div class="directorylisting-website">
-              <a href="<?php echo get_field('website'); ?>">My Website</a>
-            </div>
             <div class="directorylisting-degree">
               <?php echo get_field('degree_or_certification'); ?>
+            </div>
+            <div class="directorylisting-website">
+              <a href="<?php echo get_field('website'); ?>">My Website</a>
             </div>
           </div>
           <div class="directory-sidebar-social">
@@ -59,11 +59,11 @@
 
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-            <h2>Test Testerson</h2>
+            <h2><?php echo get_the_title(); ?></h2>
 
-            <p>Praesent adipiscing. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Sed aliquam ultrices mauris. Fusce vel dui. Praesent adipiscing. Phasellus accumsan cursus velit. Aenean ut eros et nisl sagittis vestibulum. Aenean vulputate eleifend tellus. Praesent blandit laoreet nibh. Phasellus tempus. Praesent adipiscing. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Sed aliquam ultrices mauris. Fusce vel dui. Praesent adipiscing. Phasellus accumsan cursus velit. Aenean ut eros et nisl sagittis vestibulum. Aenean vulputate eleifend tellus. Praesent blandit laoreet nibh. Phasellus tempus.</p>
+            <?php the_content(); ?>
 
-            <p>Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Fusce fermentum. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent adipiscing. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Sed aliquam ultrices mauris. Fusce vel dui. Praesent adipiscing. Phasellus accumsan cursus velit. Aenean ut eros et nisl sagittis vestibulum. Aenean vulputate eleifend tellus. Praesent blandit laoreet nibh. Phasellus tempus.</p>
+            <p><?php echo get_field('biography'); ?></p>
 
         <?php endwhile; ?>
 
