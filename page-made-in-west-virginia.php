@@ -97,88 +97,58 @@ get_header(); ?>
         <div id="resources">
 
           <?php
+            $args = array( 'post_type' => 'marketplacelisting', 'posts_per_page' => 10 );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-          // check if the repeater field has rows of data
-          if( have_rows('resource') ):
+              <?php $rand = rand(1, 4); ?>
 
-           	// loop through the rows of data
-              while ( have_rows('resource') ) : the_row();
-              ?>
+              <div class="content-fourth directorylisting show mix animated fadeIn <?php echo get_field('county'); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
+                <div class="directorylisting-inner background-<?php echo $rand; ?>">
 
-                <?php
+                  <div class="directorylisting-header">
 
-                $rand = rand(1, 4);
-                if ($rand == 1) {
-                  $color = "red";
-                }
-                elseif($rand == 2) {
-                  $color = "purple";
-                }
-                elseif($rand == 3) {
-                  $color = "blue";
-                }
-                elseif($rand == 4) {
-                  $color = "dark-gray";
-                }
-                else {
+                      <?php
 
-                }
+                        $image = get_field('artist_image');
 
+                        if( !empty($image) ):
 
-                ?>
+                        	// thumbnail
+                        	$size = 'thumbnail';
+                        	$thumb = $image['sizes'][ $size ];
+                        	?>
 
-                  <div class="content-fourth resource show animated fadeIn <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
+                          <a href="<?php echo get_permalink(); ?>">
+                            <div class="directorylisting-picture">
+                          		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
+                            </div>
+                          </a>
 
-                    <div class="resource-inner">
-                      <div class="resource-type">
-                        <?php
-                          echo get_sub_field('resource_type');
-                        ?>
+                      <?php endif; ?>
+
+                      <div class="directorylisting-title">
+                        <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
                       </div>
-                      <div class="resource-title">
-                        <?php
-                          echo get_sub_field('title');
-                        ?>
-                      </div>
-                      <div class="resource-description">
-                        <?php
-                          echo get_sub_field('description');
-                        ?>
-                      </div>
-                      <div class="resource-link">
-                        <a href="<?php echo get_sub_field('url'); ?>">
-                          <?php echo get_sub_field('link_text'); ?>
-                          <span class="resource-link-image">
-                            <?php
-                              if ($rand == 1) {
-                                $arrow = "red-arrow.png";
-                              }
-                              elseif($rand == 2) {
-                                $arrow = "purple-arrow.png";
-                              }
-                              elseif($rand == 3) {
-                                $arrow = "blue-arrow.png";
-                              }
-                              elseif($rand == 4) {
-                                $arrow = "black-arrow.png";
-                              }
-                            ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $arrow; ?>" />
-                          </span>
-                        </a>
-                      </div>
+
                     </div>
+                  <div class="directorylisting-business-name">
+                    <?php echo get_field('business_name'); ?>
+                  </div>
+                  <div class="directorylisting-skills">
+                    <?php echo get_field('primary_creative_practice'); ?>
                   </div>
 
-              <?php
-              endwhile;
+                  <hr/>
 
-          else :
+                  <div class="directorylisting-description">
+                    <p><?php the_excerpt(); ?></p>
+                  </div>
+                </div>
+              </div>
 
-              // no rows found
-
-          endif;
-
+            <?php
+            endwhile; // end of the loop.
           ?>
 
         </div>

@@ -650,6 +650,8 @@ blockquote {
 
   img {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -963,9 +965,12 @@ blockquote {
 .directory-sidebar-image {
   padding: 25px;
   margin-bottom: 20px;
+  text-align: center;
 
   img {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
   }
 }
 
