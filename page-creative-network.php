@@ -185,7 +185,7 @@ get_header(); ?>
                         if( !empty($image) ):
 
                         	// thumbnail
-                        	$size = 'directorylisting';
+                        	$size = 'thumbnail';
                         	$thumb = $image['sizes'][ $size ];
                         	?>
 
