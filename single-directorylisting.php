@@ -21,7 +21,12 @@
               <?php echo get_field('business_name'); ?>
             </div>
             <div class="directorylisting-skills">
-              <?php echo get_field('primary_creative_practice'); ?>
+              <?php
+                $str = get_field('primary_creative_practice');
+                $str = ucfirst(str_replace("-", " ", $str));
+
+              ?>
+              <?php echo $str; ?>
             </div>
             <div class="directorylisting-address">
               <?php echo get_field('street_address'); ?><br/>
