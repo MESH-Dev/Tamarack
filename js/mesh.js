@@ -56,6 +56,8 @@ jQuery(document).ready(function($){
 
   $(".footer-block").matchHeight();
 
+  $('.press-third').matchHeight();
+
   $(".filter-product-button").click(function() {
      $('.filter-box').hide();
      $(".filter-product").show();

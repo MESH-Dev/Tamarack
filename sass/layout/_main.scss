@@ -859,17 +859,21 @@ blockquote {
 
 #marketplace-single {
   margin: 50px 0;
+  p {
+    letter-spacing: 0.05em;
+  }
 
   h2 {
     font-size: 36px;
     font-family: $font-family--primary;
     line-height: 36px;
     margin: 0 0 25px;
+    letter-spacing: 0.05em;
   }
 }
 
 .marketplace-sidebar {
-  margin-left: 20px;
+
 }
 
 .press-third {
@@ -1029,10 +1033,87 @@ blockquote {
 }
 
 .marketplace-button {
-  padding: 25px 65px;
+  padding: 15px 50px;
   font-family: $font-family--secondary;
   font-size: 24px;
   text-transform: uppercase;
   color: #3f4143;
   line-height: 24px;
+  text-align: center;
+  width: 300px;
+  margin-bottom: 40px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.marketplace-section {
+
+  .marketplace-section-title {
+    text-align: center;
+    font-family: $font-family--primary;
+    width: 300px;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+  }
+  .marketplace-section-content {
+
+  }
+
+}
+
+.marketplace-content-half {
+  padding-right: 20px;
+
+  hr {
+    margin: 20px 0;
+    width: 140px;
+  }
+}
+
+.marketplace-content-title {
+  font-family: $font-family--secondary;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.marketplace-content-body {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.marketplace-main {
+  padding-right: 20px;
+}
+
+.marketplace-sidebar-location {
+  margin-bottom: 20px;
+}
+
+.marketplace-sidebar-website {
+  margin-bottom: 20px;
+}
+
+.marketplace-sidebar-social {
+  margin-bottom: 20px;
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.marketplace-sidebar-image {
+  
 }

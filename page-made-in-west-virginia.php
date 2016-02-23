@@ -3,39 +3,45 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
 
-        <div id="marketplace">
+  <div class="filter-row">
+    <div class="filter-half filter-product-button filter-button">
+      Collections
+      <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
+    </div>
+    <div class="filter-half filter-skills-button filter-button">
+      Products
+      <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
+    </div>
+  </div>
+
+  <div id="marketplace">
+
+    <?php
+      $args = array( 'post_type' => 'marketplacelisting', 'posts_per_page' => -1 );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
           <?php
-            $args = array( 'post_type' => 'marketplacelisting', 'posts_per_page' => -1 );
-            $loop = new WP_Query( $args );
-            while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                <?php
+          $image = get_field('product_image_1');
+          $thumb = $image['sizes']['large'];
 
-                $image = get_field('product_image_1');
-                $thumb = $image['sizes']['large'];
-
-                ?>
-
-                  <div class="content-fourth collection">
-                    <div class="collection-inner" style="background-image: url(<?php echo $thumb; ?>); background-size: cover;">
-                      <div class="collection-inner-text">
-                        <h3><?php echo get_the_title(); ?></h3>
-                        <p><a href="<?php echo get_permalink(); ?>">This could link <i class="fa fa-angle-double-right"></i></a></p>
-                      </div>
-                    </div>
-                  </div>
-
-              <?php
-              endwhile;
           ?>
 
-        </div>
+            <div class="content-fourth collection">
+              <div class="collection-inner" style="background-image: url(<?php echo $thumb; ?>); background-size: cover;">
+                <div class="collection-inner-text">
+                  <h3><?php echo get_the_title(); ?></h3>
+                  <p><a href="<?php echo get_permalink(); ?>">This could link <i class="fa fa-angle-double-right"></i></a></p>
+                </div>
+              </div>
+            </div>
 
+        <?php
+        endwhile;
+    ?>
 
-
-    
-
+  </div>
 
 </main><!-- #main -->
 

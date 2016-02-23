@@ -39,58 +39,115 @@ get_header(); ?>
       <div class="container">
         <div class="row">
           <div class="nine columns">
-            <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+            <div class="marketplace-main">
+              <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-                <h2><?php the_title(); ?></h2>
+                  <h2><?php the_title(); ?></h2>
 
-                <?php the_content(); ?>
+                  <?php the_content(); ?>
 
-            <?php endwhile; ?>
+              <?php endwhile; ?>
 
-            <div class="marketplace-button">
-              Shop <?php echo get_field('business_name'); ?>
-            </div>
+              <?php if (get_field('web_address')) { ?>
+                <a href="<?php echo get_field('web_address'); ?>">
+                  <div class="marketplace-button background-1">
+                    Shop <?php echo get_the_title(); ?>
+                  </div>
+                </a>
+              <?php } ?>
 
-            <div class="marketplace-content-half">
-              <div class-"marketplace-content-title">
-              </div>
-              <div class="marketplace-content-body">
-                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
-              </div>
-            </div>
-            <div class="marketplace-content-half">
-              <div class-"marketplace-content-title">
-              </div>
-              <div class="marketplace-content-body">
-                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
-              </div>
-            </div>
-            <div class="marketplace-content-half">
-              <div class-"marketplace-content-title">
-              </div>
-              <div class="marketplace-content-body">
-                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
-              </div>
-            </div>
-            <div class="marketplace-content-half">
-              <div class-"marketplace-content-title">
-              </div>
-              <div class="marketplace-content-body">
-                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
+              <div class="marketplace-section">
+                <div class="marketplace-section-title"><?php echo get_field('section_title'); ?></div>
+                <div class="marketplace-section-content">
+                  <div class="marketplace-content-half">
+                    <div class="marketplace-content-title">
+                      Tell us about your creative process.
+                    </div>
+                    <hr>
+                    <div class="marketplace-content-body">
+                      <?php echo get_field('about_your_creative_process'); ?>
+                    </div>
+                  </div>
+                  <div class="marketplace-content-half">
+                    <div class="marketplace-content-title">
+                      What sets your business or product apart from the pack?
+                    </div>
+                    <hr>
+                    <div class="marketplace-content-body">
+                      <?php echo get_field('sets_your_business_apart'); ?>
+                    </div>
+                  </div>
+                  <div class="marketplace-content-half">
+                    <div class="marketplace-content-title">
+                      What inspires your work?
+                    </div>
+                    <hr>
+                    <div class="marketplace-content-body">
+                      <?php echo get_field('work_inspiration'); ?>
+                    </div>
+                  </div>
+                  <div class="marketplace-content-half">
+                    <div class="marketplace-content-title">
+                      List any honors or awards you've received.
+                    </div>
+                    <hr>
+                    <div class="marketplace-content-body">
+                      <?php echo get_field('honors_or_awards'); ?>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="three columns">
 
             <div class="marketplace-sidebar">
-              <p>25 Normal St. Belvedere, WV 11283-2553</p>
-              <p>555-555-5555<br/><a href="">My Website</a></p>
-              <div class="marketplace-sidebar-social">
-                Twitter, Facebook, Instagram
-              </div>
-              <div class="marketplace-sidebar-image">
-                <?php echo get_field('artist_image'); ?>
-              </div>
+              <?php
+                $author_id = get_the_author_id();
+                $current_id = get_the_id();
+
+                $args = array( 'post_type' => 'directorylisting', 'posts_per_page' => 1, 'author' => $author_id );
+                $loop = new WP_Query( $args );
+                while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                  <div class="marketplace-sidebar-address">
+                    <?php echo get_field('street_address', get_the_id()); ?>
+                  </div>
+                  <div class="marketplace-sidebar-location">
+                    <?php echo get_field('city_state_zip', get_the_id()); ?>
+                  </div>
+                  <div class="marketplace-sidebar-phone">
+                    <?php echo get_field('phone', get_the_id()); ?>
+                  </div>
+                  <div class="marketplace-sidebar-website">
+                    <a href="<?php echo get_field('website', get_the_id()); ?>">My Website</a>
+                  </div>
+                  <div class="marketplace-sidebar-social">
+                    <?php if(get_field('facebook', get_the_id())) { ?>
+                      <a href="<?php echo get_field('facebook'); ?>"><i class="fa fa-facebook"></i></a>
+                    <?php } ?>
+                    <?php if(get_field('twitter', get_the_id())) { ?>
+                      <a href="<?php echo get_field('twitter'); ?>"><i class="fa fa-twitter"></i></a>
+                    <?php } ?>
+                    <?php if(get_field('instagram', get_the_id())) { ?>
+                      <a href="<?php echo get_field('instagram'); ?>"><i class="fa fa-instagram"></i></a>
+                    <?php } ?>
+                  </div>
+
+                  <div class="marketplace-sidebar-image">
+                    <?php
+
+                    $image = get_field('artist_image', get_the_id());
+                    $thumb = $image['sizes']['directorylisting'];
+
+                    ?>
+
+                    <img src="<?php echo $thumb; ?>" />
+                  </div>
+
+                <?php
+                endwhile;
+              ?>
             </div>
 
           </div>
@@ -103,28 +160,28 @@ get_header(); ?>
       <div class="press-third press-1">
         <div class="press-tag">Notable Press</div>
         <div class="press-quote">
-          "Wow, some really notable press quotes can be styled this way."
+          "<?php echo get_field('favorite_quote_1', $current_id); ?>"
         </div>
         <div class="press-cta">
-          <a href="">Read more <i class="fa fa-angle-double-right"></i></a>
+          <a href="<?php echo get_field('link_1', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
         </div>
       </div>
       <div class="press-third press-2">
         <div class="press-tag">Notable Press</div>
         <div class="press-quote">
-          "Wow, some really notable press quotes can be styled this way."
+          "<?php echo get_field('favorite_quote_2', $current_id); ?>"
         </div>
         <div class="press-cta">
-          <a href="">Read more <i class="fa fa-angle-double-right"></i></a>
+          <a href="<?php echo get_field('link_2', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
         </div>
       </div>
       <div class="press-third press-3">
         <div class="press-tag">Notable Press</div>
         <div class="press-quote">
-          "Wow, some really notable press quotes can be styled this way."
+          "<?php echo get_field('favorite_quote_3', $current_id); ?>"
         </div>
         <div class="press-cta">
-          <a href="">Read more <i class="fa fa-angle-double-right"></i></a>
+          <a href="<?php echo get_field('link_3', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
         </div>
       </div>
     </div>

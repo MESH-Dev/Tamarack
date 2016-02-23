@@ -39,6 +39,7 @@
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mixitup.js"></script>
 
+
 	<?php wp_head(); ?>
 
 </head>
