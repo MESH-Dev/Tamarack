@@ -45,10 +45,6 @@ input[type="tel"] {
   width: 100% !important;
 }
 
-.frm_ajax_loading {
-  display: none;
-}
-
 .frm_error {
   margin-bottom: 15px;
 }
@@ -85,7 +81,7 @@ input[type="tel"] {
 }
 
 .frm_error {
-  color: $crail;
+  color: red;
 }
 
 .frm_message {

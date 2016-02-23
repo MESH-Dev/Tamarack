@@ -2248,61 +2248,56 @@ input[type="tel"] {
 }
 
 /* line 48, sass/layout/_input.scss */
-.frm_ajax_loading {
-  display: none;
-}
-
-/* line 52, sass/layout/_input.scss */
 .frm_error {
   margin-bottom: 15px;
 }
 
-/* line 56, sass/layout/_input.scss */
+/* line 52, sass/layout/_input.scss */
 .footer-citation {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
-/* line 61, sass/layout/_input.scss */
+/* line 57, sass/layout/_input.scss */
 .footer-citation a {
   color: #646464;
   font-size: 12px;
   font-family: "LeituraDisplay-Roman", serif;
 }
 
-/* line 68, sass/layout/_input.scss */
+/* line 64, sass/layout/_input.scss */
 .input-form {
   margin-top: 97px;
 }
 
-/* line 73, sass/layout/_input.scss */
+/* line 69, sass/layout/_input.scss */
 .multi-select select {
   height: 98px;
 }
 
-/* line 78, sass/layout/_input.scss */
+/* line 74, sass/layout/_input.scss */
 .frm_description {
   font-size: 14px;
   margin: 10px 0;
 }
 
-/* line 83, sass/layout/_input.scss */
+/* line 79, sass/layout/_input.scss */
 .frm_top_container {
   margin-bottom: 25px;
 }
 
-/* line 87, sass/layout/_input.scss */
+/* line 83, sass/layout/_input.scss */
 .frm_error {
-  color: #c25543;
+  color: red;
 }
 
-/* line 91, sass/layout/_input.scss */
+/* line 87, sass/layout/_input.scss */
 .frm_message {
   padding: 25px;
   border: 1px solid #3f4042;
 }
 
-/* line 97, sass/layout/_input.scss */
+/* line 93, sass/layout/_input.scss */
 #message p:first-of-type {
   font-family: "LeituraDisplay-Roman", serif;
   color: #b33ed9;
@@ -2311,26 +2306,26 @@ input[type="tel"] {
   margin-bottom: 20px;
 }
 
-/* line 106, sass/layout/_input.scss */
+/* line 102, sass/layout/_input.scss */
 .frm_checkbox {
   display: inline-block;
 }
 
-/* line 114, sass/layout/_input.scss */
+/* line 110, sass/layout/_input.scss */
 #frm_field_152_container .frm_checkbox:last-of-type {
   display: block;
 }
-/* line 117, sass/layout/_input.scss */
+/* line 113, sass/layout/_input.scss */
 #frm_field_152_container .frm_checkbox:last-of-type label {
   display: inline-block;
 }
-/* line 121, sass/layout/_input.scss */
+/* line 117, sass/layout/_input.scss */
 #frm_field_152_container .frm_checkbox:last-of-type input {
   width: inherit;
   display: inline-block;
 }
 
-/* line 130, sass/layout/_input.scss */
+/* line 126, sass/layout/_input.scss */
 .frm_forms fieldset {
   padding: 0;
   margin: 0;
