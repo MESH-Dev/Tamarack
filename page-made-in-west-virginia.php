@@ -3,108 +3,38 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
 
-    <div class="filter-row">
-      <div class="filter-half filter-business-button filter-button">
-        View All Collections
-        <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
-      </div>
-      <div class="filter-half filter-marketing-and-pr-button filter-button">
-        View All Products
-        <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
-      </div>
-    </div>
-
-    <div class="filter-row">
-      <div class="twelve columns">
-        <div class="search">
-          <div class="search-title">
-            Current Search
-          </div>
-          <div class="search-items">
-
-          </div>
-          <div class="reset-filter filter">Reset filter <i class="fa fa-angle-double-right"></i></div>
-          <!-- <div class="search-bar">
-            <input type="text" class="search" placeholder="Search by..." />
-            <div class="search-icon"><i class="fa fa-search"></i></div>
-          </div> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="filter-row">
-      <div class="twelve columns">
-        <div id="collections">
+        <div id="marketplace">
 
           <?php
-            $args = array( 'post_type' => 'collection', 'posts_per_page' => -1 );
+            $args = array( 'post_type' => 'marketplacelisting', 'posts_per_page' => -1 );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-              <?php $rand = rand(1, 4); ?>
+                <?php
+
+                $image = get_field('product_image_1');
+                $thumb = $image['sizes']['large'];
+
+                ?>
+
+                  <div class="content-fourth collection">
+                    <div class="collection-inner" style="background-image: url(<?php echo $thumb; ?>); background-size: cover;">
+                      <div class="collection-inner-text">
+                        <h3><?php echo get_the_title(); ?></h3>
+                        <p><a href="<?php echo get_permalink(); ?>">This could link <i class="fa fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
 
               <?php
-
-              $c_i = get_field('collection_image');
-              $c_i = $c_i['sizes']['large'];
-
-              ?>
-
-              <div class="content-half collection show mix animated fadeIn" style="background-image: url(<?php echo $c_i; ?>)">
-                <div class="collection-inner">
-
-                  <div class="collection-header">
-
-                      <?php
-
-                        $image = get_field('artist_image');
-
-                        if( !empty($image) ):
-
-                        	// thumbnail
-                        	$size = 'thumbnail';
-                        	$thumb = $image['sizes'][ $size ];
-                        	?>
-
-                          <a href="<?php echo get_permalink(); ?>">
-                            <div class="directorylisting-picture">
-                          		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
-                            </div>
-                          </a>
-
-                      <?php endif; ?>
-
-                      <div class="directorylisting-title">
-                        <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-                      </div>
-
-                    </div>
-                  <div class="directorylisting-business-name">
-                    <?php echo get_field('business_name'); ?>
-                  </div>
-                  <div class="directorylisting-skills">
-                    <?php
-                      $str = get_field('primary_creative_practice');
-                      $str = ucfirst(str_replace("-", " ", $str));
-                    ?>
-                    <?php echo $str; ?>
-                  </div>
-
-                  <hr/>
-
-                  <div class="directorylisting-description">
-                    <p><?php the_excerpt(); ?></p>
-                  </div>
-                </div>
-              </div>
-
-            <?php
-            endwhile; // end of the loop.
+              endwhile;
           ?>
 
         </div>
-      </div>
-    </div>
+
+
+
+    
 
 
 </main><!-- #main -->
@@ -175,6 +105,14 @@ get_header(); ?>
         $('.search-items').html(active.join(", "));
       }
 
+    });
+
+    var divWidth = jQuery('.content-fourth').width();
+    jQuery('.content-fourth').height(divWidth);
+
+    jQuery(window).resize(function() {
+      var divWidth = jQuery('.content-fourth').width();
+      jQuery('.content-fourth').height(divWidth);
     });
 
 
