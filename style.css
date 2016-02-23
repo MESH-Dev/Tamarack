@@ -2049,10 +2049,10 @@ blockquote .quote-citation:before {
 
 /* line 944, sass/layout/_main.scss */
 .trail-third {
-  border-top: 1px solid black;
   width: 33.333%;
   float: left;
   position: relative;
+  padding: 10px;
 }
 @media screen and (max-width: 768px) {
   /* line 944, sass/layout/_main.scss */
@@ -2062,10 +2062,10 @@ blockquote .quote-citation:before {
 }
 
 /* line 955, sass/layout/_main.scss */
-.trail-description {
+.trail-half {
   float: left;
-  width: 100%;
-  margin-top: 50px;
+  position: relative;
+  width: 50%;
 }
 
 /* line 961, sass/layout/_main.scss */
@@ -2244,6 +2244,191 @@ blockquote .quote-citation:before {
 /* line 1116, sass/layout/_main.scss */
 .marketplace-sidebar-social i {
   margin-right: 5px;
+}
+
+/* line 1125, sass/layout/_main.scss */
+.trail-full {
+  margin-top: 75px;
+}
+
+/* line 1129, sass/layout/_main.scss */
+.trail-title {
+  float: left;
+  width: 100%;
+}
+/* line 1133, sass/layout/_main.scss */
+.trail-title h2 {
+  margin: 0 0 50px;
+}
+
+/* line 1138, sass/layout/_main.scss */
+.trail-description {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* line 1144, sass/layout/_main.scss */
+.trail-social {
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 50px;
+}
+
+/* line 1152, sass/layout/_main.scss */
+.trailstop-inner {
+  border-top: 1px solid black;
+  position: relative;
+}
+/* line 1156, sass/layout/_main.scss */
+.trailstop-inner h3 {
+  margin: 0;
+  padding-top: 10px;
+  line-height: 36px;
+}
+
+/* line 1163, sass/layout/_main.scss */
+.trailstop-number {
+  right: 10px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid #3f4042;
+  text-align: center;
+  top: 5px;
+  line-height: 23px;
+}
+
+/* line 1175, sass/layout/_main.scss */
+.trailstop-inner-1 {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+/* line 1180, sass/layout/_main.scss */
+.trailstop-inner-1 hr {
+  width: 400px;
+  position: relative;
+  float: left;
+}
+
+/* line 1187, sass/layout/_main.scss */
+.trailstop-inner-2 {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+/* line 1193, sass/layout/_main.scss */
+.trailstop-inner-2 hr {
+  width: 250px;
+  position: relative;
+  float: left;
+}
+
+/* line 1200, sass/layout/_main.scss */
+.trailstop-address, .trailstop-hours, .trailstop-city {
+  float: left;
+  width: 100%;
+}
+
+/* line 1205, sass/layout/_main.scss */
+.trailstop-content {
+  margin-bottom: 15px;
+}
+
+/* line 1209, sass/layout/_main.scss */
+.trailstop-type {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* line 1215, sass/layout/_main.scss */
+.trail-red {
+  color: #c25543;
+}
+/* line 1218, sass/layout/_main.scss */
+.trail-red .trailstop-inner {
+  border-top: 1px solid #c25543;
+}
+/* line 1222, sass/layout/_main.scss */
+.trail-red .trailstop-number {
+  border: 3px solid #c25543;
+}
+/* line 1226, sass/layout/_main.scss */
+.trail-red hr {
+  border-top: 1px solid #c25543;
+}
+/* line 1230, sass/layout/_main.scss */
+.trail-red a {
+  color: #c25543;
+}
+
+/* line 1235, sass/layout/_main.scss */
+.trail-purple {
+  color: #b33ed9;
+}
+/* line 1238, sass/layout/_main.scss */
+.trail-purple .trailstop-inner {
+  border-top: 1px solid #b33ed9;
+}
+/* line 1242, sass/layout/_main.scss */
+.trail-purple .trailstop-number {
+  border: 3px solid #b33ed9;
+}
+/* line 1246, sass/layout/_main.scss */
+.trail-purple hr {
+  border-top: 1px solid #b33ed9;
+}
+/* line 1251, sass/layout/_main.scss */
+.trail-purple a {
+  color: #b33ed9;
+}
+
+/* line 1256, sass/layout/_main.scss */
+.trail-blue {
+  color: #1b648d;
+}
+/* line 1259, sass/layout/_main.scss */
+.trail-blue .trailstop-inner {
+  border-top: 1px solid #1b648d;
+}
+/* line 1263, sass/layout/_main.scss */
+.trail-blue .trailstop-number {
+  border: 3px solid #1b648d;
+}
+/* line 1267, sass/layout/_main.scss */
+.trail-blue hr {
+  border-top: 1px solid #1b648d;
+}
+/* line 1272, sass/layout/_main.scss */
+.trail-blue a {
+  color: #1b648d;
+}
+
+/* line 1277, sass/layout/_main.scss */
+.trail-dark-gray {
+  color: #3f4042;
+}
+/* line 1280, sass/layout/_main.scss */
+.trail-dark-gray .trailstop-inner {
+  border-top: 1px solid #3f4042;
+}
+/* line 1284, sass/layout/_main.scss */
+.trail-dark-gray .trailstop-number {
+  border: 3px solid #3f4042;
+}
+/* line 1288, sass/layout/_main.scss */
+.trail-dark-gray hr {
+  border-top: 1px solid #3f4042;
+}
+/* line 1293, sass/layout/_main.scss */
+.trail-dark-gray a {
+  color: #3f4042;
 }
 
 /* line 1, sass/layout/_header.scss */
