@@ -2339,6 +2339,7 @@ input[type="tel"] {
 /* line 135, sass/layout/_input.scss */
 .frm_loading {
   background: none !important;
+  color: red;
 }
 
 /* Frame */
