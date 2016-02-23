@@ -142,4 +142,8 @@ jQuery(document).ready(function($){
      }
    });
 
+   $('.frm_submit').click(function() {
+     $('.frm_ajax_loading').show();
+   });
+
 });
