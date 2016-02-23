@@ -1874,22 +1874,27 @@ blockquote .quote-citation:before {
 }
 
 /* line 782, sass/layout/_main.scss */
+.directory-sidebar-social {
+  margin-bottom: 20px;
+}
+
+/* line 786, sass/layout/_main.scss */
 .collection-single {
   margin-top: 50px;
 }
 
-/* line 786, sass/layout/_main.scss */
+/* line 790, sass/layout/_main.scss */
 #collections {
   margin-top: 30px;
 }
 
-/* line 790, sass/layout/_main.scss */
+/* line 794, sass/layout/_main.scss */
 .collection {
   padding: 20px;
   background-color: #f5f5f5;
 }
 
-/* line 795, sass/layout/_main.scss */
+/* line 799, sass/layout/_main.scss */
 .collection-inner {
   float: left;
   height: 100%;
@@ -1900,7 +1905,7 @@ blockquote .quote-citation:before {
   display: table;
 }
 
-/* line 805, sass/layout/_main.scss */
+/* line 809, sass/layout/_main.scss */
 .collection-inner:after {
   position: absolute;
   content: '';
@@ -1912,7 +1917,7 @@ blockquote .quote-citation:before {
   z-index: 5;
 }
 
-/* line 816, sass/layout/_main.scss */
+/* line 820, sass/layout/_main.scss */
 .collection-inner-text {
   position: relative;
   z-index: 10;
@@ -1920,7 +1925,7 @@ blockquote .quote-citation:before {
   vertical-align: middle;
   display: table-cell;
 }
-/* line 823, sass/layout/_main.scss */
+/* line 827, sass/layout/_main.scss */
 .collection-inner-text h3 {
   margin-bottom: 40px;
   font-family: "LeituraDisplay-Roman", serif;
@@ -1928,7 +1933,7 @@ blockquote .quote-citation:before {
   font-size: 30px;
   letter-spacing: 0.05em;
 }
-/* line 831, sass/layout/_main.scss */
+/* line 835, sass/layout/_main.scss */
 .collection-inner-text a {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -1936,7 +1941,7 @@ blockquote .quote-citation:before {
   color: #3f4143;
 }
 
-/* line 841, sass/layout/_main.scss */
+/* line 845, sass/layout/_main.scss */
 .collection-intro span {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -1945,7 +1950,7 @@ blockquote .quote-citation:before {
   font-style: normal;
   letter-spacing: 0;
 }
-/* line 850, sass/layout/_main.scss */
+/* line 854, sass/layout/_main.scss */
 .collection-intro p {
   font-size: 30px;
   line-height: 45px;
@@ -1955,15 +1960,15 @@ blockquote .quote-citation:before {
   font-style: italic;
 }
 
-/* line 860, sass/layout/_main.scss */
+/* line 864, sass/layout/_main.scss */
 #marketplace-single {
   margin: 50px 0;
 }
-/* line 862, sass/layout/_main.scss */
+/* line 866, sass/layout/_main.scss */
 #marketplace-single p {
   letter-spacing: 0.05em;
 }
-/* line 866, sass/layout/_main.scss */
+/* line 870, sass/layout/_main.scss */
 #marketplace-single h2 {
   font-size: 36px;
   font-family: "LeituraDisplay-Roman", serif;
@@ -1972,7 +1977,7 @@ blockquote .quote-citation:before {
   letter-spacing: 0.05em;
 }
 
-/* line 879, sass/layout/_main.scss */
+/* line 883, sass/layout/_main.scss */
 .press-third {
   width: 33.333%;
   float: left;
@@ -1982,59 +1987,59 @@ blockquote .quote-citation:before {
   padding: 25px 40px;
 }
 @media screen and (max-width: 768px) {
-  /* line 879, sass/layout/_main.scss */
+  /* line 883, sass/layout/_main.scss */
   .press-third {
     width: 100%;
   }
 }
 
-/* line 892, sass/layout/_main.scss */
+/* line 896, sass/layout/_main.scss */
 .press-1 {
   background-image: url(img/plaster.png);
   background-size: cover;
   color: #b33ed9;
 }
-/* line 897, sass/layout/_main.scss */
+/* line 901, sass/layout/_main.scss */
 .press-1 a {
   color: #b33ed9;
 }
 
-/* line 902, sass/layout/_main.scss */
+/* line 906, sass/layout/_main.scss */
 .press-2 {
   background-image: url(img/cup.png);
   background-size: cover;
   color: #3f4143;
 }
-/* line 907, sass/layout/_main.scss */
+/* line 911, sass/layout/_main.scss */
 .press-2 a {
   color: #3f4143;
 }
 
-/* line 912, sass/layout/_main.scss */
+/* line 916, sass/layout/_main.scss */
 .press-3 {
   background-image: url(img/cherry.png);
   background-size: cover;
   color: white;
 }
-/* line 917, sass/layout/_main.scss */
+/* line 921, sass/layout/_main.scss */
 .press-3 a {
   color: white;
 }
 
-/* line 922, sass/layout/_main.scss */
+/* line 926, sass/layout/_main.scss */
 .press-tag {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
 }
 
-/* line 928, sass/layout/_main.scss */
+/* line 932, sass/layout/_main.scss */
 .press-quote {
   margin: 50px 0;
   text-align: center;
 }
 
-/* line 933, sass/layout/_main.scss */
+/* line 937, sass/layout/_main.scss */
 .press-cta {
   text-align: right;
   text-transform: uppercase;
@@ -2042,7 +2047,7 @@ blockquote .quote-citation:before {
   font-size: 14px;
 }
 
-/* line 940, sass/layout/_main.scss */
+/* line 944, sass/layout/_main.scss */
 .trail-third {
   border-top: 1px solid black;
   width: 33.333%;
@@ -2050,69 +2055,69 @@ blockquote .quote-citation:before {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 940, sass/layout/_main.scss */
+  /* line 944, sass/layout/_main.scss */
   .trail-third {
     width: 100%;
   }
 }
 
-/* line 951, sass/layout/_main.scss */
+/* line 955, sass/layout/_main.scss */
 .trail-description {
   float: left;
   width: 100%;
   margin-top: 50px;
 }
 
-/* line 957, sass/layout/_main.scss */
+/* line 961, sass/layout/_main.scss */
 .background-1 {
   background-image: url(img/FreshSnow.png);
   background-repeat: repeat;
 }
 
-/* line 961, sass/layout/_main.scss */
+/* line 965, sass/layout/_main.scss */
 .background-2 {
   background-image: url(img/DarkSnow.png);
   background-repeat: repeat;
 }
 
-/* line 965, sass/layout/_main.scss */
+/* line 969, sass/layout/_main.scss */
 .background-3 {
   background-image: url(img/GreenPaper.png);
   background-repeat: repeat;
 }
 
-/* line 969, sass/layout/_main.scss */
+/* line 973, sass/layout/_main.scss */
 .background-4 {
   background-image: url(img/Sandpaper.png);
   background-repeat: repeat;
 }
 
-/* line 974, sass/layout/_main.scss */
+/* line 978, sass/layout/_main.scss */
 .directory-sidebar-image {
   padding: 25px;
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 979, sass/layout/_main.scss */
+/* line 983, sass/layout/_main.scss */
 .directory-sidebar-image img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
 }
 
-/* line 986, sass/layout/_main.scss */
+/* line 990, sass/layout/_main.scss */
 .directorylisting-address, .directorylisting-phone, .directorylisting-website, .directorylisting-degree {
   font-size: 15px;
   margin-bottom: 15px;
 }
 
-/* line 991, sass/layout/_main.scss */
+/* line 995, sass/layout/_main.scss */
 .collection-inner {
   background-color: rgba(255, 255, 255, 0.25);
   display: table;
 }
 
-/* line 996, sass/layout/_main.scss */
+/* line 1000, sass/layout/_main.scss */
 .collection-header {
   display: table-cell;
   vertical-align: middle;
@@ -2121,14 +2126,14 @@ blockquote .quote-citation:before {
   position: relative;
 }
 
-/* line 1004, sass/layout/_main.scss */
+/* line 1008, sass/layout/_main.scss */
 #collections {
   float: left;
   width: 100%;
   position: relative;
 }
 
-/* line 1010, sass/layout/_main.scss */
+/* line 1014, sass/layout/_main.scss */
 .resource-icon {
   width: 30px;
   position: absolute;
@@ -2136,20 +2141,20 @@ blockquote .quote-citation:before {
   top: 10px;
 }
 
-/* line 1017, sass/layout/_main.scss */
+/* line 1021, sass/layout/_main.scss */
 .resource-type {
   width: 30px;
   position: relative;
   display: block;
 }
 
-/* line 1023, sass/layout/_main.scss */
+/* line 1027, sass/layout/_main.scss */
 .content-full {
   width: 100%;
   float: left;
 }
 
-/* line 1028, sass/layout/_main.scss */
+/* line 1032, sass/layout/_main.scss */
 .marketplace-content-half {
   width: 50%;
   float: left;
@@ -2157,7 +2162,7 @@ blockquote .quote-citation:before {
   padding-bottom: 10px;
 }
 
-/* line 1035, sass/layout/_main.scss */
+/* line 1039, sass/layout/_main.scss */
 .marketplace-button {
   padding: 15px 50px;
   font-family: "din-condensed-web", sans-serif;
@@ -2169,12 +2174,12 @@ blockquote .quote-citation:before {
   width: 300px;
   margin-bottom: 40px;
 }
-/* line 1046, sass/layout/_main.scss */
+/* line 1050, sass/layout/_main.scss */
 .marketplace-button:hover {
   opacity: 0.7;
 }
 
-/* line 1053, sass/layout/_main.scss */
+/* line 1057, sass/layout/_main.scss */
 .marketplace-section .marketplace-section-title {
   text-align: center;
   font-family: "LeituraDisplay-Roman", serif;
@@ -2190,17 +2195,17 @@ blockquote .quote-citation:before {
   margin-bottom: 40px;
 }
 
-/* line 1073, sass/layout/_main.scss */
+/* line 1077, sass/layout/_main.scss */
 .marketplace-content-half {
   padding-right: 20px;
 }
-/* line 1076, sass/layout/_main.scss */
+/* line 1080, sass/layout/_main.scss */
 .marketplace-content-half hr {
   margin: 20px 0;
   width: 140px;
 }
 
-/* line 1082, sass/layout/_main.scss */
+/* line 1086, sass/layout/_main.scss */
 .marketplace-content-title {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -2209,7 +2214,7 @@ blockquote .quote-citation:before {
   margin-bottom: 10px;
 }
 
-/* line 1090, sass/layout/_main.scss */
+/* line 1094, sass/layout/_main.scss */
 .marketplace-content-body {
   margin-bottom: 20px;
   font-size: 15px;
@@ -2217,26 +2222,26 @@ blockquote .quote-citation:before {
   letter-spacing: 0.05em;
 }
 
-/* line 1097, sass/layout/_main.scss */
+/* line 1101, sass/layout/_main.scss */
 .marketplace-main {
   padding-right: 20px;
 }
 
-/* line 1101, sass/layout/_main.scss */
+/* line 1105, sass/layout/_main.scss */
 .marketplace-sidebar-location {
   margin-bottom: 20px;
 }
 
-/* line 1105, sass/layout/_main.scss */
+/* line 1109, sass/layout/_main.scss */
 .marketplace-sidebar-website {
   margin-bottom: 20px;
 }
 
-/* line 1109, sass/layout/_main.scss */
+/* line 1113, sass/layout/_main.scss */
 .marketplace-sidebar-social {
   margin-bottom: 20px;
 }
-/* line 1112, sass/layout/_main.scss */
+/* line 1116, sass/layout/_main.scss */
 .marketplace-sidebar-social i {
   margin-right: 5px;
 }
