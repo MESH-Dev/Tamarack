@@ -2140,6 +2140,12 @@ blockquote .quote-citation:before {
   display: block;
 }
 
+/* line 1014, sass/layout/_main.scss */
+.content-full {
+  width: 100%;
+  float: left;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;

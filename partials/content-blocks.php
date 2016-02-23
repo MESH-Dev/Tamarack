@@ -120,12 +120,14 @@ if( have_rows('content_block_section') ):
 
           ?>
 
-          <div class="container">
-            <div class="row">
-              <div class="twelve columns">
-                <h2><?php echo get_sub_field('title'); ?></h2>
-                <div class="text-block text-two-columns">
-                  <?php echo get_sub_field('content'); ?>
+          <div class="content-full">
+            <div class="container">
+              <div class="row">
+                <div class="twelve columns">
+                  <h2><?php echo get_sub_field('title'); ?></h2>
+                  <div class="text-block text-two-columns">
+                    <?php echo get_sub_field('content'); ?>
+                  </div>
                 </div>
               </div>
             </div>
