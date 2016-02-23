@@ -107,6 +107,8 @@ function acme_login_redirect( $redirect_to, $request, $user  ) {
 }
 add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
 
-
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M' );
+@ini_set( 'max_execution_time', '300' );
 
 ?>
