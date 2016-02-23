@@ -2336,6 +2336,11 @@ input[type="tel"] {
   margin: 0;
 }
 
+/* line 135, sass/layout/_input.scss */
+.frm_loading {
+  background: none !important;
+}
+
 /* Frame */
 /* line 2, sass/layout/_slider.scss */
 .frame {
