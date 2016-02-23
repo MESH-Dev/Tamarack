@@ -40,8 +40,8 @@ jQuery(document).ready(function($){
         active = index;
       }
 
-      $(".sidebar-item").removeClass('active');
-      $(".sidebar-" + active).addClass('active');
+      $(".sidebar-item").removeClass('active-item');
+      $(".sidebar-" + active).addClass('active-item');
 
     });
   });

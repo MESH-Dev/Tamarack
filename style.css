@@ -1450,7 +1450,7 @@ blockquote .quote-citation:before {
   margin-bottom: 10px;
 }
 /* line 390, sass/layout/_main.scss */
-#sidebar ul li.active a {
+#sidebar ul li.active-item a {
   border-bottom: 3px solid #3f4042;
 }
 /* line 395, sass/layout/_main.scss */

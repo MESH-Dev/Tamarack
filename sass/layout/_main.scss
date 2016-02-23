@@ -386,7 +386,7 @@ blockquote {
       text-transform: uppercase;
       margin-bottom: 10px;
 
-      &.active {
+      &.active-item {
         a {
           border-bottom: 3px solid $abbey;
         }
