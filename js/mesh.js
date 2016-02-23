@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
   var active = 0;
   var prev = 0;
 
-  $(".sidebar-" + active).addClass('active');
+  $(".sidebar-" + active).addClass('active-item');
 
   $(window).scroll(function (event) {
     $( ".form-section" ).each(function( index ) {
