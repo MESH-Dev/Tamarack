@@ -4,49 +4,6 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
     <div class="filter-row">
-
-        <div class="content-third" style="background-image: url('http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png')">
-          <div class="content-circle-screen">
-            <div class="content-text ">
-              <div class="content-text-main">
-                Your Creative Network Profile
-              </div>
-              <div class="content-text-cta">
-                <a href="http://tamarack.bkfk-t5yk.accessdomain.com/creative-network-profile/">Join the Creative Network <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="content-third" style="background-image: url('http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png')">
-          <div class="content-circle-screen">
-            <div class="content-text ">
-              <div class="content-text-main">
-                Your Made in West Virginia Profile
-              </div>
-              <div class="content-text-cta">
-                <a href="http://tamarack.bkfk-t5yk.accessdomain.com/west-virginia-made-profile/">Join Made in West Virginia <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="content-third" style="background-image: url('http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png')">
-          <div class="content-circle-screen">
-            <div class="content-text ">
-              <div class="content-text-main">
-                Your Trail Profile
-              </div>
-              <div class="content-text-cta">
-                <a href="http://tamarack.bkfk-t5yk.accessdomain.com/trail-profile/">Join a Trail <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-    <div class="filter-row">
       <div class="filter-quarter filter-business-button filter-button">
         <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/business.png" /></span>
         Business
@@ -210,7 +167,7 @@ get_header(); ?>
                         <a href="<?php echo get_sub_field('url'); ?>">
                           <?php echo get_sub_field('link_text'); ?>
                           <span class="resource-link-image">
-                          
+
                             <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $arrow; ?>" />
                           </span>
                         </a>
