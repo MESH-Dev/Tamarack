@@ -1020,3 +1020,19 @@ blockquote {
   width: 100%;
   float: left;
 }
+
+.marketplace-content-half {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.marketplace-button {
+  padding: 25px 65px;
+  font-family: $font-family--secondary;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #3f4143;
+  line-height: 24px;
+}

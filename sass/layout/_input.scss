@@ -93,6 +93,16 @@ input[type="tel"] {
   border: 1px solid #3f4042;
 }
 
+#message {
+  p:first-of-type {
+    font-family: $font-family--primary;
+    color: #b33ed9;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+}
+
 .frm_checkbox {
   display: inline-block;
 }

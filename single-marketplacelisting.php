@@ -13,20 +13,23 @@ get_header(); ?>
           $product_image_3 = get_field('product_image_3');
           $product_image_4 = get_field('product_image_4');
           $product_image_5 = get_field('product_image_5');
-
-          $thumb_1 = $product_image_1['sizes']['large'];
-          $thumb_2 = $product_image_2['sizes']['large'];
-          $thumb_3 = $product_image_3['sizes']['large'];
-          $thumb_4 = $product_image_4['sizes']['large'];
-          $thumb_5 = $product_image_5['sizes']['large'];
+          $product_image_6 = get_field('product_image_6');
+          $product_image_7 = get_field('product_image_7');
+          $product_image_8 = get_field('product_image_8');
+          $product_image_9 = get_field('product_image_9');
 
         ?>
 
-				<li><img src="<?php echo $thumb_1; ?>" /></li>
-        <li><img src="<?php echo $thumb_2; ?>" /></li>
-        <li><img src="<?php echo $thumb_3; ?>" /></li>
-        <li><img src="<?php echo $thumb_4; ?>" /></li>
-        <li><img src="<?php echo $thumb_5; ?>" /></li>
+				<?php if ($product_image_1) { ?><li><img src="<?php echo $product_image_1['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_2) { ?><li><img src="<?php echo $product_image_2['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_3) { ?><li><img src="<?php echo $product_image_3['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_4) { ?><li><img src="<?php echo $product_image_4['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_5) { ?><li><img src="<?php echo $product_image_5['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_6) { ?><li><img src="<?php echo $product_image_6['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_7) { ?><li><img src="<?php echo $product_image_7['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_8) { ?><li><img src="<?php echo $product_image_8['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_9) { ?><li><img src="<?php echo $product_image_9['sizes']['large']; ?>" /></li><?php } ?>
+
 			</ul>
 		</div>
 
@@ -43,6 +46,39 @@ get_header(); ?>
                 <?php the_content(); ?>
 
             <?php endwhile; ?>
+
+            <div class="marketplace-button">
+              Shop <?php echo get_field('business_name'); ?>
+            </div>
+
+            <div class="marketplace-content-half">
+              <div class-"marketplace-content-title">
+              </div>
+              <div class="marketplace-content-body">
+                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
+              </div>
+            </div>
+            <div class="marketplace-content-half">
+              <div class-"marketplace-content-title">
+              </div>
+              <div class="marketplace-content-body">
+                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
+              </div>
+            </div>
+            <div class="marketplace-content-half">
+              <div class-"marketplace-content-title">
+              </div>
+              <div class="marketplace-content-body">
+                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
+              </div>
+            </div>
+            <div class="marketplace-content-half">
+              <div class-"marketplace-content-title">
+              </div>
+              <div class="marketplace-content-body">
+                Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Morbi vestibulum volutpat enim.
+              </div>
+            </div>
           </div>
           <div class="three columns">
 

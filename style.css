@@ -801,7 +801,7 @@ textarea {
   margin-bottom: 15px;
   background: white;
   padding: 15px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "LeituraDisplay-Roman", serif;
   letter-spacing: 0.01em;
 }
@@ -2149,6 +2149,24 @@ blockquote .quote-citation:before {
   float: left;
 }
 
+/* line 1024, sass/layout/_main.scss */
+.marketplace-content-half {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 1031, sass/layout/_main.scss */
+.marketplace-button {
+  padding: 25px 65px;
+  font-family: "din-condensed-web", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #3f4143;
+  line-height: 24px;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
@@ -2284,26 +2302,35 @@ input[type="tel"] {
   border: 1px solid #3f4042;
 }
 
-/* line 96, sass/layout/_input.scss */
+/* line 97, sass/layout/_input.scss */
+#message p:first-of-type {
+  font-family: "LeituraDisplay-Roman", serif;
+  color: #b33ed9;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+/* line 106, sass/layout/_input.scss */
 .frm_checkbox {
   display: inline-block;
 }
 
-/* line 104, sass/layout/_input.scss */
+/* line 114, sass/layout/_input.scss */
 #frm_field_152_container .frm_checkbox:last-of-type {
   display: block;
 }
-/* line 107, sass/layout/_input.scss */
+/* line 117, sass/layout/_input.scss */
 #frm_field_152_container .frm_checkbox:last-of-type label {
   display: inline-block;
 }
-/* line 111, sass/layout/_input.scss */
+/* line 121, sass/layout/_input.scss */
 #frm_field_152_container .frm_checkbox:last-of-type input {
   width: inherit;
   display: inline-block;
 }
 
-/* line 120, sass/layout/_input.scss */
+/* line 130, sass/layout/_input.scss */
 .frm_forms fieldset {
   padding: 0;
   margin: 0;
