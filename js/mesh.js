@@ -107,6 +107,55 @@ jQuery(document).ready(function($){
     $('.filter-box').hide();
   });
 
+  $('.learn, .learn-sub')
+    .mouseenter(function() {
+      $('.learn-sub').show();
+    })
+    .mouseleave(function() {
+      $('.learn-sub').hide();
+    });
+
+  $('.build, .build-sub')
+    .mouseenter(function() {
+      $('.build-sub').show();
+    })
+    .mouseleave(function() {
+      $('.build-sub').hide();
+    });
+
+  $('.fund, .fund-sub')
+    .mouseenter(function() {
+      $('.fund-sub').show();
+    })
+    .mouseleave(function() {
+      $('.fund-sub').hide();
+    });
+
+  $('.connect, .connect-sub')
+    .mouseenter(function() {
+      $('.connect-sub').show();
+    })
+    .mouseleave(function() {
+      $('.connect-sub').hide();
+    });
+
+  $('.grow, .grow-sub')
+    .mouseenter(function() {
+      $('.grow-sub').show();
+    })
+    .mouseleave(function() {
+      $('.grow-sub').hide();
+    });
+
+  $('.shop, .shop-sub')
+    .mouseenter(function() {
+      $('.shop-sub').show();
+    })
+    .mouseleave(function() {
+      $('.shop-sub').hide();
+    });
+
+
   // var divWidth = jQuery('.content-fourth').width();
   // jQuery('.content-fourth').height(divWidth);
   //

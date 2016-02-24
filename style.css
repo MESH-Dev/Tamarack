@@ -2786,95 +2786,84 @@ input[type="tel"] {
 
 /* line 144, sass/modules/_menus.scss */
 .menu-block {
-  background-color: white;
-  padding: 10px;
-  height: 93px;
+  height: 50px;
   margin-bottom: 5px;
 }
 /* line 150, sass/modules/_menus.scss */
-.menu-block:hover {
-  background-color: #b33ed9;
+.menu-block:hover .menu-block-primary-text {
+  color: #b33ed9;
 }
 /* line 153, sass/modules/_menus.scss */
-.menu-block:hover .menu-block-primary-text {
-  color: white;
-}
-/* line 156, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-secondary-text {
-  color: white;
-  border-bottom: 2px solid white;
+  color: #b33ed9;
+  border-bottom: 2px solid #b33ed9;
 }
 
-/* line 164, sass/modules/_menus.scss */
-.menu-item:hover .menu-block {
-  background-color: #b33ed9;
+/* line 160, sass/modules/_menus.scss */
+.main-menu-item {
+  width: 105px;
+  margin-left: 5px;
+  margin-right: 10px;
+  float: left;
+  display: inline;
+  position: relative;
 }
-/* line 167, sass/modules/_menus.scss */
-.menu-item:hover .menu-block .menu-block-primary-text {
-  color: white;
-}
+
 /* line 170, sass/modules/_menus.scss */
-.menu-item:hover .menu-block .menu-block-secondary-text {
-  color: white;
-  border-bottom: 2px solid white;
+.menu-item:hover .menu-block {
+  color: #b33ed9;
 }
-/* line 175, sass/modules/_menus.scss */
+/* line 173, sass/modules/_menus.scss */
+.menu-item:hover .menu-block .menu-block-primary-text {
+  color: #b33ed9;
+}
+/* line 176, sass/modules/_menus.scss */
+.menu-item:hover .menu-block .menu-block-secondary-text {
+  color: #b33ed9;
+  border-bottom: 2px solid #b33ed9;
+}
+/* line 181, sass/modules/_menus.scss */
 .menu-item:hover .sub-menu-block {
   display: block;
 }
 
-/* line 181, sass/modules/_menus.scss */
-.menu-item-half:hover .menu-block-half {
-  background-color: #b33ed9;
-}
-/* line 184, sass/modules/_menus.scss */
-.menu-item-half:hover .menu-block-half .menu-block-primary-text {
-  color: white;
-}
-/* line 187, sass/modules/_menus.scss */
-.menu-item-half:hover .menu-block-half .menu-block-secondary-text {
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-/* line 197, sass/modules/_menus.scss */
+/* line 186, sass/modules/_menus.scss */
 .menu-block-half-1, .menu-block-half-2 {
   background-color: white;
   padding: 10px;
   margin-bottom: 5px;
 }
-/* line 202, sass/modules/_menus.scss */
+/* line 191, sass/modules/_menus.scss */
 .menu-block-half-1:hover, .menu-block-half-2:hover {
   background-color: #b33ed9;
 }
-/* line 205, sass/modules/_menus.scss */
+/* line 194, sass/modules/_menus.scss */
 .menu-block-half-1:hover .menu-block-primary-text, .menu-block-half-2:hover .menu-block-primary-text {
   color: white;
 }
 
-/* line 211, sass/modules/_menus.scss */
+/* line 200, sass/modules/_menus.scss */
 .menu-block-primary-text {
   display: block;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   font-size: 23px;
   line-height: 24px;
-  color: black;
+  color: white;
 }
 
-/* line 219, sass/modules/_menus.scss */
+/* line 208, sass/modules/_menus.scss */
 .menu-block-secondary-text {
   display: block;
   font-family: "LeituraDisplay-Roman", serif;
   font-size: 12px;
-  color: black;
-  border-bottom: 2px solid #696969;
+  color: white;
+  border-bottom: 2px solid white;
   font-weight: 700;
-  width: 65%;
   letter-spacing: 0.01em;
 }
 
-/* line 230, sass/modules/_menus.scss */
+/* line 218, sass/modules/_menus.scss */
 .tagline {
   width: 100%;
   float: left;
@@ -2883,132 +2872,72 @@ input[type="tel"] {
   background-color: white;
   position: relative;
 }
-/* line 238, sass/modules/_menus.scss */
+/* line 226, sass/modules/_menus.scss */
 .tagline .tagline-attention {
   font-family: "LeituraDisplay-Roman", serif;
   color: #5a636e;
   letter-spacing: 0.01em;
 }
-/* line 243, sass/modules/_menus.scss */
+/* line 231, sass/modules/_menus.scss */
 .tagline .tagline-message {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   color: #3f4143;
 }
 
-/* line 250, sass/modules/_menus.scss */
-.sub-menu-block-1, .sub-menu-block-2 {
-  background: white;
-  width: 890px;
-  float: left;
-  border-top: 5px solid #b33ed9;
-  display: none;
-  z-index: 10;
-  position: absolute;
-  left: -720px;
-}
-/* line 260, sass/modules/_menus.scss */
-.sub-menu-block-1 ul, .sub-menu-block-2 ul {
-  list-style-type: none;
-  padding: 0;
-}
-/* line 264, sass/modules/_menus.scss */
-.sub-menu-block-1 .sub-menu-block-quote, .sub-menu-block-2 .sub-menu-block-quote {
-  float: left;
-  width: 100%;
-  padding: 30px;
-}
-/* line 269, sass/modules/_menus.scss */
-.sub-menu-block-1 .sub-menu-block-quote .sub-menu-block-quote-text, .sub-menu-block-2 .sub-menu-block-quote .sub-menu-block-quote-text {
-  font-weight: 700;
-  font-size: 24px;
-}
-/* line 273, sass/modules/_menus.scss */
-.sub-menu-block-1 .sub-menu-block-quote .sub-menu-block-quote-cta, .sub-menu-block-2 .sub-menu-block-quote .sub-menu-block-quote-cta {
-  font-size: 14px;
-  font-family: "din-condensed-web", sans-serif;
-  text-transform: uppercase;
-  display: block;
-}
-/* line 280, sass/modules/_menus.scss */
-.sub-menu-block-1 .sub-menu-block-nav, .sub-menu-block-2 .sub-menu-block-nav {
-  float: left;
-  width: 50%;
-  padding: 30px;
-}
-/* line 285, sass/modules/_menus.scss */
-.sub-menu-block-1 .sub-menu-block-nav .half, .sub-menu-block-2 .sub-menu-block-nav .half {
-  width: 50%;
-  float: left;
-  padding-right: 10px;
-}
-/* line 292, sass/modules/_menus.scss */
-.sub-menu-block-1 .sub-menu-block-nav > ul > li, .sub-menu-block-2 .sub-menu-block-nav > ul > li {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 20px;
-}
-/* line 298, sass/modules/_menus.scss */
-.sub-menu-block-1 .sub-menu-block-nav > ul ul > li, .sub-menu-block-2 .sub-menu-block-nav > ul ul > li {
-  font-family: "din-condensed-web", sans-serif;
-  text-transform: uppercase;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 300;
-}
-
-/* line 310, sass/modules/_menus.scss */
+/* line 238, sass/modules/_menus.scss */
 .sub-menu-block {
   background: white;
-  width: 890px;
-  float: left;
+  width: 720px;
+  right: 0;
   border-top: 5px solid #b33ed9;
   display: none;
   z-index: 10;
   position: absolute;
+  top: 105px;
 }
-/* line 319, sass/modules/_menus.scss */
+/* line 248, sass/modules/_menus.scss */
 .sub-menu-block ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 323, sass/modules/_menus.scss */
+/* line 252, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-quote {
   float: left;
   width: 50%;
   padding: 30px;
 }
-/* line 328, sass/modules/_menus.scss */
+/* line 257, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-text {
   font-weight: 700;
   font-size: 24px;
 }
-/* line 332, sass/modules/_menus.scss */
+/* line 261, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-cta {
   font-size: 14px;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   display: block;
 }
-/* line 339, sass/modules/_menus.scss */
+/* line 268, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav {
   float: left;
   width: 50%;
   padding: 30px;
 }
-/* line 344, sass/modules/_menus.scss */
+/* line 273, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav .half {
   width: 50%;
   float: left;
   padding-right: 10px;
 }
-/* line 351, sass/modules/_menus.scss */
+/* line 280, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul > li {
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
 }
-/* line 357, sass/modules/_menus.scss */
+/* line 286, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul ul > li {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -3017,31 +2946,17 @@ input[type="tel"] {
   font-weight: 300;
 }
 
-/* line 370, sass/modules/_menus.scss */
-.learn .sub-menu-block {
-  left: 0;
-}
-
-/* line 376, sass/modules/_menus.scss */
-.build .sub-menu-block {
-  left: -180px;
-}
-
-/* line 382, sass/modules/_menus.scss */
-.fund .sub-menu-block {
-  left: -360px;
-}
-
-/* line 388, sass/modules/_menus.scss */
-.connect .sub-menu-block {
-  left: -540px;
-}
-
-/* line 393, sass/modules/_menus.scss */
+/* line 298, sass/modules/_menus.scss */
 .logo {
   text-align: right;
   position: relative;
   top: -30px;
+}
+
+/* line 304, sass/modules/_menus.scss */
+.main-menu-container {
+  float: right;
+  position: relative;
 }
 
 /* line 5, sass/modules/_modules.scss */
