@@ -1296,7 +1296,18 @@ blockquote {
 }
 
 .trail-map {
+  margin-bottom: 30px;
+
   iframe {
     border: none;
+    position: relative;
+    top: -46px;
+  }
+
+  .trail-map-container {
+    height: 438px;
+    border: 2px solid #eee;
+    display: inline-block;
+    overflow: hidden;
   }
 }

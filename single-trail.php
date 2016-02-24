@@ -21,7 +21,9 @@ get_header(); ?>
             </div>
             <div class="trail-half">
               <div class="trail-map">
-                <?php echo get_field('trail_map'); ?>
+                <div class="trail-map-container">
+                  <?php echo get_field('trail_map'); ?>
+                </div>
               </div>
             </div>
 
