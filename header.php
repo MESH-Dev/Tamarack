@@ -59,6 +59,8 @@
 
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
 
+			<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
+
 			<div class="utilities-nav">
 				<div class="container">
 					<div class="twelve columns">
@@ -103,7 +105,7 @@
 
 			<div class="container homer">
 
-				<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
+
 
 				<div class="row">
 
@@ -338,6 +340,7 @@
 					</div>
 				<?php } ?>
 			</div>
+
 			<?php if (is_page_template('templates/text.php')) { dimox_breadcrumbs(); } ?>
 				<?php if (get_field('masthead_image_citation')) { ?>
 					<div class="citation">
