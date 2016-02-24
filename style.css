@@ -2431,6 +2431,11 @@ blockquote .quote-citation:before {
   color: #3f4042;
 }
 
+/* line 1299, sass/layout/_main.scss */
+.trail-map iframe {
+  border: none;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
