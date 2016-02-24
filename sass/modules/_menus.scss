@@ -1,8 +1,6 @@
 #menu-utilities-nav, #social-utilities-nav, #login-utilities-nav {
-	background: white;
 	clear: both;
 	display: inline-block;
-	margin: 10px 0 0 10px;
 	list-style-type: none;
 	padding: 0;
 
@@ -139,6 +137,9 @@
 	float: left;
 	width: 100%;
 	text-align: right;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 30px;
+margin-bottom: 15px;
 }
 
 .menu-block {
@@ -298,7 +299,7 @@
 .logo {
 	text-align: right;
 	position: relative;
-	top: -30px;
+	top: -45px;
 }
 
 .main-menu-container {

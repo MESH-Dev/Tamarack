@@ -94,6 +94,8 @@ input[type="tel"] {
 }
 
 #message {
+  margin-bottom: 25px;
+  
   p:first-of-type {
     font-family: $font-family--primary;
     color: #b33ed9;

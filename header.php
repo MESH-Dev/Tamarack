@@ -58,51 +58,52 @@
 		} ?>
 
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
-			<div class="container">
 
-				<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
-
-				<div class="row">
-					<div class="utilities-nav">
-						<div class="twelve columns">
-							<?php if(has_nav_menu('utilities_nav')){
-								$defaults = array(
-									'theme_location'  => 'utilities_nav',
-									'menu'            => 'utilities_nav',
-									'container'       => false,
-									'container_class' => '',
-									'container_id'    => '',
-									'menu_class'      => 'menu',
-									'menu_id'         => '',
-									'echo'            => true,
-									'fallback_cb'     => 'wp_page_menu',
-									'before'          => '',
-									'after'           => '',
-									'link_before'     => '',
-									'link_after'      => '',
-									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s
-																					<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
-																					<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
-																			  </ul>',
-									'depth'           => 0,
-									'walker'          => ''
-								); wp_nav_menu( $defaults );
-							}else{
-								echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
-							} ?>
-							<ul id="login-utilities-nav">
-								<?php if (is_user_logged_in()) { ?>
-									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/creative-network-profile">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
-								<?php } else { ?>
-									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/register">Join our creative network</a></li><li><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Artist login</a></li>
-								<?php } ?>
-							</ul>
-						</div>
+			<div class="utilities-nav">
+				<div class="container">
+					<div class="twelve columns">
+						<?php if(has_nav_menu('utilities_nav')){
+							$defaults = array(
+								'theme_location'  => 'utilities_nav',
+								'menu'            => 'utilities_nav',
+								'container'       => false,
+								'container_class' => '',
+								'container_id'    => '',
+								'menu_class'      => 'menu',
+								'menu_id'         => '',
+								'echo'            => true,
+								'fallback_cb'     => 'wp_page_menu',
+								'before'          => '',
+								'after'           => '',
+								'link_before'     => '',
+								'link_after'      => '',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s
+																				<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
+																				<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+																				<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
+																				<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
+																				<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
+																			</ul>',
+								'depth'           => 0,
+								'walker'          => ''
+							); wp_nav_menu( $defaults );
+						}else{
+							echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
+						} ?>
+						<ul id="login-utilities-nav">
+							<?php if (is_user_logged_in()) { ?>
+								<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/creative-network-profile">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
+							<?php } else { ?>
+								<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/register">Join our creative network</a></li><li><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Artist login</a></li>
+							<?php } ?>
+						</ul>
 					</div>
 				</div>
+			</div>
+
+			<div class="container homer">
+
+				<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
 
 				<div class="row">
 
