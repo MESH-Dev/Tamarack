@@ -2787,24 +2787,26 @@ input[type="tel"] {
   background-color: rgba(255, 255, 255, 0.7);
   height: 30px;
   margin-bottom: 15px;
+  z-index: 100;
+  position: relative;
 }
 
-/* line 145, sass/modules/_menus.scss */
+/* line 147, sass/modules/_menus.scss */
 .menu-block {
   height: 50px;
   margin-bottom: 5px;
 }
-/* line 151, sass/modules/_menus.scss */
+/* line 153, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-primary-text {
   color: #b33ed9;
 }
-/* line 154, sass/modules/_menus.scss */
+/* line 156, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-secondary-text {
   color: #b33ed9;
   border-bottom: 2px solid #b33ed9;
 }
 
-/* line 161, sass/modules/_menus.scss */
+/* line 163, sass/modules/_menus.scss */
 .main-menu-item {
   width: 105px;
   margin-left: 5px;
@@ -2814,40 +2816,40 @@ input[type="tel"] {
   position: relative;
 }
 
-/* line 171, sass/modules/_menus.scss */
+/* line 173, sass/modules/_menus.scss */
 .menu-item:hover .menu-block {
   color: #b33ed9;
 }
-/* line 174, sass/modules/_menus.scss */
+/* line 176, sass/modules/_menus.scss */
 .menu-item:hover .menu-block .menu-block-primary-text {
   color: #b33ed9;
 }
-/* line 177, sass/modules/_menus.scss */
+/* line 179, sass/modules/_menus.scss */
 .menu-item:hover .menu-block .menu-block-secondary-text {
   color: #b33ed9;
   border-bottom: 2px solid #b33ed9;
 }
-/* line 182, sass/modules/_menus.scss */
+/* line 184, sass/modules/_menus.scss */
 .menu-item:hover .sub-menu-block {
   display: block;
 }
 
-/* line 187, sass/modules/_menus.scss */
+/* line 189, sass/modules/_menus.scss */
 .menu-block-half-1, .menu-block-half-2 {
   background-color: white;
   padding: 10px;
   margin-bottom: 5px;
 }
-/* line 192, sass/modules/_menus.scss */
+/* line 194, sass/modules/_menus.scss */
 .menu-block-half-1:hover, .menu-block-half-2:hover {
   background-color: #b33ed9;
 }
-/* line 195, sass/modules/_menus.scss */
+/* line 197, sass/modules/_menus.scss */
 .menu-block-half-1:hover .menu-block-primary-text, .menu-block-half-2:hover .menu-block-primary-text {
   color: white;
 }
 
-/* line 201, sass/modules/_menus.scss */
+/* line 203, sass/modules/_menus.scss */
 .menu-block-primary-text {
   display: block;
   font-family: "din-condensed-web", sans-serif;
@@ -2857,7 +2859,7 @@ input[type="tel"] {
   color: white;
 }
 
-/* line 209, sass/modules/_menus.scss */
+/* line 211, sass/modules/_menus.scss */
 .menu-block-secondary-text {
   display: block;
   font-family: "LeituraDisplay-Roman", serif;
@@ -2868,7 +2870,7 @@ input[type="tel"] {
   letter-spacing: 0.01em;
 }
 
-/* line 219, sass/modules/_menus.scss */
+/* line 221, sass/modules/_menus.scss */
 .tagline {
   width: 100%;
   float: left;
@@ -2877,20 +2879,20 @@ input[type="tel"] {
   background-color: white;
   position: relative;
 }
-/* line 227, sass/modules/_menus.scss */
+/* line 229, sass/modules/_menus.scss */
 .tagline .tagline-attention {
   font-family: "LeituraDisplay-Roman", serif;
   color: #5a636e;
   letter-spacing: 0.01em;
 }
-/* line 232, sass/modules/_menus.scss */
+/* line 234, sass/modules/_menus.scss */
 .tagline .tagline-message {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   color: #3f4143;
 }
 
-/* line 239, sass/modules/_menus.scss */
+/* line 241, sass/modules/_menus.scss */
 .sub-menu-block {
   background: white;
   width: 720px;
@@ -2901,48 +2903,48 @@ input[type="tel"] {
   position: absolute;
   top: 105px;
 }
-/* line 249, sass/modules/_menus.scss */
+/* line 251, sass/modules/_menus.scss */
 .sub-menu-block ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 253, sass/modules/_menus.scss */
+/* line 255, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-quote {
   float: left;
   width: 50%;
   padding: 30px;
 }
-/* line 258, sass/modules/_menus.scss */
+/* line 260, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-text {
   font-weight: 700;
   font-size: 24px;
 }
-/* line 262, sass/modules/_menus.scss */
+/* line 264, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-cta {
   font-size: 14px;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   display: block;
 }
-/* line 269, sass/modules/_menus.scss */
+/* line 271, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav {
   float: left;
   width: 50%;
   padding: 30px;
 }
-/* line 274, sass/modules/_menus.scss */
+/* line 276, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav .half {
   width: 50%;
   float: left;
   padding-right: 10px;
 }
-/* line 281, sass/modules/_menus.scss */
+/* line 283, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul > li {
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
 }
-/* line 287, sass/modules/_menus.scss */
+/* line 289, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul ul > li {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -2951,14 +2953,14 @@ input[type="tel"] {
   font-weight: 300;
 }
 
-/* line 299, sass/modules/_menus.scss */
+/* line 301, sass/modules/_menus.scss */
 .logo {
   text-align: right;
   position: relative;
   top: -45px;
 }
 
-/* line 305, sass/modules/_menus.scss */
+/* line 307, sass/modules/_menus.scss */
 .main-menu-container {
   float: right;
   position: relative;
