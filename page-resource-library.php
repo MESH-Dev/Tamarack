@@ -95,8 +95,8 @@ get_header(); ?>
             </div>
             <div class="search-items">
             </div>
+            <div class="reset-filter filter">View All <i class="fa fa-angle-double-right"></i></div>
           </div>
-          <div class="reset-filter filter">Reset filter <i class="fa fa-angle-double-right"></i></div>
           <div class="search-bar">
             <input type="text" class="search" placeholder="Search by..." />
             <div class="search-icon"><i class="fa fa-search"></i></div>
@@ -218,6 +218,9 @@ get_header(); ?>
 
     $('.reset-filter').click(function() {
 
+      $('.filter-box').hide();
+      $('.filter-bar').hide();
+
       $('.resource').addClass('show');
       $('.filter-checkbox').removeClass('active');
       active = [];
@@ -292,12 +295,9 @@ get_header(); ?>
 
     });
 
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
 
-    jQuery(window).resize(function() {
-      var divWidth = jQuery('.content-fourth').width();
-      jQuery('.content-fourth').height(divWidth);
+    jQuery('.content-fourth').matchHeight({
+      byRow: true
     });
 
 

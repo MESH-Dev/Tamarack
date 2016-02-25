@@ -455,7 +455,7 @@ blockquote {
 }
 
 .resource {
-  padding: 40px 10px;
+  padding: 10px;
   float: left;
   position: relative;
 
@@ -696,6 +696,7 @@ blockquote {
   font-size: 14px;
   color: $purple;
   cursor: pointer;
+  bottom: 25px;
 
   &.active {
     background: none;
@@ -1257,4 +1258,5 @@ blockquote {
 
 .filter-bar {
   display: none;
+  position: relative;
 }
