@@ -1072,6 +1072,14 @@ blockquote {
 .marketplace-sidebar-social {
   margin-bottom: 20px;
 
+
+  span {
+    font-family: $font-family--primary;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+
   i {
     margin-right: 5px;
   }

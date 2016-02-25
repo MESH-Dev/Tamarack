@@ -2210,34 +2210,40 @@ blockquote .quote-citation:before {
 .marketplace-sidebar-social {
   margin-bottom: 20px;
 }
-/* line 1075, sass/layout/_main.scss */
+/* line 1076, sass/layout/_main.scss */
+.marketplace-sidebar-social span {
+  font-family: "LeituraDisplay-Roman", serif;
+  font-style: italic;
+  font-size: 14px;
+}
+/* line 1083, sass/layout/_main.scss */
 .marketplace-sidebar-social i {
   margin-right: 5px;
 }
 
-/* line 1084, sass/layout/_main.scss */
+/* line 1092, sass/layout/_main.scss */
 .trail-full {
   margin-top: 75px;
 }
 
-/* line 1088, sass/layout/_main.scss */
+/* line 1096, sass/layout/_main.scss */
 .trail-title {
   float: left;
   width: 100%;
 }
-/* line 1092, sass/layout/_main.scss */
+/* line 1100, sass/layout/_main.scss */
 .trail-title h2 {
   margin: 0 0 50px;
 }
 
-/* line 1097, sass/layout/_main.scss */
+/* line 1105, sass/layout/_main.scss */
 .trail-description {
   float: left;
   width: 100%;
   margin-bottom: 50px;
 }
 
-/* line 1103, sass/layout/_main.scss */
+/* line 1111, sass/layout/_main.scss */
 .trail-social {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -2246,19 +2252,19 @@ blockquote .quote-citation:before {
   margin-bottom: 50px;
 }
 
-/* line 1111, sass/layout/_main.scss */
+/* line 1119, sass/layout/_main.scss */
 .trailstop-inner {
   border-top: 1px solid black;
   position: relative;
 }
-/* line 1115, sass/layout/_main.scss */
+/* line 1123, sass/layout/_main.scss */
 .trailstop-inner h3 {
   margin: 0;
   padding-top: 10px;
   line-height: 36px;
 }
 
-/* line 1122, sass/layout/_main.scss */
+/* line 1130, sass/layout/_main.scss */
 .trailstop-number {
   right: 10px;
   position: absolute;
@@ -2271,146 +2277,146 @@ blockquote .quote-citation:before {
   line-height: 23px;
 }
 
-/* line 1134, sass/layout/_main.scss */
+/* line 1142, sass/layout/_main.scss */
 .trailstop-inner-1 {
   float: left;
   width: 100%;
   position: relative;
 }
-/* line 1139, sass/layout/_main.scss */
+/* line 1147, sass/layout/_main.scss */
 .trailstop-inner-1 hr {
   width: 400px;
   position: relative;
   float: left;
 }
 
-/* line 1146, sass/layout/_main.scss */
+/* line 1154, sass/layout/_main.scss */
 .trailstop-inner-2 {
   float: left;
   width: 100%;
   position: relative;
   margin-bottom: 15px;
 }
-/* line 1152, sass/layout/_main.scss */
+/* line 1160, sass/layout/_main.scss */
 .trailstop-inner-2 hr {
   width: 250px;
   position: relative;
   float: left;
 }
 
-/* line 1159, sass/layout/_main.scss */
+/* line 1167, sass/layout/_main.scss */
 .trailstop-address, .trailstop-hours, .trailstop-city {
   float: left;
   width: 100%;
 }
 
-/* line 1164, sass/layout/_main.scss */
+/* line 1172, sass/layout/_main.scss */
 .trailstop-content {
   margin-bottom: 15px;
 }
 
-/* line 1168, sass/layout/_main.scss */
+/* line 1176, sass/layout/_main.scss */
 .trailstop-type {
   font-style: italic;
   font-size: 14px;
   margin-bottom: 25px;
 }
 
-/* line 1174, sass/layout/_main.scss */
+/* line 1182, sass/layout/_main.scss */
 .trail-red {
   color: #c25543;
 }
-/* line 1177, sass/layout/_main.scss */
+/* line 1185, sass/layout/_main.scss */
 .trail-red .trailstop-inner {
   border-top: 1px solid #c25543;
 }
-/* line 1181, sass/layout/_main.scss */
+/* line 1189, sass/layout/_main.scss */
 .trail-red .trailstop-number {
   border: 3px solid #c25543;
 }
-/* line 1185, sass/layout/_main.scss */
+/* line 1193, sass/layout/_main.scss */
 .trail-red hr {
   border-top: 1px solid #c25543;
 }
-/* line 1189, sass/layout/_main.scss */
+/* line 1197, sass/layout/_main.scss */
 .trail-red a {
   color: #c25543;
 }
 
-/* line 1194, sass/layout/_main.scss */
+/* line 1202, sass/layout/_main.scss */
 .trail-purple {
   color: #b33ed9;
 }
-/* line 1197, sass/layout/_main.scss */
+/* line 1205, sass/layout/_main.scss */
 .trail-purple .trailstop-inner {
   border-top: 1px solid #b33ed9;
 }
-/* line 1201, sass/layout/_main.scss */
+/* line 1209, sass/layout/_main.scss */
 .trail-purple .trailstop-number {
   border: 3px solid #b33ed9;
 }
-/* line 1205, sass/layout/_main.scss */
+/* line 1213, sass/layout/_main.scss */
 .trail-purple hr {
   border-top: 1px solid #b33ed9;
 }
-/* line 1210, sass/layout/_main.scss */
+/* line 1218, sass/layout/_main.scss */
 .trail-purple a {
   color: #b33ed9;
 }
 
-/* line 1215, sass/layout/_main.scss */
+/* line 1223, sass/layout/_main.scss */
 .trail-blue {
   color: #1b648d;
 }
-/* line 1218, sass/layout/_main.scss */
+/* line 1226, sass/layout/_main.scss */
 .trail-blue .trailstop-inner {
   border-top: 1px solid #1b648d;
 }
-/* line 1222, sass/layout/_main.scss */
+/* line 1230, sass/layout/_main.scss */
 .trail-blue .trailstop-number {
   border: 3px solid #1b648d;
 }
-/* line 1226, sass/layout/_main.scss */
+/* line 1234, sass/layout/_main.scss */
 .trail-blue hr {
   border-top: 1px solid #1b648d;
 }
-/* line 1231, sass/layout/_main.scss */
+/* line 1239, sass/layout/_main.scss */
 .trail-blue a {
   color: #1b648d;
 }
 
-/* line 1236, sass/layout/_main.scss */
+/* line 1244, sass/layout/_main.scss */
 .trail-dark-gray {
   color: #3f4042;
 }
-/* line 1239, sass/layout/_main.scss */
+/* line 1247, sass/layout/_main.scss */
 .trail-dark-gray .trailstop-inner {
   border-top: 1px solid #3f4042;
 }
-/* line 1243, sass/layout/_main.scss */
+/* line 1251, sass/layout/_main.scss */
 .trail-dark-gray .trailstop-number {
   border: 3px solid #3f4042;
 }
-/* line 1247, sass/layout/_main.scss */
+/* line 1255, sass/layout/_main.scss */
 .trail-dark-gray hr {
   border-top: 1px solid #3f4042;
 }
-/* line 1252, sass/layout/_main.scss */
+/* line 1260, sass/layout/_main.scss */
 .trail-dark-gray a {
   color: #3f4042;
 }
 
-/* line 1257, sass/layout/_main.scss */
+/* line 1265, sass/layout/_main.scss */
 .trail-map {
   margin-bottom: 30px;
 }
-/* line 1260, sass/layout/_main.scss */
+/* line 1268, sass/layout/_main.scss */
 .trail-map iframe {
   border: none;
   position: relative;
   top: -46px;
 }
-/* line 1266, sass/layout/_main.scss */
+/* line 1274, sass/layout/_main.scss */
 .trail-map .trail-map-container {
   height: 438px;
   border: 2px solid #eee;
@@ -2418,7 +2424,7 @@ blockquote .quote-citation:before {
   overflow: hidden;
 }
 
-/* line 1274, sass/layout/_main.scss */
+/* line 1282, sass/layout/_main.scss */
 .filter-bar {
   display: none;
   position: relative;

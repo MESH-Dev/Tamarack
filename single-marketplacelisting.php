@@ -42,6 +42,8 @@ get_header(); ?>
             <div class="marketplace-main">
               <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+                  <?php $title = get_the_title(); ?>
+
                   <h2><?php the_title(); ?></h2>
 
                   <?php the_content(); ?>
@@ -61,7 +63,7 @@ get_header(); ?>
                 <div class="marketplace-section-content">
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
-                      Tell us about your creative process.
+                      Creative Process
                     </div>
                     <hr>
                     <div class="marketplace-content-body">
@@ -70,7 +72,7 @@ get_header(); ?>
                   </div>
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
-                      What sets your business or product apart from the pack?
+                      My Business
                     </div>
                     <hr>
                     <div class="marketplace-content-body">
@@ -79,7 +81,7 @@ get_header(); ?>
                   </div>
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
-                      What inspires your work?
+                      Inspirations
                     </div>
                     <hr>
                     <div class="marketplace-content-body">
@@ -88,7 +90,7 @@ get_header(); ?>
                   </div>
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
-                      List any honors or awards you've received.
+                      Honors and Awards
                     </div>
                     <hr>
                     <div class="marketplace-content-body">
@@ -116,14 +118,15 @@ get_header(); ?>
                   <div class="marketplace-sidebar-location">
                     <?php echo get_field('city_state_zip', get_the_id()); ?>
                   </div>
-                  
+
                   <div class="marketplace-sidebar-phone">
                     <?php echo get_field('phone', get_the_id()); ?>
                   </div>
                   <div class="marketplace-sidebar-website">
-                    <a href="<?php echo get_field('website', get_the_id()); ?>">My Website</a>
+                    <a href="<?php echo get_field('website', get_the_id()); ?>"><?php echo $title; ?></a>
                   </div>
                   <div class="marketplace-sidebar-social">
+                    <span>Follow:</span>
                     <?php if(get_field('facebook', get_the_id())) { ?>
                       <a href="<?php echo get_field('facebook'); ?>"><i class="fa fa-facebook"></i></a>
                     <?php } ?>
