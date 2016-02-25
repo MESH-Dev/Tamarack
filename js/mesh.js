@@ -55,18 +55,21 @@ jQuery(document).ready(function($){
   // Creative Network
 
   $(".filter-product-button").click(function() {
-     $('.filter-box').hide();
+     $('.filter-skills').hide();
+     $('.filter-location').hide();
      $(".filter-product").toggle();
   });
 
   $(".filter-skills-button").click(function() {
-     $('.filter-box').hide();
-     $(".filter-skills").show();
+     $('.filter-product').hide();
+     $('.filter-location').hide();
+     $(".filter-skills").toggle();
   });
 
   $(".filter-location-button").click(function() {
-     $('.filter-box').hide();
-     $(".filter-location").show();
+     $('.filter-skills').hide();
+     $('.filter-product').hide();
+     $(".filter-location").toggle();
   });
 
   // Resource Library

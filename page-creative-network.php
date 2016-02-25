@@ -147,17 +147,18 @@ get_header(); ?>
     <div class="filter-row">
       <div class="twelve columns">
         <div class="search">
-          <div class="search-title">
-            Current Search
+          <div class="filter-bar">
+            <div class="search-title">
+              Current Search
+            </div>
+            <div class="search-items">
+            </div>
+            <div class="reset-filter filter">View All <i class="fa fa-angle-double-right"></i></div>
           </div>
-          <div class="search-items">
-
-          </div>
-          <div class="reset-filter filter">Reset filter <i class="fa fa-angle-double-right"></i></div>
-          <!-- <div class="search-bar">
+          <div class="search-bar">
             <input type="text" class="search" placeholder="Search by..." />
             <div class="search-icon"><i class="fa fa-search"></i></div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -257,7 +258,11 @@ get_header(); ?>
       }
     });
 
-    $('.reset-filter').click(function() {
+    $('.reset-filter, input.search').click(function() {
+
+      $('.filter-box').hide();
+      $('.filter-bar').hide();
+
       $('.directorylisting').addClass('show');
       $('.filter-checkbox').removeClass('active');
       active = [];
@@ -285,6 +290,8 @@ get_header(); ?>
     var active = [];
     $('.filter-checkbox').click(function() {
 
+      $('.filter-bar').show();
+
       if (first == true) {
         $('.directorylisting').removeClass('show');
         first = false;
@@ -302,6 +309,29 @@ get_header(); ?>
     });
 
 
+    //Live Search Global Network
+    $("input.search").keyup(function(){
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val();
+
+        // Loop through grid items
+        $("#directorylistings .directorylisting").each(function(){
+
+            $(this).removeClass('show');
+
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+
+                $(this).fadeOut();
+
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).fadeIn();
+
+            }
+        });
+
+    });
 
 
   });

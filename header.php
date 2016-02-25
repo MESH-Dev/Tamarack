@@ -310,12 +310,10 @@
 					</div>
 
 					<?php if (is_page("Creative Network")) { ?>
-					<div class="two columns">
 						<div class="join-bubble">
 							<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Our Creative Network</a></span>
 							<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
 						</div>
-					</div>
 					<?php } ?>
 
 					<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
