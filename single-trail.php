@@ -98,7 +98,16 @@ get_header(); ?>
                     <?php echo get_field('city_state_zip', $trail_stop->ID); ?>
                   </div>
                   <div class="trailstop-hours">
-                    <?php echo get_field('hours_open', $trail_stop->ID); ?>
+                    <?php
+
+                      if (get_field('by_appointment_only', $trail_stop->ID) == "Yes") {
+                        echo "By appointment only";
+                      }
+                      else {
+                        echo get_field('hours_open', $trail_stop->ID);
+                      }
+
+                    ?>
                   </div>
                   <div class="trailstop-inner-2"><hr></div>
                   <div class="trailstop-content">

@@ -901,7 +901,7 @@ blockquote {
   width: 33.333%;
   float: left;
   position: relative;
-  padding: 10px;
+  padding: 10px 10px 20px;
 
   @include mq($tablet-width, "max-width") {
     width: 100%;
@@ -938,7 +938,6 @@ blockquote {
 
   img {
     border-radius: 50%;
-    width: 150px;
     height: 150px;
   }
 }

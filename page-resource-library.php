@@ -214,7 +214,7 @@ get_header(); ?>
     });
 
 
-    $('.reset-filter').click(function() {
+    $('.reset-filter, input.search').click(function() {
 
       $('.filter-box').hide();
       $('.filter-bar').hide();
