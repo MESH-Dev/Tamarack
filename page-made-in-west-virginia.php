@@ -9,7 +9,7 @@ get_header(); ?>
       <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
     </div>
     <div class="filter-half filter-skills-button filter-button">
-      Products
+      Businesses
       <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
     </div>
   </div>
