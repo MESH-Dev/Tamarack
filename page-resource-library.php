@@ -155,9 +155,7 @@ get_header(); ?>
                         <?php echo '<img src="' . $n . '" />'; ?>
                       </div>
                       <div class="resource-title">
-                        <?php
-                          echo get_sub_field('title');
-                        ?>
+                        <a href="<?php echo get_sub_field('url'); ?>"><?php echo get_sub_field('title'); ?></a>
                       </div>
                       <div class="resource-description">
                         <?php
@@ -284,7 +282,7 @@ get_header(); ?>
             // If the list item does not contain the text phrase fade it out
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {
 
-                $(this).hide();
+                $(this).fadeOut();
 
             // Show the list item if the phrase matches and increase the count by 1
             } else {
