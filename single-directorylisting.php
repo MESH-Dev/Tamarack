@@ -17,30 +17,34 @@
             <img src="<?php echo $thumb; ?>" />
           </div>
           <div class="directory-sidebar-text">
-            <div class="directorylisting-business-name">
-              <?php echo get_field('business_name'); ?>
-            </div>
+            <?php if(get_field('website')) { ?>
+              <div class="directorylisting-business-name">
+                <a href="<?php echo get_field('website'); ?>"><?php echo get_field('business_name'); ?></a>
+              </div>
+            <?php } ?>
             <div class="directorylisting-skills">
               <?php
                 $str = get_field('primary_creative_practice');
                 $str = ucfirst(str_replace("-", " ", $str));
-
               ?>
               <?php echo $str; ?>
             </div>
+            <?php if (get_field('street_address')) { ?>
             <div class="directorylisting-address">
               <?php echo get_field('street_address'); ?><br/>
               <?php echo get_field('city_state_zip'); ?>
             </div>
-            <div class="directorylisting-phone">
-              <?php echo get_field('phone'); ?>
-            </div>
+            <?php } ?>
+            <?php if (get_field('phone')) { ?>
+              <div class="directorylisting-phone">
+                <?php echo get_field('phone'); ?>
+              </div>
+            <?php } ?>
+            <?php if (get_field('degree_or_certification')) { ?>
             <div class="directorylisting-degree">
               <?php echo get_field('degree_or_certification'); ?>
             </div>
-            <div class="directorylisting-website">
-              <a href="<?php echo get_field('website'); ?>">My Website</a>
-            </div>
+            <?php } ?>
           </div>
           <div class="directory-sidebar-social">
             <?php if(get_field('facebook')) { ?>

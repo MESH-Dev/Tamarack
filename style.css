@@ -1704,7 +1704,7 @@ blockquote .quote-citation:before {
 
 /* line 615, sass/layout/_main.scss */
 .directorylisting-business-name {
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: "din-condensed-web", sans-serif;
   color: #b33ed9;
