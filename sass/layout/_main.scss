@@ -726,6 +726,17 @@ blockquote {
 
 .directory-sidebar-social {
   margin-bottom: 20px;
+
+  span {
+    font-family: $font-family--primary;
+    font-style: italic;
+    font-size: 14px;
+  }
+}
+
+.directory-sidebar-categories {
+  font-style: italic;
+  font-size: 14px;
 }
 
 .collection-single {
@@ -932,7 +943,7 @@ blockquote {
   }
 }
 
-.directorylisting-address, .directorylisting-phone, .directorylisting-website, .directorylisting-degree, .directorylisting-county {
+.directorylisting-address, .directorylisting-phone, .directorylisting-website, .directorylisting-degree, .directorylisting-county, .directorylisting-email {
   font-size: 15px;
   margin-bottom: 15px;
 }

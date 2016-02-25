@@ -116,6 +116,7 @@ get_header(); ?>
                   <div class="marketplace-sidebar-location">
                     <?php echo get_field('city_state_zip', get_the_id()); ?>
                   </div>
+                  
                   <div class="marketplace-sidebar-phone">
                     <?php echo get_field('phone', get_the_id()); ?>
                   </div>
