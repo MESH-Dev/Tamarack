@@ -96,10 +96,10 @@ get_header(); ?>
 
           </div>
           <div class="reset-filter filter">Reset filter <i class="fa fa-angle-double-right"></i></div>
-          <!-- <div class="search-bar">
+          <div class="search-bar">
             <input type="text" class="search" placeholder="Search by..." />
             <div class="search-icon"><i class="fa fa-search"></i></div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>

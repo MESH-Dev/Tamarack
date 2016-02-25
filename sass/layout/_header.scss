@@ -3,6 +3,7 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
+  background-blend-mode: darken;
 
   &.full {
 
@@ -11,8 +12,14 @@ header {
         margin-bottom: 170px;
     }
 
-    .container.homer {
-      min-height: calc(100vh - 34px);
+    .container {
+      .home-container {
+        height: calc(100vh - 80px);
+        display: table;
+        width: 100%;
+        top: 0px;
+        position: relative;
+      }
     }
   }
 

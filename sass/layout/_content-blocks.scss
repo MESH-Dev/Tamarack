@@ -1,0 +1,77 @@
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+.effect-oscar {
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+
+.effect-oscar .content-half {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.effect-oscar .content-text {
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+.effect-oscar .content-text::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+.effect-oscar .content-text-title {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20%,0);
+	transform: translate3d(0,20%,0);
+  margin-top: -30px;
+
+  // border-top: 3px solid white;
+  // border-bottom: 3px solid white;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+}
+
+.effect-oscar .content-text::before,
+.effect-oscar .content-text-cta {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.effect-oscar:hover {
+  padding: 5px;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
+
+.effect-oscar:hover .content-text-title {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect-oscar:hover .content-text::before,
+.effect-oscar:hover .content-text-cta {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.effect-oscar:hover .content-text {
+	background-color: rgba(58, 52, 42, 0);
+}
+
+.effect-oscar:hover .content-half {
+	opacity: 0.4;
+}

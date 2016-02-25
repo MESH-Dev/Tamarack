@@ -115,12 +115,28 @@ jQuery(document).ready(function($){
       $('.learn-sub').hide();
     });
 
+  $('.learn-sub')
+    .mouseenter(function() {
+      $('.learn').addClass('menu-active');
+    })
+    .mouseleave(function() {
+      $('.learn').removeClass('menu-active');
+    });
+
   $('.build, .build-sub')
     .mouseenter(function() {
       $('.build-sub').show();
     })
     .mouseleave(function() {
       $('.build-sub').hide();
+    });
+
+  $('.build-sub')
+    .mouseenter(function() {
+      $('.build').addClass('menu-active');
+    })
+    .mouseleave(function() {
+      $('.build').removeClass('menu-active');
     });
 
   $('.fund, .fund-sub')
@@ -131,12 +147,28 @@ jQuery(document).ready(function($){
       $('.fund-sub').hide();
     });
 
+  $('.fund-sub')
+    .mouseenter(function() {
+      $('.fund').addClass('menu-active');
+    })
+    .mouseleave(function() {
+      $('.fund').removeClass('menu-active');
+    });
+
   $('.connect, .connect-sub')
     .mouseenter(function() {
       $('.connect-sub').show();
     })
     .mouseleave(function() {
       $('.connect-sub').hide();
+    });
+
+  $('.connect-sub')
+    .mouseenter(function() {
+      $('.connect').addClass('menu-active');
+    })
+    .mouseleave(function() {
+      $('.connect').removeClass('menu-active');
     });
 
   $('.grow, .grow-sub')
@@ -147,12 +179,28 @@ jQuery(document).ready(function($){
       $('.grow-sub').hide();
     });
 
+  $('.grow-sub')
+    .mouseenter(function() {
+      $('.grow').addClass('menu-active');
+    })
+    .mouseleave(function() {
+      $('.grow').removeClass('menu-active');
+    });
+
   $('.shop, .shop-sub')
     .mouseenter(function() {
       $('.shop-sub').show();
     })
     .mouseleave(function() {
       $('.shop-sub').hide();
+    });
+
+  $('.shop-sub')
+    .mouseenter(function() {
+      $('.shop').addClass('menu-active');
+    })
+    .mouseleave(function() {
+      $('.shop').removeClass('menu-active');
     });
 
 

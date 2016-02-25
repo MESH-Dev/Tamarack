@@ -110,8 +110,18 @@ footer {
     float: left;
     margin-bottom: 20px;
 
+    .menu-block-primary-text {
+      color: #726e73;
+    }
+
     .menu-block-secondary-text {
+      color: #726e73;
+      border-bottom: 2px solid #726e73;
       width: 65%;
+    }
+
+    &:hover {
+      opacity: 0.7;
     }
 }
 

@@ -246,7 +246,7 @@
 	display: none;
 	z-index: 10;
 	position: absolute;
-	top: 105px;
+	top: 50px;
 
 	ul {
 		list-style-type: none;
@@ -299,12 +299,21 @@
 }
 
 .logo {
-	text-align: right;
-	position: relative;
+	position: absolute;
 	top: -45px;
 }
 
 .main-menu-container {
-	float: right;
-	position: relative;
+	right: 0;
+	position: absolute;
+}
+
+.menu-active {
+	.menu-block-primary-text {
+		color: $purple;
+	}
+	.menu-block-secondary-text {
+		color: $purple;
+		border-bottom: 2px solid $purple;
+	}
 }

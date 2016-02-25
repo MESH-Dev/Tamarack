@@ -1,8 +1,7 @@
 .masthead-title {
   color: white;
   text-align: center;
-  font-size: 69px;
-  margin: 75px 0 35px;
+  font-size: 42px;
   letter-spacing: 0.01em;
 }
 
@@ -69,4 +68,18 @@
 .masthead-arrow {
   text-align: center;
   margin: 50px 0 15px;
+}
+
+.masthead-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.screen {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

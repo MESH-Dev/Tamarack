@@ -59,250 +59,256 @@
 
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
 
+			<div class="screen"></div>
+
 			<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
 
-			<div class="utilities-nav">
-				<div class="container">
-					<div class="twelve columns">
-						<?php if(has_nav_menu('utilities_nav')){
-							$defaults = array(
-								'theme_location'  => 'utilities_nav',
-								'menu'            => 'utilities_nav',
-								'container'       => false,
-								'container_class' => '',
-								'container_id'    => '',
-								'menu_class'      => 'menu',
-								'menu_id'         => '',
-								'echo'            => true,
-								'fallback_cb'     => 'wp_page_menu',
-								'before'          => '',
-								'after'           => '',
-								'link_before'     => '',
-								'link_after'      => '',
-								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s
-																				<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
-																				<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
-																				<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
-																				<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
-																				<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
-																			</ul>',
-								'depth'           => 0,
-								'walker'          => ''
-							); wp_nav_menu( $defaults );
-						}else{
-							echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
-						} ?>
-						<ul id="login-utilities-nav">
-							<?php if (is_user_logged_in()) { ?>
-								<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/creative-network-profile">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
-							<?php } else { ?>
-								<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/register">Join our creative network</a></li><li><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Artist login</a></li>
-							<?php } ?>
-						</ul>
+				<div class="utilities-nav">
+					<div class="container">
+						<div class="twelve columns">
+							<?php if(has_nav_menu('utilities_nav')){
+								$defaults = array(
+									'theme_location'  => 'utilities_nav',
+									'menu'            => 'utilities_nav',
+									'container'       => false,
+									'container_class' => '',
+									'container_id'    => '',
+									'menu_class'      => 'menu',
+									'menu_id'         => '',
+									'echo'            => true,
+									'fallback_cb'     => 'wp_page_menu',
+									'before'          => '',
+									'after'           => '',
+									'link_before'     => '',
+									'link_after'      => '',
+									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s
+																					<li class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-pinterest"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></li>
+																					<li class="social-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
+																				</ul>',
+									'depth'           => 0,
+									'walker'          => ''
+								); wp_nav_menu( $defaults );
+							}else{
+								echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
+							} ?>
+							<ul id="login-utilities-nav">
+								<?php if (is_user_logged_in()) { ?>
+									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/creative-network-profile">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
+								<?php } else { ?>
+									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/register">Join our creative network</a></li><li><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Artist login</a></li>
+								<?php } ?>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="container homer">
+				<div class="container">
 
+					<div class="home-container">
 
-
-				<div class="row">
-
-					<div class="two columns">
 						<div class="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a>
 						</div>
-					</div>
 
-					<div class="main-menu-container">
+						<div class="main-menu-container">
 
-						<div class="main-menu-item menu-item learn">
-							<a href="">
-								<div class="menu-block menu-block-item">
-									<span class="menu-block-primary-text">Learn</span>
-									<span class="menu-block-secondary-text">New Skills</span>
-								</div>
-							</a>
-						</div>
-
-						<div class="main-menu-item menu-item build">
-							<a href="">
-								<div class="menu-block menu-block-item">
-									<span class="menu-block-primary-text">Build</span>
-									<span class="menu-block-secondary-text">Your Business</span>
-								</div>
-							</a>
-						</div>
-
-						<div class="main-menu-item menu-item fund">
-							<a href="">
-								<div class="menu-block menu-block-item">
-									<span class="menu-block-primary-text">Fund</span>
-									<span class="menu-block-secondary-text">Your Ideas</span>
-								</div>
-							</a>
-						</div>
-
-						<div class="main-menu-item menu-item connect">
-							<a href="">
-								<div class="menu-block menu-block-item">
-									<span class="menu-block-primary-text">Connect</span>
-									<span class="menu-block-secondary-text">With Creatives</span>
-								</div>
-							</a>
-						</div>
-
-						<div class="main-menu-item menu-item grow">
+							<div class="main-menu-item menu-item learn">
 								<a href="">
 									<div class="menu-block menu-block-item">
-										<span class="menu-block-primary-text">Grow</span>
-										<span class="menu-block-secondary-text">Creative Industry</span>
+										<span class="menu-block-primary-text">Learn</span>
+										<span class="menu-block-secondary-text">New Skills</span>
 									</div>
 								</a>
-						</div>
+							</div>
 
-						<div class="main-menu-item menu-item shop">
+							<div class="main-menu-item menu-item build">
 								<a href="">
 									<div class="menu-block menu-block-item">
-										<span class="menu-block-primary-text">Shop</span>
-										<span class="menu-block-secondary-text">Businesses</span>
+										<span class="menu-block-primary-text">Build</span>
+										<span class="menu-block-secondary-text">Your Business</span>
 									</div>
 								</a>
+							</div>
+
+							<div class="main-menu-item menu-item fund">
+								<a href="">
+									<div class="menu-block menu-block-item">
+										<span class="menu-block-primary-text">Fund</span>
+										<span class="menu-block-secondary-text">Your Ideas</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="main-menu-item menu-item grow">
+									<a href="">
+										<div class="menu-block menu-block-item">
+											<span class="menu-block-primary-text">Grow</span>
+											<span class="menu-block-secondary-text">Creative Industry</span>
+										</div>
+									</a>
+							</div>
+
+							<div class="main-menu-item menu-item connect">
+								<a href="">
+									<div class="menu-block menu-block-item">
+										<span class="menu-block-primary-text">Connect</span>
+										<span class="menu-block-secondary-text">With Creatives</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="main-menu-item menu-item shop">
+									<a href="">
+										<div class="menu-block menu-block-item">
+											<span class="menu-block-primary-text">Shop</span>
+											<span class="menu-block-secondary-text">Businesses</span>
+										</div>
+									</a>
+							</div>
+
 						</div>
 
-					</div>
 
-				</div>
 
-				<div class="sub-menu-block learn-sub">
-					<div class="sub-menu-block-quote">
-						<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-						<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
-					</div>
-					<div class="sub-menu-block-nav">
-						<ul class="half">
-							<li>Level 2 Links: Access New Markets
-								<ul>
+						<div class="sub-menu-block learn-sub">
+							<div class="sub-menu-block-quote">
+								<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+							</div>
+							<div class="sub-menu-block-nav">
+								<ul class="half">
+									<li>Level 2 Links: Access New Markets
+										<ul>
+											<li>Rural to Urban Markets</li>
+											<li>Find a Sales Representative</li>
+											<li>WV Craft Week</li>
+											<li>Sign up for the "Marketplace"</li>
+											<li>Sign up for the "Trail"</li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="half">
+									<li>Find Support</li>
+										<ul>
+											<li>Coop Business Services</li>
+											<li>Business Education</li>
+										</ul>
+								</ul>
+							</div>
+						</div>
+
+						<div class="sub-menu-block build-sub">
+							<div class="sub-menu-block-quote">
+								<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+							</div>
+							<div class="sub-menu-block-nav">
+								<ul class="half">
 									<li>Rural to Urban Markets</li>
 									<li>Find a Sales Representative</li>
 									<li>WV Craft Week</li>
-									<li>Sign up for the "Marketplace"</li>
+									<li>Sign up for the "Markeplace"</li>
+								</ul>
+								<ul class="half">
 									<li>Sign up for the "Trail"</li>
+									<li>Reduced-Rate Business Services</li>
+									<li>Cooperative Business Services</li>
+									<li>Business Education & Service Network</li>
 								</ul>
-							</li>
-						</ul>
-						<ul class="half">
-							<li>Find Support</li>
-								<ul>
-									<li>Coop Business Services</li>
-									<li>Business Education</li>
+							</div>
+						</div>
+
+						<div class="sub-menu-block fund-sub">
+							<div class="sub-menu-block-quote">
+								<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+							</div>
+							<div class="sub-menu-block-nav">
+								<ul class="half">
+									<li>Emerging Artist Fellowship</li>
+									<li>Master Fellowship</li>
+									<li>Fellowship 3</li>
 								</ul>
-						</ul>
-					</div>
-				</div>
+								<ul class="half">
+									<li>Fellowship 4</li>
+									<li>Emergency Relief Fund</li>
+								</ul>
+							</div>
+						</div>
 
-				<div class="sub-menu-block build-sub">
-					<div class="sub-menu-block-quote">
-						<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-						<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
-					</div>
-					<div class="sub-menu-block-nav">
-						<ul class="half">
-							<li>Rural to Urban Markets</li>
-							<li>Find a Sales Representative</li>
-							<li>WV Craft Week</li>
-							<li>Sign up for the "Markeplace"</li>
-						</ul>
-						<ul class="half">
-							<li>Sign up for the "Trail"</li>
-							<li>Reduced-Rate Business Services</li>
-							<li>Cooperative Business Services</li>
-							<li>Business Education & Service Network</li>
-						</ul>
-					</div>
-				</div>
+						<div class="sub-menu-block connect-sub">
+							<div class="sub-menu-block-quote">
+								<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+							</div>
+							<div class="sub-menu-block-nav">
+								<ul class="half">
+									<li>Sign up for the directory</li>
+									<li>Ask for advice</li>
+									<li>Join your local arts council</li>
+								</ul>
+								<ul class="half">
+									<li>Start your local arts council</li>
+									<li>Host a pop-up event</li>
+								</ul>
+							</div>
+						</div>
 
-				<div class="sub-menu-block fund-sub">
-					<div class="sub-menu-block-quote">
-						<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-						<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
-					</div>
-					<div class="sub-menu-block-nav">
-						<ul class="half">
-							<li>Emerging Artist Fellowship</li>
-							<li>Master Fellowship</li>
-							<li>Fellowship 3</li>
-						</ul>
-						<ul class="half">
-							<li>Fellowship 4</li>
-							<li>Emergency Relief Fund</li>
-						</ul>
-					</div>
-				</div>
+						<div class="sub-menu-block grow-sub">
+							<div class="sub-menu-block-quote">
+								<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+							</div>
+							<div class="sub-menu-block-nav">
+								<ul class="half">
+									<li>Sign up for the directory</li>
+									<li>Ask for advice</li>
+									<li>Join your local arts council</li>
+								</ul>
+								<ul class="half">
+									<li>Start your local arts council</li>
+									<li>Host a pop-up event</li>
+								</ul>
+							</div>
+						</div>
 
-				<div class="sub-menu-block connect-sub">
-					<div class="sub-menu-block-quote">
-						<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-						<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
-					</div>
-					<div class="sub-menu-block-nav">
-						<ul class="half">
-							<li>Sign up for the directory</li>
-							<li>Ask for advice</li>
-							<li>Join your local arts council</li>
-						</ul>
-						<ul class="half">
-							<li>Start your local arts council</li>
-							<li>Host a pop-up event</li>
-						</ul>
-					</div>
-				</div>
+						<div class="sub-menu-block shop-sub">
+							<div class="sub-menu-block-quote">
+								<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
+								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+							</div>
+							<div class="sub-menu-block-nav">
+								<ul class="half">
+									<li>Sign up for the directory</li>
+									<li>Ask for advice</li>
+									<li>Join your local arts council</li>
+								</ul>
+								<ul class="half">
+									<li>Start your local arts council</li>
+									<li>Host a pop-up event</li>
+								</ul>
+							</div>
+						</div>
 
-				<div class="sub-menu-block grow-sub">
-					<div class="sub-menu-block-quote">
-						<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-						<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
-					</div>
-					<div class="sub-menu-block-nav">
-						<ul class="half">
-							<li>Sign up for the directory</li>
-							<li>Ask for advice</li>
-							<li>Join your local arts council</li>
-						</ul>
-						<ul class="half">
-							<li>Start your local arts council</li>
-							<li>Host a pop-up event</li>
-						</ul>
-					</div>
-				</div>
 
-				<div class="sub-menu-block shop-sub">
-					<div class="sub-menu-block-quote">
-						<div class="sub-menu-block-quote-text"><span class="purple">The Marketplace</span> is a place for you to find products, goods, and fine art by the the best artists, creatives, and designers in West Virginia.</div>
-						<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
-					</div>
-					<div class="sub-menu-block-nav">
-						<ul class="half">
-							<li>Sign up for the directory</li>
-							<li>Ask for advice</li>
-							<li>Join your local arts council</li>
-						</ul>
-						<ul class="half">
-							<li>Start your local arts council</li>
-							<li>Host a pop-up event</li>
-						</ul>
-					</div>
-				</div>
+					<?php } ?>
 
-				<?php } ?>
 
-				<div class="row">
-					<div class="ten columns offset-by-one">
+
+					<div class="masthead-text">
 						<div class="masthead-title">
 							<?php echo get_field("masthead_title"); ?>
 						</div>
+						<?php if(get_field("masthead_url")) { ?>
+							<div class="masthead-link">
+								<a href="<?php echo get_field('masthead_url') ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						<?php } ?>
 					</div>
+
 					<?php if (is_page("Creative Network")) { ?>
 					<div class="two columns">
 						<div class="join-bubble">
@@ -311,47 +317,31 @@
 						</div>
 					</div>
 					<?php } ?>
-				</div>
-				<?php if (get_field("masthead_subtitle")) { ?>
-					<div class="row">
-						<div class="eight columns offset-by-two">
-							<div class="masthead-subtitle">
-								<div class="masthead-subtitle-inner">
-									<?php echo get_field("masthead_subtitle"); ?>
-								</div>
+
+					<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
+						<div class="bottom">
+							<div class="masthead-arrow hint--top" data-hint="Scroll Down">
+								<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
 							</div>
 						</div>
-					</div>
-				<?php } ?>
-				<?php if(get_field("masthead_url")) { ?>
-					<div class="row">
-						<div class="twelve columns">
-							<div class="masthead-link">
-								<a href="<?php echo get_field('masthead_url') ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
-							</div>
+					<?php } ?>
+
+
+					<?php if (is_page_template('templates/text.php')) { dimox_breadcrumbs(); } ?>
+					<?php if (get_field('masthead_image_citation')) { ?>
+						<div class="citation">
+							<?php echo get_field('masthead_image_citation'); ?>
 						</div>
-					</div>
-				<?php } ?>
-				<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
-					<div class="row bottom">
-						<div class="masthead-arrow hint--top" data-hint="Scroll Down">
-							<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
-						</div>
-					</div>
-				<?php } ?>
+					<?php } ?>
+
 			</div>
 
-			<?php if (is_page_template('templates/text.php')) { dimox_breadcrumbs(); } ?>
-				<?php if (get_field('masthead_image_citation')) { ?>
-					<div class="citation">
-						<?php echo get_field('masthead_image_citation'); ?>
-					</div>
-				<?php } ?>
-			<?php if (is_front_page()) { ?>
-				<div class="tagline">
-					<?php if (get_field('tagline_url', get_page_by_title('frontpage')->ID)) { ?><a href="<?php echo get_field('tagline_url', get_page_by_title('frontpage')->ID) ?>"> <?php } ?>
-						<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
-					<?php if (get_field('tagline_url', get_page_by_title('frontpage')->ID)) { ?></a><?php } ?>
-				</div>
-			<?php } ?>
 		</header>
+
+		<?php if (is_front_page()) { ?>
+			<div class="tagline">
+				<?php if (get_field('tagline_url', get_page_by_title('frontpage')->ID)) { ?><a href="<?php echo get_field('tagline_url', get_page_by_title('frontpage')->ID) ?>"> <?php } ?>
+					<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
+				<?php if (get_field('tagline_url', get_page_by_title('frontpage')->ID)) { ?></a><?php } ?>
+			</div>
+		<?php } ?>
