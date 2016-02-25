@@ -316,6 +316,13 @@
 						</div>
 					<?php } ?>
 
+					<?php if (is_page("Made in West Virginia")) { ?>
+						<div class="join-bubble join-bubble-made">
+							<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Made in West Virginia</a></span><br/>
+							<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
+						</div>
+					<?php } ?>
+
 					<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
 						<div class="bottom">
 							<div class="masthead-arrow hint--top" data-hint="Scroll Down">
