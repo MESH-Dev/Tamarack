@@ -736,30 +736,33 @@ h4 {
 /* line 43, sass/base/_base.scss */
 h5 {
   font-size: 24px;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 15px;
 }
 
-/* line 47, sass/base/_base.scss */
+/* line 50, sass/base/_base.scss */
 .subtitle-din {
   font-size: 36px;
 }
 
-/* line 51, sass/base/_base.scss */
+/* line 54, sass/base/_base.scss */
 .subtitle-leitura {
   font-size: 30px;
 }
 
-/* line 56, sass/base/_base.scss */
+/* line 59, sass/base/_base.scss */
 a {
   color: #b33ed9;
   text-decoration: none;
   font-weight: 400;
 }
-/* line 61, sass/base/_base.scss */
+/* line 64, sass/base/_base.scss */
 a:hover {
   opacity: 0.7;
 }
 
-/* line 66, sass/base/_base.scss */
+/* line 69, sass/base/_base.scss */
 p {
   margin: 0 0 1.66667em;
   font-weight: 300;
@@ -767,7 +770,7 @@ p {
   line-height: 1.5;
 }
 
-/* line 73, sass/base/_base.scss */
+/* line 76, sass/base/_base.scss */
 blockquote {
   font-size: 1.5pxem;
   font-style: italic;
@@ -777,20 +780,20 @@ blockquote {
   border-left: solid 0.33333em palette(grey, xx-light);
 }
 
-/* line 84, sass/base/_base.scss */
+/* line 87, sass/base/_base.scss */
 img {
   margin-bottom: 1.5pxem;
   max-width: 100%;
   height: auto;
 }
 
-/* line 92, sass/base/_base.scss */
+/* line 95, sass/base/_base.scss */
 ul,
 li {
   margin: 0;
 }
 
-/* line 99, sass/base/_base.scss */
+/* line 102, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -806,22 +809,22 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-/* line 114, sass/base/_base.scss */
+/* line 117, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 121, sass/base/_base.scss */
+/* line 124, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 127, sass/base/_base.scss */
+/* line 130, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 129, sass/base/_base.scss */
+/* line 132, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;

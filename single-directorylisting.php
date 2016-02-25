@@ -54,7 +54,7 @@
             <?php } ?>
           </div>
           <div class="directory-sidebar-categories">
-            <?php 
+            <?php
               foreach(get_field("creative_skills") as $c) { echo ucfirst(str_replace("-", " ", $c)); if ($c == end(get_field("creative_skills"))) {} else { echo ", "; } } ?>
           </div>
         </div>
@@ -68,6 +68,10 @@
             <h2><?php echo get_the_title(); ?></h2>
 
             <?php the_content(); ?>
+
+            <?php if (get_field('biography')) { ?>
+              <h5>Biography</h5>
+            <?php } ?>
 
             <p><?php echo get_field('biography'); ?></p>
 
