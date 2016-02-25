@@ -5,11 +5,11 @@ get_header(); ?>
 
   <div class="filter-row">
     <div class="filter-half filter-product-button filter-button">
-      Collections
+      View All Collections
       <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
     </div>
     <div class="filter-half filter-skills-button filter-button">
-      Businesses
+      View All Businesses
       <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
     </div>
   </div>
