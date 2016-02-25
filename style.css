@@ -2059,7 +2059,7 @@ blockquote .quote-citation:before {
 }
 
 /* line 935, sass/layout/_main.scss */
-.directorylisting-address, .directorylisting-phone, .directorylisting-website, .directorylisting-degree {
+.directorylisting-address, .directorylisting-phone, .directorylisting-website, .directorylisting-degree, .directorylisting-county {
   font-size: 15px;
   margin-bottom: 15px;
 }

@@ -35,6 +35,11 @@
               <?php echo get_field('city_state_zip'); ?>
             </div>
             <?php } ?>
+            <?php if (get_field('county')) { ?>
+              <div class="directorylisting-county">
+                <?php echo ucfirst(get_field('county')); ?> County
+              </div>
+            <?php } ?>
             <?php if (get_field('phone')) { ?>
               <div class="directorylisting-phone">
                 <?php echo get_field('phone'); ?>
