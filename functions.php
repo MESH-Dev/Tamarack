@@ -6,6 +6,18 @@ include('functions/clean.php');
 
 include('functions/widgets.php');
 
+// Replaces the excerpt "more" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '...<br/><br/><a class="moretag" href="'. get_permalink($post->ID) . '"> Read more <i class="fa fa-angle-double-right"></i></a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 //Custon wp-admin logo
 function my_custom_login_logo() {
   echo '<style type="text/css">
