@@ -89,11 +89,12 @@ get_header(); ?>
     <div class="filter-row">
       <div class="twelve columns">
         <div class="search">
-          <div class="search-title">
-            Current Search
-          </div>
-          <div class="search-items">
-
+          <div class="filter-bar">
+            <div class="search-title">
+              Current Search
+            </div>
+            <div class="search-items">
+            </div>
           </div>
           <div class="reset-filter filter">Reset filter <i class="fa fa-angle-double-right"></i></div>
           <div class="search-bar">
@@ -210,16 +211,12 @@ get_header(); ?>
       },
       callbacks: {
         onMixEnd: function(state){
-
         }
       }
     });
 
 
-
     $('.reset-filter').click(function() {
-
-
 
       $('.resource').addClass('show');
       $('.filter-checkbox').removeClass('active');
@@ -248,13 +245,12 @@ get_header(); ?>
     var active = [];
     $('.filter-checkbox').click(function() {
 
-
+      $('.filter-bar').show();
 
       if (first == true) {
         $('.resource').removeClass('show');
         first = false;
       }
-
 
       var item = $(this).next("span").html();
       if(jQuery.inArray(item, active) == -1 ) {
@@ -264,6 +260,35 @@ get_header(); ?>
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
+
+      if (active.length == 0) {
+        $('.filter-bar').hide();
+        $('.resource').addClass('show');
+      }
+
+    });
+
+    //Live Search Global Network
+    $("input.search").keyup(function(){
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val();
+
+        // Loop through grid items
+        $("#resources .resource").each(function(){
+
+            $(this).removeClass('show');
+
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+
+                $(this).hide();
+
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).fadeIn();
+
+            }
+        });
 
     });
 

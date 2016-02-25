@@ -75,3 +75,10 @@
 .effect-oscar:hover .content-half {
 	opacity: 0.4;
 }
+
+
+.effect-circle {
+	&:hover {
+		padding: 5px;
+	}
+}

@@ -46,21 +46,17 @@ jQuery(document).ready(function($){
     });
   });
 
-  $('.menu-block-half-1').hover(function() {
-    $('.sub-menu-block-1').toggle();
-  });
 
-  $('.menu-block-half-2').hover(function() {
-    $('.sub-menu-block-2').toggle();
-  });
 
   $(".footer-block").matchHeight();
 
   $('.press-third').matchHeight();
 
+  // Creative Network
+
   $(".filter-product-button").click(function() {
      $('.filter-box').hide();
-     $(".filter-product").show();
+     $(".filter-product").toggle();
   });
 
   $(".filter-skills-button").click(function() {
@@ -73,25 +69,38 @@ jQuery(document).ready(function($){
      $(".filter-location").show();
   });
 
+  // Resource Library
+
   $(".filter-business-button").click(function() {
-    $('.filter-box').hide();
-    $(".filter-business").show();
+    $(".filter-marketing-and-pr").hide();
+    $(".filter-legal").hide();
+    $(".filter-finance").hide();
+    $(".filter-business").toggle();
   });
 
   $(".filter-marketing-and-pr-button").click(function() {
-    $('.filter-box').hide();
-    $(".filter-marketing-and-pr").show();
+    $(".filter-business").hide();
+    $(".filter-legal").hide();
+    $(".filter-finance").hide();
+    $(".filter-marketing-and-pr").toggle();
   });
 
   $(".filter-legal-button").click(function() {
-    $('.filter-box').hide();
-    $(".filter-legal").show();
+    $(".filter-marketing-and-pr").hide();
+    $(".filter-business").hide();
+    $(".filter-finance").hide();
+    $(".filter-legal").toggle();
   });
 
   $(".filter-finance-button").click(function() {
-    $('.filter-box').hide();
-    $(".filter-finance").show();
+    $(".filter-marketing-and-pr").hide();
+    $(".filter-legal").hide();
+    $(".filter-business").hide();
+    $(".filter-finance").toggle();
   });
+
+
+  // Made in West Virginia
 
   $(".filter-collections-button").click(function() {
     $('.filter-box').hide();
@@ -201,6 +210,16 @@ jQuery(document).ready(function($){
     })
     .mouseleave(function() {
       $('.shop').removeClass('menu-active');
+    });
+
+  $('.effect-circle')
+    .mouseenter(function() {
+      $(this).find('.content-screen').addClass('content-square-screen');
+      $(this).find('.content-screen').removeClass('content-circle-screen');
+    })
+    .mouseleave(function() {
+      $(this).find('.content-screen').addClass('content-circle-screen');
+      $(this).find('.content-screen').removeClass('content-square-screen');
     });
 
 

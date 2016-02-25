@@ -7,11 +7,6 @@ header {
 
   &.full {
 
-    .masthead-title {
-    //   margin-top: 25%;
-        margin-bottom: 170px;
-    }
-
     .container {
       .home-container {
         height: calc(100vh - 80px);
@@ -22,6 +17,16 @@ header {
       }
     }
   }
+
+
+  .home-container {
+    height: calc(40vh);
+    display: table;
+    width: 100%;
+    top: 0px;
+    position: relative;
+  }
+
 
   .bottom {
     position: absolute;

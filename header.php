@@ -299,7 +299,7 @@
 
 
 					<div class="masthead-text">
-						<div class="masthead-title">
+						<div class="masthead-title <?php if (is_front_page()) { echo "masthead-title-home"; } ?>">
 							<?php echo get_field("masthead_title"); ?>
 						</div>
 						<?php if(get_field("masthead_url")) { ?>

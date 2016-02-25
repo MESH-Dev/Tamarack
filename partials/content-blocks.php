@@ -52,8 +52,8 @@ if( have_rows('content_block_section') ):
 
           ?>
 
-            <div class="content-third" style="background-image: url(<?php echo $thumb; ?>)">
-              <div class="content-circle-screen">
+            <div class="content-third effect-circle" style="background-image: url(<?php echo $thumb; ?>)">
+              <div class="content-screen content-circle-screen animated fadeIn">
                 <div class="content-text <?php echo get_sub_field('color'); ?>">
                   <div class="content-text-main">
                     <?php echo get_sub_field('title'); ?>
