@@ -95,7 +95,7 @@ input[type="tel"] {
 
 #message {
   margin-bottom: 25px;
-  
+
   p:first-of-type {
     font-family: $font-family--primary;
     color: #b33ed9;
@@ -138,3 +138,33 @@ input[type="tel"] {
    background: none !important;
    color: red;
  }
+
+
+.frm_submit {
+  margin-top: 20px;
+  
+  input[type="submit"] {
+    width: 50%;
+    float: left;
+  }
+
+  .frm_save_draft {
+    a {
+      float: left;
+      font-family: 'din-condensed-web', sans-serif;
+      text-transform: uppercase;
+      background: #ccc;
+      border: 0;
+      box-shadow: none;
+      text-shadow: none;
+      border-radius: 0;
+      color: #c25543;
+      font-size: 20px;
+      height: auto;
+      padding: 16px;
+      width: 48%;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+}

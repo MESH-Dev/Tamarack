@@ -2630,6 +2630,34 @@ input[type="tel"] {
   color: red;
 }
 
+/* line 143, sass/layout/_input.scss */
+.frm_submit {
+  margin-top: 20px;
+}
+/* line 146, sass/layout/_input.scss */
+.frm_submit input[type="submit"] {
+  width: 50%;
+  float: left;
+}
+/* line 152, sass/layout/_input.scss */
+.frm_submit .frm_save_draft a {
+  float: left;
+  font-family: 'din-condensed-web', sans-serif;
+  text-transform: uppercase;
+  background: #ccc;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  color: #c25543;
+  font-size: 20px;
+  height: auto;
+  padding: 16px;
+  width: 48%;
+  text-align: center;
+  margin-left: 10px;
+}
+
 /* Frame */
 /* line 2, sass/layout/_slider.scss */
 .frame {
