@@ -3157,22 +3157,32 @@ input[type="tel"] {
 }
 
 /* line 27, sass/modules/_masthead.scss */
+.masthead-tagline {
+  text-align: center;
+  font-family: "din-condensed-web", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* line 39, sass/modules/_masthead.scss */
 .masthead-link {
   font-size: 10px;
   text-align: center;
   text-transform: uppercase;
   font-family: "din-condensed-web", sans-serif;
 }
-/* line 33, sass/modules/_masthead.scss */
+/* line 45, sass/modules/_masthead.scss */
 .masthead-link a {
   color: white;
 }
-/* line 36, sass/modules/_masthead.scss */
+/* line 48, sass/modules/_masthead.scss */
 .masthead-link a:hover {
   color: #b33ed9;
 }
 
-/* line 42, sass/modules/_masthead.scss */
+/* line 54, sass/modules/_masthead.scss */
 .citation {
   text-align: right;
   color: white;
@@ -3184,7 +3194,7 @@ input[type="tel"] {
   bottom: 0px;
 }
 
-/* line 53, sass/modules/_masthead.scss */
+/* line 65, sass/modules/_masthead.scss */
 .breadcrumbs {
   text-align: left;
   color: white;
@@ -3195,29 +3205,29 @@ input[type="tel"] {
   left: 0px;
   bottom: 0px;
 }
-/* line 63, sass/modules/_masthead.scss */
+/* line 75, sass/modules/_masthead.scss */
 .breadcrumbs a {
   color: white;
 }
 
-/* line 68, sass/modules/_masthead.scss */
+/* line 80, sass/modules/_masthead.scss */
 .sep {
   margin: 0 5px;
 }
 
-/* line 72, sass/modules/_masthead.scss */
+/* line 84, sass/modules/_masthead.scss */
 .masthead-arrow {
   text-align: center;
   margin: 50px 0 15px;
 }
 
-/* line 77, sass/modules/_masthead.scss */
+/* line 89, sass/modules/_masthead.scss */
 .masthead-text {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 82, sass/modules/_masthead.scss */
+/* line 94, sass/modules/_masthead.scss */
 .screen {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
