@@ -51,6 +51,8 @@ footer {
   font-weight: 700;
   color: black;
   letter-spacing: 0.01em;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .footer-block-1 {
@@ -78,6 +80,7 @@ footer {
  }
 
  .footer-block-3 {
+
    .menu-block-primary-text {
      color: $dove;
      border-bottom: 2px solid black;
@@ -91,6 +94,7 @@ footer {
    }
 
    p {
+     float: left;
      font-size: 12px;
      font-weight: 700;
      color: $dove;

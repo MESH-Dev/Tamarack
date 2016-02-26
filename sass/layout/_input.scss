@@ -164,7 +164,22 @@ input[type="tel"] {
       padding: 16px;
       width: 48%;
       text-align: center;
-      
+
 
   }
+}
+
+#mce-EMAIL {
+  width: 68%;
+  float: left;
+  border: none;
+  margin-bottom: 10px;
+}
+
+#mc-embedded-subscribe {
+  font-size: 12px;
+  padding: 18px;
+  width: 30%;
+  float: right;
+  margin-bottom: 10px;
 }

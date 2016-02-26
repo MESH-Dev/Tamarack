@@ -98,7 +98,14 @@
 				<div class="footer-block footer-block-3">
 					<span class="menu-block-primary-text">Join our conversation</span>
 					<span class="footer-block-newsletter-text">Sign up for our newsletters:</span>
-					<p>Special message can go across here. Special message can go across here. Copyright 2015 Tamarack Foundation for the Arts.</p>
+
+					<form action="//tamarackfoundation.us12.list-manage.com/subscribe/post?u=8eb3531f974a15694f5de5dba&amp;id=2e44333fb6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						<input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button">
+					</form>
+
+
+					<p>Copyright 2015 Tamarack Foundation for the Arts.</p>
 					<span class="footer-citation"><a href="http://meshfresh.com" target="_blank">website by MESH</a></span>
 				</div>
 			</div>
