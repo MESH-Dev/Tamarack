@@ -258,8 +258,11 @@
 		padding: 30px;
 
 		.sub-menu-block-quote-text {
-			font-weight: 700;
-			font-size: 24px;
+			p {
+				font-weight: 700;
+				font-size: 24px;
+				margin-bottom: 0;
+			}
 		}
 		.sub-menu-block-quote-cta {
 			font-size: 14px;
@@ -300,7 +303,8 @@
 
 .logo {
 	position: absolute;
-	top: -45px;
+	top: -35px;
+	width: 150px;
 }
 
 .main-menu-container {

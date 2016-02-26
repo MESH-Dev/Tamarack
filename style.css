@@ -2998,37 +2998,38 @@ input[type="tel"] {
   width: 50%;
   padding: 30px;
 }
-/* line 260, sass/modules/_menus.scss */
-.sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-text {
+/* line 261, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-text p {
   font-weight: 700;
   font-size: 24px;
+  margin-bottom: 0;
 }
-/* line 264, sass/modules/_menus.scss */
+/* line 267, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-cta {
   font-size: 14px;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   display: block;
 }
-/* line 271, sass/modules/_menus.scss */
+/* line 274, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav {
   float: left;
   width: 50%;
   padding: 30px;
 }
-/* line 276, sass/modules/_menus.scss */
+/* line 279, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav .half {
   width: 50%;
   float: left;
   padding-right: 10px;
 }
-/* line 283, sass/modules/_menus.scss */
+/* line 286, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul > li {
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
 }
-/* line 289, sass/modules/_menus.scss */
+/* line 292, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul ul > li {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -3037,23 +3038,24 @@ input[type="tel"] {
   font-weight: 300;
 }
 
-/* line 301, sass/modules/_menus.scss */
+/* line 304, sass/modules/_menus.scss */
 .logo {
   position: absolute;
-  top: -45px;
+  top: -35px;
+  width: 150px;
 }
 
-/* line 306, sass/modules/_menus.scss */
+/* line 310, sass/modules/_menus.scss */
 .main-menu-container {
   right: 0;
   position: absolute;
 }
 
-/* line 312, sass/modules/_menus.scss */
+/* line 316, sass/modules/_menus.scss */
 .menu-active .menu-block-primary-text {
   color: #b33ed9;
 }
-/* line 315, sass/modules/_menus.scss */
+/* line 319, sass/modules/_menus.scss */
 .menu-active .menu-block-secondary-text {
   color: #b33ed9;
   border-bottom: 2px solid #b33ed9;
