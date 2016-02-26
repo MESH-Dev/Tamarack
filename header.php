@@ -303,6 +303,11 @@
 						<div class="masthead-title <?php if (is_front_page()) { echo "masthead-title-home"; } ?>">
 							<?php echo get_field("masthead_title"); ?>
 						</div>
+						<?php if(get_field("masthead_tagline")) { ?>
+						<div class="masthead-tagline">
+ 							<?php echo get_field("masthead_tagline"); ?>
+						</div>
+						<?php } ?>
 						<?php if(get_field("masthead_url")) { ?>
 							<div class="masthead-link">
 								<a href="<?php echo get_field('masthead_url') ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
