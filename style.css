@@ -2637,7 +2637,7 @@ input[type="tel"] {
 /* line 146, sass/layout/_input.scss */
 .frm_submit input[type="submit"] {
   width: 50%;
-  float: left;
+  float: right;
 }
 /* line 151, sass/layout/_input.scss */
 .frm_submit .frm_save_draft {
@@ -2655,7 +2655,6 @@ input[type="tel"] {
   padding: 16px;
   width: 48%;
   text-align: center;
-  margin-left: 10px;
 }
 
 /* Frame */
