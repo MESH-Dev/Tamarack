@@ -460,8 +460,11 @@ blockquote {
 
 .resource {
   padding: 10px;
+  display: inline-block;
   float: left;
   position: relative;
+ 
+ 
 
   .resource-inner {
     padding: 10px;
@@ -522,14 +525,15 @@ blockquote {
   background: #3f4143;
 }
 
-#resources {
+#resources, #directorylistings {
   float: left;
   width: 100%;
+  min-height: 600px;
   position: relative;
 }
 
-#resources .mix {
-  display: none;
+#resources .mix, #directorylistings .mix{
+   display: none;
 }
 
 
@@ -549,7 +553,7 @@ blockquote {
     font-size: 18px;
     color: #b33ed9;
     border-bottom: 1px solid #b33ed9;
-    min-height: 38px;
+    min-height: 48px;
     /* line-height: 40px; */
     padding: 10px 90px 10px 0;
     position: relative;
@@ -714,6 +718,7 @@ blockquote {
 
 .show{
   display: block !important;
+
 }
 
 .directory-single {
@@ -1288,3 +1293,5 @@ blockquote {
   display: none;
   position: relative;
 }
+
+.white-bg{ background: #fff !important}

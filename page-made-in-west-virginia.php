@@ -69,7 +69,7 @@ get_header(); ?>
     });
 
     $('.reset-filter').click(function() {
-      $('.resource').addClass('show');
+      
       $('.filter-checkbox').removeClass('active');
       active = [];
       $('.search-items').html("");
