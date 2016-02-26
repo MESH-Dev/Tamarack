@@ -464,8 +464,6 @@ blockquote {
   float: left;
   position: relative;
  
-
-  height: 350px;
  
 
   .resource-inner {
@@ -527,14 +525,14 @@ blockquote {
   background: #3f4143;
 }
 
-#resources {
+#resources, #directorylistings {
   float: left;
   width: 100%;
   min-height: 600px;
   position: relative;
 }
 
-#resources .mix {
+#resources .mix, #directorylistings .mix{
    display: none;
 }
 

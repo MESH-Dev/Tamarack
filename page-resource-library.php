@@ -312,9 +312,9 @@ get_header(); ?>
     });
 
 
-    // jQuery('.content-fourth').matchHeight({
-    //   byRow: true
-    // });
+    jQuery('.content-fourth').matchHeight({
+      byRow: true
+    });
   });
 </script>
 
