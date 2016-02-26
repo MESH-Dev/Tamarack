@@ -3029,7 +3029,11 @@ input[type="tel"] {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 292, sass/modules/_menus.scss */
+/* line 291, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-nav > ul > li a {
+  color: #3f4042;
+}
+/* line 296, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul ul > li {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -3038,24 +3042,24 @@ input[type="tel"] {
   font-weight: 300;
 }
 
-/* line 304, sass/modules/_menus.scss */
+/* line 308, sass/modules/_menus.scss */
 .logo {
   position: absolute;
   top: -35px;
   width: 150px;
 }
 
-/* line 310, sass/modules/_menus.scss */
+/* line 314, sass/modules/_menus.scss */
 .main-menu-container {
   right: 0;
   position: absolute;
 }
 
-/* line 316, sass/modules/_menus.scss */
+/* line 320, sass/modules/_menus.scss */
 .menu-active .menu-block-primary-text {
   color: #b33ed9;
 }
-/* line 319, sass/modules/_menus.scss */
+/* line 323, sass/modules/_menus.scss */
 .menu-active .menu-block-secondary-text {
   color: #b33ed9;
   border-bottom: 2px solid #b33ed9;

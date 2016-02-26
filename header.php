@@ -120,7 +120,7 @@
 							?>
 
 							<div class="main-menu-item menu-item learn">
-								<a href="">
+								<a href="<?php echo get_field('learn_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Learn</span>
 										<span class="menu-block-secondary-text">New Skills</span>
@@ -129,7 +129,7 @@
 							</div>
 
 							<div class="main-menu-item menu-item build">
-								<a href="<?php echo $main_menu[1]->guid; ?>">
+								<a href="<?php echo get_field('build_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Build</span>
 										<span class="menu-block-secondary-text">Your Business</span>
@@ -138,7 +138,7 @@
 							</div>
 
 							<div class="main-menu-item menu-item fund">
-								<a href="<?php echo $main_menu[2]->guid; ?>">
+								<a href="<?php echo get_field('fund_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Fund</span>
 										<span class="menu-block-secondary-text">Your Ideas</span>
@@ -147,7 +147,7 @@
 							</div>
 
 							<div class="main-menu-item menu-item grow">
-									<a href="<?php echo $main_menu[3]->guid; ?>">
+									<a href="<?php echo get_field('grow_main_link', 'option'); ?>">
 										<div class="menu-block menu-block-item">
 											<span class="menu-block-primary-text">Grow</span>
 											<span class="menu-block-secondary-text">Creative Industry</span>
@@ -156,7 +156,7 @@
 							</div>
 
 							<div class="main-menu-item menu-item connect">
-								<a href="<?php echo $main_menu[4]->guid; ?>">
+								<a href="<?php echo get_field('connect_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Connect</span>
 										<span class="menu-block-secondary-text">With Creatives</span>
@@ -165,7 +165,7 @@
 							</div>
 
 							<div class="main-menu-item menu-item shop">
-									<a href="<?php echo $main_menu[5]->guid; ?>">
+									<a href="<?php echo get_field('shop_main_link', 'option'); ?>">
 										<div class="menu-block menu-block-item">
 											<span class="menu-block-primary-text">Shop</span>
 											<span class="menu-block-secondary-text">Businesses</span>
@@ -182,26 +182,19 @@
 								<div class="sub-menu-block-quote-text">
 									<?php echo get_field('learn_text', 'option'); ?>
 								</div>
-								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('learn_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
 							<div class="sub-menu-block-nav">
 								<ul class="half">
-									<li>Level 2 Links: Access New Markets
-										<ul>
-											<li>Rural to Urban Markets</li>
-											<li>Find a Sales Representative</li>
-											<li>WV Craft Week</li>
-											<li>Sign up for the "Marketplace"</li>
-											<li>Sign up for the "Trail"</li>
-										</ul>
-									</li>
-								</ul>
-								<ul class="half">
-									<li>Find Support</li>
-										<ul>
-											<li>Coop Business Services</li>
-											<li>Business Education</li>
-										</ul>
+
+									<?php
+										if( have_rows('learn_links', 'option') ):
+									    while ( have_rows('learn_links', 'option') ) : the_row();
+								        echo "<li><a href=" . get_sub_field('learn_link', 'option')->guid . " >" . get_sub_field('learn_link', 'option')->post_title . "</a></li>";
+									    endwhile;
+										endif;
+									?>
+
 								</ul>
 							</div>
 						</div>
@@ -209,20 +202,17 @@
 						<div class="sub-menu-block build-sub">
 							<div class="sub-menu-block-quote">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('build_text', 'option'); ?></div>
-								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('build_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
 							<div class="sub-menu-block-nav">
 								<ul class="half">
-									<li>Rural to Urban Markets</li>
-									<li>Find a Sales Representative</li>
-									<li>WV Craft Week</li>
-									<li>Sign up for the "Markeplace"</li>
-								</ul>
-								<ul class="half">
-									<li>Sign up for the "Trail"</li>
-									<li>Reduced-Rate Business Services</li>
-									<li>Cooperative Business Services</li>
-									<li>Business Education & Service Network</li>
+									<?php
+										if( have_rows('build_links', 'option') ):
+									    while ( have_rows('build_links', 'option') ) : the_row();
+								        echo "<li><a href=" . get_sub_field('build_link', 'option')->guid . " >" . get_sub_field('build_link', 'option')->post_title . "</a></li>";
+									    endwhile;
+										endif;
+									?>
 								</ul>
 							</div>
 						</div>
@@ -230,17 +220,17 @@
 						<div class="sub-menu-block fund-sub">
 							<div class="sub-menu-block-quote">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('fund_text', 'option'); ?></div>
-								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('fund_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
 							<div class="sub-menu-block-nav">
 								<ul class="half">
-									<li>Emerging Artist Fellowship</li>
-									<li>Master Fellowship</li>
-									<li>Fellowship 3</li>
-								</ul>
-								<ul class="half">
-									<li>Fellowship 4</li>
-									<li>Emergency Relief Fund</li>
+									<?php
+										if( have_rows('fund_links', 'option') ):
+									    while ( have_rows('fund_links', 'option') ) : the_row();
+								        echo "<li><a href=" . get_sub_field('fund_link', 'option')->guid . " >" . get_sub_field('fund_link', 'option')->post_title . "</a></li>";
+									    endwhile;
+										endif;
+									?>
 								</ul>
 							</div>
 						</div>
@@ -248,17 +238,17 @@
 						<div class="sub-menu-block connect-sub">
 							<div class="sub-menu-block-quote">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('grow_text', 'option'); ?></div>
-								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('grow_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
 							<div class="sub-menu-block-nav">
 								<ul class="half">
-									<li>Sign up for the directory</li>
-									<li>Ask for advice</li>
-									<li>Join your local arts council</li>
-								</ul>
-								<ul class="half">
-									<li>Start your local arts council</li>
-									<li>Host a pop-up event</li>
+									<?php
+										if( have_rows('connect_links', 'option') ):
+									    while ( have_rows('connect_links', 'option') ) : the_row();
+								        echo "<li><a href=" . get_sub_field('connect_link', 'option')->guid . " >" . get_sub_field('connect_link', 'option')->post_title . "</a></li>";
+									    endwhile;
+										endif;
+									?>
 								</ul>
 							</div>
 						</div>
@@ -266,17 +256,17 @@
 						<div class="sub-menu-block grow-sub">
 							<div class="sub-menu-block-quote">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('connect_text', 'option'); ?></div>
-								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('connect_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
 							<div class="sub-menu-block-nav">
 								<ul class="half">
-									<li>Sign up for the directory</li>
-									<li>Ask for advice</li>
-									<li>Join your local arts council</li>
-								</ul>
-								<ul class="half">
-									<li>Start your local arts council</li>
-									<li>Host a pop-up event</li>
+									<?php
+										if( have_rows('grow_links', 'option') ):
+									    while ( have_rows('grow_links', 'option') ) : the_row();
+								        echo "<li><a href=" . get_sub_field('grow_link', 'option')->guid . " >" . get_sub_field('grow_link', 'option')->post_title . "</a></li>";
+									    endwhile;
+										endif;
+									?>
 								</ul>
 							</div>
 						</div>
@@ -284,17 +274,17 @@
 						<div class="sub-menu-block shop-sub">
 							<div class="sub-menu-block-quote">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('shop_text', 'option'); ?></div>
-								<div class="sub-menu-block-quote-cta">Browse Now <i class="fa fa-angle-double-right"></i></div>
+								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('shop_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
 							<div class="sub-menu-block-nav">
 								<ul class="half">
-									<li>Sign up for the directory</li>
-									<li>Ask for advice</li>
-									<li>Join your local arts council</li>
-								</ul>
-								<ul class="half">
-									<li>Start your local arts council</li>
-									<li>Host a pop-up event</li>
+									<?php
+										if( have_rows('shop_links', 'option') ):
+									    while ( have_rows('shop_links', 'option') ) : the_row();
+								        echo "<li><a href=" . get_sub_field('shop_link', 'option')->guid . " >" . get_sub_field('shop_link', 'option')->post_title . "</a></li>";
+									    endwhile;
+										endif;
+									?>
 								</ul>
 							</div>
 						</div>
