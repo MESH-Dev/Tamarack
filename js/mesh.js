@@ -72,35 +72,25 @@ jQuery(document).ready(function($){
      $(".filter-location").toggle();
   });
 
-  // Resource Library
 
-  $(".filter-business-button").click(function() {
-    $(".filter-marketing-and-pr").hide();
-    $(".filter-legal").hide();
-    $(".filter-finance").hide();
-    $(".filter-business").toggle();
+
+  // Resource Library Filter Toggles
+  $(".filter-button").click(function() {
+
+    var section = $(this).attr('data-section');
+    section = "."+section;
+    console.log(section);
+    $(".filter-box").hide();
+    $(".filter-button").removeClass('white-bg');
+
+    $(section).fadeIn('400');
+    $(this).addClass('white-bg');
+    $(section).addClass('white-bg');
+
+ 
   });
 
-  $(".filter-marketing-and-pr-button").click(function() {
-    $(".filter-business").hide();
-    $(".filter-legal").hide();
-    $(".filter-finance").hide();
-    $(".filter-marketing-and-pr").toggle();
-  });
-
-  $(".filter-legal-button").click(function() {
-    $(".filter-marketing-and-pr").hide();
-    $(".filter-business").hide();
-    $(".filter-finance").hide();
-    $(".filter-legal").toggle();
-  });
-
-  $(".filter-finance-button").click(function() {
-    $(".filter-marketing-and-pr").hide();
-    $(".filter-legal").hide();
-    $(".filter-business").hide();
-    $(".filter-finance").toggle();
-  });
+ 
 
 
   // Made in West Virginia
@@ -117,6 +107,7 @@ jQuery(document).ready(function($){
 
   $(".x").click(function() {
     $('.filter-box').hide();
+    $(".filter-button").removeClass('white-bg');
   });
 
   $('.learn, .learn-sub')

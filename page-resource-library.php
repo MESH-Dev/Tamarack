@@ -4,22 +4,22 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
     <div class="filter-row">
-      <div class="filter-quarter filter-business-button filter-button">
+      <div class="filter-quarter filter-business-button filter-button" data-section="filter-business">
         <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/business.png" /></span>
         Business
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter filter-marketing-and-pr-button filter-button">
+      <div class="filter-quarter filter-marketing-and-pr-button filter-button" data-section="filter-marketing-and-pr">
         <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/marketing.png" /></span>
         Marketing & PR
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter filter-legal-button filter-button">
+      <div class="filter-quarter filter-legal-button filter-button" data-section="filter-legal">
         <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/legal.png" /></span>
         Legal
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-quarter filter-finance-button filter-button">
+      <div class="filter-quarter filter-finance-button filter-button" data-section="filter-finance">
         <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/finance.png" /></span>
         Finance
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
@@ -29,7 +29,7 @@ get_header(); ?>
     <div class="filter-row">
       <div class="twelve columns">
         <div class="controls">
-          <div class="filter-box filter-business animated fadeIn">
+          <div class="filter-box filter-business ">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".foundation-building" id="foundation-building"></div><span class="filter-title">Foundation Building</span></li>
@@ -43,7 +43,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".advocacy-policy-and-research" id="advocacy-policy-and-research"></div><span class="filter-title">Advocacy, Policy & Research</span></li>
               </ul>
           </div>
-          <div class="filter-box filter-marketing-and-pr animated fadeIn">
+          <div class="filter-box filter-marketing-and-pr  ">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".asset-building"></div><span class="filter-title">Asset Building</span></li>
@@ -62,7 +62,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".advertising"></div><span class="filter-title">Advertising</span></li>
               </ul>
           </div>
-          <div class="filter-box filter-legal animated fadeIn">
+          <div class="filter-box filter-legal  ">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".considerations"></div><span class="filter-title">Considerations</span></li>
@@ -70,7 +70,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".trademark-patent-and-copyright"></div><span class="filter-title">Trademark, Patent and Copyright</span></li>
               </ul>
           </div>
-          <div class="filter-box filter-finance animated fadeIn">
+          <div class="filter-box filter-finance  ">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".pricing"></div><span class="filter-title">Pricing</span></li>
@@ -91,7 +91,7 @@ get_header(); ?>
         <div class="search">
           <div class="filter-bar">
             <div class="search-title">
-              Current Search
+              Currently Filtered By: 
             </div>
             <div class="search-items">
             </div>
@@ -148,7 +148,7 @@ get_header(); ?>
                   }
                 ?>
 
-                  <div class="content-fourth resource show animated fadeIn <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
+                  <div class="content-fourth resource <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
 
                     <div class="resource-inner">
                       <div class="resource-type">
@@ -194,111 +194,127 @@ get_header(); ?>
 
 <script>
   $(document).ready(function(){
+    var init_filters = '.foundation-building,.business-plan,.time-management,.trade-show-markets,.fairs-and-festivals-markets,.online-markets,.gallery-and-retail-shop-markets,.artists-representatives,.advocacy-policy-and-research,.asset-building,.strategy,.branding,.portfolio,.artist-statement,.social-media,.website,.earned-media-pr,.customer-service,.salesmanship-skills,.email-marketing,.booth-presentation,.print-materials,.advertising,.considerations,.contracts,.trademark-patent-and-copyright,.pricing,.accounting,.revenue-streams,.selling-wholesale,.selling-retail,.grantwriting,.commissions';
 
     var first = true;
-
+    
+    var click = 0;
     $('#resources').mixItUp({
-      load: {
-        filter: ''
-      },
-      animation: {
-        enable: false
-      },
-      controls: {
-        toggleFilterButtons: true
-      },
-      callbacks: {
-        onMixEnd: function(state){
-        }
-      }
-    });
-
-
-    $('.reset-filter, input.search').click(function() {
-
-      $('.filter-box').hide();
-      $('.filter-bar').hide();
-
-      $('.resource').addClass('show');
-      $('.filter-checkbox').removeClass('active');
-      active = [];
-      $('.search-items').html("");
-      first = true;
-      $('#resources').mixItUp('destroy', true);
-      $('#resources').mixItUp({
         load: {
-          filter: ''
+           filter:init_filters
         },
         animation: {
-          enable: false
+          duration: 400,
+          effects: 'fade scale(0.87)',
+          easing: 'cubic-bezier(0.47, 0, 0.745, 0.715)'
         },
         controls: {
-          toggleFilterButtons: true
+          //toggleFilterButtons: true,
+          enable: false
+
         },
         callbacks: {
           onMixEnd: function(state){
-
+            if(click == 0){
+              $('.filter-checkbox').removeClass('active')
+              click = click+1;
+            }
           }
         }
       });
-    });
+ 
 
+    //Update currenly selected filter string
     var active = [];
+    
     $('.filter-checkbox').click(function() {
 
-      $('.filter-bar').show();
+      //show filter bar
+       $('.filter-bar').show();
+     
 
-      if (first == true) {
-        $('.resource').removeClass('show');
-        first = false;
+      //toggle active class on checkbox 
+      if($(this).hasClass('active')){
+        $(this).removeClass('active');
+      }
+      else{
+        $(this).addClass('active');
+      }
+ 
+     
+      var filters = [];
+      
+      var item = $(this).next("span").html();
+
+      //get filter string
+      $('.filter-checkbox.active').each(function() {
+          var this_filter = $(this).attr('data-filter'); 
+          filters.push(this_filter);
+      });
+      var filter_string = filters.join(",");
+ 
+      //if filters are blank, show all
+      if(filter_string == ""){
+        filter_string = init_filters;
       }
 
-      var item = $(this).next("span").html();
+      //trigger filter
+      $('#resources').mixItUp('filter', filter_string);
+
+
+
+      //update html filtered string
       if(jQuery.inArray(item, active) == -1 ) {
         active.push(item);
         $('.search-items').html(active.join(", "));
+
       } else {
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
+  
 
-      if (active.length == 0) {
-        $('.filter-bar').hide();
-        $('.resource').addClass('show');
-      }
+
 
     });
+
+ 
+
+     //Reset Button
+    $('.reset-filter, input.search').click(function() {
+      // $('.filter-box').hide();
+      // $('.filter-bar').hide();
+      //$('.resource').addClass('show');
+      $('.filter-checkbox').removeClass('active');
+      active = [];
+      $('.search-items').html("");
+      first = true;
+      $('#resources').mixItUp('filter', init_filters);
+    });
+
+ 
 
     //Live Search Global Network
     $("input.search").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();
-
         // Loop through grid items
         $("#resources .resource").each(function(){
-
-            $(this).removeClass('show');
-
+          
             // If the list item does not contain the text phrase fade it out
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-
                 $(this).fadeOut();
-
             // Show the list item if the phrase matches and increase the count by 1
             } else {
                 $(this).fadeIn();
-
             }
         });
-
     });
 
 
-    jQuery('.content-fourth').matchHeight({
-      byRow: true
-    });
-
-
+    // jQuery('.content-fourth').matchHeight({
+    //   byRow: true
+    // });
   });
 </script>
 
