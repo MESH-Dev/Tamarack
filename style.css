@@ -3019,7 +3019,7 @@ input[type="tel"] {
 }
 /* line 279, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav .half {
-  width: 50%;
+  width: 100%;
   float: left;
   padding-right: 10px;
 }
