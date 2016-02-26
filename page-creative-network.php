@@ -4,15 +4,15 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
     <div class="filter-row">
-      <div class="filter-third filter-product-button filter-button">
+      <div class="filter-third filter-product-button filter-button" data-section="filter-product">
         Product
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-third filter-skills-button filter-button">
+      <div class="filter-third filter-skills-button filter-button" data-section="filter-skills">
         Skills
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
-      <div class="filter-third filter-location-button filter-button">
+      <div class="filter-third filter-location-button filter-button" data-section="filter-location">
         Location
         <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
       </div>
@@ -174,7 +174,7 @@ get_header(); ?>
 
               <?php $rand = rand(1, 4); ?>
 
-              <div class="content-fourth directorylisting show mix animated fadeIn <?php echo get_field('county'); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
+              <div class="content-fourth directorylisting mix <?php echo get_field('county'); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
                 <div class="directorylisting-inner background-<?php echo $rand; ?>">
 
                   <div class="directorylisting-header">
@@ -238,102 +238,127 @@ get_header(); ?>
 
 <script>
   $(document).ready(function(){
+    var init_filters = '.painting,.drawing,.photography,.printmaking,.sculpture,.installation,.public-art,.new-media-and-video,.mixed-media-and-collage,.ceramics,.pottery,.glass,.paper,.jewelry,.textile,.wood,.furniture,.leather,.metal,.baskets,.candles,.bath-and-body,.architecture,.graphic-design,.fashion,.industrial-design,.painting,.drawing,.photography,.printmaking,.sculpting,.sound,.video,.animation,.installation-art-design-and-production,.public-art-design-and-production,.ceramics-and-pottery,.jewelry-making,.papermaking-and-crafting,.woodworking,.leather-crafting,.metalworking,.basketmaking,.candlemaking,.textile-design-and-artistry,.glassworking-and-forming,.bath-and-body-product-making,.architecture,.graphic-design,.fashion-design,.industrial-design,.barbour,.berkeley,.boone,.braxton,.brooke,.cabell,.calhoun,.clay,.doddridge,.fayette,.gilmer,.grant,.greenbrier,.hampshire,.hancock,.hardy,.harrison,.jackson,.jefferson,.kanawha,.lewis,.lincoln,.marion,.marshall,.mcdowell,.mercer,.mineral,.mingo,.monongalia,.monroe,.morgan,.nicholas,.ohio,.pendleton,.pleasants,.pocahontas,.preston,.putnam,.raleigh,.randolph,.ritchie,.roane,.summers,.taylor,.tucker,.tyler,.upshur,.wayne,.webster,.wetzel,.wirt,.wood,.wyoming';
 
     var first = true;
-
+    
+    var click = 0;
     $('#directorylistings').mixItUp({
-      load: {
-        filter: ''
-      },
-      animation: {
-        enable: false
-      },
-      controls: {
-        toggleFilterButtons: true
-      },
-      callbacks: {
-        onMixEnd: function(state){
-
-        }
-      }
-    });
-
-    $('.reset-filter, input.search').click(function() {
-
-      $('.filter-box').hide();
-      $('.filter-bar').hide();
-
-      $('.directorylisting').addClass('show');
-      $('.filter-checkbox').removeClass('active');
-      active = [];
-      $('.search-items').html("");
-      first = true;
-      $('#directorylistings').mixItUp('destroy', true);
-      $('#directorylistings').mixItUp({
         load: {
-          filter: ''
+           //filter:init_filters
         },
         animation: {
-          enable: false
+          duration: 400,
+          effects: 'fade scale(0.87)',
+          easing: 'cubic-bezier(0.47, 0, 0.745, 0.715)'
         },
         controls: {
-          toggleFilterButtons: true
+          //toggleFilterButtons: true,
+          enable: false
+
         },
         callbacks: {
           onMixEnd: function(state){
-
+            if(click == 0){
+              $('.filter-checkbox').removeClass('active')
+              click = click+1;
+            }
           }
         }
       });
-    });
+ 
 
+    //Update currenly selected filter string
     var active = [];
+    
     $('.filter-checkbox').click(function() {
 
-      $('.filter-bar').show();
+      //show filter bar
+       $('.filter-bar').show();
+     
 
-      if (first == true) {
-        $('.directorylisting').removeClass('show');
-        first = false;
+      //toggle active class on checkbox 
+      if($(this).hasClass('active')){
+        $(this).removeClass('active');
+      }
+      else{
+        $(this).addClass('active');
+      }
+ 
+     
+      var filters = [];
+      
+      var item = $(this).next("span").html();
+
+      //get filter string
+      $('.filter-checkbox.active').each(function() {
+          var this_filter = $(this).attr('data-filter'); 
+          filters.push(this_filter);
+      });
+      var filter_string = filters.join(",");
+ 
+      //if filters are blank, show all
+      if(filter_string == ""){
+        filter_string = init_filters;
       }
 
+      console.log(filter_string);
 
-      var item = $(this).next("span").html();
+      //trigger filter
+      $('#directorylistings').mixItUp('filter', filter_string);
+
+
+
+      //update html filtered string
       if(jQuery.inArray(item, active) == -1 ) {
         active.push(item);
         $('.search-items').html(active.join(", "));
+
       } else {
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
+  
+
+
+
     });
 
+ 
+
+     //Reset Button
+    $('.reset-filter, input.search').click(function() {
+ 
+      $('.filter-checkbox').removeClass('active');
+      active = [];
+      $('.search-items').html("");
+      first = true;
+      $('#directorylistings').mixItUp('filter', init_filters);
+    });
+
+ 
 
     //Live Search Global Network
     $("input.search").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();
-
         // Loop through grid items
         $("#directorylistings .directorylisting").each(function(){
-
-            $(this).removeClass('show');
-
+          
             // If the list item does not contain the text phrase fade it out
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-
                 $(this).fadeOut();
-
             // Show the list item if the phrase matches and increase the count by 1
             } else {
                 $(this).fadeIn();
-
             }
         });
-
     });
 
 
+    jQuery('.content-fourth').matchHeight({
+      byRow: true
+    });
   });
 </script>
 
