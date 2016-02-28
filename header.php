@@ -112,11 +112,11 @@
 
 					<div class="home-container">
 
+						<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
+
 						<div class="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/tam_white.png" /></a>
 						</div>
-
-						<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
 
 						<div class="main-menu-container">
 
