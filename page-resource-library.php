@@ -41,6 +41,14 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".gallery-and-retail-shop-markets" id="gallery-and-retail-shop-markets"></div><span class="filter-title">Gallery & Retail Shop Markets</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".artists-representatives" id="artists-representatives"></div><span class="filter-title">Artist Representatives</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".advocacy-policy-and-research" id="advocacy-policy-and-research"></div><span class="filter-title">Advocacy, Policy & Research</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".awards-and-fellowships" id="awards-and-fellowships"></div><span class="filter-title">Awards and Fellowships</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".residencies" id="residencies"></div><span class="filter-title">Residencies</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".alternative-markets" id="alternative-markets"></div><span class="filter-title">Alternative Markets</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".shipping-and-transporting-work" id="shipping-and-transporting-work"></div><span class="filter-title">Shipping & Transporting Work</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".studio-and-retail-management" id="studio-and-retail-management"></div><span class="filter-title">Studio & Retail Management</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".inventory-management" id="inventory-management"></div><span class="filter-title">Inventory Management</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".professional-development" id="professional-development"></div><span class="filter-title">Professional Development</span></li>
+
               </ul>
           </div>
           <div class="filter-box filter-marketing-and-pr  ">
@@ -60,6 +68,9 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".booth-presentation"></div><span class="filter-title">Booth Presentation</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".print-materials"></div><span class="filter-title">Print Materials</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".advertising"></div><span class="filter-title">Advertising</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".podcasting"></div><span class="filter-title">Podcasting</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".outreach-and-promotion"></div><span class="filter-title">Outreach & Promotion</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".product-presentation"></div><span class="filter-title">Product Presentation</span></li>
               </ul>
           </div>
           <div class="filter-box filter-legal  ">
@@ -68,18 +79,23 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".considerations"></div><span class="filter-title">Considerations</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".contracts"></div><span class="filter-title">Contracts</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".trademark-patent-and-copyright"></div><span class="filter-title">Trademark, Patent and Copyright</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".risks-and-protections"></div><span class="filter-title">Risks and Protections</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".reproduction-rights"></div><span class="filter-title">Reproduction Rights</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".estate"></div><span class="filter-title">Estate</span></li>
               </ul>
           </div>
           <div class="filter-box filter-finance  ">
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".pricing"></div><span class="filter-title">Pricing</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".accounting"></div><span class="filter-title">Accounting</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".accounting"></div><span class="filter-title">Accounting & Taxes</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".revenue-streams"></div><span class="filter-title">Revenue Streams</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".selling-wholesale"></div><span class="filter-title">Selling Wholesale</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".selling-retail"></div><span class="filter-title">Selling Retail</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".grantwriting"></div><span class="filter-title">Grantwriting</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".commissions"></div><span class="filter-title">Commissions</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".grants-and-scholarships"></div><span class="filter-title">Grants and Scholarships</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".loans"></div><span class="filter-title">Loans</span></li>
               </ul>
           </div>
         </div>
@@ -194,7 +210,7 @@ get_header(); ?>
 
 <script>
   $(document).ready(function(){
-    var init_filters = '.foundation-building,.business-plan,.time-management,.trade-show-markets,.fairs-and-festivals-markets,.online-markets,.gallery-and-retail-shop-markets,.artists-representatives,.advocacy-policy-and-research,.asset-building,.strategy,.branding,.portfolio,.artist-statement,.social-media,.website,.earned-media-pr,.customer-service,.salesmanship-skills,.email-marketing,.booth-presentation,.print-materials,.advertising,.considerations,.contracts,.trademark-patent-and-copyright,.pricing,.accounting,.revenue-streams,.selling-wholesale,.selling-retail,.grantwriting,.commissions';
+    var init_filters = '.foundation-building,.business-plan,.time-management,.trade-show-markets,.fairs-and-festivals-markets,.online-markets,.gallery-and-retail-shop-markets,.artists-representatives,.advocacy-policy-and-research,awards-and-fellowships,residencies,alternative-markets,shipping-and-transporting-work,studio-and-retail-management,inventory-management,professional-development,.asset-building,.strategy,.branding,.portfolio,.artist-statement,.social-media,.website,.earned-media-pr,.customer-service,.salesmanship-skills,.email-marketing,.booth-presentation,.print-materials,.advertising,.podcasting,.outreach-and-promotion,.product-presentation,.considerations,.contracts,.trademark-patent-and-copyright,.risks-and-protections,.reproduction-rights,.estate,.pricing,.accounting,.revenue-streams,.selling-wholesale,.selling-retail,.grantwriting,.commissions,.grants-and-scholarships,.loans';
 
     var first = true;
     
