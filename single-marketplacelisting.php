@@ -31,6 +31,8 @@ get_header(); ?>
                 <?php if ($product_image_8) { ?><li><img src="<?php echo $product_image_8['sizes']['large']; ?>" /></li><?php } ?>
                 <?php if ($product_image_9) { ?><li><img src="<?php echo $product_image_9['sizes']['large']; ?>" /></li><?php } ?>
     		</ul>
+            <div class="prevPage"><i class="fa fa-angle-left"></i></div>
+            <div class="nextPage"><i class="fa fa-angle-right"></i></div>
     	</div>
 
     <?php } ?>
@@ -213,7 +215,9 @@ get_header(); ?>
       itemNav: 'basic',
       speed: 300,
       mouseDragging: 1,
-      touchDragging: 1
+      touchDragging: 1,
+      nextPage: $('.nextPage'),
+      prevPage: $('.prevPage')
     };
     var frame = new Sly('#crazy', options).init();
 

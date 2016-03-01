@@ -2,6 +2,12 @@
 .frame {
 	overflow: hidden;
   height: 450px;
+  position: relative;
+
+  img {
+	  height: 100%;
+	  width: auto;
+  }
 }
 .frame ul {
 	list-style: none;
@@ -16,4 +22,20 @@
 	padding: 0;
 	text-align: center;
 	cursor: pointer;
+}
+
+.prevPage {
+	position: absolute;
+	left: 15px;
+	color: white;
+	top: calc(50% - 50px);
+	font-size: 100px;
+}
+
+.nextPage {
+	position: absolute;
+	right: 15px;
+	color: white;
+	top: calc(50% - 50px);
+	font-size: 100px;
 }

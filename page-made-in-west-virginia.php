@@ -4,15 +4,35 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
   <div class="filter-row">
-    <div class="filter-half filter-product-button filter-button">
+    <div class="filter-half filter-collections-button filter-button">
       View All Collections
       <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
     </div>
-    <div class="filter-half filter-skills-button filter-button">
+    <div class="filter-half filter-businesses-button filter-button">
       View All Businesses
       <span class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-dark.png" /></span>
     </div>
   </div>
+
+  <div class="filter-row">
+    <div class="twelve columns">
+      <div class="controls">
+        <div class="filter-box filter-collections">
+            <div class="x">x</div>
+            <p>
+                Collections coming soon!
+            </p>
+        </div>
+        <div class="filter-box filter-businesses">
+            <div class="x">x</div>
+            <div class="filter-inner">
+                
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div id="marketplace">
 
@@ -69,7 +89,7 @@ get_header(); ?>
     });
 
     $('.reset-filter').click(function() {
-      
+
       $('.filter-checkbox').removeClass('active');
       active = [];
       $('.search-items').html("");

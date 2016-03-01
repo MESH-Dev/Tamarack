@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
   $('.press-third').matchHeight();
 
   // Creative Network
- 
+
   // Resource Library Filter Toggles
   $(".filter-button").click(function() {
 
@@ -67,10 +67,10 @@ jQuery(document).ready(function($){
     $(this).addClass('white-bg');
     $(section).addClass('white-bg');
 
- 
+
   });
 
- 
+
 
 
   // Made in West Virginia

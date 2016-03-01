@@ -99,6 +99,39 @@
 
   </div>
 
+  <?php
+      $product_image_1 = get_field('product_image_1');
+      $product_image_2 = get_field('product_image_2');
+      $product_image_3 = get_field('product_image_3');
+  ?>
+
+  <div class="frame crazy" id="crazy">
+    <ul class="clearfix">
+        <?php if ($product_image_1) { ?><li><img src="<?php echo $product_image_1['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_2) { ?><li><img src="<?php echo $product_image_2['sizes']['large']; ?>" /></li><?php } ?>
+        <?php if ($product_image_3) { ?><li><img src="<?php echo $product_image_3['sizes']['large']; ?>" /></li><?php } ?>
+    </ul>
+    <div class="prevPage"><i class="fa fa-angle-left"></i></div>
+    <div class="nextPage"><i class="fa fa-angle-right"></i></div>
+  </div>
+
+  <script src="<?php echo get_template_directory_uri(); ?>/js/sly.min.js"></script>
+
+  <script type="text/javascript">
+
+      var options = {
+        horizontal: 1,
+        itemNav: 'basic',
+        speed: 300,
+        mouseDragging: 1,
+        touchDragging: 1,
+        nextPage: $('.nextPage'),
+        prevPage: $('.prevPage')
+      };
+      var frame = new Sly('#crazy', options).init();
+
+  </script>
+
 </main><!-- #main -->
 
 <?php get_footer(); ?>
