@@ -2487,6 +2487,11 @@ blockquote .quote-citation:before {
   height: 100%;
 }
 
+/* line 1331, sass/layout/_main.scss */
+.form-section {
+  float: left;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
