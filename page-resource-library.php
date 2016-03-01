@@ -107,7 +107,7 @@ get_header(); ?>
         <div class="search">
           <div class="filter-bar">
             <div class="search-title">
-              Currently Filtered By: 
+              Currently Filtered By:
             </div>
             <div class="search-items">
             </div>
@@ -213,7 +213,7 @@ get_header(); ?>
     var init_filters = '.foundation-building,.business-plan,.time-management,.trade-show-markets,.fairs-and-festivals-markets,.online-markets,.gallery-and-retail-shop-markets,.artists-representatives,.advocacy-policy-and-research,awards-and-fellowships,residencies,alternative-markets,shipping-and-transporting-work,studio-and-retail-management,inventory-management,professional-development,.asset-building,.strategy,.branding,.portfolio,.artist-statement,.social-media,.website,.earned-media-pr,.customer-service,.salesmanship-skills,.email-marketing,.booth-presentation,.print-materials,.advertising,.podcasting,.outreach-and-promotion,.product-presentation,.considerations,.contracts,.trademark-patent-and-copyright,.risks-and-protections,.reproduction-rights,.estate,.pricing,.accounting,.revenue-streams,.selling-wholesale,.selling-retail,.grantwriting,.commissions,.grants-and-scholarships,.loans';
 
     var first = true;
-    
+
     var click = 0;
     $('#resources').mixItUp({
         load: {
@@ -238,37 +238,37 @@ get_header(); ?>
           }
         }
       });
- 
+
 
     //Update currenly selected filter string
     var active = [];
-    
+
     $('.filter-checkbox').click(function() {
 
       //show filter bar
        $('.filter-bar').show();
-     
 
-      //toggle active class on checkbox 
+
+      //toggle active class on checkbox
       if($(this).hasClass('active')){
         $(this).removeClass('active');
       }
       else{
         $(this).addClass('active');
       }
- 
-     
+
+
       var filters = [];
-      
+
       var item = $(this).next("span").html();
 
       //get filter string
       $('.filter-checkbox.active').each(function() {
-          var this_filter = $(this).attr('data-filter'); 
+          var this_filter = $(this).attr('data-filter');
           filters.push(this_filter);
       });
       var filter_string = filters.join(",");
- 
+
       //if filters are blank, show all
       if(filter_string == ""){
         filter_string = init_filters;
@@ -288,13 +288,13 @@ get_header(); ?>
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
-  
+
 
 
 
     });
 
- 
+
 
      //Reset Button
     $('.reset-filter, input.search').click(function() {
@@ -308,7 +308,7 @@ get_header(); ?>
       $('#resources').mixItUp('filter', init_filters);
     });
 
- 
+
 
     //Live Search Global Network
     $("input.search").keyup(function(){
@@ -316,7 +316,7 @@ get_header(); ?>
         var filter = $(this).val();
         // Loop through grid items
         $("#resources .resource").each(function(){
-          
+
             // If the list item does not contain the text phrase fade it out
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {
                 $(this).fadeOut();
@@ -327,10 +327,6 @@ get_header(); ?>
         });
     });
 
-
-    jQuery('.content-fourth').matchHeight({
-      byRow: true
-    });
   });
 </script>
 

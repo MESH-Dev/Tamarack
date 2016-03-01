@@ -1553,6 +1553,7 @@ blockquote .quote-citation:before {
   display: inline-block;
   float: left;
   position: relative;
+  height: 425px;
 }
 /* line 469, sass/layout/_main.scss */
 .resource .resource-inner {
