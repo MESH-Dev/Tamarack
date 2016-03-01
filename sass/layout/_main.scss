@@ -997,6 +997,7 @@ blockquote {
   width: 100%;
   float: left;
   padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .marketplace-content-half {
@@ -1296,3 +1297,23 @@ blockquote {
 }
 
 .white-bg{ background: #fff !important}
+
+.marketplace-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+    margin-bottom: 25px;
+}
+
+.marketplace-video iframe,
+.marketplace-video object,
+.marketplace-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

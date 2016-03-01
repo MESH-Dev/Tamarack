@@ -10,16 +10,14 @@
 
   <div class="container">
 
-      <div class="twelve columns">
+      <div class="ten columns offset-by-one">
+          <div class="content-full">
 
-          <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+              <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+                  <?php the_content(); ?>
+              <?php endwhile; ?>
 
-              <h2><?php the_title(); ?></h2>
-
-              <?php the_content(); ?>
-
-          <?php endwhile; ?>
-
+          </div>
       </div>
 
   </div>

@@ -3,35 +3,37 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
 
-    <div class="frame crazy" id="crazy">
-			<ul class="clearfix">
+    <?php
 
-        <?php
+      $product_image_1 = get_field('product_image_1');
+      $product_image_2 = get_field('product_image_2');
+      $product_image_3 = get_field('product_image_3');
+      $product_image_4 = get_field('product_image_4');
+      $product_image_5 = get_field('product_image_5');
+      $product_image_6 = get_field('product_image_6');
+      $product_image_7 = get_field('product_image_7');
+      $product_image_8 = get_field('product_image_8');
+      $product_image_9 = get_field('product_image_9');
 
-          $product_image_1 = get_field('product_image_1');
-          $product_image_2 = get_field('product_image_2');
-          $product_image_3 = get_field('product_image_3');
-          $product_image_4 = get_field('product_image_4');
-          $product_image_5 = get_field('product_image_5');
-          $product_image_6 = get_field('product_image_6');
-          $product_image_7 = get_field('product_image_7');
-          $product_image_8 = get_field('product_image_8');
-          $product_image_9 = get_field('product_image_9');
+    ?>
 
-        ?>
+    <?php if ($product_image_1 or $product_image_2 or $product_image_3 or $product_image_4 or $product_image_5 or $product_image_6 or $product_image_7 or $product_image_8 or $product_image_9) { ?>
 
-				<?php if ($product_image_1) { ?><li><img src="<?php echo $product_image_1['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_2) { ?><li><img src="<?php echo $product_image_2['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_3) { ?><li><img src="<?php echo $product_image_3['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_4) { ?><li><img src="<?php echo $product_image_4['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_5) { ?><li><img src="<?php echo $product_image_5['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_6) { ?><li><img src="<?php echo $product_image_6['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_7) { ?><li><img src="<?php echo $product_image_7['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_8) { ?><li><img src="<?php echo $product_image_8['sizes']['large']; ?>" /></li><?php } ?>
-        <?php if ($product_image_9) { ?><li><img src="<?php echo $product_image_9['sizes']['large']; ?>" /></li><?php } ?>
+        <div class="frame crazy" id="crazy">
+    		<ul class="clearfix">
+    			<?php if ($product_image_1) { ?><li><img src="<?php echo $product_image_1['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_2) { ?><li><img src="<?php echo $product_image_2['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_3) { ?><li><img src="<?php echo $product_image_3['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_4) { ?><li><img src="<?php echo $product_image_4['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_5) { ?><li><img src="<?php echo $product_image_5['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_6) { ?><li><img src="<?php echo $product_image_6['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_7) { ?><li><img src="<?php echo $product_image_7['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_8) { ?><li><img src="<?php echo $product_image_8['sizes']['large']; ?>" /></li><?php } ?>
+                <?php if ($product_image_9) { ?><li><img src="<?php echo $product_image_9['sizes']['large']; ?>" /></li><?php } ?>
+    		</ul>
+    	</div>
 
-			</ul>
-		</div>
+    <?php } ?>
 
 
     <div id="marketplace-single">
@@ -50,6 +52,16 @@ get_header(); ?>
 
               <?php endwhile; ?>
 
+              <?php
+
+              if (get_field('video')) { ?>
+                  <div class="marketplace-video">
+                      <?php the_field('video'); ?>
+                  </div>
+              <?php }
+
+              ?>
+
               <?php if (get_field('web_address')) { ?>
                 <a href="<?php echo get_field('web_address'); ?>">
                   <div class="marketplace-button background-1">
@@ -59,7 +71,9 @@ get_header(); ?>
               <?php } ?>
 
               <div class="marketplace-section">
-                <div class="marketplace-section-title"><?php echo get_field('section_title'); ?></div>
+                <?php if (get_field('section_title')) { ?>
+                    <div class="marketplace-section-title"><?php echo get_field('section_title'); ?></div>
+                <?php } ?>
                 <div class="marketplace-section-content">
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
