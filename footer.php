@@ -79,9 +79,9 @@
 				<div class="footer-block footer-block-2">
 					<span class="menu-block-primary-text">Connect with us</span>
 					<span class="footer-block-title">Follow our day-to-day building the creative economy:</span>
-					<span class="footer-block-text footer-block-full-width"><i class="fa fa-twitter"></i> Tweet Us: @tamarackfoundation</span>
-					<span class="footer-block-text footer-block-full-width"><i class="fa fa-instagram"></i> Follow Our Instagram: @tamarackfoundation</span>
-					<span class="footer-block-text footer-block-full-width"><i class="fa fa-facebook"></i> Find us on <a href="https://www.facebook.com">Facebook</a></span>
+					<span class="footer-block-text footer-block-full-width"><i class="fa fa-twitter"></i> Tweet Us: <a href="https://twitter.com/tamarackfound">@tamarackfoundation</a></span>
+					<span class="footer-block-text footer-block-full-width"><i class="fa fa-instagram"></i> Follow Our Instagram: <a href="https://www.instagram.com/tamarackfoundation/">@tamarackfoundation</a></span>
+					<span class="footer-block-text footer-block-full-width"><i class="fa fa-facebook"></i> Find us on <a href="https://www.facebook.com/TamarackFoundation">Facebook</a></span>
 					<br/>
 					<span class="footer-block-title">Snail mail:</span>
 					<span class="footer-block-text footer-block-full-width">555 Address Address St.</span>
