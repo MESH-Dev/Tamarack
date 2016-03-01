@@ -32,7 +32,8 @@ get_header(); ?>
 
   <div class="container">
 
-      <div class="twelve columns">
+      <div class="ten columns offset-by-one">
+          <div class="content-full">
 
           <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -66,6 +67,7 @@ get_header(); ?>
 
           <?php endwhile; ?>
 
+          </div>
       </div>
 
   </div>
