@@ -769,8 +769,13 @@ p {
   font-size: 15px;
   line-height: 1.5;
 }
+/* line 75, sass/base/_base.scss */
+p img {
+  float: left;
+  margin: 0 20px 10px 0;
+}
 
-/* line 76, sass/base/_base.scss */
+/* line 81, sass/base/_base.scss */
 blockquote {
   font-size: 1.5pxem;
   font-style: italic;
@@ -780,20 +785,20 @@ blockquote {
   border-left: solid 0.33333em palette(grey, xx-light);
 }
 
-/* line 87, sass/base/_base.scss */
+/* line 92, sass/base/_base.scss */
 img {
   margin-bottom: 1.5pxem;
   max-width: 100%;
   height: auto;
 }
 
-/* line 95, sass/base/_base.scss */
+/* line 100, sass/base/_base.scss */
 ul,
 li {
   margin: 0;
 }
 
-/* line 102, sass/base/_base.scss */
+/* line 107, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -809,22 +814,22 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-/* line 117, sass/base/_base.scss */
+/* line 122, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 124, sass/base/_base.scss */
+/* line 129, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 130, sass/base/_base.scss */
+/* line 135, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 132, sass/base/_base.scss */
+/* line 137, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;

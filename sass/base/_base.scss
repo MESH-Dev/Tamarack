@@ -71,6 +71,11 @@ p {
 	font-weight: $font-weight--light;
 	font-size: 15px;
 	line-height: (27px/18px);
+
+	img {
+		float: left;
+		margin: 0 20px 10px 0;
+	}
 }
 
 blockquote {
