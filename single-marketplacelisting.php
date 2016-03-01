@@ -186,31 +186,37 @@ get_header(); ?>
 
     <div class="marketplace-press">
       <div class="press-third press-1">
-        <div class="press-tag">Notable Press</div>
-        <div class="press-quote">
-          "<?php echo get_field('favorite_quote_1', $current_id); ?>"
-        </div>
-        <div class="press-cta">
-          <a href="<?php echo get_field('link_1', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
-        </div>
+        <?php if (get_field('favorite_quote_1')) { ?>
+            <div class="press-tag">Notable Press</div>
+            <div class="press-quote">
+              "<?php echo get_field('favorite_quote_1', $current_id); ?>"
+            </div>
+            <div class="press-cta">
+              <a href="<?php echo get_field('link_1', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+        <?php } ?>
       </div>
       <div class="press-third press-2">
-        <div class="press-tag">Notable Press</div>
-        <div class="press-quote">
-          "<?php echo get_field('favorite_quote_2', $current_id); ?>"
-        </div>
-        <div class="press-cta">
-          <a href="<?php echo get_field('link_2', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
-        </div>
+        <?php if (get_field('favorite_quote_2')) { ?>
+            <div class="press-tag">Notable Press</div>
+            <div class="press-quote">
+              "<?php echo get_field('favorite_quote_2', $current_id); ?>"
+            </div>
+            <div class="press-cta">
+              <a href="<?php echo get_field('link_2', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+        <?php } ?>
       </div>
       <div class="press-third press-3">
-        <div class="press-tag">Notable Press</div>
-        <div class="press-quote">
-          "<?php echo get_field('favorite_quote_3', $current_id); ?>"
-        </div>
-        <div class="press-cta">
-          <a href="<?php echo get_field('link_3', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
-        </div>
+        <?php if (get_field('favorite_quote_3')) { ?>
+            <div class="press-tag">Notable Press</div>
+            <div class="press-quote">
+              "<?php echo get_field('favorite_quote_3', $current_id); ?>"
+            </div>
+            <div class="press-cta">
+              <a href="<?php echo get_field('link_3', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+        <?php } ?>
       </div>
     </div>
 

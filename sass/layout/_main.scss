@@ -891,6 +891,7 @@ blockquote {
   background-image: url(img/plaster.png);
   background-size: cover;
   color: $purple;
+  min-height: 200px;
 
   a {
     color: $purple;
@@ -901,6 +902,7 @@ blockquote {
   background-image: url(img/cup.png);
   background-size: cover;
   color: #3f4143;
+  min-height: 200px;
 
   a {
     color: #3f4143;
@@ -911,6 +913,7 @@ blockquote {
   background-image: url(img/cherry.png);
   background-size: cover;
   color: white;
+  min-height: 200px;
 
   a {
     color: white;
