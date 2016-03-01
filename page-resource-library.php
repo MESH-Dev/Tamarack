@@ -48,7 +48,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".studio-and-retail-management" id="studio-and-retail-management"></div><span class="filter-title">Studio & Retail Management</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".inventory-management" id="inventory-management"></div><span class="filter-title">Inventory Management</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".professional-development" id="professional-development"></div><span class="filter-title">Professional Development</span></li>
-
+                  <li><div class="filter-checkbox filter" data-filter=".other-business" id="other-business"></div><span class="filter-title">Other</span></li>
               </ul>
           </div>
           <div class="filter-box filter-marketing-and-pr  ">
@@ -71,6 +71,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".podcasting"></div><span class="filter-title">Podcasting</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".outreach-and-promotion"></div><span class="filter-title">Outreach & Promotion</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".product-presentation"></div><span class="filter-title">Product Presentation</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".other-marketing-and-pr" id="other-marketing-and-pr"></div><span class="filter-title">Other</span></li>
               </ul>
           </div>
           <div class="filter-box filter-legal  ">
@@ -82,6 +83,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".risks-and-protections"></div><span class="filter-title">Risks and Protections</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".reproduction-rights"></div><span class="filter-title">Reproduction Rights</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".estate"></div><span class="filter-title">Estate</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".other-legal" id="other-legal"></div><span class="filter-title">Other</span></li>
               </ul>
           </div>
           <div class="filter-box filter-finance  ">
@@ -96,6 +98,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".commissions"></div><span class="filter-title">Commissions</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".grants-and-scholarships"></div><span class="filter-title">Grants and Scholarships</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".loans"></div><span class="filter-title">Loans</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".other-finance" id="other-finance"></div><span class="filter-title">Other</span></li>
               </ul>
           </div>
         </div>
