@@ -2754,14 +2754,15 @@ input[type="tel"] {
   overflow: hidden;
   height: 450px;
   position: relative;
+  width: 100%;
 }
-/* line 7, sass/layout/_slider.scss */
+/* line 8, sass/layout/_slider.scss */
 .frame img {
   height: 100%;
   width: auto;
 }
 
-/* line 12, sass/layout/_slider.scss */
+/* line 13, sass/layout/_slider.scss */
 .frame ul {
   list-style: none;
   margin: 0;
@@ -2769,7 +2770,7 @@ input[type="tel"] {
   height: 100%;
 }
 
-/* line 18, sass/layout/_slider.scss */
+/* line 19, sass/layout/_slider.scss */
 .frame ul li {
   float: left;
   height: 100%;
@@ -2779,7 +2780,7 @@ input[type="tel"] {
   cursor: pointer;
 }
 
-/* line 27, sass/layout/_slider.scss */
+/* line 28, sass/layout/_slider.scss */
 .prevPage {
   position: absolute;
   left: 15px;
@@ -2789,7 +2790,7 @@ input[type="tel"] {
   cursor: pointer;
 }
 
-/* line 36, sass/layout/_slider.scss */
+/* line 37, sass/layout/_slider.scss */
 .nextPage {
   position: absolute;
   right: 15px;
