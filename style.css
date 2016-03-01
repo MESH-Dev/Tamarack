@@ -2786,15 +2786,17 @@ input[type="tel"] {
   color: white;
   top: calc(50% - 50px);
   font-size: 100px;
+  cursor: pointer;
 }
 
-/* line 35, sass/layout/_slider.scss */
+/* line 36, sass/layout/_slider.scss */
 .nextPage {
   position: absolute;
   right: 15px;
   color: white;
   top: calc(50% - 50px);
   font-size: 100px;
+  cursor: pointer;
 }
 
 /*---------------*/

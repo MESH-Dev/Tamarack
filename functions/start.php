@@ -132,7 +132,18 @@ function dimox_breadcrumbs() {
 			if ( get_post_type() != 'post' ) {
 				$post_type = get_post_type_object(get_post_type());
 				$slug = $post_type->rewrite;
-				printf($link, $home_link . '/' . $slug['slug'] . '/', $post_type->labels->singular_name);
+				if ($slug['slug'] == 'marketplace-listing') {
+					$link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . 'Made in West Virginia' . $link_in_after . '</a>' . $link_after;
+					$s = 'made-in-west-virginia';
+				}
+				elseif ($slug['slug'] == 'directory-listing') {
+					$link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . 'Creative Network' . $link_in_after . '</a>' . $link_after;
+					$s = 'creative-network';
+				}
+				else {
+
+				}
+				printf($link, $home_link . $s, $post_type->labels->singular_name);
 				if ($show_current) echo $sep . $before . get_the_title() . $after;
 			} else {
 				$cat = get_the_category(); $cat = $cat[0];
@@ -149,6 +160,7 @@ function dimox_breadcrumbs() {
 		// custom post type
 		} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
 			$post_type = get_post_type_object(get_post_type());
+
 			if ( get_query_var('paged') ) {
 				echo $sep . sprintf($link, get_post_type_archive_link($post_type->name), $post_type->label) . $sep . $before . sprintf($text['page'], get_query_var('paged')) . $after;
 			} else {
