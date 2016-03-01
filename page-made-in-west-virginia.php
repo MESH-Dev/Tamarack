@@ -26,7 +26,9 @@ get_header(); ?>
         <div class="filter-box filter-businesses">
             <div class="x">x</div>
             <div class="filter-inner">
-                
+                <div class="filter-inner-left">
+                    
+                </div>
             </div>
         </div>
       </div>

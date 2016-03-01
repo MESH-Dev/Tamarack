@@ -77,6 +77,7 @@ get_header(); ?>
                     <div class="marketplace-section-title"><?php echo get_field('section_title'); ?></div>
                 <?php } ?>
                 <div class="marketplace-section-content">
+                 <?php if (get_field('about_your_creative_process')) { ?>
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
                       Creative Process
@@ -86,6 +87,8 @@ get_header(); ?>
                       <?php echo get_field('about_your_creative_process'); ?>
                     </div>
                   </div>
+                 <?php } ?>
+                 <?php if (get_field('sets_your_business_apart')) { ?>
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
                       My Business
@@ -95,15 +98,8 @@ get_header(); ?>
                       <?php echo get_field('sets_your_business_apart'); ?>
                     </div>
                   </div>
-                  <div class="marketplace-content-half">
-                    <div class="marketplace-content-title">
-                      Inspirations
-                    </div>
-                    <hr>
-                    <div class="marketplace-content-body">
-                      <?php echo get_field('work_inspiration'); ?>
-                    </div>
-                  </div>
+                 <?php } ?>
+                 <?php if (get_field('honors_or_awards')) { ?>
                   <div class="marketplace-content-half">
                     <div class="marketplace-content-title">
                       Honors and Awards
@@ -113,6 +109,18 @@ get_header(); ?>
                       <?php echo get_field('honors_or_awards'); ?>
                     </div>
                   </div>
+                 <?php } ?>
+                 <?php if (get_field('work_inspiration')) { ?>
+                  <div class="marketplace-content-half">
+                    <div class="marketplace-content-title">
+                      Inspirations
+                    </div>
+                    <hr>
+                    <div class="marketplace-content-body">
+                      <?php echo get_field('work_inspiration'); ?>
+                    </div>
+                  </div>
+                 <?php } ?>
                 </div>
               </div>
             </div>
