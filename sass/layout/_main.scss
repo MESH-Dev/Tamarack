@@ -587,6 +587,10 @@ blockquote {
   color: #3f4143;
 }
 
+.directorylisting {
+    height: 640px;
+}
+
 .directorylisting-header {
   &:hover {
     img {
@@ -998,6 +1002,12 @@ blockquote {
   float: left;
   padding-bottom: 50px;
   padding-top: 20px;
+}
+
+.content-container {
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
 }
 
 .marketplace-content-half {

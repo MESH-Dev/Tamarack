@@ -241,7 +241,7 @@ get_header(); ?>
     var init_filters = '.painting,.drawing,.photography,.printmaking,.sculpture,.installation,.public-art,.new-media-and-video,.mixed-media-and-collage,.ceramics,.pottery,.glass,.paper,.jewelry,.textile,.wood,.furniture,.leather,.metal,.baskets,.candles,.bath-and-body,.architecture,.graphic-design,.fashion,.industrial-design,.painting,.drawing,.photography,.printmaking,.sculpting,.sound,.video,.animation,.installation-art-design-and-production,.public-art-design-and-production,.ceramics-and-pottery,.jewelry-making,.papermaking-and-crafting,.woodworking,.leather-crafting,.metalworking,.basketmaking,.candlemaking,.textile-design-and-artistry,.glassworking-and-forming,.bath-and-body-product-making,.architecture,.graphic-design,.fashion-design,.industrial-design,.barbour,.berkeley,.boone,.braxton,.brooke,.cabell,.calhoun,.clay,.doddridge,.fayette,.gilmer,.grant,.greenbrier,.hampshire,.hancock,.hardy,.harrison,.jackson,.jefferson,.kanawha,.lewis,.lincoln,.marion,.marshall,.mcdowell,.mercer,.mineral,.mingo,.monongalia,.monroe,.morgan,.nicholas,.ohio,.pendleton,.pleasants,.pocahontas,.preston,.putnam,.raleigh,.randolph,.ritchie,.roane,.summers,.taylor,.tucker,.tyler,.upshur,.wayne,.webster,.wetzel,.wirt,.wood,.wyoming';
 
     var first = true;
-    
+
     var click = 0;
     $('#directorylistings').mixItUp({
         load: {
@@ -266,37 +266,37 @@ get_header(); ?>
           }
         }
       });
- 
+
 
     //Update currenly selected filter string
     var active = [];
-    
+
     $('.filter-checkbox').click(function() {
 
       //show filter bar
        $('.filter-bar').show();
-     
 
-      //toggle active class on checkbox 
+
+      //toggle active class on checkbox
       if($(this).hasClass('active')){
         $(this).removeClass('active');
       }
       else{
         $(this).addClass('active');
       }
- 
-     
+
+
       var filters = [];
-      
+
       var item = $(this).next("span").html();
 
       //get filter string
       $('.filter-checkbox.active').each(function() {
-          var this_filter = $(this).attr('data-filter'); 
+          var this_filter = $(this).attr('data-filter');
           filters.push(this_filter);
       });
       var filter_string = filters.join(",");
- 
+
       //if filters are blank, show all
       if(filter_string == ""){
         filter_string = init_filters;
@@ -318,17 +318,17 @@ get_header(); ?>
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
-  
+
 
 
 
     });
 
- 
+
 
      //Reset Button
     $('.reset-filter, input.search').click(function() {
- 
+
       $('.filter-checkbox').removeClass('active');
       active = [];
       $('.search-items').html("");
@@ -336,7 +336,7 @@ get_header(); ?>
       $('#directorylistings').mixItUp('filter', init_filters);
     });
 
- 
+
 
     //Live Search Global Network
     $("input.search").keyup(function(){
@@ -344,7 +344,7 @@ get_header(); ?>
         var filter = $(this).val();
         // Loop through grid items
         $("#directorylistings .directorylisting").each(function(){
-          
+
             // If the list item does not contain the text phrase fade it out
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {
                 $(this).fadeOut();
@@ -356,9 +356,6 @@ get_header(); ?>
     });
 
 
-    jQuery('.content-fourth').matchHeight({
-      byRow: true
-    });
   });
 </script>
 
