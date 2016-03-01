@@ -256,21 +256,27 @@
 		float: left;
 		width: 50%;
 		padding: 30px;
-
-		.sub-menu-block-quote-text {
-			p {
-				font-weight: 700;
-				font-size: 24px;
-				margin-bottom: 0;
-			}
-		}
-		.sub-menu-block-quote-cta {
-			font-size: 14px;
-		  font-family: $font-family--secondary;
-		  text-transform: uppercase;
-		  display: block;
+	}
+	.sub-menu-block-quote-full {
+		float: left;
+		width: 100%;
+		padding: 30px;
+	}
+	
+	.sub-menu-block-quote-text {
+		p {
+			font-weight: 700;
+			font-size: 24px;
+			margin-bottom: 0;
 		}
 	}
+	.sub-menu-block-quote-cta {
+		font-size: 14px;
+	  font-family: $font-family--secondary;
+	  text-transform: uppercase;
+	  display: block;
+	}
+
 	.sub-menu-block-nav {
 		float: left;
 		width: 50%;

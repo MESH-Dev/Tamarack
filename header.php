@@ -177,121 +177,137 @@
 										</div>
 									</a>
 							</div>
-
 						</div>
 
 
 
 						<div class="sub-menu-block learn-sub">
-							<div class="sub-menu-block-quote">
+							<div class="<?php if (have_rows('learn_links', 'option')) { echo 'sub-menu-block-quote'; } else { echo 'sub-menu-block-quote-full'; } ?>">
 								<div class="sub-menu-block-quote-text">
 									<?php echo get_field('learn_text', 'option'); ?>
 								</div>
 								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('learn_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
-							<div class="sub-menu-block-nav">
-								<ul class="half">
 
-									<?php
-										if( have_rows('learn_links', 'option') ):
-									    while ( have_rows('learn_links', 'option') ) : the_row();
-								        echo "<li><a href=" . get_sub_field('learn_link', 'option')->guid . " >" . get_sub_field('learn_link', 'option')->post_title . "</a></li>";
-									    endwhile;
-										endif;
-									?>
+							<?php if (have_rows('learn_links', 'option')) { ?>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
 
-								</ul>
-							</div>
+										<?php
+											if( have_rows('learn_links', 'option') ):
+										    while ( have_rows('learn_links', 'option') ) : the_row();
+									        echo "<li><a href=" . get_sub_field('learn_link', 'option')->guid . " >" . get_sub_field('learn_link', 'option')->post_title . "</a></li>";
+										    endwhile;
+											endif;
+										?>
+
+									</ul>
+								</div>
+							<?php } ?>
+
 						</div>
 
 						<div class="sub-menu-block build-sub">
-							<div class="sub-menu-block-quote">
+							<div class="<?php if (have_rows('build_links', 'option')) { echo 'sub-menu-block-quote'; } else { echo 'sub-menu-block-quote-full'; } ?>">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('build_text', 'option'); ?></div>
 								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('build_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
-							<div class="sub-menu-block-nav">
-								<ul class="half">
-									<?php
-										if( have_rows('build_links', 'option') ):
-									    while ( have_rows('build_links', 'option') ) : the_row();
-								        echo "<li><a href=" . get_sub_field('build_link', 'option')->guid . " >" . get_sub_field('build_link', 'option')->post_title . "</a></li>";
-									    endwhile;
-										endif;
-									?>
-								</ul>
-							</div>
+
+							<?php if (have_rows('build_links', 'option')) { ?>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<?php
+											if( have_rows('build_links', 'option') ):
+										    while ( have_rows('build_links', 'option') ) : the_row();
+									        echo "<li><a href=" . get_sub_field('build_link', 'option')->guid . " >" . get_sub_field('build_link', 'option')->post_title . "</a></li>";
+										    endwhile;
+											endif;
+										?>
+									</ul>
+								</div>
+							<?php } ?>
+
 						</div>
 
 						<div class="sub-menu-block fund-sub">
-							<div class="sub-menu-block-quote">
+							<div class="<?php if (have_rows('fund_links', 'option')) { echo 'sub-menu-block-quote'; } else { echo 'sub-menu-block-quote-full'; } ?>">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('fund_text', 'option'); ?></div>
 								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('fund_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
-							<div class="sub-menu-block-nav">
-								<ul class="half">
-									<?php
-										if( have_rows('fund_links', 'option') ):
-									    while ( have_rows('fund_links', 'option') ) : the_row();
-								        echo "<li><a href=" . get_sub_field('fund_link', 'option')->guid . " >" . get_sub_field('fund_link', 'option')->post_title . "</a></li>";
-									    endwhile;
-										endif;
-									?>
-								</ul>
-							</div>
-						</div>
-
-						<div class="sub-menu-block connect-sub">
-							<div class="sub-menu-block-quote">
-								<div class="sub-menu-block-quote-text"><?php echo get_field('grow_text', 'option'); ?></div>
-								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('grow_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
-							</div>
-							<div class="sub-menu-block-nav">
-								<ul class="half">
-									<?php
-										if( have_rows('connect_links', 'option') ):
-									    while ( have_rows('connect_links', 'option') ) : the_row();
-								        echo "<li><a href=" . get_sub_field('connect_link', 'option')->guid . " >" . get_sub_field('connect_link', 'option')->post_title . "</a></li>";
-									    endwhile;
-										endif;
-									?>
-								</ul>
-							</div>
+							<?php if (have_rows('fund_links', 'option')) { ?>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<?php
+											if( have_rows('fund_links', 'option') ):
+										    while ( have_rows('fund_links', 'option') ) : the_row();
+									        echo "<li><a href=" . get_sub_field('fund_link', 'option')->guid . " >" . get_sub_field('fund_link', 'option')->post_title . "</a></li>";
+										    endwhile;
+											endif;
+										?>
+									</ul>
+								</div>
+							<?php } ?>
 						</div>
 
 						<div class="sub-menu-block grow-sub">
-							<div class="sub-menu-block-quote">
+							<div class="<?php if (have_rows('grow_links', 'option')) { echo 'sub-menu-block-quote'; } else { echo 'sub-menu-block-quote-full'; } ?>">
+								<div class="sub-menu-block-quote-text"><?php echo get_field('grow_text', 'option'); ?></div>
+								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('grow_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
+							</div>
+
+							<?php if (have_rows('grow_links', 'option')) { ?>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<?php
+											if( have_rows('grow_links', 'option') ):
+										    while ( have_rows('grow_links', 'option') ) : the_row();
+									        echo "<li><a href=" . get_sub_field('grow_link', 'option')->guid . " >" . get_sub_field('grow_link', 'option')->post_title . "</a></li>";
+										    endwhile;
+											endif;
+										?>
+									</ul>
+								</div>
+							<?php } ?>
+						</div>
+
+						<div class="sub-menu-block connect-sub">
+							<div class="<?php if (have_rows('connect_links', 'option')) { echo 'sub-menu-block-quote'; } else { echo 'sub-menu-block-quote-full'; } ?>">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('connect_text', 'option'); ?></div>
 								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('connect_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
-							<div class="sub-menu-block-nav">
-								<ul class="half">
-									<?php
-										if( have_rows('grow_links', 'option') ):
-									    while ( have_rows('grow_links', 'option') ) : the_row();
-								        echo "<li><a href=" . get_sub_field('grow_link', 'option')->guid . " >" . get_sub_field('grow_link', 'option')->post_title . "</a></li>";
-									    endwhile;
-										endif;
-									?>
-								</ul>
-							</div>
+							<?php if (have_rows('connect_links', 'option')) { ?>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<?php
+											if( have_rows('connect_links', 'option') ):
+										    while ( have_rows('connect_links', 'option') ) : the_row();
+									        echo "<li><a href=" . get_sub_field('connect_link', 'option')->guid . " >" . get_sub_field('connect_link', 'option')->post_title . "</a></li>";
+										    endwhile;
+											endif;
+										?>
+									</ul>
+								</div>
+							<?php } ?>
 						</div>
 
 						<div class="sub-menu-block shop-sub">
-							<div class="sub-menu-block-quote">
+							<div class="<?php if (have_rows('shop_links', 'option')) { echo 'sub-menu-block-quote'; } else { echo 'sub-menu-block-quote-full'; } ?>">
 								<div class="sub-menu-block-quote-text"><?php echo get_field('shop_text', 'option'); ?></div>
 								<div class="sub-menu-block-quote-cta"><a href="<?php echo get_field('shop_main_link', 'option'); ?>">Browse Now <i class="fa fa-angle-double-right"></i></a></div>
 							</div>
-							<div class="sub-menu-block-nav">
-								<ul class="half">
-									<?php
-										if( have_rows('shop_links', 'option') ):
-									    while ( have_rows('shop_links', 'option') ) : the_row();
-								        echo "<li><a href=" . get_sub_field('shop_link', 'option')->guid . " >" . get_sub_field('shop_link', 'option')->post_title . "</a></li>";
-									    endwhile;
-										endif;
-									?>
-								</ul>
-							</div>
+							<?php if (have_rows('shop_links', 'option')) { ?>
+								<div class="sub-menu-block-nav">
+									<ul class="half">
+										<?php
+											if( have_rows('shop_links', 'option') ):
+										    while ( have_rows('shop_links', 'option') ) : the_row();
+									        echo "<li><a href=" . get_sub_field('shop_link', 'option')->guid . " >" . get_sub_field('shop_link', 'option')->post_title . "</a></li>";
+										    endwhile;
+											endif;
+										?>
+									</ul>
+								</div>
+							<?php } ?>
 						</div>
 
 

@@ -3052,42 +3052,48 @@ input[type="tel"] {
   width: 50%;
   padding: 30px;
 }
-/* line 261, sass/modules/_menus.scss */
-.sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-text p {
+/* line 260, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-quote-full {
+  float: left;
+  width: 100%;
+  padding: 30px;
+}
+/* line 267, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-quote-text p {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 0;
 }
-/* line 267, sass/modules/_menus.scss */
-.sub-menu-block .sub-menu-block-quote .sub-menu-block-quote-cta {
+/* line 273, sass/modules/_menus.scss */
+.sub-menu-block .sub-menu-block-quote-cta {
   font-size: 14px;
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
   display: block;
 }
-/* line 274, sass/modules/_menus.scss */
+/* line 280, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav {
   float: left;
   width: 50%;
   padding: 30px;
 }
-/* line 279, sass/modules/_menus.scss */
+/* line 285, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav .half {
   width: 100%;
   float: left;
   padding-right: 10px;
 }
-/* line 286, sass/modules/_menus.scss */
+/* line 292, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul > li {
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
 }
-/* line 291, sass/modules/_menus.scss */
+/* line 297, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul > li a {
   color: #3f4042;
 }
-/* line 296, sass/modules/_menus.scss */
+/* line 302, sass/modules/_menus.scss */
 .sub-menu-block .sub-menu-block-nav > ul ul > li {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -3096,24 +3102,24 @@ input[type="tel"] {
   font-weight: 300;
 }
 
-/* line 308, sass/modules/_menus.scss */
+/* line 314, sass/modules/_menus.scss */
 .logo {
   position: absolute;
   top: -35px;
   width: 150px;
 }
 
-/* line 314, sass/modules/_menus.scss */
+/* line 320, sass/modules/_menus.scss */
 .main-menu-container {
   right: 0;
   position: absolute;
 }
 
-/* line 320, sass/modules/_menus.scss */
+/* line 326, sass/modules/_menus.scss */
 .menu-active .menu-block-primary-text {
   color: #b33ed9;
 }
-/* line 323, sass/modules/_menus.scss */
+/* line 329, sass/modules/_menus.scss */
 .menu-active .menu-block-secondary-text {
   color: #b33ed9;
   border-bottom: 2px solid #b33ed9;
