@@ -319,9 +319,9 @@
 						<div class="masthead-title <?php if (is_front_page()) { echo "masthead-title-home"; } ?>">
 							<?php
 								if (get_post_type() == 'directory-listing') {
-									echo get_field("masthead_title");
-								} else {
 									echo get_the_title();
+								} else {
+									echo get_field("masthead_title");
 								}
 
 							?>
