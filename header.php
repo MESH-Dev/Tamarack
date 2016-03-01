@@ -318,7 +318,7 @@
 					<div class="masthead-text">
 						<div class="masthead-title <?php if (is_front_page()) { echo "masthead-title-home"; } ?>">
 							<?php
-								if (get_post_type() == 'directory-listing') {
+								if (get_post_type() == 'directorylisting') {
 									echo get_the_title();
 								} else {
 									echo get_field("masthead_title");
