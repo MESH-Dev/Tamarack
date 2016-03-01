@@ -21,7 +21,7 @@
 
 /* TABLET (PORTRAIT)
  * ------------------------------------------------ */
-@media only screen and (min-width: $tablet-width) and (max-width: $base-width - 1) {
+@media only screen and (min-width: $tablet-width) and (max-width: $base-width + 150) {
 	.container {
 		width: $tablet-width;
 		.column,
