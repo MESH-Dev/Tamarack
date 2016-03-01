@@ -26,7 +26,11 @@ if( have_rows('content_block_section') ):
               <div class="content-rectangle-screen">
                 <div class="content-text <?php echo get_sub_field('color'); ?>">
                     <div class="content-text-title"><?php echo get_sub_field('title'); ?></div>
-                    <div class="content-text-cta"><?php echo get_sub_field('subtitle'); ?></div>
+                    <div class="content-text-cta">
+                        <?php if(get_sub_field('url')) { ?><a href="<?php echo get_sub_field('url'); ?>"><?php } ?>
+                            <?php echo get_sub_field('subtitle'); ?>
+                        <?php if(get_sub_field('url')) { ?></a><?php } ?>
+                    </div>
                 </div>
               </div>
             </div>
