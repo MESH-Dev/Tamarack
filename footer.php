@@ -122,6 +122,136 @@
 
 </div><!-- #page -->
 
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+	  <li>
+		<div class="menu-block menu-block-item">
+			<span class="menu-block-primary-text">Learn</span>
+			<span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
+			<span class="menu-block-secondary-text">New Skills</span>
+		</div>
+		<div class="sub-menu-block-item">
+			<ul>
+				<li><a href="<?php echo get_field('learn_main_link', 'option'); ?>">Learn New Skills</a></li>
+
+				<?php
+					if( have_rows('learn_links', 'option') ):
+						while ( have_rows('learn_links', 'option') ) : the_row();
+							echo "<li><a href=" . get_sub_field('learn_link', 'option')->guid . " >" . get_sub_field('learn_link', 'option')->post_title . "</a></li>";
+						endwhile;
+					endif;
+				?>
+
+			</ul>
+		</div>
+	  </li>
+	  <li>
+		<div class="menu-block menu-block-item">
+			<span class="menu-block-primary-text">Build</span>
+			<span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
+			<span class="menu-block-secondary-text">Your Business</span>
+		</div>
+		<div class="sub-menu-block-item">
+			<ul>
+				<li><a href="<?php echo get_field('build_main_link', 'option'); ?>">Build Your Business</a></li>
+
+				<?php
+					if( have_rows('build_links', 'option') ):
+						while ( have_rows('build_links', 'option') ) : the_row();
+							echo "<li><a href=" . get_sub_field('build_link', 'option')->guid . " >" . get_sub_field('build_link', 'option')->post_title . "</a></li>";
+						endwhile;
+					endif;
+				?>
+			</ul>
+		</div>
+		</a>
+	  </li>
+	  <li>
+		  <div class="menu-block menu-block-item">
+			  <span class="menu-block-primary-text">Fund</span>
+			  <span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
+			  <span class="menu-block-secondary-text">Your Ideas</span>
+		  </div>
+		  <div class="sub-menu-block-item">
+			<ul>
+				<li><a href="<?php echo get_field('fund_main_link', 'option'); ?>">Fund Your Ideas</a></li>
+
+				<?php
+					if( have_rows('fund_links', 'option') ):
+						while ( have_rows('fund_links', 'option') ) : the_row();
+							echo "<li><a href=" . get_sub_field('fund_link', 'option')->guid . " >" . get_sub_field('fund_link', 'option')->post_title . "</a></li>";
+						endwhile;
+					endif;
+				?>
+			</ul>
+		  </div>
+	  </li>
+	  <li>
+		  <div class="menu-block menu-block-item">
+			  <span class="menu-block-primary-text">Grow</span>
+			  <span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
+			  <span class="menu-block-secondary-text">Creative Industry</span>
+		  </div>
+		  <div class="sub-menu-block-item">
+			  <ul>
+				<li><a href="<?php echo get_field('grow_main_link', 'option'); ?>">Grow Creative Industry</a></li>
+
+				<?php
+					if( have_rows('grow_links', 'option') ):
+						while ( have_rows('grow_links', 'option') ) : the_row();
+							echo "<li><a href=" . get_sub_field('grow_link', 'option')->guid . " >" . get_sub_field('grow_link', 'option')->post_title . "</a></li>";
+						endwhile;
+					endif;
+				?>
+			  </ul>
+		  </div>
+	  </li>
+	  <li>
+		<div class="menu-block menu-block-item">
+			<span class="menu-block-primary-text">Connect</span><span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
+			<span class="menu-block-secondary-text">With Creatives</span>
+		</div>
+		<div class="sub-menu-block-item">
+			<ul>
+				<li><a href="<?php echo get_field('connect_main_link', 'option'); ?>">Connect With Creatives</a></li>
+
+				<?php
+					if( have_rows('connect_links', 'option') ):
+						while ( have_rows('connect_links', 'option') ) : the_row();
+							echo "<li><a href=" . get_sub_field('connect_link', 'option')->guid . " >" . get_sub_field('connect_link', 'option')->post_title . "</a></li>";
+						endwhile;
+					endif;
+				?>
+			</ul>
+		</div>
+	  </li>
+	  <li>
+		  <div class="menu-block menu-block-item">
+			  <span class="menu-block-primary-text">Shop</span>
+			  <span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
+			  <span class="menu-block-secondary-text">Businesses</span>
+		  </div>
+		  <div class="sub-menu-block-item">
+			<ul>
+				<li>
+					<a href="<?php echo get_field('shop_main_link', 'option'); ?>">Shop Businesses</a>
+				</li>
+
+				<?php
+					if( have_rows('shop_links', 'option') ):
+						while ( have_rows('shop_links', 'option') ) : the_row();
+							echo "<li><a href=" . get_sub_field('shop_link', 'option')->guid . " >" . get_sub_field('shop_link', 'option')->post_title . "</a></li>";
+						endwhile;
+					endif;
+				?>
+			</ul>
+		  </div>
+	  </li>
+  </ul>
+
+</div>
+
 <?php wp_footer(); ?>
 
 <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
