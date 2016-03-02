@@ -49,7 +49,13 @@
 	<div id="page" class='hfeed site <?php if( is_page_template('templates/homepage-fullscreen.php') && is_front_page() ) { echo "content-fullscreen"; } ?>'>
 
 		<?php
-		$image = get_field('masthead_image');
+
+		if (is_home()) {
+			$image = get_field('masthead_image');
+		} else {
+			$image = get_field('masthead_image', 19);
+		}
+
 
 		if( !empty($image) ) {
 			$thumb = $image['sizes']['background-fullscreen'];
@@ -177,6 +183,10 @@
 										</div>
 									</a>
 							</div>
+						</div>
+
+						<div class="main-menu-toggle">
+							<i class="fa fa-navicon"></i>
 						</div>
 
 

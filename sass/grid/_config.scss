@@ -20,15 +20,18 @@ $is-fluid: false !global; // Change to true to enable the fluid grid
 $base-col-width: 80px !global; // The width of each columns
 $base-gutter-width: 10px !global; // The space between columns
 $base-col-count: 12 !global; // The number of columns
-$base-width: if($is-fluid, 98%, ($base-col-width + $base-gutter-width) * $base-col-count) !global; // Calculated
+$base-width: if($is-fluid, 98%, (($base-col-width + $base-gutter-width) * $base-col-count)) !global; // Calculated
 
 // BREAKPOINTS
 
+$big-width: $base-width + 200 !global;
 $desktop-width: 900px !global;
 $tablet-width: 768px !global; // the tablet width media query
 $mobile-portrait-width: 300px !global; // the mobile portrait media query
-$mobile-landscape-width: 420px !global; // the mobile landscape media query
+$mobile-landscape-width: 480px !global; // the mobile landscape media query
 $mobile-fluid-width: 100%; // this value is not used with breakpoints, it is used in generating a fluid grid for mobile devices
 
 // ------ CHANGE MAY CAUSE UNDESIRED RESULTS
 $base-font-size: $base__font-size !global; // the font size in the html element so we can use ems and rems in a friendly way
+
+$max: "max-width";

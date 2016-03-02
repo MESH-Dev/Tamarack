@@ -56,6 +56,16 @@
 		font-family: $font-family--secondary;
 		padding: 5px 10px;
 
+		@include mq($big-width, "max-width") {
+	      padding: 5px;
+	    }
+
+		@include mq($tablet-width, "max-width") {
+			&.menu-item {
+				display: none;
+			}
+	    }
+
 		&.social-icon {
 			padding: 5px;
 		}
@@ -167,6 +177,10 @@
 	float: left;
 	display: inline;
 	position: relative;
+
+	@include mq($big-width, "max-width") {
+	  width: 80px;
+	}
 }
 
 .menu-item:hover {
@@ -320,6 +334,22 @@
 .main-menu-container {
 	right: 0;
 	position: absolute;
+
+	@include mq($tablet-width, $max) {
+	  display: none;
+	}
+}
+
+.main-menu-toggle {
+	display: none;
+	position: absolute;
+	right: 0;
+	color: white;
+	font-size: 30px;
+
+	@include mq($tablet-width, $max) {
+	  display: block;
+	}
 }
 
 .menu-active {

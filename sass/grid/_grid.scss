@@ -21,7 +21,7 @@
 
 /* TABLET (PORTRAIT)
  * ------------------------------------------------ */
-@media only screen and (min-width: $tablet-width) and (max-width: $base-width + 200) {
+@media only screen and (min-width: $tablet-width) and (max-width: $big-width) {
 	.container {
 		width: $tablet-width;
 		.column,
@@ -63,7 +63,7 @@
 
 /* MOBILE (LANDSCAPE)
  * ------------------------------------------------ */
-@media only screen and (min-width: $mobile-landscape-width + 60) and (max-width: $tablet-width - 1) {
+@media only screen and (min-width: $mobile-landscape-width) and (max-width: $tablet-width - 1) {
 	@include mobileGrid($mobile-landscape-width, $is-fluid, $base-col-count);
 }
 
