@@ -348,21 +348,36 @@ blockquote {
 
 #sidebar {
     position: absolute;
-    background-color: $pampas;
-    padding: 20px;
     z-index: 10;
     width: 200px;
     right: 0;
     top: 0;
+    margin-top: 100px;
 
     ul {
       padding: 0;
+      display: none;
 
       li {
         list-style-type: none;
-        font-family: $font-family--secondary;
-        text-transform: uppercase;
+        font-family: $font-family--primary;
         margin-bottom: 10px;
+        font-size: 15px;
+        padding: 0px 30px;
+
+        &:before {
+            content: '\f0da';
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0px 0px 0px 10px;
+            text-decoration: none;
+            position: absolute;
+            left: 0px;
+            cursor: pointer;
+            font-size: 25px;
+            line-height: 20px;
+        }
 
         &.active-item {
           a {
@@ -374,6 +389,90 @@ blockquote {
           color: $abbey;
         }
       }
+    }
+
+    .search-field {
+        border: none;
+        border-bottom: 1px solid black;
+        font-family: $font-family--secondary;
+        text-transform: uppercase;
+        color: $almost-black;
+        font-size: 18px;
+
+        &::-webkit-input-placeholder {
+            color: $almost-black;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+            color: $almost-black;
+        }
+
+        &::-moz-placeholder {  /* Firefox 19+ */
+            color: $almost-black;
+        }
+
+        &:-ms-input-placeholder {
+            color: $almost-black;
+        }
+    }
+
+    .screen-reader-text {
+        display: none;
+    }
+
+    .search-submit {
+        display: none;
+    }
+
+    .textwidget {
+        border-bottom: 1px solid black;
+        font-family: $font-family--secondary;
+        text-transform: uppercase;
+        color: $almost-black;
+        font-size: 18px;
+        padding: 15px;
+
+        .social-icons {
+            float: right;
+
+            i {
+                margin-right: 5px;
+            }
+
+            a {
+                color: $almost-black;
+            }
+        }
+    }
+
+    h3 {
+        font-family: $font-family--secondary;
+        text-transform: uppercase;
+        color: $almost-black;
+        font-size: 18px;
+        padding: 15px;
+        background-image: url(img/Sandpaper.png);
+        background-repeat: repeat;
+
+        &:after {
+           content: '\f0da';
+           font-family: FontAwesome;
+           font-weight: normal;
+           font-style: normal;
+           margin:0px 0px 0px 10px;
+           text-decoration:none;
+           position: absolute;
+           right: 20px;
+           cursor: pointer;
+        }
+    }
+
+
+}
+
+.sidebar-open {
+    &:after {
+        content: "\f0d7" !important;
     }
 }
 

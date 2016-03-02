@@ -44,6 +44,19 @@
 
 	<?php get_sidebar(); ?>
 
+	<script>
+
+		$(document).ready(function(){
+
+			$("#sidebar h3").click(function() {
+				$(this).toggleClass('sidebar-open');
+				$(this).next('ul').slideToggle();
+			});
+
+		});
+
+	</script>
+
 </main><!-- End of Content -->
 
 <?php get_footer(); ?>

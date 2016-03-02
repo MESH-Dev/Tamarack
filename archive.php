@@ -4,39 +4,58 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="nine columns">
+			<div class="ten columns offset-by-one">
+				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-				<?php if ( have_posts() ) : ?>
-					<h1>
-						<?php if ( is_day() ) : ?>
-							<?php printf( __( 'Daily Archives: <span>%s</span>' ), get_the_date() ); ?>
-						<?php elseif ( is_month() ) : ?>
-							<?php printf( __( 'Monthly Archives: <span>%s</span>' ), get_the_date('F Y') ); ?>
-						<?php elseif ( is_year() ) : ?>
-							<?php printf( __( 'Yearly Archives: <span>%s</span>' ), get_the_date('Y') ); ?>
-						<?php else : ?>
-							<?php _e( 'Blog Archives' ); ?>
-						<?php endif; ?>
-					</h1>
+					<div class="post">
+						<h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<p class="postinfo"><?php the_author(); ?> | <?php the_time('F j, Y'); ?></p>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+						<hr>
 
-						<div class="post">
-							<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-							<p class="postinfo">By <?php the_author(); ?> | Categories: <?php the_category(', '); ?> | <?php comments_popup_link(); ?></p>
-							<?php the_content('Read more &#8658'); ?>
+						<div class="share-post">
+							<div class="share-icon">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-facebook"></i> Share</a>
+							</div>
+							<div class="share-icon">
+								<a href="https://twitter.com/home?status=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-twitter"></i> Tweet</a>
+							</div>
+							<!-- <div class="share-icon">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-pinterest"></i> Share</a>
+							</div>
+							<div class="share-icon">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-fancy"></i> Share</a>
+							</div> -->
+
 						</div>
 
-					<?php endwhile; ?>
+						<div class="post-thumbnail">
+							<?php the_post_thumbnail(); ?>
+						</div>
 
-				<?php endif; ?>
+						<?php the_excerpt(); ?>
+					</div>
 
-			</div>
-			<div class="three columns">
-				<?php get_sidebar(); ?>
+				<?php endwhile; ?>
 			</div>
 		</div>
 	</div>
+
+
+	<?php get_sidebar(); ?>
+
+	<script>
+
+		$(document).ready(function(){
+
+			$("#sidebar h3").click(function() {
+				$(this).toggleClass('sidebar-open');
+				$(this).next('ul').slideToggle();
+			});
+
+		});
+
+	</script>
 
 </main><!-- End of Content -->
 

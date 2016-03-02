@@ -1,8 +1,9 @@
 <div id="sidebar">
-	
-	<?php 
+
+	<?php
+
 	if ( ! dynamic_sidebar('primary-widget-area') ) : ?>
-		
+
 		<!-- Sidebar content if no widgets
 			Example:
 			<div class="box">
@@ -12,8 +13,7 @@
 				</ul>
 			</div>
 		-->
-		
-	<?php endif; ?>
-	
-</div><!-- End of Sidebar -->
 
+	<?php endif; ?>
+
+</div><!-- End of Sidebar -->
