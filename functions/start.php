@@ -279,6 +279,29 @@ register_sidebar( array(
     'after_title' => '</h3>',
 ) );
 
+function one_half( $atts, $content = null ) {
+   return '<div class="one_half">';
+}
+
+add_shortcode('first_column', 'one_half');
+
+function end_first_column( $atts, $content = null ) {
+   return '</div>';
+}
+
+add_shortcode('end_first_column', 'end_first_column');
+add_shortcode('end_second_column', 'end_second_column');
+
+function end_second_column( $atts, $content = null ) {
+   return '</div><div class="clearboth"></div>';
+}
+
+
+function  one_half_last( $atts, $content = null ) {
+   return '<div class="one_half last">'; 
+}
+add_shortcode('second_column', 'one_half_last');
+
 
 
 

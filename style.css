@@ -2810,6 +2810,69 @@ blockquote .quote-citation:before {
   cursor: pointer;
 }
 
+/* line 1641, sass/layout/_main.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+/* line 1642, sass/layout/_main.scss */
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/* line 1643, sass/layout/_main.scss */
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1644, sass/layout/_main.scss */
+a img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+/* line 1645, sass/layout/_main.scss */
+a img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/* line 1646, sass/layout/_main.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1648, sass/layout/_main.scss */
+.one_half {
+  width: 47%;
+  padding-right: 2%;
+  float: left;
+}
+
+/* line 1649, sass/layout/_main.scss */
+.last {
+  margin-right: 0 !important;
+  padding-left: 2%;
+  padding-right: 0;
+  clear: right;
+}
+
+/* line 1650, sass/layout/_main.scss */
+.clearboth {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  width: 100%;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
