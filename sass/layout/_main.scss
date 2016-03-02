@@ -543,7 +543,8 @@ blockquote {
     background-repeat: repeat;
 
     &:hover {
-      opacity: 0.7;
+      opacity: 1;
+     
     }
 }
 
@@ -847,6 +848,12 @@ blockquote {
 }
 
 #directorylistings .mix {
+  display: none;
+  position: relative;
+  float: left;
+}
+
+#marketplace .mix {
   display: none;
   position: relative;
   float: left;
