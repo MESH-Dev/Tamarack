@@ -51,9 +51,9 @@
 		<?php
 
 		if (is_home()) {
-			$image = get_field('masthead_image');
-		} else {
 			$image = get_field('masthead_image', 19);
+		} else {
+			$image = get_field('masthead_image');
 		}
 
 
