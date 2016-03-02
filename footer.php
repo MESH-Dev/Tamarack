@@ -124,7 +124,16 @@
 
 <?php wp_footer(); ?>
 
+<script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
 
+<script>
+	jQuery(document).ready(function() {
+	  jQuery('#simple-menu').sidr();
+	  jQuery('#simple-menu i').click(function() {
+		  $(this).toggleClass('fa-navicon fa-close');
+	  });
+	});
+</script>
 
 <script src="https://use.typekit.net/ofd3xas.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>

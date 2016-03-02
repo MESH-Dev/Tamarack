@@ -33,6 +33,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/hint.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/MyFontsWebfontsKit.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/animate.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/jquery.sidr.bare.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
@@ -186,7 +187,9 @@
 						</div>
 
 						<div class="main-menu-toggle">
-							<i class="fa fa-navicon"></i>
+							<a href="#sidr" id="simple-menu">
+								<i class="fa fa-navicon"></i>
+							</a>
 						</div>
 
 
@@ -384,6 +387,61 @@
 			</div>
 
 		</header>
+
+		<div id="sidr">
+		  <!-- Your content -->
+		  <ul>
+			  <li>
+				<a href="<?php echo get_field('learn_main_link', 'option'); ?>">
+					<div class="menu-block menu-block-item">
+						<span class="menu-block-primary-text">Learn</span>
+						<span class="menu-block-secondary-text">New Skills</span>
+					</div>
+				</a>
+			  </li>
+			  <li>
+				<a href="<?php echo get_field('build_main_link', 'option'); ?>">
+					<div class="menu-block menu-block-item">
+						<span class="menu-block-primary-text">Build</span>
+						<span class="menu-block-secondary-text">Your Business</span>
+					</div>
+				</a>
+			  </li>
+  			  <li>
+				<a href="<?php echo get_field('fund_main_link', 'option'); ?>">
+					<div class="menu-block menu-block-item">
+						<span class="menu-block-primary-text">Fund</span>
+						<span class="menu-block-secondary-text">Your Ideas</span>
+					</div>
+    			</a>
+			  </li>
+			  <li>
+				  <a href="<?php echo get_field('grow_main_link', 'option'); ?>">
+					  <div class="menu-block menu-block-item">
+						  <span class="menu-block-primary-text">Grow</span>
+						  <span class="menu-block-secondary-text">Creative Industry</span>
+					  </div>
+				  </a>
+			  </li>
+  			  <li>
+				<a href="<?php echo get_field('connect_main_link', 'option'); ?>">
+					<div class="menu-block menu-block-item">
+						<span class="menu-block-primary-text">Connect</span>
+						<span class="menu-block-secondary-text">With Creatives</span>
+					</div>
+				</a>
+			  </li>
+			  <li>
+				  <a href="<?php echo get_field('shop_main_link', 'option'); ?>">
+					  <div class="menu-block menu-block-item">
+						  <span class="menu-block-primary-text">Shop</span>
+						  <span class="menu-block-secondary-text">Businesses</span>
+					  </div>
+				  </a>
+			  </li>
+		  </ul>
+		  
+		</div>
 
 		<?php if (is_front_page() and get_field('tagline', get_page_by_title('frontpage')->ID)) { ?>
 			<div class="tagline">
