@@ -51,10 +51,35 @@ jQuery(document).ready(function($){
   $(".footer-block").matchHeight();
 
   $('.press-third').matchHeight();
+ 
 
-  // Creative Network
+  // Resource Library/Directory Filter Toggles
+    $(".filter-button").click(function() {
 
-  // Resource Library Filter Toggles
+    var section = $(this).attr('data-section');
+    section = "."+section;
+    //console.log(section);
+    $(".filter-box").hide();
+    $(".filter-button").removeClass('white-bg');
+
+    $(section).fadeIn('400');
+    $(this).addClass('white-bg');
+    $(section).addClass('white-bg');
+  });
+ 
+ // Filter Toggles
+    $(".filter-inner-button").click(function() {
+
+      var section = $(this).attr('data-section');
+      section = "."+section;
+      //console.log(section);
+      $(".filter-inner-box").hide();
+      $(".filter-inner-button").removeClass('white-bg');
+
+      $(section).fadeIn('400');
+      $(this).addClass('white-bg');
+      $(section).addClass('white-bg');
+    });
 
 
 
@@ -76,6 +101,11 @@ jQuery(document).ready(function($){
     $('.filter-box').hide();
     $(".filter-button").removeClass('white-bg');
   });
+
+
+
+
+
 
   $('.learn, .learn-sub')
     .mouseenter(function() {
