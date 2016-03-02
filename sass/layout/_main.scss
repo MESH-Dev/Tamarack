@@ -357,7 +357,7 @@ blockquote {
     margin-top: 100px;
 
     .share{
- 
+
       border-bottom: 1px solid black;
       font-family: "din-condensed-web", sans-serif;
       text-transform: uppercase;
@@ -370,11 +370,11 @@ blockquote {
         padding: 0 40px 0 30px;
       }
       .sidebar-share-icon{
-        display: inline; float: left; padding-left: 10px;  
+        display: inline; float: left; padding-left: 10px;
 
         & a{
           color: black;
-        } 
+        }
       }
     }
 
@@ -486,7 +486,7 @@ blockquote {
        &:hover{
         cursor: pointer;
         opacity: 0.8;
-       } 
+       }
 
        img{
         text-align: right;
@@ -507,7 +507,7 @@ blockquote {
 
 .sidebar-open {
     &:after {
-       
+
     }
 }
 
