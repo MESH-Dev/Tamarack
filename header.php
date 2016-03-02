@@ -371,7 +371,7 @@
 					<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
 						<div class="bottom">
 							<div class="masthead-arrow hint--top" data-hint="Scroll Down">
-								<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
+								<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-angle.png" /></a>
 							</div>
 						</div>
 					<?php } ?>
