@@ -174,7 +174,7 @@ get_header(); ?>
 
               <?php $rand = rand(1, 4); ?>
 
-              <div class="content-fourth directorylisting mix <?php echo get_field('county'); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
+              <div class="content-fourth directorylisting mix <?php echo strtolower(get_field('county')); ?> <?php echo get_field('primary_creative_practice'); ?> <?php foreach(get_field("creative_skills") as $c) { echo $c . " "; } ?>">
                 <div class="directorylisting-inner background-<?php echo $rand; ?>">
 
                   <div class="directorylisting-header">
