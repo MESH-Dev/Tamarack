@@ -5,7 +5,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="nine columns">
+			<div class="nine columns offset-by-one">
 				<?php if ( have_posts() ) : ?>
 					<h1><?php printf( __( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 
@@ -26,11 +26,11 @@
 					<?php get_search_form(); ?>
 				<?php endif; ?>
 			</div>
-			<div class="three columns">
-				<?php get_sidebar(); ?>
-			</div>
+		 
 		</div>
 	</div>
+
+	<?php get_sidebar(); ?>
 
 </main><!-- End of Content -->
 

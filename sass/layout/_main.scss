@@ -342,6 +342,8 @@ blockquote {
   }
 }
 
+
+
 #content {
     position: relative;
 }
@@ -349,10 +351,32 @@ blockquote {
 #sidebar {
     position: absolute;
     z-index: 10;
-    width: 200px;
+    width: 250px;
     right: 0;
     top: 0;
     margin-top: 100px;
+
+    .share{
+ 
+      border-bottom: 1px solid black;
+      font-family: "din-condensed-web", sans-serif;
+      text-transform: uppercase;
+      color: #3f4143;
+      font-size: 18px;
+      padding-bottom: 8px;
+      margin: 0 0 10px 0;
+      .share-title{
+        display: inline; float: left;
+        padding: 0 40px 0 30px;
+      }
+      .sidebar-share-icon{
+        display: inline; float: left; padding-left: 10px;  
+
+        & a{
+          color: black;
+        } 
+      }
+    }
 
     ul {
       padding: 0;
@@ -392,12 +416,17 @@ blockquote {
     }
 
     .search-field {
-        border: none;
-        border-bottom: 1px solid black;
-        font-family: $font-family--secondary;
-        text-transform: uppercase;
-        color: $almost-black;
-        font-size: 18px;
+      margin-top: 15px;
+      border: none;
+      border-bottom: 1px solid black;
+      font-family: $font-family--secondary;
+      text-transform: uppercase;
+      color: $almost-black;
+      font-size: 18px;
+      padding: 10px 0 10px 30px;
+      width: 220px;
+      background: url(img/magnify.png) no-repeat   206px 10px; ;
+
 
         &::-webkit-input-placeholder {
             color: $almost-black;
@@ -452,27 +481,33 @@ blockquote {
         font-size: 18px;
         padding: 15px;
         background-image: url(img/Sandpaper.png);
+
         background-repeat: repeat;
+       &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+       } 
+
+       img{
+        text-align: right;
+        float: right;
+       }
+
 
         &:after {
-           content: '\f0da';
-           font-family: FontAwesome;
-           font-weight: normal;
-           font-style: normal;
-           margin:0px 0px 0px 10px;
-           text-decoration:none;
-           position: absolute;
-           right: 20px;
-           cursor: pointer;
+
         }
     }
+    h3.sidebar-open{
+      background-image: url(img/Gritty.png);
+     }
 
 
 }
 
 .sidebar-open {
     &:after {
-        content: "\f0d7" !important;
+       
     }
 }
 
