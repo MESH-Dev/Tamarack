@@ -807,7 +807,12 @@ li {
   margin: 0;
 }
 
-/* line 116, sass/base/_base.scss */
+/* line 114, sass/base/_base.scss */
+ul {
+  padding-bottom: 15px;
+}
+
+/* line 120, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -823,22 +828,22 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-/* line 131, sass/base/_base.scss */
+/* line 135, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 138, sass/base/_base.scss */
+/* line 142, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 144, sass/base/_base.scss */
+/* line 148, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 146, sass/base/_base.scss */
+/* line 150, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;
@@ -2811,7 +2816,7 @@ blockquote .quote-citation:before {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 1606, sass/layout/_main.scss */
+  /* line 1641, sass/layout/_main.scss */
   .join-mobile {
     display: none;
   }
