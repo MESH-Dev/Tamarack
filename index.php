@@ -13,7 +13,27 @@
 
 						<hr>
 
-						<?php the_content(); ?>
+						<div class="share-post">
+							<div class="share-icon">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-facebook"></i> Share</a>
+							</div>
+							<div class="share-icon">
+								<a href="https://twitter.com/home?status=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-twitter"></i> Tweet</a>
+							</div>
+							<!-- <div class="share-icon">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-pinterest"></i> Share</a>
+							</div>
+							<div class="share-icon">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-fancy"></i> Share</a>
+							</div> -->
+
+						</div>
+
+						<div class="post-thumbnail">
+							<?php the_post_thumbnail(); ?>
+						</div>
+
+						<?php the_excerpt(); ?>
 					</div>
 
 				<?php endwhile; ?>
@@ -22,7 +42,7 @@
 	</div>
 
 
-	<?php // get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 
 </main><!-- End of Content -->
 

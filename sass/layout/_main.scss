@@ -351,7 +351,7 @@ blockquote {
     background-color: $pampas;
     padding: 20px;
     z-index: 10;
-    width: 165px;
+    width: 200px;
     right: 0;
     top: 0;
 
@@ -1409,7 +1409,7 @@ blockquote {
     }
 
     hr {
-        margin: 20px 0;
+        margin: 10px 0;
         background: black;
         border-top: 1px solid black;
         border-bottom: 0;
@@ -1432,5 +1432,10 @@ blockquote {
 }
 
 .share-post {
+    margin-bottom: 20px;
+}
+
+.post-thumbnail {
+    float: left;
     margin-bottom: 20px;
 }
