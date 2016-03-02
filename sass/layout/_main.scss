@@ -402,7 +402,7 @@ blockquote {
 .filter-button {
     font-family: $font-family--secondary;
     text-transform: uppercase;
-    color: #3f4143;
+    color: $almost-black;
     cursor: pointer;
 
     &:hover {
@@ -529,7 +529,7 @@ blockquote {
 	width: 15px;
 	position: relative;
   float: left;
-  border: 1px solid #3f4143;
+  border: 1px solid $almost-black;
   margin-right: 10px;
   position: relative;
   bottom: -4px;
@@ -542,7 +542,7 @@ blockquote {
 }
 
 .active {
-  background: #3f4143;
+  background: $almost-black;
 }
 
 #resources, #directorylistings {
@@ -604,7 +604,7 @@ blockquote {
   position: absolute;
   top: 8px;
   left: 7px;
-  color: #3f4143;
+  color: $almost-black;
 }
 
 .directorylisting {
@@ -685,7 +685,7 @@ blockquote {
 }
 
 .join-bubble {
-  background: #3f4143;
+  background: $almost-black;
   color: white;
   border-radius: 50%;
   height: 135px;
@@ -830,7 +830,7 @@ blockquote {
     font-family: $font-family--secondary;
     text-transform: uppercase;
     font-size: 14px;
-    color: #3f4143;
+    color: $almost-black;
   }
 }
 
@@ -901,11 +901,11 @@ blockquote {
 .press-2 {
   background-image: url(img/cup.png);
   background-size: cover;
-  color: #3f4143;
+  color: $almost-black;
   min-height: 200px;
 
   a {
-    color: #3f4143;
+    color: $almost-black;
   }
 }
 
@@ -1046,7 +1046,7 @@ blockquote {
   font-family: $font-family--secondary;
   font-size: 24px;
   text-transform: uppercase;
-  color: #3f4143;
+  color: $almost-black;
   line-height: 24px;
   text-align: center;
   width: 300px;
@@ -1369,7 +1369,7 @@ blockquote {
 
     h2 {
         a {
-            color: #3f4143;
+            color: $almost-black;
         }
     }
 
@@ -1380,4 +1380,22 @@ blockquote {
         border-bottom: 0;
         width: 60%;
     }
+}
+
+.share-icon {
+    display: inline;
+    margin-right: 25px;
+    font-size: 12px;
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        color: $almost-black;
+    }
+}
+
+.share-post {
+    margin-bottom: 20px;
 }

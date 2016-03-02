@@ -774,7 +774,7 @@ p {
 /* line 77, sass/base/_base.scss */
 .alignleft {
   float: left;
-  margin: 0 20px 10px 0;
+  margin: 20px 20px 10px 0;
 }
 
 /* line 82, sass/base/_base.scss */
@@ -2551,6 +2551,26 @@ blockquote .quote-citation:before {
   border-top: 1px solid black;
   border-bottom: 0;
   width: 60%;
+}
+
+/* line 1385, sass/layout/_main.scss */
+.share-icon {
+  display: inline;
+  margin-right: 25px;
+  font-size: 12px;
+}
+/* line 1390, sass/layout/_main.scss */
+.share-icon i {
+  margin-right: 10px;
+}
+/* line 1394, sass/layout/_main.scss */
+.share-icon a {
+  color: #3f4143;
+}
+
+/* line 1399, sass/layout/_main.scss */
+.share-post {
+  margin-bottom: 20px;
 }
 
 /* line 1, sass/layout/_header.scss */

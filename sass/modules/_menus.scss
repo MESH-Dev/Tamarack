@@ -234,7 +234,7 @@
 	.tagline-message {
 		font-family: $font-family--secondary;
 		text-transform: uppercase;
-		color: #3f4143;
+		color: $almost-black;
 	}
 }
 
@@ -262,7 +262,7 @@
 		width: 100%;
 		padding: 30px;
 	}
-	
+
 	.sub-menu-block-quote-text {
 		p {
 			font-weight: 700;

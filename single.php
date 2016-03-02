@@ -11,7 +11,19 @@
 				<hr>
 
 				<div class="share-post">
-					<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-facebook"></i> Share</a>
+					<div class="share-icon">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-facebook"></i> Share</a>
+					</div>
+					<div class="share-icon">
+						<a href="https://twitter.com/home?status=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-twitter"></i> Tweet</a>
+					</div>
+					<!-- <div class="share-icon">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-pinterest"></i> Share</a>
+					</div>
+					<div class="share-icon">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-fancy"></i> Share</a>
+					</div> -->
+
 				</div>
 
 				<?php the_content(); ?>
