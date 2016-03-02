@@ -320,20 +320,23 @@
 							<?php
 								if (get_post_type() == 'directorylisting') {
 									echo get_the_title();
-								} else {
+								} elseif(is_home()) {
+									echo get_field('masthead_title', 19);
+								}
+								else {
 									echo get_field("masthead_title");
 								}
 
 							?>
 						</div>
-						<?php if(get_field("masthead_tagline")) { ?>
+						<?php if(get_field("masthead_tagline", 19)) { ?>
 						<div class="masthead-tagline">
- 							<?php echo get_field("masthead_tagline"); ?>
+ 							<?php echo get_field("masthead_tagline", 19); ?>
 						</div>
 						<?php } ?>
-						<?php if(get_field("masthead_url")) { ?>
+						<?php if(get_field("masthead_url", 19)) { ?>
 							<div class="masthead-link">
-								<a href="<?php echo get_field('masthead_url') ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
+								<a href="<?php echo get_field('masthead_url', 19) ?>"><?php echo get_field("masthead_link_text", 19); ?> <i class="fa fa-angle-double-right"></i></a>
 							</div>
 						<?php } ?>
 					</div>
