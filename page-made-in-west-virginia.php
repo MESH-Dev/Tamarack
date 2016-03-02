@@ -27,7 +27,7 @@ get_header(); ?>
             <div class="x">x</div>
             <div class="filter-inner">
                 <div class="filter-inner-left">
-                    
+
                 </div>
             </div>
         </div>
@@ -69,7 +69,6 @@ get_header(); ?>
 
 <script>
   $(document).ready(function(){
-    $('#sidebar').css('position', 'fixed');
 
     var first = true;
 

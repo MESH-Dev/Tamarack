@@ -4,12 +4,12 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="nine columns">
+			<div class="ten columns offset-by-one">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 					<div class="post">
 						<h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<p class="postinfo"><?php the_author(); ?> | <?php the_date(); ?></p>
+						<p class="postinfo"><?php the_author(); ?> | <?php the_time('F j, Y'); ?></p>
 
 						<hr>
 
@@ -18,12 +18,11 @@
 
 				<?php endwhile; ?>
 			</div>
-			<div class="three columns">
-				<?php get_sidebar(); ?>
-			</div>
 		</div>
 	</div>
 
+
+	<?php // get_sidebar(); ?>
 
 </main><!-- End of Content -->
 

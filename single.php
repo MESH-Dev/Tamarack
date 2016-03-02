@@ -6,7 +6,7 @@
 
 			<div class="post">
 				<h2><?php the_title(); ?></h2>
-				<p class="postinfo"><?php the_author(); ?> | <?php the_date(); ?></p>
+				<p class="postinfo"><?php the_author(); ?> | <?php the_time('F j, Y'); ?></p>
 
 				<hr>
 
@@ -35,5 +35,4 @@
 	</div>
 </div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

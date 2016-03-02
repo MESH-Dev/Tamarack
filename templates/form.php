@@ -5,7 +5,7 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
 
-  <div id="sidebar">
+  <div id="slidebar">
     <ul>
 
       <?php
@@ -74,7 +74,7 @@ get_header(); ?>
 
   <script>
     $(document).ready(function(){
-      $('#sidebar').css('position', 'fixed');
+      $('#slidebar').css('position', 'fixed');
       console.log('at least');
     });
   </script>

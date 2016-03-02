@@ -313,7 +313,7 @@ blockquote {
   display: none;
 }
 
-#sidebar {
+#slidebar {
   position: fixed;
   background-color: $pampas;
   padding: 20px;
@@ -340,6 +340,41 @@ blockquote {
       }
     }
   }
+}
+
+#content {
+    position: relative;
+}
+
+#sidebar {
+    position: absolute;
+    background-color: $pampas;
+    padding: 20px;
+    z-index: 10;
+    width: 165px;
+    right: 0;
+    top: 0;
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        font-family: $font-family--secondary;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+        &.active-item {
+          a {
+            border-bottom: 3px solid $abbey;
+          }
+        }
+
+        a {
+          color: $abbey;
+        }
+      }
+    }
 }
 
 .filter-box {
