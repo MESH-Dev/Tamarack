@@ -329,14 +329,14 @@
 
 							?>
 						</div>
-						<?php if(get_field("masthead_tagline", 19)) { ?>
-						<div class="masthead-tagline">
- 							<?php echo get_field("masthead_tagline", 19); ?>
-						</div>
+						<?php if(get_field("masthead_tagline")) { ?>
+							<div class="masthead-tagline">
+	 							<?php echo get_field("masthead_tagline"); ?>
+							</div>
 						<?php } ?>
-						<?php if(get_field("masthead_url", 19)) { ?>
+						<?php if(get_field("masthead_url")) { ?>
 							<div class="masthead-link">
-								<a href="<?php echo get_field('masthead_url', 19) ?>"><?php echo get_field("masthead_link_text", 19); ?> <i class="fa fa-angle-double-right"></i></a>
+								<a href="<?php echo get_field('masthead_url', 19) ?>"><?php echo get_field("masthead_link_text"); ?> <i class="fa fa-angle-double-right"></i></a>
 							</div>
 						<?php } ?>
 					</div>
