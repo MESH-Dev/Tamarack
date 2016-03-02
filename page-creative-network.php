@@ -267,6 +267,20 @@ get_header(); ?>
         }
       });
 
+    // Resource Library Filter Toggles
+    $(".filter-button").click(function() {
+
+    var section = $(this).attr('data-section');
+    section = "."+section;
+    //console.log(section);
+    $(".filter-box").hide();
+    $(".filter-button").removeClass('white-bg');
+
+    $(section).fadeIn('400');
+    $(this).addClass('white-bg');
+    $(section).addClass('white-bg');
+    });
+
 
     //Update currenly selected filter string
     var active = [];
