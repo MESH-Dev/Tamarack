@@ -2783,6 +2783,13 @@ blockquote .quote-citation:before {
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  /* line 1606, sass/layout/_main.scss */
+  .join-mobile {
+    display: none;
+  }
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;
@@ -3255,7 +3262,7 @@ input[type="tel"] {
 .creative-network::after {
   content: "|";
   position: absolute;
-  right: 0px;
+  right: -1px;
   top: 4px;
 }
 
@@ -3540,17 +3547,57 @@ input[type="tel"] {
 
 /* line 372, sass/modules/_menus.scss */
 .sidr {
-  background: #3f4143;
+  background: white;
 }
 /* line 375, sass/modules/_menus.scss */
-.sidr ul {
+.sidr > ul {
+  list-style-type: none;
+  padding: 5px;
+}
+/* line 379, sass/modules/_menus.scss */
+.sidr > ul > li {
+  margin: 0;
+  padding: 5px 5px;
+}
+/* line 384, sass/modules/_menus.scss */
+.sidr > ul > li:hover .menu-block-primary-icon {
+  color: #b33ed9;
+}
+/* line 389, sass/modules/_menus.scss */
+.sidr > ul > li ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 380, sass/modules/_menus.scss */
-.sidr li {
-  margin: 0;
-  padding: 5px 5px;
+/* line 393, sass/modules/_menus.scss */
+.sidr > ul > li ul li {
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #3f4143;
+}
+/* line 399, sass/modules/_menus.scss */
+.sidr > ul > li ul li > a {
+  color: #3f4143;
+}
+/* line 409, sass/modules/_menus.scss */
+.sidr .menu-block-primary-text {
+  color: #3f4143;
+  display: inline;
+}
+/* line 413, sass/modules/_menus.scss */
+.sidr .menu-block-primary-icon {
+  float: right;
+  display: inline;
+  font-size: 25px;
+}
+/* line 418, sass/modules/_menus.scss */
+.sidr .menu-block-secondary-text {
+  color: #3f4143;
+  border-bottom: 2px solid #3f4143;
+}
+/* line 423, sass/modules/_menus.scss */
+.sidr .sub-menu-block-item {
+  display: none;
 }
 
 /* line 5, sass/modules/_modules.scss */

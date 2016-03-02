@@ -132,6 +132,10 @@
 	  jQuery('#simple-menu i').click(function() {
 		  $(this).toggleClass('fa-navicon fa-close');
 	  });
+
+	  jQuery('#sidr ul li').click(function() {
+		 $(this).find('.sub-menu-block-item').slideToggle();
+	  });
 	});
 </script>
 

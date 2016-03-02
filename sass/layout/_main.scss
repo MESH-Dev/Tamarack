@@ -544,7 +544,7 @@ blockquote {
 
     &:hover {
       opacity: 1;
-     
+
     }
 }
 
@@ -1601,4 +1601,10 @@ blockquote {
     background-repeat: repeat;
     margin: auto;
     cursor: pointer;
+}
+
+.join-mobile {
+    @include mq($mobile-landscape-width, $max) {
+      display: none;
+    }
 }
