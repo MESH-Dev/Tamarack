@@ -241,22 +241,7 @@ get_header(); ?>
           }
         }
       });
-
-  // Resource Library Filter Toggles
-  $(".filter-button").click(function() {
-
-    var section = $(this).attr('data-section');
-    section = "."+section;
-    //console.log(section);
-    $(".filter-box").hide();
-    $(".filter-button").removeClass('white-bg');
-
-    $(section).fadeIn('400');
-    $(this).addClass('white-bg');
-    $(section).addClass('white-bg');
-  });
-
-
+ 
 
     //Update currenly selected filter string
     var active = [];
@@ -328,7 +313,7 @@ get_header(); ?>
 
 
 
-    //Live Search Global Network
+    //Live Search 
     $("input.search").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();

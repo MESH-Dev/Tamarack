@@ -41,7 +41,7 @@ get_header(); ?>
                 <div class="filter-row">
                     <div class="twelve columns">
                       <div class="filters">
-                        <div class="filter-inner-box filter-product animated fadeIn">
+                        <div class="filter-inner-box filter-product ">
                             <div class="x">x</div>
                                 <ul>
                                     <li><div class="filter-checkbox filter" data-filter=".painting"></div><span class="filter-title">Painting</span></li>
@@ -72,7 +72,7 @@ get_header(); ?>
                                     <li><div class="filter-checkbox filter" data-filter=".industrial-design"></div><span class="filter-title">Industrial Design</span></li>
                                 </ul>
                             </div>
-                            <div class="filter-inner-box filter-location animated fadeIn">
+                            <div class="filter-inner-box filter-location ">
                                 <div class="x">x</div>
                                 <ul>
                                     <li><div class="filter-checkbox filter" data-filter=".barbour"></div><span class="filter-title">Barbour</span></li>
@@ -183,7 +183,7 @@ get_header(); ?>
             $inner_loop = new WP_Query( $inner_args );
             while ( $inner_loop->have_posts() ) : $inner_loop->the_post(); ?>
 
-                <div class="content-fourth marketplace-collection <?php echo get_field('primary_creative_practice', get_the_id()); ?> <?php foreach(get_field("creative_skills", get_the_id()) as $c) { echo $c . " "; } ?>">
+                <div class="content-fourth marketplace-collection mix <?php echo get_field('primary_creative_practice', get_the_id()); ?> <?php foreach(get_field("creative_skills", get_the_id()) as $c) { echo $c . " "; } ?>">
                   <div class="marketplace-collection-inner" style="background-image: url(<?php echo $thumb; ?>); background-size: cover;">
                     <div class="marketplace-collection-inner-text">
                       <h3><?php echo get_the_title($current_id); ?></h3>
@@ -200,11 +200,11 @@ get_header(); ?>
         endwhile;
     ?>
 
-    <div class="content-full">
+  <!--   <div class="content-full">
         <div class="more-button">
             View More Businesses
         </div>
-    </div>
+    </div> -->
 
   </div>
 
@@ -212,86 +212,116 @@ get_header(); ?>
 
 <script>
   $(document).ready(function(){
+    var init_filters = '.painting,.drawing,.photography,.printmaking,.sculpture,.installation,.public-art,.new-media-and-video,.mixed-media-and-collage,.ceramics,.pottery,.glass,.paper,.jewelry,.textile,.wood,.furniture,.leather,.metal,.baskets,.candles,.bath-and-body,.architecture,.graphic-design,.fashion,.industrial-design,.barbour,.berkeley,.boone,.braxton,.brooke,.cabell,.calhoun,.clay,.doddridge,.fayette,.gilmer,.grant,.greenbrier,.hampshire,.hancock,.hardy,.harrison,.jackson,.jefferson,.kanawha,.lewis,.lincoln,.marion,.marshall,.mcdowell,.mercer,.mineral,.mingo,.monongalia,.monroe,.morgan,.nicholas,.ohio,.pendleton,.pleasants,.pocahontas,.preston,.putnam,.raleigh,.randolph,.ritchie,.roane,.summers,.taylor,.tucker,.tyler,.upshur,.wayne,.webster,.wetzel,.wirt,.wood,.wyoming';
 
     var first = true;
 
-    $('#resources').mixItUp({
-      load: {
-        filter: ''
-      },
-      animation: {
-        enable: false
-      },
-      controls: {
-        toggleFilterButtons: true
-      },
-      callbacks: {
-        onMixEnd: function(state){
-
-        }
-      }
-    });
-
-    // Resource Library Filter Toggles
-    $(".filter-inner-button").click(function() {
-
-      var section = $(this).attr('data-section');
-      section = "."+section;
-      //console.log(section);
-      $(".filter-inner-box").hide();
-      $(".filter-inner-button").removeClass('white-bg');
-
-      $(section).fadeIn('400');
-      $(this).addClass('white-bg');
-      $(section).addClass('white-bg');
-    });
-
-
-    $('.reset-filter').click(function() {
-
-      $('.filter-checkbox').removeClass('active');
-      active = [];
-      $('.search-items').html("");
-      first = true;
-      $('#resources').mixItUp('destroy', true);
-      $('#resources').mixItUp({
+    var click = 0;
+    $('#marketplace').mixItUp({
         load: {
-          filter: ''
+           filter:init_filters
         },
         animation: {
-          enable: false
+          duration: 400,
+          effects: 'fade scale(0.87)',
+          easing: 'cubic-bezier(0.47, 0, 0.745, 0.715)'
         },
         controls: {
-          toggleFilterButtons: true
+          //toggleFilterButtons: true,
+          enable: false
+
         },
         callbacks: {
           onMixEnd: function(state){
-
+            if(click == 0){
+              $('.filter-checkbox').removeClass('active')
+              click = click+1;
+            }
           }
         }
       });
-    });
+ 
 
+    //Update currenly selected filter string
     var active = [];
+
     $('.filter-checkbox').click(function() {
 
-      if (first == true) {
-        $('.resource').removeClass('show');
-        first = false;
+      //show filter bar
+       $('.filter-bar').show();
+
+
+      //toggle active class on checkbox
+      if($(this).hasClass('active')){
+        $(this).removeClass('active');
+      }
+      else{
+        $(this).addClass('active');
       }
 
 
+      var filters = [];
+
+
       var item = $(this).next("span").html();
+
+      //get filter string
+      $('.filter-checkbox.active').each(function() {
+          var this_filter = $(this).attr('data-filter');
+          filters.push(this_filter);
+      });
+      var filter_string = filters.join(",");
+
+      //if filters are blank, show all
+      if(filter_string == ""){
+        filter_string = init_filters;
+      }
+
+      //trigger filter
+      $('#marketplace').mixItUp('filter', filter_string);
+      console.log(filter_string);
+
+
+      //update html filtered string
       if(jQuery.inArray(item, active) == -1 ) {
         active.push(item);
         $('.search-items').html(active.join(", "));
+
       } else {
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
+ 
+    });
+ 
+     //Reset Button
+    $('.reset-filter, input.search').click(function() {
+ 
+      $('.filter-checkbox').removeClass('active');
+      active = [];
+      $('.search-items').html("");
+      first = true;
+      $('#marketplace').mixItUp('filter', init_filters);
+    });
+ 
+    //Live Search 
+    $("input.search").keyup(function(){
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val();
+        // Loop through grid items
+        $("#marketplace .marketplace-collection").each(function(){
 
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).fadeIn();
+            }
+        });
     });
 
+    //equal height
     var divWidth = jQuery('.content-fourth').width();
     jQuery('.content-fourth').height(divWidth);
 
