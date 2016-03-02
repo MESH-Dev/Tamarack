@@ -55,20 +55,7 @@ jQuery(document).ready(function($){
   // Creative Network
 
   // Resource Library Filter Toggles
-  $(".filter-button").click(function() {
 
-    var section = $(this).attr('data-section');
-    section = "."+section;
-    //console.log(section);
-    $(".filter-box").hide();
-    $(".filter-button").removeClass('white-bg');
-
-    $(section).fadeIn('400');
-    $(this).addClass('white-bg');
-    $(section).addClass('white-bg');
-
-
-  });
 
 
 
@@ -80,9 +67,9 @@ jQuery(document).ready(function($){
     $(".filter-collections").show();
   });
 
-  $(".filter-products-button").click(function() {
+  $(".filter-businesses-button").click(function() {
     $('.filter-box').hide();
-    $(".filter-products").show();
+    $(".filter-businesses").show();
   });
 
   $(".x").click(function() {
