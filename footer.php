@@ -139,8 +139,5 @@
 	});
 </script>
 
-<script src="https://use.typekit.net/ofd3xas.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
 </body>
 </html>
