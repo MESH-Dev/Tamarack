@@ -101,7 +101,7 @@
 
 					<form action="//tamarackfoundation.us12.list-manage.com/subscribe/post?u=8eb3531f974a15694f5de5dba&amp;id=2e44333fb6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email here...">
-						<input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button">
+						<input type="submit" value="Sign up!" name="subscribe" id="mc-embedded-subscribe" class="button">
 					</form>
 
 
