@@ -2757,9 +2757,10 @@ blockquote .quote-citation:before {
 .post-thumbnail {
   float: left;
   margin-bottom: 20px;
+  width: 100%;
 }
 
-/* line 1583, sass/layout/_main.scss */
+/* line 1584, sass/layout/_main.scss */
 .more-button {
   padding: 15px 50px;
   font-family: "din-condensed-web", sans-serif;
