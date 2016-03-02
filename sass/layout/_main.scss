@@ -42,7 +42,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 40px;
+  padding: 30px;
 
   @include mq($tablet-width, "max-width") {
     width: 100%;
@@ -144,7 +144,6 @@
 	height: 100%;
   background-color: rgba(255, 255, 255, 0.75);
   display: table;
-  padding: 10%;
   -webkit-transition: all .1s ease-in-out;
   -moz-transition: all .1s ease-in-out;
   -o-transition: all .1s ease-in-out;
@@ -357,7 +356,7 @@ blockquote {
     margin-top: 100px;
 
     .share{
- 
+
       border-bottom: 1px solid black;
       font-family: "din-condensed-web", sans-serif;
       text-transform: uppercase;
@@ -370,11 +369,11 @@ blockquote {
         padding: 0 40px 0 30px;
       }
       .sidebar-share-icon{
-        display: inline; float: left; padding-left: 10px;  
+        display: inline; float: left; padding-left: 10px;
 
         & a{
           color: black;
-        } 
+        }
       }
     }
 
@@ -486,7 +485,7 @@ blockquote {
        &:hover{
         cursor: pointer;
         opacity: 0.8;
-       } 
+       }
 
        img{
         text-align: right;
@@ -507,7 +506,7 @@ blockquote {
 
 .sidebar-open {
     &:after {
-       
+
     }
 }
 
@@ -579,7 +578,7 @@ blockquote {
 
     &:hover {
       opacity: 1;
-     
+
     }
 }
 
@@ -1638,6 +1637,7 @@ blockquote {
     cursor: pointer;
 }
 
+
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
@@ -1648,3 +1648,9 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .one_half{ width:47%; padding-right: 2%; float: left; }
 .last{ margin-right:0 !important; padding-left: 2%; padding-right: 0; clear:right; }
 .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
+
+.join-mobile {
+    @include mq($mobile-landscape-width, $max) {
+      display: none;
+    }
+}

@@ -107,7 +107,7 @@
 .creative-network::after {
 	content: "|";
 	position: absolute;
-	right: 0px;
+	right: -1px;
 	top: 4px;
 }
 
@@ -370,15 +370,58 @@
 }
 
 .sidr {
-	background: $almost-black;
+	background: white;
 
-	ul {
+	> ul {
 		list-style-type: none;
-		padding: 0;
+		padding: 5px;
+
+		> li {
+			margin: 0;
+			padding: 5px 5px;
+			cursor: pointer;
+
+			&:hover {
+				.menu-block-primary-icon {
+					color: $purple;
+				}
+			}
+
+			ul {
+				list-style-type: none;
+				padding: 0;
+
+				li {
+					padding: 0;
+					margin-bottom: 5px;
+					font-size: 14px;
+					color: $almost-black;
+
+					> a {
+						color: $almost-black;
+					}
+				}
+			}
+		}
 	}
 
-	li {
-		margin: 0;
-		padding: 5px 5px;
+
+
+	.menu-block-primary-text {
+		color: $almost-black;
+		display: inline;
+	}
+	.menu-block-primary-icon {
+		float: right;
+		display: inline;
+		font-size: 25px;
+	}
+	.menu-block-secondary-text {
+		color: $almost-black;
+		border-bottom: 2px solid $almost-black;
+	}
+
+	.sub-menu-block-item {
+		display: none;
 	}
 }
