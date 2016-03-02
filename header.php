@@ -375,7 +375,7 @@
 
 		</header>
 
-		<?php if (is_front_page()) { ?>
+		<?php if (is_front_page() and get_field('tagline', get_page_by_title('frontpage')->ID)) { ?>
 			<div class="tagline">
 				<?php if (get_field('tagline_url', get_page_by_title('frontpage')->ID)) { ?><a href="<?php echo get_field('tagline_url', get_page_by_title('frontpage')->ID) ?>"> <?php } ?>
 					<span class="tagline-attention">Attention: </span><span class="tagline-message"><?php echo get_field('tagline', get_page_by_title('frontpage')->ID); ?></span>
