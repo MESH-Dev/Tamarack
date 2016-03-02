@@ -255,4 +255,7 @@ jQuery(document).ready(function($){
      $('.frm_ajax_loading').show();
    });
 
+   $('#sidebar h3').append('<img src="http://localhost/tamarack/wp-content/themes/Tamarack/img/down-arrow.png"/>');
+
+
 });

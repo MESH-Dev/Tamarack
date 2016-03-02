@@ -4,7 +4,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="ten columns offset-by-one">
+			<div class="nine columns offset-by-one">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 					<div class="post">
@@ -38,11 +38,19 @@
 
 				<?php endwhile; ?>
 			</div>
+
+ 
+
+
 		</div>
 	</div>
-
-
+	
 	<?php get_sidebar(); ?>
+
+
+
+
+	
 
 	<script>
 
