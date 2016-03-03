@@ -15,8 +15,24 @@ get_header(); ?>
               <div class="trail-description">
                 <?php the_content(); ?>
               </div>
-            <div class="trail-social">
-                Tell your friends:
+              <div class="trail-social">
+                <div class="trail-share-icon">
+                    Tell your friends:
+                </div>
+                <div class="trail-share-icon">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="trail-share-icon">
+                    <a href="https://twitter.com/home?status=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-twitter"></i></a>
+                </div>
+                    <!-- <div class="share-icon">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-pinterest"></i> Share</a>
+                    </div>
+                    <div class="share-icon">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-fancy"></i> Share</a>
+                    </div> -->
+
+
               </div>
             </div>
             <div class="trail-half">

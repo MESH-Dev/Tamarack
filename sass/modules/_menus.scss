@@ -183,7 +183,7 @@
 	position: relative;
 
 	@include mq($big-width, "max-width") {
-	  width: 80px;
+	  width: 85px;
 	}
 }
 
@@ -234,6 +234,10 @@
 	border-bottom: 2px solid white;
 	font-weight: 700;
 	letter-spacing: 0.01em;
+
+	@include mq($big-width, "max-width") {
+	  font-size: 10px;
+	}
 }
 
 .tagline {
@@ -333,6 +337,10 @@
 	position: absolute;
 	top: -35px;
 	width: 150px;
+
+	@include mq($big-width, "max-width") {
+	  width: 110px;
+	}
 }
 
 .main-menu-container {

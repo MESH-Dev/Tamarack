@@ -241,7 +241,7 @@ get_header(); ?>
           }
         }
       });
- 
+
 
     //Update currenly selected filter string
     var active = [];
@@ -312,8 +312,28 @@ get_header(); ?>
     });
 
 
+    $(function() {
+        jQuery('.resource').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
 
-    //Live Search 
+    $( window ).resize(function() {
+        $(function() {
+            jQuery('.resource').matchHeight({
+                byRow: true,
+                property: 'height',
+                target: null,
+                remove: false
+            });
+        });
+    });
+
+
+    //Live Search
     $("input.search").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();

@@ -337,6 +337,10 @@
 									echo get_the_title();
 								} elseif(is_home()) {
 									echo get_field('masthead_title', 19);
+								} elseif(get_post_type() == 'marketplacelisting') {
+									echo get_the_title();
+								} elseif(is_404()) {
+									echo "Oops!";
 								}
 								else {
 									echo get_field("masthead_title");
@@ -356,28 +360,6 @@
 						<?php } ?>
 					</div>
 
-					<?php if (is_page("Creative Network")) { ?>
-						<div class="join-bubble">
-							<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Our Creative Network</a></span>
-							<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
-						</div>
-					<?php } ?>
-
-					<?php if (is_page("Made in West Virginia")) { ?>
-						<div class="join-bubble join-bubble-made">
-							<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Made in West Virginia</a></span><br/>
-							<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
-						</div>
-					<?php } ?>
-
-					<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
-						<div class="bottom">
-							<div class="masthead-arrow hint--top" data-hint="Scroll Down">
-								<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-angle.png" /></a>
-							</div>
-						</div>
-					<?php } ?>
-
 
 					<?php dimox_breadcrumbs(); ?>
 					<?php if (get_field('masthead_image_citation')) { ?>
@@ -386,7 +368,30 @@
 						</div>
 					<?php } ?>
 
+				</div>
 			</div>
+
+			<?php if (is_page("Creative Network")) { ?>
+				<div class="join-bubble">
+					<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Our Creative Network</a></span>
+					<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
+				</div>
+			<?php } ?>
+
+			<?php if (is_page("Made in West Virginia")) { ?>
+				<div class="join-bubble join-bubble-made">
+					<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Made in West Virginia</a></span><br/>
+					<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
+				</div>
+			<?php } ?>
+
+			<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
+				<div class="bottom">
+					<div class="masthead-arrow hint--top" data-hint="Scroll Down">
+						<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-angle.png" /></a>
+					</div>
+				</div>
+			<?php } ?>
 
 		</header>
 

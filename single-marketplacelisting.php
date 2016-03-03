@@ -235,6 +235,26 @@ get_header(); ?>
     };
     var frame = new Sly('#crazy', options).init();
 
+    $(function() {
+        jQuery('.marketplace-content-half').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
+
+    $( window ).resize(function() {
+        $(function() {
+            jQuery('.marketplace-content-half').matchHeight({
+                byRow: true,
+                property: 'height',
+                target: null,
+                remove: false
+            });
+        });
+    });
+
     </script>
 
 

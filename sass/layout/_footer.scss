@@ -13,6 +13,10 @@ footer {
   float: left;
   width: 100%;
 
+  @include mq($tablet-width, $max) {
+   padding: 40px 15px 15px;
+  }
+
   &:before {
     position: absolute;
     left: 0;
@@ -58,6 +62,10 @@ footer {
 .footer-block-1 {
   &:before {
     content: url(img/divider-1.png);
+
+    @include mq($tablet-width, $max) {
+     content: '';
+    }
   }
 }
 
@@ -76,6 +84,10 @@ footer {
 
   &:before {
     content: url(img/divider-2.png);
+
+    @include mq($tablet-width, $max) {
+     content: '';
+    }
   }
  }
 
@@ -102,10 +114,18 @@ footer {
 
    &:before {
      content: url(img/divider-3.png);
+
+     @include mq($tablet-width, $max) {
+      content: '';
+     }
    }
    &:after {
      content: url(img/divider-1.png);
      top: 40px;
+
+     @include mq($tablet-width, $max) {
+      content: '';
+     }
    }
  }
 
@@ -132,6 +152,7 @@ footer {
 .footer-navigation {
   float: left;
   font-family: $font-family--secondary;
+  width: 100%;
 
   ul {
     padding: 0;

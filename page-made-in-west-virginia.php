@@ -240,7 +240,7 @@ get_header(); ?>
           }
         }
       });
- 
+
 
     //Update currenly selected filter string
     var active = [];
@@ -291,20 +291,20 @@ get_header(); ?>
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
- 
+
     });
- 
+
      //Reset Button
     $('.reset-filter, input.search').click(function() {
- 
+
       $('.filter-checkbox').removeClass('active');
       active = [];
       $('.search-items').html("");
       first = true;
       $('#marketplace').mixItUp('filter', init_filters);
     });
- 
-    //Live Search 
+
+    //Live Search
     $("input.search").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();
@@ -322,12 +322,32 @@ get_header(); ?>
     });
 
     //equal height
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
+    // var divWidth = jQuery('.content-fourth').width();
+    // jQuery('.content-fourth').height(divWidth);
+    //
+    // jQuery(window).resize(function() {
+    //   var divWidth = jQuery('.content-fourth').width();
+    //   jQuery('.content-fourth').height(divWidth);
+    // });
 
-    jQuery(window).resize(function() {
-      var divWidth = jQuery('.content-fourth').width();
-      jQuery('.content-fourth').height(divWidth);
+    $(function() {
+        jQuery('.content-fourth').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
+
+    $( window ).resize(function() {
+        $(function() {
+            jQuery('.resource').matchHeight({
+                byRow: true,
+                property: 'height',
+                target: null,
+                remove: false
+            });
+        });
     });
 
 

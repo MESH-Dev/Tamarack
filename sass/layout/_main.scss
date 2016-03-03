@@ -56,6 +56,10 @@
     background-position: center;
     position: relative;
 
+    @include mq($base-width, "max-width") {
+      width: 50%;
+    }
+
     @include mq($tablet-width, "max-width") {
       width: 100%;
     }
@@ -531,6 +535,12 @@ blockquote {
     -webkit-column-count: 5; /* Chrome, Safari, Opera */
     -moz-column-count: 5; /* Firefox */
     column-count: 5;
+
+    @include mq($tablet-width, "max-width") {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+	}
 }
 
 .filter-legal, .filter-finance {
@@ -538,6 +548,12 @@ blockquote {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
+
+    @include mq($tablet-width, "max-width") {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+	}
 }
 
 .filter-business, .filter-marketing-and-pr {
@@ -545,6 +561,12 @@ blockquote {
     -webkit-column-count: 5; /* Chrome, Safari, Opera */
     -moz-column-count: 5; /* Firefox */
     column-count: 5;
+
+    @include mq($tablet-width, "max-width") {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+	}
 }
 
 .filter-collections {
@@ -692,7 +714,6 @@ blockquote {
   display: inline-block;
   float: left;
   position: relative;
-  height: 425px;
 
 
   .resource-inner {
@@ -817,7 +838,7 @@ blockquote {
 }
 
 .directorylisting {
-    height: 750px;
+
 }
 
 .directorylisting-header {
@@ -839,7 +860,7 @@ blockquote {
 
   img {
     border-radius: 50%;
-    height: 150px;
+    max-height: 150px;
   }
 }
 
@@ -907,8 +928,12 @@ blockquote {
   width: 135px;
   padding: 27px;
   position: absolute;
-  right: 0px;
+  right: 30px;
   bottom: 35px;
+
+  @include mq($tablet-width, "max-width") {
+    display: none;
+  }
 }
 
 .join-bubble-made {
@@ -1169,6 +1194,11 @@ blockquote {
   float: left;
   position: relative;
   width: 50%;
+  overflow: hidden;
+
+  @include mq($tablet-width, $max) {
+    width: 100%;
+  }
 }
 
 .background-1 {
@@ -1258,7 +1288,10 @@ blockquote {
   float: left;
   padding-right: 10px;
   padding-bottom: 10px;
-  min-height: 300px;
+
+  @include mq($tablet-width, $max) {
+    width: 100%;
+  }
 }
 
 .marketplace-button {
@@ -1411,7 +1444,7 @@ blockquote {
   position: relative;
 
   hr {
-    width: 400px;
+    width: 80%;
     position: relative;
     float: left;
   }
@@ -1424,7 +1457,7 @@ blockquote {
   margin-bottom: 15px;
 
   hr {
-    width: 250px;
+    width: 50%;
     position: relative;
     float: left;
   }
@@ -1610,6 +1643,15 @@ blockquote {
     i {
         margin-right: 10px;
     }
+
+    a {
+        color: $almost-black;
+    }
+}
+
+.trail-share-icon {
+    display: inline;
+    margin-right: 10px;
 
     a {
         color: $almost-black;

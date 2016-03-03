@@ -51,7 +51,7 @@ jQuery(document).ready(function($){
   $(".footer-block").matchHeight();
 
   $('.press-third').matchHeight();
- 
+
 
   // Resource Library/Directory Filter Toggles
     $(".filter-button").click(function() {
@@ -66,7 +66,7 @@ jQuery(document).ready(function($){
     $(this).addClass('white-bg');
     $(section).addClass('white-bg');
   });
- 
+
  // Filter Toggles
     $(".filter-inner-button").click(function() {
 

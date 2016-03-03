@@ -369,6 +369,26 @@ get_header(); ?>
         });
     });
 
+    $(function() {
+        jQuery('.directorylisting').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
+
+    $( window ).resize(function() {
+        $(function() {
+            jQuery('.directorylisting').matchHeight({
+                byRow: true,
+                property: 'height',
+                target: null,
+                remove: false
+            });
+        });
+    });
+
 
   });
 </script>
