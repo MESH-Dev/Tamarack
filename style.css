@@ -3368,21 +3368,30 @@ input[type="tel"] {
   background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
   background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
 }
+@media screen and (max-width: 480px) {
+  /* line 5, sass/layout/_content-blocks.scss */
+  .effect-oscar {
+    padding: 5px;
+    -webkit-transition: width 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+  }
+}
 
-/* line 10, sass/layout/_content-blocks.scss */
+/* line 17, sass/layout/_content-blocks.scss */
 .effect-oscar .content-half {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-/* line 16, sass/layout/_content-blocks.scss */
+/* line 23, sass/layout/_content-blocks.scss */
 .effect-oscar .content-text {
   -webkit-transition: background-color 0.35s;
   transition: background-color 0.35s;
 }
 
-/* line 21, sass/layout/_content-blocks.scss */
+/* line 28, sass/layout/_content-blocks.scss */
 .effect-oscar .content-text::before {
   position: absolute;
   top: 30px;
@@ -3393,7 +3402,7 @@ input[type="tel"] {
   content: '';
 }
 
-/* line 31, sass/layout/_content-blocks.scss */
+/* line 38, sass/layout/_content-blocks.scss */
 .effect-oscar .content-text-title {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -3402,14 +3411,14 @@ input[type="tel"] {
   margin-top: -30px;
 }
 @media screen and (max-width: 480px) {
-  /* line 31, sass/layout/_content-blocks.scss */
+  /* line 38, sass/layout/_content-blocks.scss */
   .effect-oscar .content-text-title {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
-/* line 49, sass/layout/_content-blocks.scss */
+/* line 56, sass/layout/_content-blocks.scss */
 .effect-oscar .content-text::before,
 .effect-oscar .content-text-cta {
   opacity: 0;
@@ -3419,7 +3428,7 @@ input[type="tel"] {
   transform: scale(0);
 }
 @media screen and (max-width: 480px) {
-  /* line 49, sass/layout/_content-blocks.scss */
+  /* line 56, sass/layout/_content-blocks.scss */
   .effect-oscar .content-text::before,
   .effect-oscar .content-text-cta {
     opacity: 1;
@@ -3428,7 +3437,7 @@ input[type="tel"] {
   }
 }
 
-/* line 64, sass/layout/_content-blocks.scss */
+/* line 71, sass/layout/_content-blocks.scss */
 .effect-oscar:hover {
   padding: 5px;
   -webkit-transition: width 2s;
@@ -3436,13 +3445,13 @@ input[type="tel"] {
   transition: width 2s;
 }
 
-/* line 70, sass/layout/_content-blocks.scss */
+/* line 77, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-text-title {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 75, sass/layout/_content-blocks.scss */
+/* line 82, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-text::before,
 .effect-oscar:hover .content-text-cta {
   opacity: 1;
@@ -3450,17 +3459,17 @@ input[type="tel"] {
   transform: scale(1);
 }
 
-/* line 82, sass/layout/_content-blocks.scss */
+/* line 89, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-text {
   background-color: rgba(58, 52, 42, 0);
 }
 
-/* line 86, sass/layout/_content-blocks.scss */
+/* line 93, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-half {
   opacity: 0.4;
 }
 
-/* line 92, sass/layout/_content-blocks.scss */
+/* line 99, sass/layout/_content-blocks.scss */
 .effect-circle:hover {
   padding: 5px;
 }
