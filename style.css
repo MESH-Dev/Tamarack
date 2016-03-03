@@ -3504,7 +3504,7 @@ input[type="tel"] {
 @media screen and (max-width: 1280px) {
   /* line 51, sass/modules/_menus.scss */
   #menu-utilities-nav li, #social-utilities-nav li, #login-utilities-nav li {
-    padding: 5px 3px;
+    padding: 0 3px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3515,7 +3515,7 @@ input[type="tel"] {
 }
 /* line 69, sass/modules/_menus.scss */
 #menu-utilities-nav li.social-icon, #social-utilities-nav li.social-icon, #login-utilities-nav li.social-icon {
-  padding: 5px;
+  padding: 0 3px;
 }
 @media screen and (max-width: 480px) {
   /* line 69, sass/modules/_menus.scss */
@@ -3567,7 +3567,7 @@ input[type="tel"] {
   content: "|";
   position: absolute;
   right: -1px;
-  top: 4px;
+  top: 0px;
 }
 
 /* Small menu. */
@@ -3617,7 +3617,7 @@ input[type="tel"] {
   width: 100%;
   text-align: right;
   background-color: rgba(255, 255, 255, 0.7);
-  height: 30px;
+  height: 19px;
   margin-bottom: 15px;
   z-index: 100;
   position: relative;
@@ -3816,7 +3816,7 @@ input[type="tel"] {
 /* line 356, sass/modules/_menus.scss */
 .logo {
   position: absolute;
-  top: -35px;
+  top: -40px;
   width: 150px;
 }
 @media screen and (max-width: 1280px) {
