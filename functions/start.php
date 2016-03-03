@@ -223,7 +223,7 @@ function dimox_breadcrumbs() {
 			echo get_post_format_string( get_post_format() );
 		}
 		elseif ( is_home() ) {
-			if ($show_home_link) echo $sep . "Blog";
+			if ($show_home_link) echo $sep . "News & Updates";
 		}
 		echo $wrap_after;
 	}
