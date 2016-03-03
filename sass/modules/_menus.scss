@@ -54,10 +54,10 @@
 		font-size: em(12);
 		text-transform: uppercase;
 		font-family: $font-family--secondary;
-		padding: 0px 5px;
+		padding: 3px 5px;
 
 		@include mq($big-width, "max-width") {
-	      padding: 0 5px;
+	      padding: 3px 5px;
 	    }
 
 		@include mq($tablet-width, "max-width") {
@@ -67,7 +67,7 @@
 	    }
 
 		&.social-icon {
-			padding: 0 5px;
+			padding: 3px 5px;
 
 			@include mq($mobile-landscape-width, $max) {
 				display: none;
@@ -124,7 +124,7 @@
 	content: "|";
 	position: absolute;
 	right: -1px;
-	top: 0px;
+	top: -2px;
 }
 
 /* Small menu. */
@@ -168,7 +168,7 @@
 	width: 100%;
 	text-align: right;
 	background-color: rgba(255, 255, 255, 0.7);
-	height: 19px;
+	height: 24px;
 	margin-bottom: 15px;
 	z-index: 100;
 	position: relative;
@@ -355,8 +355,13 @@
 
 .logo {
 	position: absolute;
-	top: -40px;
+	top: -39px;
 	width: 150px;
+	cursor: pointer;
+
+	a:hover {
+		opacity: 1;
+	}
 
 	// @include mq($big-width, "max-width") {
 	//   width: 110px;
