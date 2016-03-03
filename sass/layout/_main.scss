@@ -225,6 +225,13 @@
    -moz-column-gap: 20px;
    -webkit-column-count: 2;
    -webkit-column-gap: 20px;
+
+   @include mq($mobile-landscape-width, "max-width") {
+       -moz-column-count: 1;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 1;
+       -webkit-column-gap: 20px;
+   }
 }
 
 blockquote {
@@ -358,6 +365,10 @@ blockquote {
     right: 0;
     top: 0;
     margin-top: 100px;
+
+    @include mq($tablet-width, "max-width") {
+        display: none;
+	}
 
     .share{
 

@@ -10,7 +10,7 @@
 		<br class="clear">
 	</div>
 	<?php
- 
+
 
 	if ( ! dynamic_sidebar('primary-widget-area') ) : ?>
 
