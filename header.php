@@ -65,7 +65,7 @@
 		if( !empty($image) ) {
 			$thumb = $image['sizes']['background-fullscreen'];
 		} else {
-			$thumb = "http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png";
+			$thumb = "http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/02/Paintbrushes-5487x3658-5.31MB-1800x1200.jpg";
 		} ?>
 
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>

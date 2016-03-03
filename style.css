@@ -3910,7 +3910,7 @@ input[type="tel"] {
 /* line 423, sass/modules/_menus.scss */
 .sidr > ul {
   list-style-type: none;
-  padding: 0 5px 5px;
+  padding: 0 5px 0;
 }
 /* line 427, sass/modules/_menus.scss */
 .sidr > ul > li {
