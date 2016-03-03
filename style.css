@@ -3068,6 +3068,11 @@ a img.aligncenter {
   text-align: center;
 }
 
+/* line 1780, sass/layout/_main.scss */
+.hover-opacity {
+  opacity: 0.7;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;

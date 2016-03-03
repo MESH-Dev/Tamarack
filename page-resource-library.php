@@ -332,6 +332,15 @@ get_header(); ?>
         });
     });
 
+    $(".resource-title").hover(function() {
+        $p = $(this).parent();
+        $p.find('.resource-link').toggleClass('hover-opacity');
+    });
+
+    $(".resource-link").hover(function() {
+        $p = $(this).parent();
+        $p.find('.resource-title').toggleClass('hover-opacity');
+    });
 
     //Live Search
     $("input.search-by").keyup(function(){
