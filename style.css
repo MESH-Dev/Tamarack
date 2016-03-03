@@ -3411,8 +3411,17 @@ input[type="tel"] {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
+@media screen and (max-width: 480px) {
+  /* line 44, sass/layout/_content-blocks.scss */
+  .effect-oscar .content-text::before,
+  .effect-oscar .content-text-cta {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
-/* line 53, sass/layout/_content-blocks.scss */
+/* line 59, sass/layout/_content-blocks.scss */
 .effect-oscar:hover {
   padding: 5px;
   -webkit-transition: width 2s;
@@ -3420,13 +3429,13 @@ input[type="tel"] {
   transition: width 2s;
 }
 
-/* line 59, sass/layout/_content-blocks.scss */
+/* line 65, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-text-title {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 64, sass/layout/_content-blocks.scss */
+/* line 70, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-text::before,
 .effect-oscar:hover .content-text-cta {
   opacity: 1;
@@ -3434,17 +3443,17 @@ input[type="tel"] {
   transform: scale(1);
 }
 
-/* line 71, sass/layout/_content-blocks.scss */
+/* line 77, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-text {
   background-color: rgba(58, 52, 42, 0);
 }
 
-/* line 75, sass/layout/_content-blocks.scss */
+/* line 81, sass/layout/_content-blocks.scss */
 .effect-oscar:hover .content-half {
   opacity: 0.4;
 }
 
-/* line 81, sass/layout/_content-blocks.scss */
+/* line 87, sass/layout/_content-blocks.scss */
 .effect-circle:hover {
   padding: 5px;
 }
@@ -4051,7 +4060,7 @@ input[type="tel"] {
 
 /* line 79, sass/modules/_masthead.scss */
 .masthead-link {
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   font-family: "din-condensed-web", sans-serif;
@@ -4076,8 +4085,14 @@ input[type="tel"] {
   right: 0px;
   bottom: 0px;
 }
+@media screen and (max-width: 480px) {
+  /* line 94, sass/modules/_masthead.scss */
+  .citation {
+    display: none;
+  }
+}
 
-/* line 105, sass/modules/_masthead.scss */
+/* line 109, sass/modules/_masthead.scss */
 .breadcrumbs {
   text-align: left;
   color: white;
@@ -4088,12 +4103,12 @@ input[type="tel"] {
   left: 0px;
   bottom: 0px;
 }
-/* line 115, sass/modules/_masthead.scss */
+/* line 119, sass/modules/_masthead.scss */
 .breadcrumbs a {
   color: white;
 }
 
-/* line 120, sass/modules/_masthead.scss */
+/* line 124, sass/modules/_masthead.scss */
 .breadcrumbs {
   opacity: 1;
   transform: translateY(0);
@@ -4103,7 +4118,7 @@ input[type="tel"] {
   -webkit-transition: -webkit-transform .4s ease-in-out, opacity .4s ease-in-out;
 }
 
-/* line 129, sass/modules/_masthead.scss */
+/* line 133, sass/modules/_masthead.scss */
 .wf-loading .breadcrumbs {
   opacity: 0;
   transform: translateY(-20px);
@@ -4111,24 +4126,24 @@ input[type="tel"] {
   -webkit-transform: translateY(-20px);
 }
 
-/* line 136, sass/modules/_masthead.scss */
+/* line 140, sass/modules/_masthead.scss */
 .sep {
   margin: 0 5px;
 }
 
-/* line 140, sass/modules/_masthead.scss */
+/* line 144, sass/modules/_masthead.scss */
 .masthead-arrow {
   text-align: center;
   margin: 50px 0 15px;
 }
 
-/* line 145, sass/modules/_masthead.scss */
+/* line 149, sass/modules/_masthead.scss */
 .masthead-text {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 150, sass/modules/_masthead.scss */
+/* line 154, sass/modules/_masthead.scss */
 .screen {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
