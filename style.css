@@ -3831,7 +3831,7 @@ input[type="tel"] {
   font-size: 30px;
 }
 /* line 395, sass/modules/_menus.scss */
-.main-menu-toggle a {
+.main-menu-toggle i {
   color: white;
 }
 @media screen and (max-width: 768px) {

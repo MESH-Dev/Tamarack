@@ -191,9 +191,7 @@
 						</div>
 
 						<div class="main-menu-toggle">
-							<a href="#sidr" id="simple-menu">
-								<i class="fa fa-navicon"></i>
-							</a>
+							<i class="fa fa-navicon"></i>
 						</div>
 
 
@@ -366,7 +364,7 @@
 
 
 					<?php dimox_breadcrumbs(); ?>
-					
+
 					<?php if (get_field('masthead_image_citation')) { ?>
 						<div class="citation">
 							<?php echo get_field('masthead_image_citation'); ?>

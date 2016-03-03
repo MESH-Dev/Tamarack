@@ -258,14 +258,13 @@
 
 <script>
 	jQuery(document).ready(function() {
-	  jQuery('#simple-menu').sidr();
-	  jQuery('#simple-menu i').click(function() {
-		  $(this).toggleClass('fa-navicon fa-close');
-		  jQuery('.logo').toggle();
-	  });
+	  jQuery('.main-menu-toggle').sidr();
 
-	  jQuery('#simple-menu').click(function() {
-		 $(this).parent().toggleClass('main-menu-toggle-left');
+	  jQuery('.main-menu-toggle').click(function() {
+		  console.log('text');
+		  $(this).find('i').toggleClass('fa-navicon fa-close');
+		  $(this).toggleClass('main-menu-toggle-left');
+		  jQuery('.logo').toggle();
 	  });
 
 
