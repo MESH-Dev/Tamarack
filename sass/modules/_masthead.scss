@@ -42,6 +42,11 @@
 .masthead-title-home {
   font-size: 42px;
   line-height: 54px;
+
+  @include mq($mobile-landscape-width, "max-width") {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 
 .masthead-subtitle {
