@@ -415,21 +415,21 @@ blockquote {
         font-family: $font-family--primary;
         margin-bottom: 10px;
         font-size: 15px;
-        padding: 0px 30px;
+        // padding: 0px 30px;
 
-        &:before {
-            content: '\f0da';
-            font-family: FontAwesome;
-            font-weight: normal;
-            font-style: normal;
-            margin: 0px 0px 0px 10px;
-            text-decoration: none;
-            position: absolute;
-            left: 0px;
-            cursor: pointer;
-            font-size: 25px;
-            line-height: 20px;
-        }
+        // &:before {
+        //     content: '\f0da';
+        //     font-family: FontAwesome;
+        //     font-weight: normal;
+        //     font-style: normal;
+        //     margin: 0px 0px 0px 10px;
+        //     text-decoration: none;
+        //     position: absolute;
+        //     left: 0px;
+        //     cursor: pointer;
+        //     font-size: 25px;
+        //     line-height: 20px;
+        // }
 
         &.active-item {
           a {
@@ -1494,6 +1494,7 @@ blockquote {
     margin: 0;
     padding-top: 10px;
     line-height: 36px;
+    width: 90%;
   }
 }
 

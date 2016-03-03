@@ -1560,21 +1560,6 @@ blockquote .quote-citation:before {
   font-family: "LeituraDisplay-Roman", serif;
   margin-bottom: 10px;
   font-size: 15px;
-  padding: 0px 30px;
-}
-/* line 420, sass/layout/_main.scss */
-#sidebar ul li:before {
-  content: '\f0da';
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0px 0px 0px 10px;
-  text-decoration: none;
-  position: absolute;
-  left: 0px;
-  cursor: pointer;
-  font-size: 25px;
-  line-height: 20px;
 }
 /* line 435, sass/layout/_main.scss */
 #sidebar ul li.active-item a {

@@ -32,7 +32,7 @@ if( have_rows('content_block_section') ):
                     </div>
                     <div class="content-text-cta">
                         <?php if(get_sub_field('url')) { ?><a href="<?php echo get_sub_field('url'); ?>"><?php } ?>
-                            <?php echo get_sub_field('subtitle'); ?>
+                            <?php echo get_sub_field('subtitle'); ?> <i class="fa fa-angle-double-right"></i>
                         <?php if(get_sub_field('url')) { ?></a><?php } ?>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ if( have_rows('content_block_section') ):
               <div class="content-screen content-circle-screen animated fadeIn">
                 <div class="content-text <?php echo get_sub_field('color'); ?>">
                   <div class="content-text-main">
-                    <?php echo get_sub_field('title'); ?>
+                    <a href="<?php echo get_sub_field('url'); ?>"><?php echo get_sub_field('title'); ?></a>
                   </div>
                   <div class="content-text-cta">
                     <a href="<?php echo get_sub_field('url'); ?>"><?php echo get_sub_field('link_text'); ?> <i class="fa fa-angle-double-right"></i></a>
