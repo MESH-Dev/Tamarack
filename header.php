@@ -341,6 +341,8 @@
 									echo "Oops!";
 								} elseif(get_post_type() == 'trail') {
 									echo get_the_title();
+								} elseif(is_single()) {
+									echo get_the_title();
 								}
 								else {
 									echo get_field("masthead_title");
