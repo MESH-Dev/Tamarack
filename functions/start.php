@@ -140,6 +140,10 @@ function dimox_breadcrumbs() {
 					$link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . 'Creative Network' . $link_in_after . '</a>' . $link_after;
 					$s = 'creative-network';
 				}
+				elseif ($slug['slug'] == 'trail') {
+					$link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . 'Visit Art Spaces' . $link_in_after . '</a>' . $link_after;
+					$s = 'visit-art-spaces';
+				}
 				else {
 
 				}
