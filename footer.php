@@ -131,25 +131,12 @@
 
   <ul>
 	  <li>
-		<div class="menu-block menu-block-item">
-			<span class="menu-block-primary-text">Learn</span>
-			<span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
-			<span class="menu-block-secondary-text">New Skills</span>
-		</div>
-		<div class="sub-menu-block-item">
-			<ul>
-				<li><a href="<?php echo get_field('learn_main_link', 'option'); ?>">Learn New Skills</a></li>
-
-				<?php
-					if( have_rows('learn_links', 'option') ):
-						while ( have_rows('learn_links', 'option') ) : the_row();
-							echo "<li><a href=" . get_sub_field('learn_link', 'option')->guid . " >" . get_sub_field('learn_link', 'option')->post_title . "</a></li>";
-						endwhile;
-					endif;
-				?>
-
-			</ul>
-		</div>
+	  	<a href="<?php echo get_field('learn_main_link', 'option'); ?>">
+			<div class="menu-block menu-block-item">
+				<span class="menu-block-primary-text">Learn</span>
+				<span class="menu-block-secondary-text">New Skills</span>
+			</div>
+		</a>
 	  </li>
 	  <li>
 		<div class="menu-block menu-block-item">
@@ -213,45 +200,20 @@
 		  </div>
 	  </li>
 	  <li>
-		<div class="menu-block menu-block-item">
-			<span class="menu-block-primary-text">Connect</span><span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
-			<span class="menu-block-secondary-text">With Creatives</span>
-		</div>
-		<div class="sub-menu-block-item">
-			<ul>
-				<li><a href="<?php echo get_field('connect_main_link', 'option'); ?>">Connect With Creatives</a></li>
-
-				<?php
-					if( have_rows('connect_links', 'option') ):
-						while ( have_rows('connect_links', 'option') ) : the_row();
-							echo "<li><a href=" . get_sub_field('connect_link', 'option')->guid . " >" . get_sub_field('connect_link', 'option')->post_title . "</a></li>";
-						endwhile;
-					endif;
-				?>
-			</ul>
-		</div>
+	    <a href="<?php echo get_field('connect_main_link', 'option'); ?>">
+			<div class="menu-block menu-block-item">
+				<span class="menu-block-primary-text">Connect</span><span class="menu-block-primary-icon"></span>
+				<span class="menu-block-secondary-text">With Creatives</span>
+			</div>
+		</a>
 	  </li>
 	  <li>
-		  <div class="menu-block menu-block-item">
-			  <span class="menu-block-primary-text">Shop</span>
-			  <span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
-			  <span class="menu-block-secondary-text">Businesses</span>
-		  </div>
-		  <div class="sub-menu-block-item">
-			<ul>
-				<li>
-					<a href="<?php echo get_field('shop_main_link', 'option'); ?>">Shop Businesses</a>
-				</li>
-
-				<?php
-					if( have_rows('shop_links', 'option') ):
-						while ( have_rows('shop_links', 'option') ) : the_row();
-							echo "<li><a href=" . get_sub_field('shop_link', 'option')->guid . " >" . get_sub_field('shop_link', 'option')->post_title . "</a></li>";
-						endwhile;
-					endif;
-				?>
-			</ul>
-		  </div>
+	  	  <a href="<?php echo get_field('shop_main_link', 'option'); ?>">
+			  <div class="menu-block menu-block-item">
+				  <span class="menu-block-primary-text">Shop</span>
+				  <span class="menu-block-secondary-text">Businesses</span>
+			  </div>
+	  	  </a>
 	  </li>
   </ul>
 
