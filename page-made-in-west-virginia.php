@@ -142,7 +142,7 @@ get_header(); ?>
 
   <div class="filter-row">
     <div class="twelve columns">
-      <div class="search">
+      <div class="search-by">
         <div class="filter-bar">
           <div class="search-title">
             Current Search
@@ -295,7 +295,7 @@ get_header(); ?>
     });
 
      //Reset Button
-    $('.reset-filter, input.search').click(function() {
+    $('.reset-filter, input.search-by').click(function() {
 
       $('.filter-checkbox').removeClass('active');
       active = [];
@@ -305,7 +305,7 @@ get_header(); ?>
     });
 
     //Live Search
-    $("input.search").keyup(function(){
+    $("input.search-by").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();
         // Loop through grid items
