@@ -133,7 +133,7 @@
 								// $main_menu = wp_get_nav_menu_items('Main Nav');
 							?>
 
-							<div class="main-menu-item menu-item learn">
+							<div class="main-menu-item menu-item learn <?php if(curPageURL() == get_field('learn_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('learn_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Learn</span>
@@ -142,7 +142,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item build">
+							<div class="main-menu-item menu-item build <?php if(curPageURL() == get_field('build_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('build_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Build</span>
@@ -151,7 +151,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item fund">
+							<div class="main-menu-item menu-item fund <?php if(curPageURL() == get_field('fund_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('fund_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Fund</span>
@@ -160,7 +160,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item grow">
+							<div class="main-menu-item menu-item grow <?php if(curPageURL() == get_field('grow_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 									<a href="<?php echo get_field('grow_main_link', 'option'); ?>">
 										<div class="menu-block menu-block-item">
 											<span class="menu-block-primary-text">Grow</span>
@@ -169,7 +169,7 @@
 									</a>
 							</div>
 
-							<div class="main-menu-item menu-item connect">
+							<div class="main-menu-item menu-item connect <?php if(curPageURL() == get_field('connect_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('connect_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Connect</span>
@@ -178,7 +178,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item shop">
+							<div class="main-menu-item menu-item shop <?php if(curPageURL() == get_field('shop_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 									<a href="<?php echo get_field('shop_main_link', 'option'); ?>">
 										<div class="menu-block menu-block-item">
 											<span class="menu-block-primary-text">Shop</span>

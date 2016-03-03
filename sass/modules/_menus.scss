@@ -494,3 +494,12 @@
 	text-align: right;
 	cursor: pointer;
 }
+
+.menu-item-active {
+	.menu-block-primary-text, .menu-block-secondary-text {
+		color: $purple;
+	}
+	.menu-block-secondary-text {
+	    border-bottom: 3px solid $purple;
+	}
+}
