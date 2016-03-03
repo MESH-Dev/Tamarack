@@ -3589,7 +3589,7 @@ input[type="tel"] {
   content: "|";
   position: absolute;
   right: -1px;
-  top: -2px;
+  top: 2px;
 }
 
 /* Small menu. */
