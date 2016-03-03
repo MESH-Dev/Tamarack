@@ -5,6 +5,6 @@ jQuery(document).ready(function($){
 
   $('#nav a:contains("Register")').attr("href", last + "register");
 
-  $('#backtoblog a').hide();
+  // $('#backtoblog a').hide();
 
 });
