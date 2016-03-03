@@ -265,7 +265,6 @@
 	  });
 
 	  jQuery('#simple-menu').click(function() {
-		  console.log($(this).parent());
 		 $(this).parent().toggleClass('main-menu-toggle-left');
 	  });
 
