@@ -3091,7 +3091,7 @@ header.full .container .home-container {
 }
 /* line 22, sass/layout/_header.scss */
 header .home-container {
-  height: calc(60vh);
+  height: calc(70vh);
   display: table;
   width: 100%;
   top: 0px;
