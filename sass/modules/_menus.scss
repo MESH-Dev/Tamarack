@@ -503,3 +503,27 @@
 	    border-bottom: 3px solid $purple;
 	}
 }
+
+.grow {
+	@include mq($tablet-width, 'min-width') {
+		width: 120px;
+	}
+}
+
+.fund {
+	@include mq($tablet-width, 'min-width') {
+		width: 90px;
+	}
+}
+
+.shop {
+	@include mq($tablet-width, 'min-width') {
+		width: 75px;
+	}
+}
+
+.learn {
+	@include mq($tablet-width, 'min-width') {
+		width: 75px;
+	}
+}
