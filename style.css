@@ -3843,7 +3843,7 @@ input[type="tel"] {
 
 /* line 404, sass/modules/_menus.scss */
 .main-menu-toggle-left {
-  left: 30px;
+  left: 0;
 }
 
 /* line 409, sass/modules/_menus.scss */
