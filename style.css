@@ -3865,7 +3865,7 @@ input[type="tel"] {
 /* line 423, sass/modules/_menus.scss */
 .sidr > ul {
   list-style-type: none;
-  padding: 5px;
+  padding: 0 5px 5px;
 }
 /* line 427, sass/modules/_menus.scss */
 .sidr > ul > li {
@@ -3916,7 +3916,7 @@ input[type="tel"] {
 
 /* line 477, sass/modules/_menus.scss */
 .close-sidr {
-  padding: 10px;
+  padding: 10px 10px 0;
   width: 100%;
   text-align: right;
   cursor: pointer;
