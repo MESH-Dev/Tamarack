@@ -2967,13 +2967,18 @@ a img.aligncenter {
 }
 
 /* line 1709, sass/layout/_main.scss */
+.alignright, .alignleft, .aligncenter {
+  max-width: 100%;
+}
+
+/* line 1713, sass/layout/_main.scss */
 .one_half {
   width: 47%;
   padding-right: 2%;
   float: left;
 }
 
-/* line 1710, sass/layout/_main.scss */
+/* line 1714, sass/layout/_main.scss */
 .last {
   margin-right: 0 !important;
   padding-left: 2%;
@@ -2981,7 +2986,7 @@ a img.aligncenter {
   clear: right;
 }
 
-/* line 1711, sass/layout/_main.scss */
+/* line 1715, sass/layout/_main.scss */
 .clearboth {
   clear: both;
   display: block;
@@ -2992,7 +2997,7 @@ a img.aligncenter {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 1713, sass/layout/_main.scss */
+  /* line 1717, sass/layout/_main.scss */
   .join-mobile {
     display: none;
   }
