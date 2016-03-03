@@ -3826,7 +3826,7 @@ input[type="tel"] {
 /* line 389, sass/modules/_menus.scss */
 .main-menu-toggle {
   display: none;
-  position: fixed;
+  position: absolute;
   right: 30px;
   font-size: 30px;
 }
@@ -3911,6 +3911,13 @@ input[type="tel"] {
 /* line 471, sass/modules/_menus.scss */
 .sidr .sub-menu-block-item {
   display: none;
+}
+
+/* line 476, sass/modules/_menus.scss */
+.close-sidr {
+  padding: 10px;
+  width: 100%;
+  text-align: right;
 }
 
 /* line 5, sass/modules/_modules.scss */

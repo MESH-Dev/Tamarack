@@ -388,7 +388,7 @@
 
 .main-menu-toggle {
 	display: none;
-	position: fixed;
+	position: absolute;
 	right: 30px;
 	font-size: 30px;
 
@@ -471,4 +471,10 @@
 	.sub-menu-block-item {
 		display: none;
 	}
+}
+
+.close-sidr {
+	padding: 10px;
+	width: 100%;
+	text-align: right;
 }

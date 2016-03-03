@@ -124,6 +124,11 @@
 
 <div id="sidr">
   <!-- Your content -->
+
+  <div class="close-sidr">
+	<i class="fa fa-close"></i>
+  </div>
+
   <ul>
 	  <li>
 		<div class="menu-block menu-block-item">
@@ -269,17 +274,7 @@
 	// 	  console.log('test');
 	//   });
 
-	$('body').swipe( {
-	   //Single swipe handler for left swipes
-	   swipeLeft: function () {
-		   $.sidr('close', 'sidr-main');
-	   },
-	   swipeRight: function () {
-		   $.sidr('open', 'sidr-main');
-	   },
-	   //Default is 75px, set to 0 for demo so any distance triggers swipe
-	   threshold: 45
-   });
+	  jQuery('.close-sidr').sidr();
 
 	  jQuery('#sidr ul li').click(function() {
 		 $(this).find('.sub-menu-block-item').slideToggle();
