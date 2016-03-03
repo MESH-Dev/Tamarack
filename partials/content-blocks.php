@@ -27,8 +27,9 @@ if( have_rows('content_block_section') ):
                 <div class="content-text <?php echo get_sub_field('color'); ?>">
                     <div class="content-text-title">
                         <?php if(get_sub_field('url')) { ?><a href="<?php echo get_sub_field('url'); ?>"><?php } ?>
-                            <?php echo get_sub_field('title'); ?></div>
+                            <?php echo get_sub_field('title'); ?>
                         <?php if(get_sub_field('url')) { ?></a><?php } ?>
+                    </div>
                     <div class="content-text-cta">
                         <?php if(get_sub_field('url')) { ?><a href="<?php echo get_sub_field('url'); ?>"><?php } ?>
                             <?php echo get_sub_field('subtitle'); ?>

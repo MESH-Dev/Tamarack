@@ -3923,28 +3923,32 @@ input[type="tel"] {
 .sidr > ul > li ul li > a {
   color: #3f4143;
 }
-/* line 460, sass/modules/_menus.scss */
+/* line 458, sass/modules/_menus.scss */
+.sidr .footer-navigation {
+  padding: 0 10px;
+}
+/* line 462, sass/modules/_menus.scss */
 .sidr .menu-block-primary-text {
   color: #3f4143;
   display: inline;
 }
-/* line 464, sass/modules/_menus.scss */
+/* line 466, sass/modules/_menus.scss */
 .sidr .menu-block-primary-icon {
   float: right;
   display: inline;
   font-size: 25px;
 }
-/* line 469, sass/modules/_menus.scss */
+/* line 471, sass/modules/_menus.scss */
 .sidr .menu-block-secondary-text {
   color: #3f4143;
   border-bottom: 2px solid #3f4143;
 }
-/* line 474, sass/modules/_menus.scss */
+/* line 476, sass/modules/_menus.scss */
 .sidr .sub-menu-block-item {
   display: none;
 }
 
-/* line 479, sass/modules/_menus.scss */
+/* line 481, sass/modules/_menus.scss */
 .close-sidr {
   padding: 10px 10px 0;
   width: 100%;
