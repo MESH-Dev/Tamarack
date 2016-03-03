@@ -286,6 +286,11 @@ blockquote {
 .content-text-title {
   display: block;
   margin-bottom: 10px;
+
+  @include mq($mobile-landscape-width, "max-width") {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 .wppb-user-forms {
