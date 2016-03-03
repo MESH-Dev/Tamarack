@@ -363,9 +363,9 @@
 		opacity: 1;
 	}
 
-	// @include mq($big-width, "max-width") {
-	//   width: 110px;
-	// }
+	@include mq($big-width, "max-width") {
+	  width: 140px;
+	}
 }
 
 .main-menu-container {

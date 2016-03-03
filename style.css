@@ -3846,6 +3846,12 @@ input[type="tel"] {
 .logo a:hover {
   opacity: 1;
 }
+@media screen and (max-width: 1280px) {
+  /* line 356, sass/modules/_menus.scss */
+  .logo {
+    width: 140px;
+  }
+}
 
 /* line 371, sass/modules/_menus.scss */
 .main-menu-container {
