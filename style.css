@@ -3965,7 +3965,7 @@ input[type="tel"] {
 
 /* line 481, sass/modules/_menus.scss */
 .close-sidr {
-  padding: 10px 10px 0;
+  padding: 0 10px;
   width: 100%;
   text-align: right;
   cursor: pointer;
