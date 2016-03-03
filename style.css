@@ -787,7 +787,7 @@ p {
 /* line 89, sass/base/_base.scss */
 .aligncenter {
   float: left;
-  width: 100%;
+  width: 100% !important;
 }
 
 /* line 95, sass/base/_base.scss */
