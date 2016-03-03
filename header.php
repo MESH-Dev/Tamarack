@@ -35,7 +35,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/animate.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/jquery.sidr.bare.css">
 
-	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/tam_white.png">
+	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/tam_white-2.png">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
