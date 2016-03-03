@@ -561,6 +561,12 @@ blockquote {
     column-count: 5;
 
     @include mq($tablet-width, "max-width") {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+	}
+
+    @include mq($mobile-landscape-width, "max-width") {
         -webkit-column-count: 1; /* Chrome, Safari, Opera */
         -moz-column-count: 1; /* Firefox */
         column-count: 1;
@@ -574,6 +580,12 @@ blockquote {
     column-count: 3;
 
     @include mq($tablet-width, "max-width") {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+	}
+
+    @include mq($mobile-landscape-width, "max-width") {
         -webkit-column-count: 1; /* Chrome, Safari, Opera */
         -moz-column-count: 1; /* Firefox */
         column-count: 1;
@@ -587,10 +599,16 @@ blockquote {
     column-count: 5;
 
     @include mq($tablet-width, "max-width") {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+	}
+
+    @include mq($mobile-landscape-width, "max-width") {
         -webkit-column-count: 1; /* Chrome, Safari, Opera */
         -moz-column-count: 1; /* Firefox */
         column-count: 1;
-	}
+    }
 }
 
 .filter-collections {
