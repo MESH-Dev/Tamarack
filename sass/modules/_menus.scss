@@ -54,7 +54,7 @@
 		font-size: em(12);
 		text-transform: uppercase;
 		font-family: $font-family--secondary;
-		padding: 5px 10px;
+		padding: 0px 3px;
 
 		@include mq($big-width, "max-width") {
 	      padding: 0 3px;
