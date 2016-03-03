@@ -11,9 +11,7 @@
 	<title><?php bloginfo('name'); ?></title>
 
 	<!-- Meta / og: tags -->
-	<meta name="description" content="">
 	<meta name="author" content="">
-
 
 	<!-- Mobile Specific Metas
 	================================================== -->
