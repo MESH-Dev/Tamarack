@@ -259,15 +259,27 @@
 <script>
 	jQuery(document).ready(function() {
 
-
-	  jQuery('.main-menu-toggle').click(function() {
-		  $(this).find('i').toggleClass('fa-navicon fa-close');
-		  $(this).toggleClass('main-menu-toggle-left');
-		  jQuery('.logo').toggle();
-	  });
-
 	  jQuery('.main-menu-toggle').sidr();
 
+	//   jQuery('.main-menu-toggle').click(function() {
+	// 	  $(this).find('i').toggleClass('fa-navicon fa-close');
+	// 	  $(this).toggleClass('main-menu-toggle-left');
+	// 	  jQuery('.logo').toggle();
+	  //
+	// 	  console.log('test');
+	//   });
+
+	$('body').swipe( {
+	   //Single swipe handler for left swipes
+	   swipeLeft: function () {
+		   $.sidr('close', 'sidr-main');
+	   },
+	   swipeRight: function () {
+		   $.sidr('open', 'sidr-main');
+	   },
+	   //Default is 75px, set to 0 for demo so any distance triggers swipe
+	   threshold: 45
+   });
 
 	  jQuery('#sidr ul li').click(function() {
 		 $(this).find('.sub-menu-block-item').slideToggle();

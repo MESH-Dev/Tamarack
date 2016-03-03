@@ -3826,7 +3826,7 @@ input[type="tel"] {
 /* line 389, sass/modules/_menus.scss */
 .main-menu-toggle {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 30px;
   font-size: 30px;
 }
