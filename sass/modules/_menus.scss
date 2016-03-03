@@ -388,7 +388,7 @@
 
 .main-menu-toggle {
 	display: none;
-	position: fixed;
+	position: absolute;
 	right: 30px;
 	font-size: 30px;
 
@@ -399,6 +399,10 @@
 	@include mq($tablet-width, $max) {
 	  display: block;
 	}
+}
+
+.main-menu-toggle-left {
+	left: 30px;
 }
 
 .menu-active {

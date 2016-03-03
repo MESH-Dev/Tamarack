@@ -3826,7 +3826,7 @@ input[type="tel"] {
 /* line 389, sass/modules/_menus.scss */
 .main-menu-toggle {
   display: none;
-  position: fixed;
+  position: absolute;
   right: 30px;
   font-size: 30px;
 }
@@ -3841,68 +3841,73 @@ input[type="tel"] {
   }
 }
 
-/* line 405, sass/modules/_menus.scss */
+/* line 404, sass/modules/_menus.scss */
+.main-menu-toggle-left {
+  left: 30px;
+}
+
+/* line 409, sass/modules/_menus.scss */
 .menu-active .menu-block-primary-text {
   color: #b33ed9;
 }
-/* line 408, sass/modules/_menus.scss */
+/* line 412, sass/modules/_menus.scss */
 .menu-active .menu-block-secondary-text {
   color: #b33ed9;
   border-bottom: 2px solid #b33ed9;
 }
 
-/* line 414, sass/modules/_menus.scss */
+/* line 418, sass/modules/_menus.scss */
 .sidr {
   background: white;
 }
-/* line 417, sass/modules/_menus.scss */
+/* line 421, sass/modules/_menus.scss */
 .sidr > ul {
   list-style-type: none;
   padding: 5px;
 }
-/* line 421, sass/modules/_menus.scss */
+/* line 425, sass/modules/_menus.scss */
 .sidr > ul > li {
   margin: 0;
   padding: 5px 5px;
   cursor: pointer;
 }
-/* line 427, sass/modules/_menus.scss */
+/* line 431, sass/modules/_menus.scss */
 .sidr > ul > li:hover .menu-block-primary-icon {
   color: #b33ed9;
 }
-/* line 432, sass/modules/_menus.scss */
+/* line 436, sass/modules/_menus.scss */
 .sidr > ul > li ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 436, sass/modules/_menus.scss */
+/* line 440, sass/modules/_menus.scss */
 .sidr > ul > li ul li {
   padding: 0;
   margin-bottom: 5px;
   font-size: 14px;
   color: #3f4143;
 }
-/* line 442, sass/modules/_menus.scss */
+/* line 446, sass/modules/_menus.scss */
 .sidr > ul > li ul li > a {
   color: #3f4143;
 }
-/* line 452, sass/modules/_menus.scss */
+/* line 456, sass/modules/_menus.scss */
 .sidr .menu-block-primary-text {
   color: #3f4143;
   display: inline;
 }
-/* line 456, sass/modules/_menus.scss */
+/* line 460, sass/modules/_menus.scss */
 .sidr .menu-block-primary-icon {
   float: right;
   display: inline;
   font-size: 25px;
 }
-/* line 461, sass/modules/_menus.scss */
+/* line 465, sass/modules/_menus.scss */
 .sidr .menu-block-secondary-text {
   color: #3f4143;
   border-bottom: 2px solid #3f4143;
 }
-/* line 466, sass/modules/_menus.scss */
+/* line 470, sass/modules/_menus.scss */
 .sidr .sub-menu-block-item {
   display: none;
 }
