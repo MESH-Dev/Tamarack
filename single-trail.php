@@ -127,7 +127,15 @@ get_header(); ?>
                   </div>
                   <div class="trailstop-inner-2"><hr></div>
                   <div class="trailstop-content">
-                    <?php the_content(); ?>
+                    <?php
+
+                        $content_post = get_post($trail_stop->ID);
+                        $content = $content_post->post_content;
+                        $content = apply_filters('the_content', $content);
+                        $content = str_replace(']]>', ']]&gt;', $content);
+                        echo $content;
+                        
+                    ?>
                   </div>
                   <div class="trailstop-image">
                     <?php
