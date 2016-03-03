@@ -3626,7 +3626,6 @@ input[type="tel"] {
 /* line 177, sass/modules/_menus.scss */
 .menu-block {
   height: 50px;
-  margin-bottom: 5px;
 }
 /* line 183, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-primary-text {
