@@ -3859,55 +3859,56 @@ input[type="tel"] {
 /* line 418, sass/modules/_menus.scss */
 .sidr {
   background: white;
+  width: 200px;
 }
-/* line 421, sass/modules/_menus.scss */
+/* line 422, sass/modules/_menus.scss */
 .sidr > ul {
   list-style-type: none;
   padding: 5px;
 }
-/* line 425, sass/modules/_menus.scss */
+/* line 426, sass/modules/_menus.scss */
 .sidr > ul > li {
   margin: 0;
   padding: 5px 5px;
   cursor: pointer;
 }
-/* line 431, sass/modules/_menus.scss */
+/* line 432, sass/modules/_menus.scss */
 .sidr > ul > li:hover .menu-block-primary-icon {
   color: #b33ed9;
 }
-/* line 436, sass/modules/_menus.scss */
+/* line 437, sass/modules/_menus.scss */
 .sidr > ul > li ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 440, sass/modules/_menus.scss */
+/* line 441, sass/modules/_menus.scss */
 .sidr > ul > li ul li {
   padding: 0;
   margin-bottom: 5px;
   font-size: 14px;
   color: #3f4143;
 }
-/* line 446, sass/modules/_menus.scss */
+/* line 447, sass/modules/_menus.scss */
 .sidr > ul > li ul li > a {
   color: #3f4143;
 }
-/* line 456, sass/modules/_menus.scss */
+/* line 457, sass/modules/_menus.scss */
 .sidr .menu-block-primary-text {
   color: #3f4143;
   display: inline;
 }
-/* line 460, sass/modules/_menus.scss */
+/* line 461, sass/modules/_menus.scss */
 .sidr .menu-block-primary-icon {
   float: right;
   display: inline;
   font-size: 25px;
 }
-/* line 465, sass/modules/_menus.scss */
+/* line 466, sass/modules/_menus.scss */
 .sidr .menu-block-secondary-text {
   color: #3f4143;
   border-bottom: 2px solid #3f4143;
 }
-/* line 470, sass/modules/_menus.scss */
+/* line 471, sass/modules/_menus.scss */
 .sidr .sub-menu-block-item {
   display: none;
 }
