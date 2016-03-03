@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
 
   $(".content-text-title").hover(function() {
       $p = $(this).parent();
-      $p.find('.content-text-cta').toggleClass('hover-opacity');
+      $p.find('.content-text-cta a').toggleClass('hover-opacity');
   });
 
   $(".content-text-cta").hover(function() {
