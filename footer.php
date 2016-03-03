@@ -82,22 +82,22 @@
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-twitter"></i> Tweet Us: <a href="https://twitter.com/tamarackfound">@tamarackfoundation</a></span>
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-instagram"></i> Follow Our Instagram: <a href="https://www.instagram.com/tamarackfoundation/">@tamarackfoundation</a></span>
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-facebook"></i> Find us on <a href="https://www.facebook.com/TamarackFoundation">Facebook</a></span>
+					<span class="footer-block-text footer-block-full-width"><i class="fa fa-pinterest"></i> Find us on <a href="https://www.pinterest.com/TamarackFound">Pinterest</a></span>
 					<br/>
 					<span class="footer-block-title">Snail mail:</span>
-					<span class="footer-block-text footer-block-full-width">555 Address Address St.</span>
-					<span class="footer-block-text footer-block-full-width">Charleston, WV 23333</span>
+					<span class="footer-block-text footer-block-full-width">3310 Piedmont Road</span>
+					<span class="footer-block-text footer-block-full-width">Charleston, WV 25306</span>
 					<br/>
 					<div class="footer-block-info">
-						<span class="footer-block-title">Call:</span> <span class="footer-block-text">304-333-3333</span><br/>
-						<span class="footer-block-title">Fax:</span> <span class="footer-block-text">304-333-3333</span><br/>
-						<span class="footer-block-title">Email:</span> <span class="footer-block-text">hello@artfoundation.com</span>
+						<span class="footer-block-title">Call:</span> <span class="footer-block-text">304-926-3770</span><br/>
+						<span class="footer-block-title">Email:</span> <span class="footer-block-text"><a href="mailto:info@artfoundation.com">info@artfoundation.com</a></span>
 					</div>
 				</div>
 			</div>
 			<div class="four columns">
 				<div class="footer-block footer-block-3">
 					<span class="menu-block-primary-text">Join our conversation</span>
-					<span class="footer-block-newsletter-text">Sign up for our newsletters:</span>
+					<span class="footer-block-newsletter-text">Sign up for our emails to receive the latest news and updates:</span>
 
 					<form action="//tamarackfoundation.us12.list-manage.com/subscribe/post?u=8eb3531f974a15694f5de5dba&amp;id=2e44333fb6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email here...">
