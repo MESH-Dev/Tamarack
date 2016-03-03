@@ -3521,7 +3521,7 @@ input[type="tel"] {
   font-size: 0.75em;
   text-transform: uppercase;
   font-family: "din-condensed-web", sans-serif;
-  padding: 3px 5px;
+  padding: 3px;
 }
 @media screen and (max-width: 1280px) {
   /* line 51, sass/modules/_menus.scss */
