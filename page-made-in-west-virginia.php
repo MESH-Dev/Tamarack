@@ -145,7 +145,7 @@ get_header(); ?>
       <div class="search-by">
         <div class="filter-bar">
           <div class="search-title">
-            Current Search
+            Currently Filtered By
           </div>
           <div class="search-items">
           </div>
