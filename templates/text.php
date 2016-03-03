@@ -8,7 +8,7 @@ get_header(); ?>
   <div class="container">
 
       <div class="ten columns offset-by-one">
-          <div class="content-full">
+          <div class="content-full text-content">
               <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
                   <div class="content <?php if(get_field('text_two_columns')) { ?> text-two-columns <?php } ?>">
