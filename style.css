@@ -2713,9 +2713,10 @@ blockquote .quote-citation:before {
   margin: 0;
   padding-top: 10px;
   line-height: 36px;
+  width: 90%;
 }
 
-/* line 1500, sass/layout/_main.scss */
+/* line 1501, sass/layout/_main.scss */
 .trailstop-number {
   right: 10px;
   position: absolute;
@@ -2728,146 +2729,146 @@ blockquote .quote-citation:before {
   line-height: 23px;
 }
 
-/* line 1512, sass/layout/_main.scss */
+/* line 1513, sass/layout/_main.scss */
 .trailstop-inner-1 {
   float: left;
   width: 100%;
   position: relative;
 }
-/* line 1517, sass/layout/_main.scss */
+/* line 1518, sass/layout/_main.scss */
 .trailstop-inner-1 hr {
   width: 80%;
   position: relative;
   float: left;
 }
 
-/* line 1524, sass/layout/_main.scss */
+/* line 1525, sass/layout/_main.scss */
 .trailstop-inner-2 {
   float: left;
   width: 100%;
   position: relative;
   margin-bottom: 15px;
 }
-/* line 1530, sass/layout/_main.scss */
+/* line 1531, sass/layout/_main.scss */
 .trailstop-inner-2 hr {
   width: 50%;
   position: relative;
   float: left;
 }
 
-/* line 1537, sass/layout/_main.scss */
+/* line 1538, sass/layout/_main.scss */
 .trailstop-address, .trailstop-hours, .trailstop-city {
   float: left;
   width: 100%;
 }
 
-/* line 1542, sass/layout/_main.scss */
+/* line 1543, sass/layout/_main.scss */
 .trailstop-content {
   margin-bottom: 15px;
 }
 
-/* line 1546, sass/layout/_main.scss */
+/* line 1547, sass/layout/_main.scss */
 .trailstop-type {
   font-style: italic;
   font-size: 14px;
   margin-bottom: 25px;
 }
 
-/* line 1552, sass/layout/_main.scss */
+/* line 1553, sass/layout/_main.scss */
 .trail-red {
   color: #c25543;
 }
-/* line 1555, sass/layout/_main.scss */
+/* line 1556, sass/layout/_main.scss */
 .trail-red .trailstop-inner {
   border-top: 1px solid #c25543;
 }
-/* line 1559, sass/layout/_main.scss */
+/* line 1560, sass/layout/_main.scss */
 .trail-red .trailstop-number {
   border: 3px solid #c25543;
 }
-/* line 1563, sass/layout/_main.scss */
+/* line 1564, sass/layout/_main.scss */
 .trail-red hr {
   border-top: 1px solid #c25543;
 }
-/* line 1567, sass/layout/_main.scss */
+/* line 1568, sass/layout/_main.scss */
 .trail-red a {
   color: #c25543;
 }
 
-/* line 1572, sass/layout/_main.scss */
+/* line 1573, sass/layout/_main.scss */
 .trail-purple {
   color: #b33ed9;
 }
-/* line 1575, sass/layout/_main.scss */
+/* line 1576, sass/layout/_main.scss */
 .trail-purple .trailstop-inner {
   border-top: 1px solid #b33ed9;
 }
-/* line 1579, sass/layout/_main.scss */
+/* line 1580, sass/layout/_main.scss */
 .trail-purple .trailstop-number {
   border: 3px solid #b33ed9;
 }
-/* line 1583, sass/layout/_main.scss */
+/* line 1584, sass/layout/_main.scss */
 .trail-purple hr {
   border-top: 1px solid #b33ed9;
 }
-/* line 1588, sass/layout/_main.scss */
+/* line 1589, sass/layout/_main.scss */
 .trail-purple a {
   color: #b33ed9;
 }
 
-/* line 1593, sass/layout/_main.scss */
+/* line 1594, sass/layout/_main.scss */
 .trail-blue {
   color: #1b648d;
 }
-/* line 1596, sass/layout/_main.scss */
+/* line 1597, sass/layout/_main.scss */
 .trail-blue .trailstop-inner {
   border-top: 1px solid #1b648d;
 }
-/* line 1600, sass/layout/_main.scss */
+/* line 1601, sass/layout/_main.scss */
 .trail-blue .trailstop-number {
   border: 3px solid #1b648d;
 }
-/* line 1604, sass/layout/_main.scss */
+/* line 1605, sass/layout/_main.scss */
 .trail-blue hr {
   border-top: 1px solid #1b648d;
 }
-/* line 1609, sass/layout/_main.scss */
+/* line 1610, sass/layout/_main.scss */
 .trail-blue a {
   color: #1b648d;
 }
 
-/* line 1614, sass/layout/_main.scss */
+/* line 1615, sass/layout/_main.scss */
 .trail-dark-gray {
   color: #3f4042;
 }
-/* line 1617, sass/layout/_main.scss */
+/* line 1618, sass/layout/_main.scss */
 .trail-dark-gray .trailstop-inner {
   border-top: 1px solid #3f4042;
 }
-/* line 1621, sass/layout/_main.scss */
+/* line 1622, sass/layout/_main.scss */
 .trail-dark-gray .trailstop-number {
   border: 3px solid #3f4042;
 }
-/* line 1625, sass/layout/_main.scss */
+/* line 1626, sass/layout/_main.scss */
 .trail-dark-gray hr {
   border-top: 1px solid #3f4042;
 }
-/* line 1630, sass/layout/_main.scss */
+/* line 1631, sass/layout/_main.scss */
 .trail-dark-gray a {
   color: #3f4042;
 }
 
-/* line 1635, sass/layout/_main.scss */
+/* line 1636, sass/layout/_main.scss */
 .trail-map {
   margin-bottom: 30px;
 }
-/* line 1638, sass/layout/_main.scss */
+/* line 1639, sass/layout/_main.scss */
 .trail-map iframe {
   border: none;
   position: relative;
   top: -46px;
 }
-/* line 1644, sass/layout/_main.scss */
+/* line 1645, sass/layout/_main.scss */
 .trail-map .trail-map-container {
   height: 438px;
   border: 2px solid #eee;
@@ -2875,18 +2876,18 @@ blockquote .quote-citation:before {
   overflow: hidden;
 }
 
-/* line 1652, sass/layout/_main.scss */
+/* line 1653, sass/layout/_main.scss */
 .filter-bar {
   display: none;
   position: relative;
 }
 
-/* line 1657, sass/layout/_main.scss */
+/* line 1658, sass/layout/_main.scss */
 .white-bg {
   background: #fff !important;
 }
 
-/* line 1659, sass/layout/_main.scss */
+/* line 1660, sass/layout/_main.scss */
 .marketplace-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -2897,7 +2898,7 @@ blockquote .quote-citation:before {
   margin-bottom: 25px;
 }
 
-/* line 1669, sass/layout/_main.scss */
+/* line 1670, sass/layout/_main.scss */
 .marketplace-video iframe,
 .marketplace-video object,
 .marketplace-video embed {
@@ -2908,12 +2909,12 @@ blockquote .quote-citation:before {
   height: 100%;
 }
 
-/* line 1679, sass/layout/_main.scss */
+/* line 1680, sass/layout/_main.scss */
 .form-section {
   float: left;
 }
 
-/* line 1683, sass/layout/_main.scss */
+/* line 1684, sass/layout/_main.scss */
 .postinfo {
   font-family: "din-condensed-web", sans-serif;
   text-transform: uppercase;
@@ -2921,16 +2922,16 @@ blockquote .quote-citation:before {
   margin: 0;
 }
 
-/* line 1690, sass/layout/_main.scss */
+/* line 1691, sass/layout/_main.scss */
 .post {
   float: left;
   margin-bottom: 50px;
 }
-/* line 1695, sass/layout/_main.scss */
+/* line 1696, sass/layout/_main.scss */
 .post h2 a {
   color: #3f4143;
 }
-/* line 1700, sass/layout/_main.scss */
+/* line 1701, sass/layout/_main.scss */
 .post hr {
   margin: 10px 0;
   background: black;
@@ -2939,44 +2940,44 @@ blockquote .quote-citation:before {
   width: 60%;
 }
 
-/* line 1709, sass/layout/_main.scss */
+/* line 1710, sass/layout/_main.scss */
 .share-icon {
   display: inline;
   margin-right: 25px;
   font-size: 12px;
 }
-/* line 1714, sass/layout/_main.scss */
+/* line 1715, sass/layout/_main.scss */
 .share-icon i {
   margin-right: 10px;
 }
-/* line 1718, sass/layout/_main.scss */
+/* line 1719, sass/layout/_main.scss */
 .share-icon a {
   color: #3f4143;
 }
 
-/* line 1723, sass/layout/_main.scss */
+/* line 1724, sass/layout/_main.scss */
 .trail-share-icon {
   display: inline;
   margin-right: 10px;
 }
-/* line 1727, sass/layout/_main.scss */
+/* line 1728, sass/layout/_main.scss */
 .trail-share-icon a {
   color: #3f4143;
 }
 
-/* line 1732, sass/layout/_main.scss */
+/* line 1733, sass/layout/_main.scss */
 .share-post {
   margin-bottom: 20px;
 }
 
-/* line 1736, sass/layout/_main.scss */
+/* line 1737, sass/layout/_main.scss */
 .post-thumbnail {
   float: left;
   margin-bottom: 20px;
   width: 100%;
 }
 
-/* line 1742, sass/layout/_main.scss */
+/* line 1743, sass/layout/_main.scss */
 .more-button {
   padding: 15px 50px;
   font-family: "din-condensed-web", sans-serif;
@@ -2992,52 +2993,52 @@ blockquote .quote-citation:before {
   cursor: pointer;
 }
 
-/* line 1758, sass/layout/_main.scss */
+/* line 1759, sass/layout/_main.scss */
 img.alignright {
   float: right;
   margin: 0 0 1em 1em;
 }
 
-/* line 1759, sass/layout/_main.scss */
+/* line 1760, sass/layout/_main.scss */
 img.alignleft {
   float: left;
   margin: 0 1em 1em 0;
 }
 
-/* line 1760, sass/layout/_main.scss */
+/* line 1761, sass/layout/_main.scss */
 img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 1761, sass/layout/_main.scss */
+/* line 1762, sass/layout/_main.scss */
 a img.alignright {
   float: right;
   margin: 0 0 1em 1em;
 }
 
-/* line 1762, sass/layout/_main.scss */
+/* line 1763, sass/layout/_main.scss */
 a img.alignleft {
   float: left;
   margin: 0 1em 1em 0;
 }
 
-/* line 1763, sass/layout/_main.scss */
+/* line 1764, sass/layout/_main.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 1765, sass/layout/_main.scss */
+/* line 1766, sass/layout/_main.scss */
 .one_half {
   width: 47%;
   padding-right: 2%;
   float: left;
 }
 
-/* line 1766, sass/layout/_main.scss */
+/* line 1767, sass/layout/_main.scss */
 .last {
   margin-right: 0 !important;
   padding-left: 2%;
@@ -3045,7 +3046,7 @@ a img.aligncenter {
   clear: right;
 }
 
-/* line 1767, sass/layout/_main.scss */
+/* line 1768, sass/layout/_main.scss */
 .clearboth {
   clear: both;
   display: block;
@@ -3056,7 +3057,7 @@ a img.aligncenter {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 1769, sass/layout/_main.scss */
+  /* line 1770, sass/layout/_main.scss */
   .join-mobile {
     display: none;
   }

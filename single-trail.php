@@ -157,4 +157,29 @@ get_header(); ?>
 
 </main><!-- #main -->
 
+<script>
+
+$(function() {
+    jQuery('.trailstop').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+});
+
+$( window ).resize(function() {
+    $(function() {
+        jQuery('.trailstop').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
+});
+
+
+</script>
+
 <?php get_footer(); ?>
