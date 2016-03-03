@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container">
-	<div class="ten columns offset-by-one">
+	<div class="nine columns offset-by-one">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 			<div class="post">
