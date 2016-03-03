@@ -371,7 +371,7 @@ get_header(); ?>
 
     $(function() {
         jQuery('.directorylisting').matchHeight({
-            byRow: true,
+            byRow: false,
             property: 'height',
             target: null,
             remove: false
@@ -381,7 +381,7 @@ get_header(); ?>
     $( window ).resize(function() {
         $(function() {
             jQuery('.directorylisting').matchHeight({
-                byRow: true,
+                byRow: false,
                 property: 'height',
                 target: null,
                 remove: false

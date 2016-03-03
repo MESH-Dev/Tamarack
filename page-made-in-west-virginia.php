@@ -332,7 +332,7 @@ get_header(); ?>
 
     $(function() {
         jQuery('.content-fourth').matchHeight({
-            byRow: true,
+            byRow: false,
             property: 'height',
             target: null,
             remove: false
@@ -342,7 +342,7 @@ get_header(); ?>
     $( window ).resize(function() {
         $(function() {
             jQuery('.resource').matchHeight({
-                byRow: true,
+                byRow: false,
                 property: 'height',
                 target: null,
                 remove: false

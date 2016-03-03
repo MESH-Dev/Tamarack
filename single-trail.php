@@ -161,7 +161,7 @@ get_header(); ?>
 
 $(function() {
     jQuery('.trailstop').matchHeight({
-        byRow: true,
+        byRow: false,
         property: 'height',
         target: null,
         remove: false
@@ -171,7 +171,7 @@ $(function() {
 $( window ).resize(function() {
     $(function() {
         jQuery('.trailstop').matchHeight({
-            byRow: true,
+            byRow: false,
             property: 'height',
             target: null,
             remove: false

@@ -237,7 +237,7 @@ get_header(); ?>
 
     $(function() {
         jQuery('.marketplace-content-half').matchHeight({
-            byRow: true,
+            byRow: false,
             property: 'height',
             target: null,
             remove: false
@@ -247,7 +247,7 @@ get_header(); ?>
     $( window ).resize(function() {
         $(function() {
             jQuery('.marketplace-content-half').matchHeight({
-                byRow: true,
+                byRow: false,
                 property: 'height',
                 target: null,
                 remove: false
