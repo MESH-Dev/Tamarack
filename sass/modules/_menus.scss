@@ -429,9 +429,11 @@
 			padding: 5px 5px;
 			cursor: pointer;
 
-			&:hover {
-				.menu-block-primary-icon {
-					color: $purple;
+			> .menu-block-item {
+				&:hover {
+					.menu-block-primary-icon {
+						color: $purple;
+					}
 				}
 			}
 
