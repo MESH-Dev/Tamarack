@@ -30,9 +30,7 @@ function my_custom_login_logo() {
 		          background-size: 227px 85px !important;
 		          margin-bottom: 20px !important;
 		          background-image:url('.get_bloginfo('template_directory').'/images/logo.png) !important; }
-		    </style>
-        <script src="https://use.typekit.net/ofd3xas.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>';
+		    </style>';
 }
 
 function my_login_stylesheet() {
