@@ -229,7 +229,11 @@ function dimox_breadcrumbs() {
 	}
 } // end of dimox_breadcrumbs()
 
-
+add_action('wp_logout','go_home');
+function go_home(){
+  wp_redirect( home_url() );
+  exit();
+}
 
 //Register WP Menus
 register_nav_menus(
