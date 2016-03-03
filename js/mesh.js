@@ -265,7 +265,7 @@ jQuery(document).ready(function($){
      $('.frm_ajax_loading').show();
    });
 
-   $('#sidebar h3').append('<img src="http://localhost/tamarack/wp-content/themes/Tamarack/img/down-arrow.png"/>');
+   $('#sidebar h3').append('<img src="http://tamarack.bkfk-t5yk.accessdomain.com/tamarack/wp-content/themes/Tamarack/img/down-arrow.png"/>');
 
    $(document).ready(function(){
 
