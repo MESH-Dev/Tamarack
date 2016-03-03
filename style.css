@@ -3063,6 +3063,11 @@ a img.aligncenter {
   }
 }
 
+/* line 1776, sass/layout/_main.scss */
+.center {
+  text-align: center;
+}
+
 /* line 1, sass/layout/_header.scss */
 header {
   background-repeat: no-repeat;

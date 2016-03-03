@@ -132,7 +132,7 @@ if( have_rows('content_block_section') ):
             <div class="container">
               <div class="row">
                 <div class="twelve columns">
-                  <h2><?php echo get_sub_field('title'); ?></h2>
+                  <h2 class="center"><?php echo get_sub_field('title'); ?></h2>
                   <div class="text-block <?php if(get_field('text_two_columns')) { ?> text-two-columns <?php } ?>">
                     <?php echo get_sub_field('content'); ?>
                   </div>
