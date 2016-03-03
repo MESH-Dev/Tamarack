@@ -706,14 +706,15 @@ body {
   font-family: "LeituraDisplay-Roman", serif;
   line-height: 1.5;
   letter-spacing: 0.01em;
+  overflow: hidden;
 }
 
-/* line 22, sass/base/_base.scss */
+/* line 23, sass/base/_base.scss */
 h1 {
   font-size: 69px;
 }
 
-/* line 26, sass/base/_base.scss */
+/* line 27, sass/base/_base.scss */
 h2 {
   font-size: 42px;
   line-height: 46px;
@@ -721,7 +722,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* line 33, sass/base/_base.scss */
+/* line 34, sass/base/_base.scss */
 h3 {
   font-size: 36px;
   font-family: "din-condensed-web", sans-serif;
@@ -730,12 +731,12 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* line 41, sass/base/_base.scss */
+/* line 42, sass/base/_base.scss */
 h4 {
   font-size: 0.875em;
 }
 
-/* line 45, sass/base/_base.scss */
+/* line 46, sass/base/_base.scss */
 h5 {
   font-size: 24px;
   font-family: "din-condensed-web", sans-serif;
@@ -743,28 +744,28 @@ h5 {
   margin: 0 0 15px;
 }
 
-/* line 52, sass/base/_base.scss */
+/* line 53, sass/base/_base.scss */
 .subtitle-din {
   font-size: 36px;
 }
 
-/* line 56, sass/base/_base.scss */
+/* line 57, sass/base/_base.scss */
 .subtitle-leitura {
   font-size: 30px;
 }
 
-/* line 61, sass/base/_base.scss */
+/* line 62, sass/base/_base.scss */
 a {
   color: #b33ed9;
   text-decoration: none;
   font-weight: 400;
 }
-/* line 66, sass/base/_base.scss */
+/* line 67, sass/base/_base.scss */
 a:hover {
   opacity: 0.7;
 }
 
-/* line 71, sass/base/_base.scss */
+/* line 72, sass/base/_base.scss */
 p {
   margin: 0 0 1.66667em;
   font-weight: 300;
@@ -772,25 +773,25 @@ p {
   line-height: 1.5;
 }
 
-/* line 78, sass/base/_base.scss */
+/* line 79, sass/base/_base.scss */
 .alignleft {
   float: left;
   margin: 20px 20px 10px 0;
 }
 
-/* line 83, sass/base/_base.scss */
+/* line 84, sass/base/_base.scss */
 .alignright {
   float: right;
   margin: 20px 0 10px 20px;
 }
 
-/* line 89, sass/base/_base.scss */
+/* line 90, sass/base/_base.scss */
 .aligncenter {
   float: left;
   width: 100% !important;
 }
 
-/* line 95, sass/base/_base.scss */
+/* line 96, sass/base/_base.scss */
 blockquote {
   font-size: 1.5pxem;
   font-style: italic;
@@ -800,25 +801,25 @@ blockquote {
   border-left: solid 0.33333em palette(grey, xx-light);
 }
 
-/* line 106, sass/base/_base.scss */
+/* line 107, sass/base/_base.scss */
 img {
   margin-bottom: 1.5pxem;
   max-width: 100%;
   height: auto;
 }
 
-/* line 114, sass/base/_base.scss */
+/* line 115, sass/base/_base.scss */
 ul,
 li {
   margin: 0;
 }
 
-/* line 119, sass/base/_base.scss */
+/* line 120, sass/base/_base.scss */
 ul {
   padding-bottom: 15px;
 }
 
-/* line 125, sass/base/_base.scss */
+/* line 126, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -834,22 +835,22 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-/* line 140, sass/base/_base.scss */
+/* line 141, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 147, sass/base/_base.scss */
+/* line 148, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 153, sass/base/_base.scss */
+/* line 154, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 155, sass/base/_base.scss */
+/* line 156, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;
