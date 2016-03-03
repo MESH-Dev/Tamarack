@@ -3831,12 +3831,6 @@ input[type="tel"] {
   top: -40px;
   width: 150px;
 }
-@media screen and (max-width: 1280px) {
-  /* line 356, sass/modules/_menus.scss */
-  .logo {
-    width: 110px;
-  }
-}
 
 /* line 366, sass/modules/_menus.scss */
 .main-menu-container {
