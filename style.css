@@ -1496,7 +1496,7 @@ blockquote .quote-citation:before {
   top: 0;
   margin-top: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   /* line 365, sass/layout/_main.scss */
   #sidebar {
     display: none;
