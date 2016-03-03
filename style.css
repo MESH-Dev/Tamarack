@@ -1040,7 +1040,7 @@ footer {
 /* line 141, sass/layout/_footer.scss */
 .footer-menu-block .menu-block-secondary-text {
   color: #726e73;
-  border-bottom: 2px solid #726e73;
+  border-bottom: 3px solid #726e73;
   width: 65%;
 }
 /* line 147, sass/layout/_footer.scss */
@@ -3656,7 +3656,7 @@ input[type="tel"] {
 /* line 186, sass/modules/_menus.scss */
 .menu-block:hover .menu-block-secondary-text {
   color: #b33ed9;
-  border-bottom: 2px solid #b33ed9;
+  border-bottom: 3px solid #b33ed9;
 }
 
 /* line 193, sass/modules/_menus.scss */
@@ -3686,7 +3686,7 @@ input[type="tel"] {
 /* line 213, sass/modules/_menus.scss */
 .menu-item:hover .menu-block .menu-block-secondary-text {
   color: #b33ed9;
-  border-bottom: 2px solid #b33ed9;
+  border-bottom: 3px solid #b33ed9;
 }
 /* line 218, sass/modules/_menus.scss */
 .menu-item:hover .sub-menu-block {
@@ -3724,7 +3724,7 @@ input[type="tel"] {
   font-family: "LeituraDisplay-Roman", serif;
   font-size: 12px;
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -3899,7 +3899,7 @@ input[type="tel"] {
 /* line 413, sass/modules/_menus.scss */
 .menu-active .menu-block-secondary-text {
   color: #b33ed9;
-  border-bottom: 2px solid #b33ed9;
+  border-bottom: 3px solid #b33ed9;
 }
 
 /* line 419, sass/modules/_menus.scss */
@@ -3956,7 +3956,7 @@ input[type="tel"] {
 /* line 471, sass/modules/_menus.scss */
 .sidr .menu-block-secondary-text {
   color: #3f4143;
-  border-bottom: 2px solid #3f4143;
+  border-bottom: 3px solid #3f4143;
 }
 /* line 476, sass/modules/_menus.scss */
 .sidr .sub-menu-block-item {
