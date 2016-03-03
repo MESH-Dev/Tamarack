@@ -1697,11 +1697,11 @@ blockquote .quote-citation:before {
 @media screen and (max-width: 768px) {
   /* line 557, sass/layout/_main.scss */
   .filter-product, .filter-skills, .filter-location {
-    -webkit-column-count: 2;
+    -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
-    -moz-column-count: 2;
+    -moz-column-count: 1;
     /* Firefox */
-    column-count: 2;
+    column-count: 1;
   }
 }
 
@@ -1717,11 +1717,11 @@ blockquote .quote-citation:before {
 @media screen and (max-width: 768px) {
   /* line 570, sass/layout/_main.scss */
   .filter-legal, .filter-finance {
-    -webkit-column-count: 2;
+    -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
-    -moz-column-count: 2;
+    -moz-column-count: 1;
     /* Firefox */
-    column-count: 2;
+    column-count: 1;
   }
 }
 
@@ -1737,11 +1737,11 @@ blockquote .quote-citation:before {
 @media screen and (max-width: 768px) {
   /* line 583, sass/layout/_main.scss */
   .filter-business, .filter-marketing-and-pr {
-    -webkit-column-count: 2;
+    -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
-    -moz-column-count: 2;
+    -moz-column-count: 1;
     /* Firefox */
-    column-count: 2;
+    column-count: 1;
   }
 }
 
