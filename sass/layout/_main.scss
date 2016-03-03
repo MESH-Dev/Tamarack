@@ -330,6 +330,10 @@ blockquote {
   z-index: 10;
   width: 165px;
 
+  @include mq($desktop-width, "max-width") {
+      display: none;
+  }
+
   ul {
     padding: 0;
 
