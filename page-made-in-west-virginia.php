@@ -152,7 +152,7 @@ get_header(); ?>
           <div class="reset-filter filter">View All <i class="fa fa-angle-double-right"></i></div>
         </div>
         <div class="search-bar">
-          <input type="text" class="search white-bg" placeholder="Search by business name" />
+          <input type="text" class="search-by white-bg" placeholder="Search by business name" />
           <div class="search-icon"><i class="fa fa-search"></i></div>
         </div>
       </div>
