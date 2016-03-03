@@ -3859,7 +3859,7 @@ input[type="tel"] {
 /* line 418, sass/modules/_menus.scss */
 .sidr {
   background: white;
-  width: 200px;
+  width: 200px !important;
 }
 /* line 422, sass/modules/_menus.scss */
 .sidr > ul {
