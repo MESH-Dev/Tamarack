@@ -54,10 +54,10 @@
 		font-size: em(12);
 		text-transform: uppercase;
 		font-family: $font-family--secondary;
-		padding: 0px 3px;
+		padding: 0px 5px;
 
 		@include mq($big-width, "max-width") {
-	      padding: 0 3px;
+	      padding: 0 5px;
 	    }
 
 		@include mq($tablet-width, "max-width") {
@@ -67,7 +67,7 @@
 	    }
 
 		&.social-icon {
-			padding: 0 3px;
+			padding: 0 5px;
 
 			@include mq($mobile-landscape-width, $max) {
 				display: none;

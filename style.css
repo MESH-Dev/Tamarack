@@ -3521,12 +3521,12 @@ input[type="tel"] {
   font-size: 0.75em;
   text-transform: uppercase;
   font-family: "din-condensed-web", sans-serif;
-  padding: 0px 3px;
+  padding: 0px 5px;
 }
 @media screen and (max-width: 1280px) {
   /* line 51, sass/modules/_menus.scss */
   #menu-utilities-nav li, #social-utilities-nav li, #login-utilities-nav li {
-    padding: 0 3px;
+    padding: 0 5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3537,7 +3537,7 @@ input[type="tel"] {
 }
 /* line 69, sass/modules/_menus.scss */
 #menu-utilities-nav li.social-icon, #social-utilities-nav li.social-icon, #login-utilities-nav li.social-icon {
-  padding: 0 3px;
+  padding: 0 5px;
 }
 @media screen and (max-width: 480px) {
   /* line 69, sass/modules/_menus.scss */
