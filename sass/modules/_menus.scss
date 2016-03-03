@@ -89,14 +89,13 @@
 		}
 	}
 
-	
 
+}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-		color: $purple;
-	}
+.current_page_item > a,
+.current-menu-item > a,
+.current_page_ancestor > a {
+	color: $purple !important;
 }
 
 #menu-utilities-nav, #login-utilities-nav {
