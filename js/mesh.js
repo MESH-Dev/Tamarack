@@ -28,6 +28,16 @@ jQuery(document).ready(function($){
     });
   });
 
+  $(".content-text-title").hover(function() {
+      $p = $(this).parent();
+      $p.find('.content-text-cta').toggleClass('hover-opacity');
+  });
+
+  $(".content-text-cta").hover(function() {
+      $p = $(this).parent();
+      $p.find('.content-text-title').toggleClass('hover-opacity');
+  });
+
   var active = 0;
   var prev = 0;
 
