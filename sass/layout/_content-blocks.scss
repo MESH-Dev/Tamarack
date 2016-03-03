@@ -35,6 +35,11 @@
 	transform: translate3d(0,20%,0);
   margin-top: -30px;
 
+  @include mq($mobile-landscape-width, "max-width") {
+	  -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+  }
+
   // border-top: 3px solid white;
   // border-bottom: 3px solid white;
   // padding-top: 10px;
