@@ -13,7 +13,7 @@ body {
   font-family: $font-family--primary;
   line-height: ($base__line-height/$base__font-size);
 	letter-spacing: 0.01em;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 

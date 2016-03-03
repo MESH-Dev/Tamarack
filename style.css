@@ -706,7 +706,7 @@ body {
   font-family: "LeituraDisplay-Roman", serif;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* line 23, sass/base/_base.scss */
