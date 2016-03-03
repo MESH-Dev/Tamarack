@@ -87,7 +87,7 @@ function dimox_breadcrumbs() {
 	$frontpage_id   = get_option('page_on_front');
 	$parent_id      = $post->post_parent;
 	$sep            = ' ' . $sep_before . $sep . $sep_after . ' ';
-	if (is_home() || is_front_page()) {
+	if (is_front_page()) {
 		if ($show_on_home) echo $wrap_before . '<a href="' . $home_link . '">' . $text['home'] . '</a>' . $wrap_after;
 	} else {
 		echo $wrap_before;
@@ -222,6 +222,9 @@ function dimox_breadcrumbs() {
 			if ($show_home_link) echo $sep;
 			echo get_post_format_string( get_post_format() );
 		}
+		elseif ( is_home() ) {
+			if ($show_home_link) echo $sep . "Blog";
+		}
 		echo $wrap_after;
 	}
 } // end of dimox_breadcrumbs()
@@ -298,7 +301,7 @@ function end_second_column( $atts, $content = null ) {
 
 
 function  one_half_last( $atts, $content = null ) {
-   return '<div class="one_half last">'; 
+   return '<div class="one_half last">';
 }
 add_shortcode('second_column', 'one_half_last');
 
