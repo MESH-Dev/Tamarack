@@ -248,6 +248,15 @@ get_header(); ?>
 
     $('.filter-checkbox').click(function() {
 
+        // $(function() {
+        //     jQuery('.resource').matchHeight({
+        //         byRow: true,
+        //         property: 'height',
+        //         target: null,
+        //         remove: false
+        //     });
+        // });
+
       //show filter bar
        $('.filter-bar').show();
 
