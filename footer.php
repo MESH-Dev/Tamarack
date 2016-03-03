@@ -268,6 +268,7 @@
 
 	  jQuery('#sidr ul li').click(function() {
 		 $(this).find('.sub-menu-block-item').slideToggle();
+		 $(this).find('.menu-block-primary-icon i').toggleClass('fa-angle-down fa-angle-up');
 	  });
 	});
 </script>
