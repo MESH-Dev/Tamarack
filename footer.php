@@ -258,14 +258,15 @@
 
 <script>
 	jQuery(document).ready(function() {
-	  jQuery('.main-menu-toggle').sidr();
+
 
 	  jQuery('.main-menu-toggle').click(function() {
-		  console.log('text');
 		  $(this).find('i').toggleClass('fa-navicon fa-close');
 		  $(this).toggleClass('main-menu-toggle-left');
 		  jQuery('.logo').toggle();
 	  });
+
+	  jQuery('.main-menu-toggle').sidr();
 
 
 	  jQuery('#sidr ul li').click(function() {
