@@ -5,9 +5,8 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="nine columns offset-by-one">
+			<div class="ten columns offset-by-one">
 				<?php if ( have_posts() ) : ?>
-					<h1><?php printf( __( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
@@ -26,7 +25,7 @@
 					<?php get_search_form(); ?>
 				<?php endif; ?>
 			</div>
-		 
+
 		</div>
 	</div>
 

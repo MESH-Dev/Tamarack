@@ -257,5 +257,13 @@ jQuery(document).ready(function($){
 
    $('#sidebar h3').append('<img src="http://localhost/tamarack/wp-content/themes/Tamarack/img/down-arrow.png"/>');
 
+   $(document).ready(function(){
+
+       $("#sidebar h3").click(function() {
+           $(this).toggleClass('sidebar-open');
+           $(this).next('ul').slideToggle();
+       });
+
+   });
 
 });
