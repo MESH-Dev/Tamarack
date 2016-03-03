@@ -25,7 +25,10 @@ if( have_rows('content_block_section') ):
             <div class="content-half effect-oscar" style="background-image: url(<?php echo $thumb; ?>)">
               <div class="content-rectangle-screen">
                 <div class="content-text <?php echo get_sub_field('color'); ?>">
-                    <div class="content-text-title"><?php echo get_sub_field('title'); ?></div>
+                    <div class="content-text-title">
+                        <?php if(get_sub_field('url')) { ?><a href="<?php echo get_sub_field('url'); ?>"><?php } ?>
+                            <?php echo get_sub_field('title'); ?></div>
+                        <?php if(get_sub_field('url')) { ?></a><?php } ?>
                     <div class="content-text-cta">
                         <?php if(get_sub_field('url')) { ?><a href="<?php echo get_sub_field('url'); ?>"><?php } ?>
                             <?php echo get_sub_field('subtitle'); ?>
