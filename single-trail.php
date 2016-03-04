@@ -134,7 +134,7 @@ get_header(); ?>
                         $content = apply_filters('the_content', $content);
                         $content = str_replace(']]>', ']]&gt;', $content);
                         echo $content;
-                        
+
                     ?>
                   </div>
                   <div class="trailstop-image">
@@ -167,16 +167,20 @@ get_header(); ?>
 
 <script>
 
-$(function() {
-    jQuery('.trailstop').matchHeight({
-        byRow: false,
-        property: 'height',
-        target: null,
-        remove: false
-    });
-});
+if( $(window).width() > 768) {
+  $(function() {
+      jQuery('.trailstop').matchHeight({
+          byRow: false,
+          property: 'height',
+          target: null,
+          remove: false
+      });
+  });
+}
+
 
 $( window ).resize(function() {
+  if( $(window).width() > 768) {
     $(function() {
         jQuery('.trailstop').matchHeight({
             byRow: false,
@@ -185,6 +189,13 @@ $( window ).resize(function() {
             remove: false
         });
     });
+  } else {
+    $(function() {
+        jQuery('.trailstop').matchHeight({
+            remove: true
+        });
+    });
+  }
 });
 
 
