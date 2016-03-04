@@ -49,10 +49,10 @@
 					</a>
 
 					<div class="footer-navigation">
-						<?php if(has_nav_menu('footer_nav')){
+						<?php if(has_nav_menu('utilities_nav')){
 							$defaults = array(
-								'theme_location'  => 'footer_nav',
-								'menu'            => 'footer_nav',
+								'theme_location'  => 'utilities_nav',
+								'menu'            => 'utilities_nav',
 								'container'       => false,
 								'container_class' => '',
 								'container_id'    => '',
@@ -218,10 +218,10 @@
   </ul>
 
   <div class="footer-navigation">
-	  <?php if(has_nav_menu('footer_nav')){
+	  <?php if(has_nav_menu('utilities_nav')){
 		  $defaults = array(
-			  'theme_location'  => 'footer_nav',
-			  'menu'            => 'footer_nav',
+			  'theme_location'  => 'utilities_nav',
+			  'menu'            => 'utilities_nav',
 			  'container'       => false,
 			  'container_class' => '',
 			  'container_id'    => '',
