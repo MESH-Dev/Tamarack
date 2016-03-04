@@ -7,41 +7,41 @@
 			<div class="four columns">
 				<div class="footer-block footer-block-1">
 
-					<a href="">
+					<a href="<?php echo get_field('learn_main_link', 'option'); ?>">
 						<div class="footer-menu-block">
 							<span class="menu-block-primary-text">Learn</span>
 							<span class="menu-block-secondary-text">New Skills</span>
 						</div>
 					</a>
-					<a href="">
+					<a href="<?php echo get_field('build_main_link', 'option'); ?>">
 						<div class="footer-menu-block">
 							<span class="menu-block-primary-text">Build</span>
 							<span class="menu-block-secondary-text">Your Business</span>
 						</div>
 					</a>
 
-					<a href="">
+					<a href="<?php echo get_field('fund_main_link', 'option'); ?>">
 						<div class="footer-menu-block">
 							<span class="menu-block-primary-text">Fund</span>
 							<span class="menu-block-secondary-text">Your Ideas</span>
 						</div>
 					</a>
 
-					<a href="">
+					<a href="<?php echo get_field('grow_main_link', 'option'); ?>">
+						<div class="footer-menu-block">
+							<span class="menu-block-primary-text">Grow</span>
+							<span class="menu-block-secondary-text">Creative Industry</span>
+						</div>
+					</a>
+
+					<a href="<?php echo get_field('connect_main_link', 'option'); ?>">
 						<div class="footer-menu-block">
 							<span class="menu-block-primary-text">Connect</span>
 							<span class="menu-block-secondary-text">With Creatives</span>
 						</div>
 					</a>
 
-					<a href="">
-						<div class="footer-menu-block">
-							<span class="menu-block-primary-text">Find</span>
-							<span class="menu-block-secondary-text">Artists</span>
-						</div>
-					</a>
-
-					<a href="">
+					<a href="<?php echo get_field('shop_main_link', 'option'); ?>">
 						<div class="footer-menu-block">
 							<span class="menu-block-primary-text">Shop</span>
 							<span class="menu-block-secondary-text">Businesses</span>
