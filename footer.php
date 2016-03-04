@@ -79,7 +79,7 @@
 				<div class="footer-block footer-block-2">
 					<span class="menu-block-primary-text">Connect with us</span>
 					<span class="footer-block-title">Follow our day-to-day building the creative economy:</span>
-					<span class="footer-block-text footer-block-full-width"><i class="fa fa-twitter"></i> Tweet Us: <a href="https://twitter.com/tamarackfound">@tamarackfoundation</a></span>
+					<span class="footer-block-text footer-block-full-width"><i class="fa fa-twitter"></i> Tweet Us: <a href="https://twitter.com/tamarackfound">@tamarackfound</a></span>
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-instagram"></i> Follow Our Instagram: <a href="https://www.instagram.com/tamarackfoundation/">@tamarackfoundation</a></span>
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-facebook"></i> Find us on <a href="https://www.facebook.com/TamarackFoundation">Facebook</a></span>
 					<span class="footer-block-text footer-block-full-width"><i class="fa fa-pinterest"></i> Find us on <a href="https://www.pinterest.com/TamarackFound">Pinterest</a></span>
@@ -90,7 +90,7 @@
 					<br/>
 					<div class="footer-block-info">
 						<span class="footer-block-title">Call:</span> <span class="footer-block-text">304-926-3770</span><br/>
-						<span class="footer-block-title">Email:</span> <span class="footer-block-text"><a href="mailto:info@artfoundation.com">info@artfoundation.com</a></span>
+						<span class="footer-block-title">Email:</span> <span class="footer-block-text"><a href="mailto:info@tamarackfoundation.org">info@tamarackfoundation.org</a></span>
 					</div>
 				</div>
 			</div>
