@@ -105,7 +105,7 @@
 					</form>
 
 
-					<p>Copyright 2015 Tamarack Foundation for the Arts.</p>
+					<p>Copyright <?php echo date("Y"); ?> Tamarack Foundation for the Arts.</p>
 					<span class="footer-citation"><a href="http://meshfresh.com" target="_blank">website by MESH</a></span>
 				</div>
 			</div>
