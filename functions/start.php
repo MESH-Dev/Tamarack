@@ -11,7 +11,7 @@ add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 add_theme_support('post-thumbnails');
 add_image_size('background-fullscreen', 1800, 1200, true);
 add_image_size('directorylisting', 600, 600, true);
-add_image_size('bloglisting', 800, 400, true);
+add_image_size('bloglisting', 800, 600, true);
 // add_image_size('short-banner', 1800, 800, true);
 
 // add_image_size('large', 700, '', true); // Large Thumbnail
