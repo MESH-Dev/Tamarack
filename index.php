@@ -30,7 +30,7 @@
 						</div>
 
 						<div class="post-thumbnail">
-							<?php the_post_thumbnail(); ?>
+							<?php the_post_thumbnail('bloglisting'); ?>
 						</div>
 
 						<?php the_excerpt(); ?>
