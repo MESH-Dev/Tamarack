@@ -122,7 +122,7 @@
 
 </div><!-- #page -->
 
-<div id="sidr">
+<div id="sidr" style="display: none;">
   <!-- Your content -->
 
   <div class="close-sidr">
@@ -250,6 +250,10 @@
 
 <script>
 	jQuery(document).ready(function() {
+
+		jQuery('.main-menu-toggle').click(function() {
+			$('#sidr').show();
+		});
 
 	  jQuery('.main-menu-toggle').sidr();
 
