@@ -149,7 +149,7 @@
 
 </div><!-- #page -->
 
-<div id="sidr" style="display: none;">
+<div id="sidr" >
   <!-- Your content -->
 
   <div class="close-sidr">
