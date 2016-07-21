@@ -5,6 +5,13 @@
 .effect-oscar {
 	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
 	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+
+	@include mq($mobile-landscape-width, "max-width") {
+		padding: 5px;
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s;
+    }
+
 }
 
 .effect-oscar .content-half {
@@ -35,6 +42,11 @@
 	transform: translate3d(0,20%,0);
   margin-top: -30px;
 
+  @include mq($mobile-landscape-width, "max-width") {
+	  -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+  }
+
   // border-top: 3px solid white;
   // border-bottom: 3px solid white;
   // padding-top: 10px;
@@ -48,6 +60,12 @@
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(0);
 	transform: scale(0);
+
+	@include mq($mobile-landscape-width, "max-width") {
+      opacity: 1;
+	  -webkit-transform: scale(1);
+  	transform: scale(1);
+    }
 }
 
 .effect-oscar:hover {

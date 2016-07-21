@@ -6,12 +6,17 @@ footer {
   position: relative;
   float: left;
   width: 100%;
+  padding-bottom:50px;
 }
 
 .footer-block {
   padding: 40px;
   float: left;
   width: 100%;
+
+  @include mq($tablet-width, $max) {
+   padding: 40px 15px 15px;
+  }
 
   &:before {
     position: absolute;
@@ -57,7 +62,16 @@ footer {
 
 .footer-block-1 {
   &:before {
-    content: url(img/divider-1.png);
+    content:"";
+    background: url(img/divider-1.png);
+    width:5px;
+    height:80%;
+
+
+    @include mq($tablet-width, $max) {
+     content: '';
+     background:transparent;
+    }
   }
 }
 
@@ -75,7 +89,16 @@ footer {
   }
 
   &:before {
-    content: url(img/divider-2.png);
+    content: "";
+    background: url(img/divider-2.png);
+    width:5px;
+    height:80%;
+
+
+    @include mq($tablet-width, $max) {
+     content: '';
+     background:transparent;
+    }
   }
  }
 
@@ -87,6 +110,13 @@ footer {
      padding-bottom: 10px;
      width: 65%;
      margin-bottom: 10px;
+   }
+
+   .copyright{
+    //float:none;
+    float:left;
+    width:100%;
+    margin-bottom:10px;
    }
 
    hr {
@@ -101,11 +131,27 @@ footer {
    }
 
    &:before {
-     content: url(img/divider-3.png);
+     content: "";
+     width:5px;
+     height:80%;
+     background: url(img/divider-3.png);
+
+     @include mq($tablet-width, $max) {
+      content: '';
+      background:transparent;
+     }
    }
    &:after {
-     content: url(img/divider-1.png);
+     content: "";
+     background: url(img/divider-1.png);
+     height:80%;
+     width:5px;
      top: 40px;
+
+     @include mq($tablet-width, $max) {
+      content: '';
+      background:transparent;
+     }
    }
  }
 
@@ -120,8 +166,8 @@ footer {
 
     .menu-block-secondary-text {
       color: #726e73;
-      border-bottom: 2px solid #726e73;
-      width: 65%;
+      border-bottom: 3px solid #726e73;
+      width: 75%;
     }
 
     &:hover {
@@ -132,6 +178,7 @@ footer {
 .footer-navigation {
   float: left;
   font-family: $font-family--secondary;
+  width: 100%;
 
   ul {
     padding: 0;

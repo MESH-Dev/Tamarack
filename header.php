@@ -11,9 +11,7 @@
 	<title><?php bloginfo('name'); ?></title>
 
 	<!-- Meta / og: tags -->
-	<meta name="description" content="">
 	<meta name="author" content="">
-
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -35,10 +33,15 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/animate.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/jquery.sidr.bare.css">
 
+	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/tam_white-2.png">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/imagesloaded.pkgd.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mixitup.js"></script>
+	<script src="https://use.typekit.net/ofd3xas.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 
 	<?php wp_head(); ?>
@@ -61,14 +64,13 @@
 		if( !empty($image) ) {
 			$thumb = $image['sizes']['background-fullscreen'];
 		} else {
-			$thumb = "http://tamarack.bkfk-t5yk.accessdomain.com/wp-content/uploads/2016/01/Placeholder-Image.png";
+			$thumb = "http://tamarackfoundation.org/wp-content/uploads/2016/02/Paintbrushes-5487x3658-5.31MB-1800x1200.jpg";
 		} ?>
 
 		<header data-parallax="scroll" data-image-src="<?php echo $thumb; ?>" <?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?> class="full" <?php } ?>>
 
 			<div class="screen"></div>
 
-			<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
 
 				<div class="utilities-nav">
 					<div class="container">
@@ -105,7 +107,7 @@
 								<?php if (is_user_logged_in()) { ?>
 									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/creative-network-profile">Your account</a></li><li><a href="<?php echo wp_logout_url(); ?>">Log out</a></li>
 								<?php } else { ?>
-									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/register">Join our creative network</a></li><li><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Artist login</a></li>
+									<li class="creative-network"><a href="<?php echo bloginfo('url'); ?>/register">Join<span class="join-mobile"> our creative network</span></a></li><li><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Artist login</a></li>
 								<?php } ?>
 							</ul>
 						</div>
@@ -113,13 +115,13 @@
 				</div>
 
 
-				<?php } ?>
+
 
 				<div class="container">
 
 					<div class="home-container">
 
-						<?php if (!is_page(array('Creative Network Profile', 'Made in West Virginia Profile', 'Trail Profile', 'Register'))) { ?>
+						
 
 						<div class="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/tam_white.png" /></a>
@@ -131,7 +133,7 @@
 								// $main_menu = wp_get_nav_menu_items('Main Nav');
 							?>
 
-							<div class="main-menu-item menu-item learn">
+							<div class="main-menu-item menu-item learn <?php if(curPageURL() == get_field('learn_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('learn_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Learn</span>
@@ -140,7 +142,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item build">
+							<div class="main-menu-item menu-item build <?php if(curPageURL() == get_field('build_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('build_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Build</span>
@@ -149,7 +151,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item fund">
+							<div class="main-menu-item menu-item fund <?php if(curPageURL() == get_field('fund_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('fund_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Fund</span>
@@ -158,7 +160,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item grow">
+							<div class="main-menu-item menu-item grow <?php if(curPageURL() == get_field('grow_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 									<a href="<?php echo get_field('grow_main_link', 'option'); ?>">
 										<div class="menu-block menu-block-item">
 											<span class="menu-block-primary-text">Grow</span>
@@ -167,7 +169,7 @@
 									</a>
 							</div>
 
-							<div class="main-menu-item menu-item connect">
+							<div class="main-menu-item menu-item connect <?php if(curPageURL() == get_field('connect_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 								<a href="<?php echo get_field('connect_main_link', 'option'); ?>">
 									<div class="menu-block menu-block-item">
 										<span class="menu-block-primary-text">Connect</span>
@@ -176,7 +178,7 @@
 								</a>
 							</div>
 
-							<div class="main-menu-item menu-item shop">
+							<div class="main-menu-item menu-item shop <?php if(curPageURL() == get_field('shop_main_link', 'option')) { echo 'menu-item-active'; } ?>">
 									<a href="<?php echo get_field('shop_main_link', 'option'); ?>">
 										<div class="menu-block menu-block-item">
 											<span class="menu-block-primary-text">Shop</span>
@@ -187,9 +189,7 @@
 						</div>
 
 						<div class="main-menu-toggle">
-							<a href="#sidr" id="simple-menu">
-								<i class="fa fa-navicon"></i>
-							</a>
+							<i class="fa fa-navicon"></i>
 						</div>
 
 
@@ -324,7 +324,7 @@
 						</div>
 
 
-					<?php } ?>
+
 
 
 
@@ -335,6 +335,14 @@
 									echo get_the_title();
 								} elseif(is_home()) {
 									echo get_field('masthead_title', 19);
+								} elseif(get_post_type() == 'marketplacelisting') {
+									echo get_the_title();
+								} elseif(is_404()) {
+									echo "Oops!";
+								} elseif(get_post_type() == 'trail') {
+									echo get_the_title();
+								} elseif(is_single()) {
+									echo "News & Updates";
 								}
 								else {
 									echo get_field("masthead_title");
@@ -354,94 +362,41 @@
 						<?php } ?>
 					</div>
 
-					<?php if (is_page("Creative Network")) { ?>
-						<div class="join-bubble">
-							<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Our Creative Network</a></span>
-							<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
-						</div>
-					<?php } ?>
-
-					<?php if (is_page("Made in West Virginia")) { ?>
-						<div class="join-bubble join-bubble-made">
-							<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Made in West Virginia</a></span><br/>
-							<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
-						</div>
-					<?php } ?>
-
-					<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
-						<div class="bottom">
-							<div class="masthead-arrow hint--top" data-hint="Scroll Down">
-								<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.png" /></a>
-							</div>
-						</div>
-					<?php } ?>
-
 
 					<?php dimox_breadcrumbs(); ?>
+
 					<?php if (get_field('masthead_image_citation')) { ?>
 						<div class="citation">
 							<?php echo get_field('masthead_image_citation'); ?>
 						</div>
 					<?php } ?>
 
+				</div>
 			</div>
 
-		</header>
+			<?php if (is_page("Creative Network")) { ?>
+				<div class="join-bubble">
+					<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Our Creative Network</a></span>
+					<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
+				</div>
+			<?php } ?>
 
-		<div id="sidr">
-		  <!-- Your content -->
-		  <ul>
-			  <li>
-				<a href="<?php echo get_field('learn_main_link', 'option'); ?>">
-					<div class="menu-block menu-block-item">
-						<span class="menu-block-primary-text">Learn</span>
-						<span class="menu-block-secondary-text">New Skills</span>
+			<?php if (is_page("Made in West Virginia")) { ?>
+				<div class="join-bubble join-bubble-made">
+					<span class="join-text"><a href="<?php echo bloginfo('url'); ?>/register">Join Made in West Virginia</a></span><br/>
+					<span class="join-login"><a href="<?php echo bloginfo('url'); ?>/wp-login.php">Or Login</a></span>
+				</div>
+			<?php } ?>
+
+			<?php if((get_field("masthead_size") == 'full') || (is_front_page())) { ?>
+				<div class="bottom">
+					<div class="masthead-arrow hint--top" data-hint="Scroll Down">
+						<a href="#main" title="down"><img src="<?php echo get_template_directory_uri(); ?>/img/down-angle.png" /></a>
 					</div>
-				</a>
-			  </li>
-			  <li>
-				<a href="<?php echo get_field('build_main_link', 'option'); ?>">
-					<div class="menu-block menu-block-item">
-						<span class="menu-block-primary-text">Build</span>
-						<span class="menu-block-secondary-text">Your Business</span>
-					</div>
-				</a>
-			  </li>
-  			  <li>
-				<a href="<?php echo get_field('fund_main_link', 'option'); ?>">
-					<div class="menu-block menu-block-item">
-						<span class="menu-block-primary-text">Fund</span>
-						<span class="menu-block-secondary-text">Your Ideas</span>
-					</div>
-    			</a>
-			  </li>
-			  <li>
-				  <a href="<?php echo get_field('grow_main_link', 'option'); ?>">
-					  <div class="menu-block menu-block-item">
-						  <span class="menu-block-primary-text">Grow</span>
-						  <span class="menu-block-secondary-text">Creative Industry</span>
-					  </div>
-				  </a>
-			  </li>
-  			  <li>
-				<a href="<?php echo get_field('connect_main_link', 'option'); ?>">
-					<div class="menu-block menu-block-item">
-						<span class="menu-block-primary-text">Connect</span>
-						<span class="menu-block-secondary-text">With Creatives</span>
-					</div>
-				</a>
-			  </li>
-			  <li>
-				  <a href="<?php echo get_field('shop_main_link', 'option'); ?>">
-					  <div class="menu-block menu-block-item">
-						  <span class="menu-block-primary-text">Shop</span>
-						  <span class="menu-block-secondary-text">Businesses</span>
-					  </div>
-				  </a>
-			  </li>
-		  </ul>
-		  
-		</div>
+				</div>
+			<?php } ?>
+
+		</header>
 
 		<?php if (is_front_page() and get_field('tagline', get_page_by_title('frontpage')->ID)) { ?>
 			<div class="tagline">

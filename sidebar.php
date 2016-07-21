@@ -2,15 +2,15 @@
 	<div class="share">
 		<div class="share-title">SHARE THE BLOG:</div>
 		<div class="sidebar-share-icon">
-			<a href="https://twitter.com/home?status=http%3A//tamarackdounfation.org/blog" target="_blank"><i class="fa fa-twitter"></i> </a>
+			<a href="https://twitter.com/home?status=http%3A//tamarackfoundation.org/blog" target="_blank"><i class="fa fa-twitter"></i> </a>
 		</div>
 		<div class="sidebar-share-icon">
-			<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//tamarackdounfation.org/blog" target="_blank"><i class="fa fa-facebook"></i> </a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//tamarackfoundation.org/blog" target="_blank"><i class="fa fa-facebook"></i> </a>
 		</div>
 		<br class="clear">
 	</div>
 	<?php
- 
+
 
 	if ( ! dynamic_sidebar('primary-widget-area') ) : ?>
 

@@ -13,6 +13,7 @@ body {
   font-family: $font-family--primary;
   line-height: ($base__line-height/$base__font-size);
 	letter-spacing: 0.01em;
+	overflow-x: hidden;
 }
 
 
@@ -86,6 +87,11 @@ p {
 }
 
 
+.aligncenter {
+	float: left;
+	width: 100% !important;
+}
+
 
 blockquote {
   font-size: em(24px);
@@ -109,6 +115,10 @@ img {
 ul,
 li {
   margin: 0;
+}
+
+ul {
+	padding-bottom: 15px;
 }
 
 // Form elements

@@ -2,8 +2,10 @@
 
 //enqueue scripts and styles *use production assets. Dev assets are located in  /css and /js
 function loadup_scripts() {
+	//wp_enqueue_script( 'wfi-js', get_template_directory_uri().'/js/waitforimages.min.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'theme-js', get_template_directory_uri().'/js/mesh.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'height-js', get_template_directory_uri().'/js/jquery.matchHeight-min.js', array('jquery'), '1.0.0', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 
@@ -11,6 +13,7 @@ add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 add_theme_support('post-thumbnails');
 add_image_size('background-fullscreen', 1800, 1200, true);
 add_image_size('directorylisting', 600, 600, true);
+add_image_size('bloglisting', 800, 600, true);
 // add_image_size('short-banner', 1800, 800, true);
 
 // add_image_size('large', 700, '', true); // Large Thumbnail
@@ -59,7 +62,7 @@ function dimox_breadcrumbs() {
 	/* === OPTIONS === */
 	$text['home']     = 'Home'; // text for the 'Home' link
 	$text['category'] = 'Archive by Category "%s"'; // text for a category page
-	$text['search']   = 'Search Results for "%s" Query'; // text for a search results page
+	$text['search']   = 'Search Results for "%s"'; // text for a search results page
 	$text['tag']      = 'Posts Tagged "%s"'; // text for a tag page
 	$text['author']   = 'Articles Posted by %s'; // text for an author page
 	$text['404']      = 'Error 404'; // text for the 404 page
@@ -87,7 +90,7 @@ function dimox_breadcrumbs() {
 	$frontpage_id   = get_option('page_on_front');
 	$parent_id      = $post->post_parent;
 	$sep            = ' ' . $sep_before . $sep . $sep_after . ' ';
-	if (is_home() || is_front_page()) {
+	if (is_front_page()) {
 		if ($show_on_home) echo $wrap_before . '<a href="' . $home_link . '">' . $text['home'] . '</a>' . $wrap_after;
 	} else {
 		echo $wrap_before;
@@ -139,6 +142,10 @@ function dimox_breadcrumbs() {
 				elseif ($slug['slug'] == 'directory-listing') {
 					$link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . 'Creative Network' . $link_in_after . '</a>' . $link_after;
 					$s = 'creative-network';
+				}
+				elseif ($slug['slug'] == 'trail') {
+					$link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . 'Visit Art Spaces' . $link_in_after . '</a>' . $link_after;
+					$s = 'visit-art-spaces';
 				}
 				else {
 
@@ -222,18 +229,24 @@ function dimox_breadcrumbs() {
 			if ($show_home_link) echo $sep;
 			echo get_post_format_string( get_post_format() );
 		}
+		elseif ( is_home() ) {
+			if ($show_home_link) echo $sep . "News & Updates";
+		}
 		echo $wrap_after;
 	}
 } // end of dimox_breadcrumbs()
 
-
+add_action('wp_logout','go_home');
+function go_home(){
+  wp_redirect( home_url() );
+  exit();
+}
 
 //Register WP Menus
 register_nav_menus(
     array(
         'main_nav' => 'Header and breadcrumb trail heirarchy',
         'social_nav' => 'Social menu used throughout',
-				'footer_nav' => 'Footer menu',
 				'utilities_nav' => 'Utilities nav',
     )
 );
@@ -298,12 +311,16 @@ function end_second_column( $atts, $content = null ) {
 
 
 function  one_half_last( $atts, $content = null ) {
-   return '<div class="one_half last">'; 
+   return '<div class="one_half last">';
 }
 add_shortcode('second_column', 'one_half_last');
 
 
-
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
 
 
 

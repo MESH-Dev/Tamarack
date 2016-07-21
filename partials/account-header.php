@@ -1,7 +1,7 @@
 <?php
 
   if (!is_user_logged_in()) {
-    echo "<script>window.location = 'http://tamarack.bkfk-t5yk.accessdomain.com/wp-login.php';</script>";
+    echo "<script>window.location = 'http://tamarackfoundation.org/wp-login.php';</script>";
   }
 
 ?>
@@ -37,7 +37,7 @@ endif;
         Your Creative Network Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/creative-network-profile/">Join the Creative Network <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarackfoundation.org/creative-network-profile/">Join the Creative Network <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ endif;
         Your Made in West Virginia Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/west-virginia-made-profile/">Join Made in West Virginia <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarackfoundation.org/west-virginia-made-profile/">Join Made in West Virginia <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@ endif;
         Your Trail Profile
       </div>
       <div class="content-text-cta">
-        <a href="http://tamarack.bkfk-t5yk.accessdomain.com/trail-profile/">Join a Trail <i class="fa fa-angle-double-right"></i></a>
+        <a href="http://tamarackfoundation.org/trail-profile/">Join a Trail <i class="fa fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>

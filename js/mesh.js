@@ -5,6 +5,23 @@ jQuery(document).ready(function($){
 
   //Let's do something awesome!
 
+//FIxes the frame width for Sly slider, since we are using auto widths on images (children of slider)
+//Be sure that this loads before the sly slider
+//Addition from SD - 4/13/16
+
+  //function singleSlider () {
+  $('.crazy ul li').each(function(){
+    var img_width = $(this).find('img').width();
+    $(this).width(img_width);
+    console.log(img_width);
+  });
+//}
+
+//$(document).ready(singleSlider);
+//$(window).resize(singleSlider);
+
+//============================================================
+
   var divWidth = jQuery('.content-third').width();
   jQuery('.content-third').height(divWidth);
 
@@ -14,7 +31,7 @@ jQuery(document).ready(function($){
   });
 
   $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
+    $('a[href*=\\#]:not([href=\\#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -26,6 +43,16 @@ jQuery(document).ready(function($){
         }
       }
     });
+  });
+
+  $(".content-text-title").hover(function() {
+      $p = $(this).parent();
+      $p.find('.content-text-cta a').toggleClass('hover-opacity');
+  });
+
+  $(".content-text-cta").hover(function() {
+      $p = $(this).parent();
+      $p.find('.content-text-title').toggleClass('hover-opacity');
   });
 
   var active = 0;
@@ -51,7 +78,7 @@ jQuery(document).ready(function($){
   $(".footer-block").matchHeight();
 
   $('.press-third').matchHeight();
- 
+
 
   // Resource Library/Directory Filter Toggles
     $(".filter-button").click(function() {
@@ -66,7 +93,7 @@ jQuery(document).ready(function($){
     $(this).addClass('white-bg');
     $(section).addClass('white-bg');
   });
- 
+
  // Filter Toggles
     $(".filter-inner-button").click(function() {
 
@@ -255,7 +282,15 @@ jQuery(document).ready(function($){
      $('.frm_ajax_loading').show();
    });
 
-   $('#sidebar h3').append('<img src="http://localhost/tamarack/wp-content/themes/Tamarack/img/down-arrow.png"/>');
+   $('#sidebar h3').append('<img src="http://tamarackfoundation.org/wp-content/themes/Tamarack/img/down-arrow.png"/>');
 
+   $(document).ready(function(){
+
+       $("#sidebar h3").click(function() {
+           $(this).toggleClass('sidebar-open');
+           $(this).next('ul').slideToggle();
+       });
+
+   });
 
 });

@@ -23,16 +23,27 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
+
+function curPageURL() {
+ $pageURL = 'http';
+ if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+ $pageURL .= "://";
+ if ($_SERVER["SERVER_PORT"] != "80") {
+  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+ } else {
+  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+ }
+ return $pageURL;
+}
+
+
 //Custon wp-admin logo
 function my_custom_login_logo() {
   echo '<style type="text/css">
 		        h1 a {
-		          background-size: 227px 85px !important;
 		          margin-bottom: 20px !important;
-		          background-image:url('.get_bloginfo('template_directory').'/images/logo.png) !important; }
-		    </style>
-        <script src="https://use.typekit.net/ofd3xas.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>';
+		          background-image:url('.get_bloginfo('template_directory').'/img/tam_white-2.png) !important; }
+		    </style>';
 }
 
 function my_login_stylesheet() {
@@ -127,5 +138,22 @@ add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M' );
 @ini_set( 'max_execution_time', '300' );
+
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+if (!current_user_can('administrator') && !is_admin()) {
+  show_admin_bar(false);
+}
+}
+
+add_action( 'init', 'blockusers_init' );
+function blockusers_init() {
+if ( is_admin() && ! current_user_can( 'administrator' ) &&
+! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+wp_redirect( home_url() );
+exit;
+}
+}
 
 ?>

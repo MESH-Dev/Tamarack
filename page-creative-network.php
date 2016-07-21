@@ -24,32 +24,32 @@ get_header(); ?>
           <div class="filter-box filter-product animated fadeIn">
               <div class="x">x</div>
               <ul>
-                  <li><div class="filter-checkbox filter" data-filter=".painting"></div><span class="filter-title">Painting</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".drawing"></div><span class="filter-title">Drawing</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".photography"></div><span class="filter-title">Photography</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".printmaking"></div><span class="filter-title">Printmaking</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".sculpture"></div><span class="filter-title">Sculpture</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".installation"></div><span class="filter-title">Installation</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".public-art"></div><span class="filter-title">Public Art</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".new-media-and-video"></div><span class="filter-title">New Media & Video</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".mixed-media-and-collage"></div><span class="filter-title">Mixed Media & Collage</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".ceramics"></div><span class="filter-title">Ceramics</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".pottery"></div><span class="filter-title">Pottery</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".glass"></div><span class="filter-title">Glass</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".paper"></div><span class="filter-title">Paper</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".jewelry"></div><span class="filter-title">Jewelry</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".textile"></div><span class="filter-title">Textile</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".wood"></div><span class="filter-title">Wood</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".furniture"></div><span class="filter-title">Furniture</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".leather"></div><span class="filter-title">Leather</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".metal"></div><span class="filter-title">Metal</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".baskets"></div><span class="filter-title">Baskets</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".candles"></div><span class="filter-title">Candles</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".bath-and-body"></div><span class="filter-title">Bath & Body</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".architecture"></div><span class="filter-title">Architecture</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".graphic-design"></div><span class="filter-title">Graphic Design</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".fashion"></div><span class="filter-title">Fashion</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".industrial-design"></div><span class="filter-title">Industrial Design</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".architecture"></div><span class="filter-title">Architecture</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".baskets"></div><span class="filter-title">Baskets</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".bath-and-body"></div><span class="filter-title">Bath &amp; Body</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".candles"></div><span class="filter-title">Candles</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".ceramics"></div><span class="filter-title">Ceramics</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".drawing"></div><span class="filter-title">Drawing</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".fashion"></div><span class="filter-title">Fashion</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".furniture"></div><span class="filter-title">Furniture</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".glass"></div><span class="filter-title">Glass</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".graphic-design"></div><span class="filter-title">Graphic Design</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".industrial-design"></div><span class="filter-title">Industrial Design</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".jewelry"></div><span class="filter-title">Jewelry</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".installation"></div><span class="filter-title">Installation</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".leather"></div><span class="filter-title">Leather</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".metal"></div><span class="filter-title">Metal</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".mixed-media-and-collage"></div><span class="filter-title">Mixed Media &amp; Collage</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".new-media-and-video"></div><span class="filter-title">New Media &amp; Video</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".painting"></div><span class="filter-title">Painting</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".paper"></div><span class="filter-title">Paper</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".photography" selected="selected" data-i="0"></div><span class="filter-title">Photography</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".pottery"></div><span class="filter-title">Pottery</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".printmaking"></div><span class="filter-title">Printmaking</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".public-art"></div><span class="filter-title">Public Art</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".sculpture"></div><span class="filter-title">Sculpture</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".textile"></div><span class="filter-title">Textile</span></li>
+                <li><div class="filter-checkbox filter" data-filter=".wood"></div><span class="filter-title">Wood</span></li>
               </ul>
           </div>
           <div class="filter-box filter-skills animated fadeIn">
@@ -149,7 +149,7 @@ get_header(); ?>
         <div class="search">
           <div class="filter-bar">
             <div class="search-title">
-              Current Search
+              Currently Filtered By
             </div>
             <div class="search-items">
             </div>
@@ -366,6 +366,26 @@ get_header(); ?>
             } else {
                 $(this).fadeIn();
             }
+        });
+    });
+
+    $(function() {
+        jQuery('.directorylisting').matchHeight({
+            byRow: false,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
+
+    $( window ).resize(function() {
+        $(function() {
+            jQuery('.directorylisting').matchHeight({
+                byRow: false,
+                property: 'height',
+                target: null,
+                remove: false
+            });
         });
     });
 

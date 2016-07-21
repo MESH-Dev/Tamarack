@@ -39,7 +39,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".fairs-and-festivals-markets" id="fairs-and-festivals-markets"></div><span class="filter-title">Fairs & Festivals Markets</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".online-markets" id="online-markets"></div><span class="filter-title">Online Markets</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".gallery-and-retail-shop-markets" id="gallery-and-retail-shop-markets"></div><span class="filter-title">Gallery & Retail Shop Markets</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".artists-representatives" id="artists-representatives"></div><span class="filter-title">Artist Representatives</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".artist-representatives" id="artists-representatives"></div><span class="filter-title">Artist Representatives</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".advocacy-policy-and-research" id="advocacy-policy-and-research"></div><span class="filter-title">Advocacy, Policy & Research</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".awards-and-fellowships" id="awards-and-fellowships"></div><span class="filter-title">Awards and Fellowships</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".residencies" id="residencies"></div><span class="filter-title">Residencies</span></li>
@@ -107,7 +107,7 @@ get_header(); ?>
 
     <div class="filter-row">
       <div class="twelve columns">
-        <div class="search">
+        <div class="search-by">
           <div class="filter-bar">
             <div class="search-title">
               Currently Filtered By:
@@ -117,7 +117,7 @@ get_header(); ?>
             <div class="reset-filter filter">View All <i class="fa fa-angle-double-right"></i></div>
           </div>
           <div class="search-bar">
-            <input type="text" class="search" placeholder="Search by..." />
+            <input type="text" class="search-by" placeholder="Search by..." />
             <div class="search-icon"><i class="fa fa-search"></i></div>
           </div>
         </div>
@@ -132,7 +132,7 @@ get_header(); ?>
 
           // check if the repeater field has rows of data
           if( have_rows('resource') ):
-
+             
            	// loop through the rows of data
               while ( have_rows('resource') ) : the_row();
               ?>
@@ -141,33 +141,42 @@ get_header(); ?>
                 <?php
 
                   $randomer = rand(1, 4);
+                  $resource = '';
 
                   if(get_sub_field('resource_type') == 'Business') {
                     $n = get_template_directory_uri() . "/img/business.png";
                     $color = "blue";
                     $arrow = "blue-arrow.png";
+                    $resource = get_sub_field('resource_type_business');
                   }
                   elseif(get_sub_field('resource_type') == 'Finance') {
                     $n = get_template_directory_uri() . "/img/finance.png";
                     $color = "purple";
                     $arrow = "purple-arrow.png";
+                    $resource = get_sub_field('resource_type_finance');
                   }
                   elseif(get_sub_field('resource_type') == 'Legal') {
                     $n = get_template_directory_uri() . "/img/legal.png";
                     $color = "red";
                     $arrow = "red-arrow.png";
+                    $resource = get_sub_field('resource_type_legal');
                   }
                   elseif(get_sub_field('resource_type') == 'Marketing and PR') {
                     $n = get_template_directory_uri() . "/img/marketing.png";
                     $color = "dark-gray";
                     $arrow = "black-arrow.png";
+                    $resource = get_sub_field('resource_type_marketing_and_pr');
                   }
                   else {
 
                   }
-                ?>
 
-                  <div class="content-fourth resource <?php echo $color; ?> mix <?php echo get_sub_field('resource_type_business'); echo get_sub_field('resource_type_marketing_and_pr'); echo get_sub_field('resource_type_legal'); echo get_sub_field('resource_type_finance'); ?>">
+                  $resource_business = get_sub_field('resource_type_business');
+                  $resource_marketing = get_sub_field('resource_type_marketing_and_pr');
+                  $resource_legal = get_sub_field('resource_type_legal');
+                  $resource_finance = get_sub_field('resource_type_finance');                ?>
+
+                  <div class="content-fourth resource <?php echo $color; ?> mix <?php echo $resource; ?>">
 
                     <div class="resource-inner">
                       <div class="resource-type">
@@ -213,7 +222,7 @@ get_header(); ?>
 
 <script>
   $(document).ready(function(){
-    var init_filters = '.foundation-building,.business-plan,.time-management,.trade-show-markets,.fairs-and-festivals-markets,.online-markets,.gallery-and-retail-shop-markets,.artists-representatives,.advocacy-policy-and-research,awards-and-fellowships,residencies,alternative-markets,shipping-and-transporting-work,studio-and-retail-management,inventory-management,professional-development,.asset-building,.strategy,.branding,.portfolio,.artist-statement,.social-media,.website,.earned-media-pr,.customer-service,.salesmanship-skills,.email-marketing,.booth-presentation,.print-materials,.advertising,.podcasting,.outreach-and-promotion,.product-presentation,.considerations,.contracts,.trademark-patent-and-copyright,.risks-and-protections,.reproduction-rights,.estate,.pricing,.accounting,.revenue-streams,.selling-wholesale,.selling-retail,.grantwriting,.commissions,.grants-and-scholarships,.loans';
+    var init_filters = '.foundation-building,.business-plan,.time-management,.trade-show-markets,.fairs-and-festivals-markets,.online-markets,.gallery-and-retail-shop-markets,.artist-representatives,.advocacy-policy-and-research,.awards-and-fellowships,.residencies,.alternative-markets,.shipping-and-transporting-work,.studio-and-retail-management,.inventory-management,.professional-development,.asset-building,.strategy,.branding,.portfolio,.artist-statement,.social-media,.website,.earned-media-pr,.customer-service,.salesmanship-skills,.email-marketing,.booth-presentation,.print-materials,.advertising,.podcasting,.outreach-and-promotion,.product-presentation,.considerations,.contracts,.trademark-patent-and-copyright,.risks-and-protections,.reproduction-rights,.estate,.pricing,.accounting,.revenue-streams,.selling-wholesale,.selling-retail,.grantwriting,.commissions,.grants-and-scholarships,.loans';
 
     var first = true;
 
@@ -241,12 +250,21 @@ get_header(); ?>
           }
         }
       });
- 
+
 
     //Update currenly selected filter string
     var active = [];
 
     $('.filter-checkbox').click(function() {
+
+        // $(function() {
+        //     jQuery('.resource').matchHeight({
+        //         byRow: true,
+        //         property: 'height',
+        //         target: null,
+        //         remove: false
+        //     });
+        // });
 
       //show filter bar
        $('.filter-bar').show();
@@ -300,7 +318,7 @@ get_header(); ?>
 
 
      //Reset Button
-    $('.reset-filter, input.search').click(function() {
+    $('.reset-filter, input.search-by').click(function() {
       // $('.filter-box').hide();
       // $('.filter-bar').hide();
       //$('.resource').addClass('show');
@@ -312,9 +330,38 @@ get_header(); ?>
     });
 
 
+    $(function() {
+        jQuery('.resource').matchHeight({
+            byRow: false,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
 
-    //Live Search 
-    $("input.search").keyup(function(){
+    $( window ).resize(function() {
+        $(function() {
+            jQuery('.resource').matchHeight({
+                byRow: false,
+                property: 'height',
+                target: null,
+                remove: false
+            });
+        });
+    });
+
+    $(".resource-title").hover(function() {
+        $p = $(this).parent();
+        $p.find('.resource-link').toggleClass('hover-opacity');
+    });
+
+    $(".resource-link").hover(function() {
+        $p = $(this).parent();
+        $p.find('.resource-title').toggleClass('hover-opacity');
+    });
+
+    //Live Search
+    $("input.search-by").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();
         // Loop through grid items

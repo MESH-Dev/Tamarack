@@ -105,31 +105,48 @@
       $product_image_3 = get_field('product_image_3');
   ?>
 
+  <?php if ($product_image_1)  { ?>
   <div class="frame crazy" id="crazy">
-    <ul class="clearfix">
-        <?php if ($product_image_1) { ?><li><img src="<?php echo $product_image_1['sizes']['large']; ?>" /></li><?php } ?>
+   <ul class=" slidee">  <!-- clearfix -->
+        <?php if ($product_image_1) { ?><li class="slide1"><img src="<?php echo $product_image_1['sizes']['large']; ?>" /></li><?php } ?>
         <?php if ($product_image_2) { ?><li><img src="<?php echo $product_image_2['sizes']['large']; ?>" /></li><?php } ?>
         <?php if ($product_image_3) { ?><li><img src="<?php echo $product_image_3['sizes']['large']; ?>" /></li><?php } ?>
     </ul>
+    
+    <?php if ($product_image_1 && $product_image_2) { ?>
     <div class="prevPage"><i class="fa fa-angle-left"></i></div>
     <div class="nextPage"><i class="fa fa-angle-right"></i></div>
-  </div>
+     <?php } ?>
 
-  <script src="<?php echo get_template_directory_uri(); ?>/js/sly.min.js"></script>
+  </div>
+   <?php } ?>
+  
+<script src="<?php echo get_template_directory_uri(); ?>/js/sly.min.js"></script>
+
 
   <script type="text/javascript">
+ $('.crazy').imagesLoaded(function(){
 
   var options = {
     horizontal: 1,
+    //slidee: '.slidee',
+    smart: 1,
+    elasticBounds: 1,
     itemNav: 'basic',
     speed: 300,
     mouseDragging: 1,
     touchDragging: 1,
     nextPage: $('.nextPage'),
     prevPage: $('.prevPage')
+    
   };
-  var frame = new Sly('#crazy', options).init();
-
+  var frame = new Sly('#crazy', options).init(
+    $('.crazy ul li').each(function(){
+    var img_width = $(this).find('img').width();
+    $(this).width(img_width);
+  })
+    );
+});
   </script>
 
 </main><!-- #main -->

@@ -15,8 +15,24 @@ get_header(); ?>
               <div class="trail-description">
                 <?php the_content(); ?>
               </div>
-            <div class="trail-social">
-                Tell your friends:
+              <div class="trail-social">
+                <div class="trail-share-icon">
+                    Tell your friends:
+                </div>
+                <div class="trail-share-icon">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="trail-share-icon">
+                    <a href="https://twitter.com/home?status=<?php echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-twitter"></i></a>
+                </div>
+                    <!-- <div class="share-icon">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-pinterest"></i> Share</a>
+                    </div>
+                    <div class="share-icon">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php // echo str_replace(":", "%3A", get_permalink()); ?>"><i class="fa fa-fancy"></i> Share</a>
+                    </div> -->
+
+
               </div>
             </div>
             <div class="trail-half">
@@ -111,7 +127,15 @@ get_header(); ?>
                   </div>
                   <div class="trailstop-inner-2"><hr></div>
                   <div class="trailstop-content">
-                    <?php the_content(); ?>
+                    <?php
+
+                        $content_post = get_post($trail_stop->ID);
+                        $content = $content_post->post_content;
+                        $content = apply_filters('the_content', $content);
+                        $content = str_replace(']]>', ']]&gt;', $content);
+                        echo $content;
+
+                    ?>
                   </div>
                   <div class="trailstop-image">
                     <?php
@@ -140,5 +164,41 @@ get_header(); ?>
 
 
 </main><!-- #main -->
+
+<script>
+
+if( $(window).width() > 768) {
+  $(function() {
+      jQuery('.trailstop').matchHeight({
+          byRow: false,
+          property: 'height',
+          target: null,
+          remove: false
+      });
+  });
+}
+
+
+$( window ).resize(function() {
+  if( $(window).width() > 768) {
+    $(function() {
+        jQuery('.trailstop').matchHeight({
+            byRow: false,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
+  } else {
+    $(function() {
+        jQuery('.trailstop').matchHeight({
+            remove: true
+        });
+    });
+  }
+});
+
+
+</script>
 
 <?php get_footer(); ?>

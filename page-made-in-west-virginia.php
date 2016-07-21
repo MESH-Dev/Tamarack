@@ -142,17 +142,17 @@ get_header(); ?>
 
   <div class="filter-row">
     <div class="twelve columns">
-      <div class="search">
+      <div class="search-by">
         <div class="filter-bar">
           <div class="search-title">
-            Current Search
+            Currently Filtered By
           </div>
           <div class="search-items">
           </div>
           <div class="reset-filter filter">View All <i class="fa fa-angle-double-right"></i></div>
         </div>
         <div class="search-bar">
-          <input type="text" class="search white-bg" placeholder="Search by business name" />
+          <input type="text" class="search-by white-bg" placeholder="Search by business name" />
           <div class="search-icon"><i class="fa fa-search"></i></div>
         </div>
       </div>
@@ -240,7 +240,7 @@ get_header(); ?>
           }
         }
       });
- 
+
 
     //Update currenly selected filter string
     var active = [];
@@ -291,21 +291,21 @@ get_header(); ?>
         active.splice(jQuery.inArray(item, active), 1);
         $('.search-items').html(active.join(", "));
       }
- 
+
     });
- 
+
      //Reset Button
-    $('.reset-filter, input.search').click(function() {
- 
+    $('.reset-filter, input.search-by').click(function() {
+
       $('.filter-checkbox').removeClass('active');
       active = [];
       $('.search-items').html("");
       first = true;
       $('#marketplace').mixItUp('filter', init_filters);
     });
- 
-    //Live Search 
-    $("input.search").keyup(function(){
+
+    //Live Search
+    $("input.search-by").keyup(function(){
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val();
         // Loop through grid items
@@ -322,12 +322,32 @@ get_header(); ?>
     });
 
     //equal height
-    var divWidth = jQuery('.content-fourth').width();
-    jQuery('.content-fourth').height(divWidth);
+    // var divWidth = jQuery('.content-fourth').width();
+    // jQuery('.content-fourth').height(divWidth);
+    //
+    // jQuery(window).resize(function() {
+    //   var divWidth = jQuery('.content-fourth').width();
+    //   jQuery('.content-fourth').height(divWidth);
+    // });
 
-    jQuery(window).resize(function() {
-      var divWidth = jQuery('.content-fourth').width();
-      jQuery('.content-fourth').height(divWidth);
+    $(function() {
+        jQuery('.content-fourth').matchHeight({
+            byRow: false,
+            property: 'height',
+            target: null,
+            remove: false
+        });
+    });
+
+    $( window ).resize(function() {
+        $(function() {
+            jQuery('.resource').matchHeight({
+                byRow: false,
+                property: 'height',
+                target: null,
+                remove: false
+            });
+        });
     });
 
 

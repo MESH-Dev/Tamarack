@@ -30,40 +30,26 @@
 						</div>
 
 						<div class="post-thumbnail">
-							<?php the_post_thumbnail(); ?>
+							<?php the_post_thumbnail('bloglisting'); ?>
 						</div>
 
 						<?php the_excerpt(); ?>
 					</div>
 
 				<?php endwhile; ?>
+
+				<div class="pagination post"><?php echo paginate_links(); ?></div>
+				
 			</div>
 
- 
+
 
 
 		</div>
 	</div>
-	
+
 	<?php get_sidebar(); ?>
 
-
-
-
-	
-
-	<script>
-
-		$(document).ready(function(){
-
-			$("#sidebar h3").click(function() {
-				$(this).toggleClass('sidebar-open');
-				$(this).next('ul').slideToggle();
-			});
-
-		});
-
-	</script>
 
 </main><!-- End of Content -->
 
