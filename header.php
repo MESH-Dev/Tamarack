@@ -38,7 +38,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/imagesloaded.pkgd.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
-	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mixitup.js"></script>
 	<script src="https://use.typekit.net/ofd3xas.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
