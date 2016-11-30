@@ -256,7 +256,7 @@ get_header(); ?>
 
               // $url = get_sub_field('url');
               // add_post_meta($post_id, 'url', $url);
-              // add_post_meta($post_id, '_url', 'field_583dffcbba07f');
+              // add_post_meta($post_id, '_description', 'field_583dffcbba07f');
 
               // $link_text = get_sub_field('link_text');
               // add_post_meta($post_id, 'link_text', $link_text);

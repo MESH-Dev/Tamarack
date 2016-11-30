@@ -2,8 +2,10 @@
 
 //enqueue scripts and styles *use production assets. Dev assets are located in  /css and /js
 function loadup_scripts() {
+	//wp_enqueue_script( 'wfi-js', get_template_directory_uri().'/js/waitforimages.min.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'theme-js', get_template_directory_uri().'/js/mesh.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'height-js', get_template_directory_uri().'/js/jquery.matchHeight-min.js', array('jquery'), '1.0.0', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 
@@ -314,8 +316,327 @@ function  one_half_last( $atts, $content = null ) {
 add_shortcode('second_column', 'one_half_last');
 
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
+// registration code for directorylisting post type
+	function register_directorylisting_posttype() {
+		$labels = array(
+			'name' 				=> _x( 'Directory Listings', 'post type general name' ),
+			'singular_name'		=> _x( 'Directory Listing', 'post type singular name' ),
+			'add_new' 			=> __( 'Add New' ),
+			'add_new_item' 		=> __( 'Directory Listing' ),
+			'edit_item' 		=> __( 'Directory Listing' ),
+			'new_item' 			=> __( 'Directory Listing' ),
+			'view_item' 		=> __( 'Directory Listing' ),
+			'search_items' 		=> __( 'Directory Listing' ),
+			'not_found' 		=> __( 'Directory Listing' ),
+			'not_found_in_trash'=> __( 'Directory Listing' ),
+			'parent_item_colon' => __( 'Directory Listing' ),
+			'menu_name'			=> __( 'Directory Listings' )
+		);
+		
+		$taxonomies = array();
+
+		$supports = array('title','editor','author','thumbnail','excerpt','custom-fields','comments','revisions');
+		
+		$post_type_args = array(
+			'labels' 			=> $labels,
+			'singular_label' 	=> __('Directory Listing'),
+			'public' 			=> true,
+			'show_ui' 			=> true,
+			'publicly_queryable'=> true,
+			'query_var'			=> true,
+			'capability_type' 	=> 'post',
+			'has_archive' 		=> true,
+			'hierarchical' 		=> false,
+			'rewrite' 			=> array('slug' => 'directory-listing', 'with_front' => false ),
+			'supports' 			=> $supports,
+			'menu_position' 	=> 5,
+			'menu_icon' 		=> 'dashicons-groups',
+			'taxonomies'		=> $taxonomies
+		 );
+		 register_post_type('directorylisting',$post_type_args);
+	}
+	add_action('init', 'register_directorylisting_posttype');// registration code for marketplacelisting post type
+	function register_marketplacelisting_posttype() {
+		$labels = array(
+			'name' 				=> _x( 'Marketplace Listings', 'post type general name' ),
+			'singular_name'		=> _x( 'Marketplace Listing', 'post type singular name' ),
+			'add_new' 			=> __( 'Add New' ),
+			'add_new_item' 		=> __( 'Marketplace Listing' ),
+			'edit_item' 		=> __( 'Marketplace Listing' ),
+			'new_item' 			=> __( 'Marketplace Listing' ),
+			'view_item' 		=> __( 'Marketplace Listing' ),
+			'search_items' 		=> __( 'Marketplace Listing' ),
+			'not_found' 		=> __( 'Marketplace Listing' ),
+			'not_found_in_trash'=> __( 'Marketplace Listing' ),
+			'parent_item_colon' => __( 'Marketplace Listing' ),
+			'menu_name'			=> __( 'Marketplace Listings' )
+		);
+		
+		$taxonomies = array();
+
+		$supports = array('title','editor','author','thumbnail','excerpt','custom-fields','comments','revisions');
+		
+		$post_type_args = array(
+			'labels' 			=> $labels,
+			'singular_label' 	=> __('Marketplace Listing'),
+			'public' 			=> true,
+			'show_ui' 			=> true,
+			'publicly_queryable'=> true,
+			'query_var'			=> true,
+			'capability_type' 	=> 'post',
+			'has_archive' 		=> true,
+			'hierarchical' 		=> false,
+			'rewrite' 			=> array('slug' => 'marketplace-listing', 'with_front' => false ),
+			'supports' 			=> $supports,
+			'menu_position' 	=> 5,
+			'menu_icon' 		=> 'dashicons-admin-post',
+			'taxonomies'		=> $taxonomies
+		 );
+		 register_post_type('marketplacelisting',$post_type_args);
+	}
+	add_action('init', 'register_marketplacelisting_posttype');// registration code for traillisting post type
+	function register_traillisting_posttype() {
+		$labels = array(
+			'name' 				=> _x( 'Trail Listings', 'post type general name' ),
+			'singular_name'		=> _x( 'Trail Listing', 'post type singular name' ),
+			'add_new' 			=> __( 'Add New' ),
+			'add_new_item' 		=> __( 'Trail Listing' ),
+			'edit_item' 		=> __( 'Trail Listing' ),
+			'new_item' 			=> __( 'Trail Listing' ),
+			'view_item' 		=> __( 'Trail Listing' ),
+			'search_items' 		=> __( 'Trail Listing' ),
+			'not_found' 		=> __( 'Trail Listing' ),
+			'not_found_in_trash'=> __( 'Trail Listing' ),
+			'parent_item_colon' => __( 'Trail Listing' ),
+			'menu_name'			=> __( 'Trail Listings' )
+		);
+		
+		$taxonomies = array();
+
+		$supports = array('title','editor','author','thumbnail','excerpt','custom-fields','comments','revisions');
+		
+		$post_type_args = array(
+			'labels' 			=> $labels,
+			'singular_label' 	=> __('Trail Listing'),
+			'public' 			=> true,
+			'show_ui' 			=> true,
+			'publicly_queryable'=> true,
+			'query_var'			=> true,
+			'capability_type' 	=> 'post',
+			'has_archive' 		=> true,
+			'hierarchical' 		=> false,
+			'rewrite' 			=> array('slug' => 'trail-listing', 'with_front' => false ),
+			'supports' 			=> $supports,
+			'menu_position' 	=> 5,
+			'menu_icon' 		=> 'dashicons-admin-post',
+			'taxonomies'		=> $taxonomies
+		 );
+		 register_post_type('traillisting',$post_type_args);
+	}
+	add_action('init', 'register_traillisting_posttype');// registration code for collection post type
+	function register_collection_posttype() {
+		$labels = array(
+			'name' 				=> _x( 'Collections', 'post type general name' ),
+			'singular_name'		=> _x( 'Collection', 'post type singular name' ),
+			'add_new' 			=> __( 'Add New' ),
+			'add_new_item' 		=> __( 'Collection' ),
+			'edit_item' 		=> __( 'Collection' ),
+			'new_item' 			=> __( 'Collection' ),
+			'view_item' 		=> __( 'Collection' ),
+			'search_items' 		=> __( 'Collection' ),
+			'not_found' 		=> __( 'Collection' ),
+			'not_found_in_trash'=> __( 'Collection' ),
+			'parent_item_colon' => __( 'Collection' ),
+			'menu_name'			=> __( 'Collections' )
+		);
+		
+		$taxonomies = array();
+
+		$supports = array('title','editor','author','thumbnail','excerpt','custom-fields','comments','revisions');
+		
+		$post_type_args = array(
+			'labels' 			=> $labels,
+			'singular_label' 	=> __('Collection'),
+			'public' 			=> true,
+			'show_ui' 			=> true,
+			'publicly_queryable'=> true,
+			'query_var'			=> true,
+			'capability_type' 	=> 'post',
+			'has_archive' 		=> true,
+			'hierarchical' 		=> false,
+			'rewrite' 			=> array('slug' => 'collection', 'with_front' => false ),
+			'supports' 			=> $supports,
+			'menu_position' 	=> 5,
+			'menu_icon' 		=> 'dashicons-admin-post',
+			'taxonomies'		=> $taxonomies
+		 );
+		 register_post_type('collection',$post_type_args);
+	}
+	add_action('init', 'register_collection_posttype');// registration code for trail post type
+	function register_trail_posttype() {
+		$labels = array(
+			'name' 				=> _x( 'Trails', 'post type general name' ),
+			'singular_name'		=> _x( 'Trail', 'post type singular name' ),
+			'add_new' 			=> __( 'Add New' ),
+			'add_new_item' 		=> __( 'Trail' ),
+			'edit_item' 		=> __( 'Trail' ),
+			'new_item' 			=> __( 'Trail' ),
+			'view_item' 		=> __( 'Trail' ),
+			'search_items' 		=> __( 'Trail' ),
+			'not_found' 		=> __( 'Trail' ),
+			'not_found_in_trash'=> __( 'Trail' ),
+			'parent_item_colon' => __( 'Trail' ),
+			'menu_name'			=> __( 'Trails' )
+		);
+		
+		$taxonomies = array();
+
+		$supports = array('title','editor','author','thumbnail','excerpt','custom-fields','comments','revisions');
+		
+		$post_type_args = array(
+			'labels' 			=> $labels,
+			'singular_label' 	=> __('Trail'),
+			'public' 			=> true,
+			'show_ui' 			=> true,
+			'publicly_queryable'=> true,
+			'query_var'			=> true,
+			'capability_type' 	=> 'post',
+			'has_archive' 		=> true,
+			'hierarchical' 		=> false,
+			'rewrite' 			=> array('slug' => 'trail', 'with_front' => false ),
+			'supports' 			=> $supports,
+			'menu_position' 	=> 5,
+			'menu_icon' 		=> 'dashicons-admin-post',
+			'taxonomies'		=> $taxonomies
+		 );
+		 register_post_type('trail',$post_type_args);
+	}
+	add_action('init', 'register_trail_posttype');
+
+	// registration code for resource-library post type
+	function register_resource_library_posttype() {
+		$labels = array(
+			'name' 				=> _x( 'Resource Library Items', 'post type general name' ),
+			'singular_name'		=> _x( 'Resource Library Item', 'post type singular name' ),
+			'add_new' 			=> __( 'Add New Resource Library Item' ),
+			'add_new_item' 		=> __( 'Resource Library Item' ),
+			'edit_item' 		=> __( 'Resource Library Item' ),
+			'new_item' 			=> __( 'Resource Library Item' ),
+			'view_item' 		=> __( 'Resource Library Item' ),
+			'search_items' 		=> __( 'Search' ),
+			'not_found' 		=> __( 'Resource Library Item' ),
+			'not_found_in_trash'=> __( 'Resource Library Item' ),
+			'parent_item_colon' => __( 'Resource Library Item' ),
+			'menu_name'			=> __( 'Resource Library Items' )
+		);
+		
+		$taxonomies = array();
+
+		$supports = array('title','revisions','page-attributes');
+		
+		$post_type_args = array(
+			'labels' 			=> $labels,
+			'singular_label' 	=> __('Resource Library Item'),
+			'public' 			=> true,
+			'show_ui' 			=> true,
+			'publicly_queryable'=> true,
+			'query_var'			=> true,
+			'capability_type' 	=> 'post',
+			'has_archive' 		=> true,
+			'hierarchical' 		=> true,
+			'rewrite' 			=> array('slug' => 'resource-library', 'with_front' => false ),
+			'supports' 			=> $supports,
+			'menu_position' 	=> 5,
+			'menu_icon' 		=> 'dashicons-book-alt',
+			'taxonomies'		=> $taxonomies
+		 );
+		 register_post_type('resource-library',$post_type_args);
+	}
+	add_action('init', 'register_resource_library_posttype');
 
 
+	// Register Custom Taxonomy
+// function resource_type() {
 
+// 	$labels = array(
+// 		'name'                       => _x( 'Resource Types', 'Taxonomy General Name', 'text_domain' ),
+// 		'singular_name'              => _x( 'Resource Type', 'Taxonomy Singular Name', 'text_domain' ),
+// 		'menu_name'                  => __( 'Resource Type', 'text_domain' ),
+// 		'all_items'                  => __( 'All Resource Types', 'text_domain' ),
+// 		'parent_item'                => __( 'Parent Resource Type', 'text_domain' ),
+// 		'parent_item_colon'          => __( 'Parent Resource Type:', 'text_domain' ),
+// 		'new_item_name'              => __( 'New Resource Type', 'text_domain' ),
+// 		'add_new_item'               => __( 'Add New Resource Type', 'text_domain' ),
+// 		'edit_item'                  => __( 'Edit Resource Type', 'text_domain' ),
+// 		'update_item'                => __( 'Update Resource Type', 'text_domain' ),
+// 		'view_item'                  => __( 'View Resource Type', 'text_domain' ),
+// 		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
+// 		'add_or_remove_items'        => __( 'Add or remove Resource Type', 'text_domain' ),
+// 		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+// 		'popular_items'              => __( 'Popular Resource Types', 'text_domain' ),
+// 		'search_items'               => __( 'Search Resource Types', 'text_domain' ),
+// 		'not_found'                  => __( 'Not Found', 'text_domain' ),
+// 		'no_terms'                   => __( 'No items', 'text_domain' ),
+// 		'items_list'                 => __( 'Items list', 'text_domain' ),
+// 		'items_list_navigation'      => __( 'Items list navigation', 'text_domain' ),
+// 	);
+// 	$args = array(
+// 		'labels'                     => $labels,
+// 		'hierarchical'               => true,
+// 		'public'                     => true,
+// 		'show_ui'                    => true,
+// 		'show_admin_column'          => true,
+// 		'show_in_nav_menus'          => true,
+// 		'show_tagcloud'              => true,
+// 	);
+// 	register_taxonomy( 'resource_type', array( 'resource-library' ), $args );
+
+// }
+// add_action( 'init', 'resource_type', 0 );
+
+// Register Custom Taxonomy
+// function resource_sub_type() {
+
+// 	$labels = array(
+// 		'name'                       => _x( 'Resource Sub Types', 'Taxonomy General Name', 'text_domain' ),
+// 		'singular_name'              => _x( 'Resource Sub Type', 'Taxonomy Singular Name', 'text_domain' ),
+// 		'menu_name'                  => __( 'Resource Sub Type', 'text_domain' ),
+// 		'all_items'                  => __( 'All Resource Sub Type', 'text_domain' ),
+// 		'parent_item'                => __( 'Parent Resource Sub Type', 'text_domain' ),
+// 		'parent_item_colon'          => __( 'Parent Resource Sub Type:', 'text_domain' ),
+// 		'new_item_name'              => __( 'New Resource Sub Type', 'text_domain' ),
+// 		'add_new_item'               => __( 'Add New Resource Sub Type', 'text_domain' ),
+// 		'edit_item'                  => __( 'Edit Resource Sub Type', 'text_domain' ),
+// 		'update_item'                => __( 'Update Resource Sub Type', 'text_domain' ),
+// 		'view_item'                  => __( 'View Resource Sub Type', 'text_domain' ),
+// 		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
+// 		'add_or_remove_items'        => __( 'Add or remove Resource Type', 'text_domain' ),
+// 		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+// 		'popular_items'              => __( 'Popular Resource Sub Types', 'text_domain' ),
+// 		'search_items'               => __( 'Search Resource Sub Types', 'text_domain' ),
+// 		'not_found'                  => __( 'Not Found', 'text_domain' ),
+// 		'no_terms'                   => __( 'No items', 'text_domain' ),
+// 		'items_list'                 => __( 'Items list', 'text_domain' ),
+// 		'items_list_navigation'      => __( 'Items list navigation', 'text_domain' ),
+// 	);
+// 	$args = array(
+// 		'labels'                     => $labels,
+// 		'hierarchical'               => true,
+// 		'public'                     => true,
+// 		'show_ui'                    => true,
+// 		'show_admin_column'          => true,
+// 		'show_in_nav_menus'          => true,
+// 		'show_tagcloud'              => true,
+// 	);
+// 	register_taxonomy( 'resource_sub_type', array( 'resource-library' ), $args );
+
+// }
+// add_action( 'init', 'resource_sub_type', 0 );
 
 ?>

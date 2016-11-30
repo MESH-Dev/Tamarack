@@ -37,6 +37,9 @@
 					</div>
 
 				<?php endwhile; ?>
+
+				<div class="pagination post"><?php echo paginate_links(); ?></div>
+				
 			</div>
 
 

@@ -26,7 +26,7 @@ $base-width: if($is-fluid, 98%, (($base-col-width + $base-gutter-width) * $base-
 
 $big-width: $base-width + 200 !global;
 $desktop-width: 900px !global;
-$tablet-width: 768px !global; // the tablet width media query
+$tablet-width: 769px !global; // the tablet width media query
 $mobile-portrait-width: 300px !global; // the mobile portrait media query
 $mobile-landscape-width: 480px !global; // the mobile landscape media query
 $mobile-fluid-width: 100%; // this value is not used with breakpoints, it is used in generating a fluid grid for mobile devices

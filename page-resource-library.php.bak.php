@@ -2,7 +2,7 @@
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
-    
+
     <div class="filter-row">
       <div class="filter-quarter filter-business-button filter-button" data-section="filter-business">
         <span class="resource-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/business.png" /></span>
@@ -36,16 +36,16 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".business-plan" id="business-plan"></div><span class="filter-title">Business Plan</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".time-management" id="time-management"></div><span class="filter-title">Time Management</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".trade-show-markets" id="trade-show-markets"></div><span class="filter-title">Trade Show Markets</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".fairs-and-festivals-markets" id="fairs-and-festivals-markets"></div><span class="filter-title">Fairs & Festivals Markets</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".fairs-and-festivals-markets" id="fairs-and-festivals-markets"></div><span class="filter-title">Fairs &amp; Festivals Markets</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".online-markets" id="online-markets"></div><span class="filter-title">Online Markets</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".gallery-and-retail-shop-markets" id="gallery-and-retail-shop-markets"></div><span class="filter-title">Gallery & Retail Shop Markets</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".gallery-and-retail-shop-markets" id="gallery-and-retail-shop-markets"></div><span class="filter-title">Gallery &amp; Retail Shop Markets</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".artist-representatives" id="artists-representatives"></div><span class="filter-title">Artist Representatives</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".advocacy-policy-and-research" id="advocacy-policy-and-research"></div><span class="filter-title">Advocacy, Policy & Research</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".advocacy-policy-and-research" id="advocacy-policy-and-research"></div><span class="filter-title">Advocacy, Policy &amp; Research</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".awards-and-fellowships" id="awards-and-fellowships"></div><span class="filter-title">Awards and Fellowships</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".residencies" id="residencies"></div><span class="filter-title">Residencies</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".alternative-markets" id="alternative-markets"></div><span class="filter-title">Alternative Markets</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".shipping-and-transporting-work" id="shipping-and-transporting-work"></div><span class="filter-title">Shipping & Transporting Work</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".studio-and-retail-management" id="studio-and-retail-management"></div><span class="filter-title">Studio & Retail Management</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".shipping-and-transporting-work" id="shipping-and-transporting-work"></div><span class="filter-title">Shipping &amp; Transporting Work</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".studio-and-retail-management" id="studio-and-retail-management"></div><span class="filter-title">Studio &amp; Retail Management</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".inventory-management" id="inventory-management"></div><span class="filter-title">Inventory Management</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".professional-development" id="professional-development"></div><span class="filter-title">Professional Development</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".other-business" id="other-business"></div><span class="filter-title">Other</span></li>
@@ -69,7 +69,7 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".print-materials"></div><span class="filter-title">Print Materials</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".advertising"></div><span class="filter-title">Advertising</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".podcasting"></div><span class="filter-title">Podcasting</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".outreach-and-promotion"></div><span class="filter-title">Outreach & Promotion</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".outreach-and-promotion"></div><span class="filter-title">Outreach &amp; Promotion</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".product-presentation"></div><span class="filter-title">Product Presentation</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".other-marketing-and-pr" id="other-marketing-and-pr"></div><span class="filter-title">Other</span></li>
               </ul>
@@ -90,7 +90,7 @@ get_header(); ?>
               <div class="x">x</div>
               <ul>
                   <li><div class="filter-checkbox filter" data-filter=".pricing"></div><span class="filter-title">Pricing</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".accounting"></div><span class="filter-title">Accounting & Taxes</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".accounting"></div><span class="filter-title">Accounting &amp; Taxes</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".revenue-streams"></div><span class="filter-title">Revenue Streams</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".selling-wholesale"></div><span class="filter-title">Selling Wholesale</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".selling-retail"></div><span class="filter-title">Selling Retail</span></li>
@@ -131,82 +131,51 @@ get_header(); ?>
           <?php
 
           // check if the repeater field has rows of data
-          //if( have_rows('resource') ):
+          if( have_rows('resource') ):
              
             // loop through the rows of data
-              //while ( have_rows('resource') ) : the_row();
-
-              $args = array(
-                  'post_type' => 'resource-library',
-                  'orderby' => 'menu_order',
-                  'order' => 'DESC',
-                  'posts_per_page' => '-1',
-                );
-
-              $the_query = new WP_Query( $args );
+              while ( have_rows('resource') ) : the_row();
               ?>
 
 
                 <?php
 
-                if ( $the_query->have_posts() ) : 
-
-                  $card_ct=0;
-
-                  while ($the_query->have_posts()) : $the_query->the_post();
-
                   $randomer = rand(1, 4);
                   $resource = '';
-                  $color = '';
-                  $n = ' ';
+                  $title = get_sub_field('title');
 
-                  //echo get_field_object('resource_type');
-
-                  //$title = the_title();
-                  $resource_type = get_field('resource_type', $post->ID);
-                  $description = get_field('description', $post->ID);
-                  $url = get_field('url', $post->ID);
-                  $link_text = get_field('link_text', $post->ID);
-
-                  //$description = get_sub_field('description')
-
-                  if($resource_type == 'Business') {
+                  if(get_sub_field('resource_type') == 'Business') {
                     $n = get_template_directory_uri() . "/img/business.png";
                     $color = "blue";
                     $arrow = "blue-arrow.png";
-                    $resource = get_field('resource_type_business');
+                    $resource = get_sub_field('resource_type_business');
                   }
-                  elseif($resource_type == 'Finance') {
+                  elseif(get_sub_field('resource_type') == 'Finance') {
                     $n = get_template_directory_uri() . "/img/finance.png";
                     $color = "purple";
                     $arrow = "purple-arrow.png";
-                    $resource = get_field('resource_type_finance');
+                    $resource = get_sub_field('resource_type_finance');
                   }
-                  elseif($resource_type == 'Legal') {
+                  elseif(get_sub_field('resource_type') == 'Legal') {
                     $n = get_template_directory_uri() . "/img/legal.png";
                     $color = "red";
                     $arrow = "red-arrow.png";
-                    $resource = get_field('resource_type_legal');
+                    $resource = get_sub_field('resource_type_legal');
                   }
-                  elseif($resource_type == 'Marketing and PR') {
+                  elseif(get_sub_field('resource_type') == 'Marketing and PR') {
                     $n = get_template_directory_uri() . "/img/marketing.png";
                     $color = "dark-gray";
                     $arrow = "black-arrow.png";
-                    $resource = get_field('resource_type_marketing_and_pr');
+                    $resource = get_sub_field('resource_type_marketing_and_pr');
                   }
                   else {
 
                   }
 
-                  $resource_business = get_field('resource_type_business');
-                  $resource_marketing = get_field('resource_type_marketing_and_pr');
-                  $resource_legal = get_field('resource_type_legal');
-                  $resource_finance = get_field('resource_type_finance'); 
-
-
-
-                  
-                   ?>
+                  $resource_business = get_sub_field('resource_type_business');
+                  $resource_marketing = get_sub_field('resource_type_marketing_and_pr');
+                  $resource_legal = get_sub_field('resource_type_legal');
+                  $resource_finance = get_sub_field('resource_type_finance');                ?>
 
                   <div class="content-fourth resource <?php echo $color; ?> mix <?php echo $resource; ?>">
 
@@ -215,16 +184,16 @@ get_header(); ?>
                         <?php echo '<img src="' . $n . '" />'; ?>
                       </div>
                       <div class="resource-title">
-                        <a href="<?php echo $url; ?>"><?php the_title(); ?></a>
+                        <a href="<?php echo get_sub_field('url'); ?>"><?php echo get_sub_field('title'); ?></a>
                       </div>
                       <div class="resource-description">
                         <?php
-                          echo $description;
+                          echo get_sub_field('description');
                         ?>
                       </div>
                       <div class="resource-link">
-                        <a href="<?php echo $url; ?>">
-                          <?php echo $link_text; ?>
+                        <a href="<?php echo get_sub_field('url'); ?>">
+                          <?php echo get_sub_field('link_text'); ?>
                           <span class="resource-link-image">
 
                             <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $arrow; ?>" />
@@ -239,60 +208,60 @@ get_header(); ?>
               //RUN FUNCTIONS TO COPY DATA INTO CPT
 
               //CREATE POST
-              // $post_id = wp_insert_post(array (
-              //   'post_type' => 'resource-library',
-              //   'post_title' => $title,
-              //   'post_content' => '',
-              //   'post_status' => 'publish',
-              //   'comment_status' => 'closed',   // if you prefer
-              //   'ping_status' => 'closed',      // if you prefer
-              // ));
+              $post_id = wp_insert_post(array (
+                'post_type' => 'resource-library',
+                'post_title' => $title,
+                'post_content' => '',
+                'post_status' => 'publish',
+                'comment_status' => 'closed',   // if you prefer
+                'ping_status' => 'closed',      // if you prefer
+              ));
 
 
               //UPDATE POST META
-              // $description = get_sub_field('description');
-              // add_post_meta($post_id, 'description', $description);
-              // add_post_meta($post_id, '_description', 'field_583dffcbba070');
+              $description = get_sub_field('description');
+              add_post_meta($post_id, 'description', $description);
+              add_post_meta($post_id, '_description', 'field_583dffcbba070');
 
-              // $url = get_sub_field('url');
-              // add_post_meta($post_id, 'url', $url);
-              // add_post_meta($post_id, '_url', 'field_583dffcbba07f');
+              $url = get_sub_field('url');
+              add_post_meta($post_id, 'url', $url);
+              add_post_meta($post_id, '_url', 'field_583dffcbba07f');
 
-              // $link_text = get_sub_field('link_text');
-              // add_post_meta($post_id, 'link_text', $link_text);
-              // add_post_meta($post_id, '_link_text', 'field_583dffcbba091');
+              $link_text = get_sub_field('link_text');
+              add_post_meta($post_id, 'link_text', $link_text);
+              add_post_meta($post_id, '_link_text', 'field_583dffcbba091');
 
-              // $resource_type = get_sub_field('resource_type');
-              // add_post_meta($post_id, 'resource_type', $resource_type);
-              // add_post_meta($post_id, '_resource_type', 'field_583dffcbba00e');
+              $resource_type = get_sub_field('resource_type');
+              add_post_meta($post_id, 'resource_type', $resource_type);
+              add_post_meta($post_id, '_resource_type', 'field_583dffcbba00e');
 
-              // $business_resource = get_sub_field('resource_type_business');
-              // if($business_resource != ''){
-              //   add_post_meta($post_id, 'resource_type_business', $business_resource);
-              //   add_post_meta($post_id, '_resource_type_business', 'field_583dffcbba023');
-              // }
+              $business_resource = get_sub_field('resource_type_business');
+              if($business_resource != ''){
+                add_post_meta($post_id, 'resource_type_business', $business_resource);
+                add_post_meta($post_id, '_resource_type_business', 'field_583dffcbba023');
+              }
 
-              // $finance_resource = get_sub_field('resource_type_finance'); 
-              // if($finance_resource != ''){
-              //   add_post_meta($post_id, 'resource_type_finance', $finance_resource);
-              //   add_post_meta($post_id, '_resource_type_finance', 'field_583dffcbba052');
-              // }
+              $finance_resource = get_sub_field('resource_type_finance'); 
+              if($finance_resource != ''){
+                add_post_meta($post_id, 'resource_type_finance', $finance_resource);
+                add_post_meta($post_id, '_resource_type_finance', 'field_583dffcbba052');
+              }
 
-              // $marketing_resource = get_sub_field('resource_type_marketing_and_pr');
-              // if($marketing_resource != ''){
-              //   add_post_meta($post_id, 'resource_type_marketing_and_pr', $marketing_resource);
-              //   add_post_meta($post_id, '_resource_type_marketing_and_pr', 'field_583dffcbba034');
-              // }
+              $marketing_resource = get_sub_field('resource_type_marketing_and_pr');
+              if($marketing_resource != ''){
+                add_post_meta($post_id, 'resource_type_marketing_and_pr', $marketing_resource);
+                add_post_meta($post_id, '_resource_type_marketing_and_pr', 'field_583dffcbba034');
+              }
 
-              // $legal_resource = get_sub_field('resource_type_legal');
-              // if($legal_resource != ''){
-              //   add_post_meta($post_id, 'resource_type_legal', $legal_resource);
-              //   add_post_meta($post_id, '_resource_type_legal', 'field_583dffcbba040');
-              // }
-
-
+              $legal_resource = get_sub_field('resource_type_legal');
+              if($legal_resource != ''){
+                add_post_meta($post_id, 'resource_type_legal', $legal_resource);
+                add_post_meta($post_id, '_resource_type_legal', 'field_583dffcbba040');
+              }
 
               endwhile;
+
+
 
           else :
 

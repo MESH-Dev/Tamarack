@@ -341,7 +341,8 @@ blockquote {
   width: 165px;
 
   @include mq($desktop-width, "max-width") {
-      display: none;
+      //display: none;
+      position:relative !important;
   }
 
   ul {
@@ -1739,6 +1740,13 @@ blockquote {
     margin-bottom: 20px;
     width: 100%;
 }
+
+ @include mq($mobile-landscape-width, $max){
+  .post-thumbnail img{
+    width:100%;
+  }
+ }
+
 
 .more-button {
     padding: 15px 50px;

@@ -99,14 +99,41 @@
 					<span class="menu-block-primary-text">Join our conversation</span>
 					<span class="footer-block-newsletter-text">Sign up for our emails to receive the latest news and updates:</span>
 
+
+
 					<form action="//tamarackfoundation.us12.list-manage.com/subscribe/post?u=8eb3531f974a15694f5de5dba&amp;id=2e44333fb6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="mc-field-group mc-sub-type input-group">
+    						<strong>I am a: (Please select one or both options) </strong>
+						    <ul>
+						    	<li>
+						    		<input type="checkbox" value="1" name="group[1801][1]" id="mce-group[1801]-1801-0">
+						    		<label for="mce-group[1801]-1801-0"><span class="checkbox"></span>Artist or Arts Business / Organization</label>
+						    	</li>
+								<li>
+									<input type="checkbox" value="2" name="group[1801][2]" id="mce-group[1801]-1801-1">
+									<label for="mce-group[1801]-1801-1"><span class="checkbox"></span>General Public / Supporter of the Arts</label>
+								</li>
+							</ul>
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+					    	<input type="text" name="b_8eb3531f974a15694f5de5dba_2e44333fb6" tabindex="-1" value="">
+					    </div>
+
 						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email here...">
 						<input type="submit" value="Sign up!" name="subscribe" id="mc-embedded-subscribe" class="button">
+
+
 					</form>
 
 
-					<p>Copyright <?php echo date("Y"); ?> Tamarack Foundation for the Arts.</p>
-					<span class="footer-citation"><a href="http://meshfresh.com" target="_blank">website by MESH</a></span>
+					<p class="copyright">Copyright <?php echo date("Y"); ?> Tamarack Foundation for the Arts.</p>
+					<div class="footer-citation">
+						<a href="http://meshfresh.com" target="_blank">website by MESH</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -122,7 +149,7 @@
 
 </div><!-- #page -->
 
-<div id="sidr" style="display: none;">
+<div id="sidr" >
   <!-- Your content -->
 
   <div class="close-sidr">

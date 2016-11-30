@@ -6,6 +6,7 @@ footer {
   position: relative;
   float: left;
   width: 100%;
+  padding-bottom:50px;
 }
 
 .footer-block {
@@ -61,10 +62,15 @@ footer {
 
 .footer-block-1 {
   &:before {
-    content: url(img/divider-1.png);
+    content:"";
+    background: url(img/divider-1.png);
+    width:5px;
+    height:80%;
+
 
     @include mq($tablet-width, $max) {
      content: '';
+     background:transparent;
     }
   }
 }
@@ -83,10 +89,15 @@ footer {
   }
 
   &:before {
-    content: url(img/divider-2.png);
+    content: "";
+    background: url(img/divider-2.png);
+    width:5px;
+    height:80%;
+
 
     @include mq($tablet-width, $max) {
      content: '';
+     background:transparent;
     }
   }
  }
@@ -101,6 +112,13 @@ footer {
      margin-bottom: 10px;
    }
 
+   .copyright{
+    //float:none;
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+   }
+
    hr {
      border-color: black;
    }
@@ -113,18 +131,26 @@ footer {
    }
 
    &:before {
-     content: url(img/divider-3.png);
+     content: "";
+     width:5px;
+     height:80%;
+     background: url(img/divider-3.png);
 
      @include mq($tablet-width, $max) {
       content: '';
+      background:transparent;
      }
    }
    &:after {
-     content: url(img/divider-1.png);
+     content: "";
+     background: url(img/divider-1.png);
+     height:80%;
+     width:5px;
      top: 40px;
 
      @include mq($tablet-width, $max) {
       content: '';
+      background:transparent;
      }
    }
  }

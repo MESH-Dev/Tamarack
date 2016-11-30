@@ -31,8 +31,11 @@ get_header(); ?>
                 <?php if ($product_image_8) { ?><li><img src="<?php echo $product_image_8['sizes']['large']; ?>" /></li><?php } ?>
                 <?php if ($product_image_9) { ?><li><img src="<?php echo $product_image_9['sizes']['large']; ?>" /></li><?php } ?>
     		</ul>
+
+        <?php if ($product_image_1 && $product_image_2){ ?>
             <div class="prevPage"><i class="fa fa-angle-left"></i></div>
             <div class="nextPage"><i class="fa fa-angle-right"></i></div>
+        <?php } ?>
     	</div>
 
     <?php } ?>
@@ -129,7 +132,8 @@ get_header(); ?>
 
             <div class="marketplace-sidebar">
               <?php
-                $author_id = get_the_author_id();
+                //get_the_author_id() is depreciated, changed to the below
+                $author_id = get_the_author_meta('ID');
                 $current_id = get_the_id();
 
                 $args = array( 'post_type' => 'directorylisting', 'posts_per_page' => 1, 'author' => $author_id );
@@ -174,7 +178,7 @@ get_header(); ?>
                   </div>
 
                 <?php
-                endwhile;
+                endwhile; wp_reset_postdata();
               ?>
             </div>
 
@@ -186,44 +190,55 @@ get_header(); ?>
 
     <div class="marketplace-press">
       <div class="press-third press-1">
-        <?php if (get_field('favorite_quote_1')) { ?>
+        <?php 
+          $current_id = get_the_id();
+          $fq_1 = get_field('favorite_quote_1');
+          $fq_1_link = get_field('link_1');
+          $fq_2 = get_field('favorite_quote_2');
+          $fq_2_link = get_field('link_2');
+          $fq_3 = get_field('favorite_quote_3');
+          $fq_3_link = get_field('link_2');
+        ?>
+        <?php if ($fq_1) { ?>
             <div class="press-tag">Notable Press</div>
-            <div class="press-quote">
-              "<?php echo get_field('favorite_quote_1', $current_id); ?>"
+            <div class="press-quote"> 
+              "<?php echo $fq_1; ?>"
             </div>
             <div class="press-cta">
-              <a href="<?php echo get_field('link_1', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
+              <a href="<?php echo $fq_1_link; ?>">Read more <i class="fa fa-angle-double-right"></i></a>
             </div>
         <?php } ?>
       </div>
       <div class="press-third press-2">
-        <?php if (get_field('favorite_quote_2')) { ?>
+        <?php if ($fq_2) { ?>
             <div class="press-tag">Notable Press</div>
             <div class="press-quote">
-              "<?php echo get_field('favorite_quote_2', $current_id); ?>"
+              "<?php echo $fq_2 ?>"
             </div>
             <div class="press-cta">
-              <a href="<?php echo get_field('link_2', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
+              <a href="<?php echo $fq_2_link; ?>">Read more <i class="fa fa-angle-double-right"></i></a>
             </div>
         <?php } ?>
       </div>
       <div class="press-third press-3">
-        <?php if (get_field('favorite_quote_3')) { ?>
+        <?php if ($fq_3) { ?>
             <div class="press-tag">Notable Press</div>
             <div class="press-quote">
-              "<?php echo get_field('favorite_quote_3', $current_id); ?>"
+              "<?php echo $fq_3; ?>"
             </div>
             <div class="press-cta">
-              <a href="<?php echo get_field('link_3', $current_id); ?>">Read more <i class="fa fa-angle-double-right"></i></a>
+              <a href="<?php echo $fq_3_link; ?>">Read more <i class="fa fa-angle-double-right"></i></a>
             </div>
         <?php } ?>
       </div>
     </div>
 
+
+
     <script src="<?php echo get_template_directory_uri(); ?>/js/sly.min.js"></script>
 
     <script type="text/javascript">
-
+    $('.crazy').imagesLoaded(function(){
     var options = {
       horizontal: 1,
       itemNav: 'basic',
@@ -233,7 +248,15 @@ get_header(); ?>
       nextPage: $('.nextPage'),
       prevPage: $('.prevPage')
     };
-    var frame = new Sly('#crazy', options).init();
+    var frame = new Sly('#crazy', options).init(
+
+       $('.crazy ul li').each(function(){
+    var img_width = $(this).find('img').width();
+    $(this).width(img_width);
+     })
+
+      );
+    });
 
     $(function() {
         jQuery('.marketplace-content-half').matchHeight({

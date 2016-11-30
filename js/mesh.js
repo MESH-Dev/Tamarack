@@ -5,6 +5,23 @@ jQuery(document).ready(function($){
 
   //Let's do something awesome!
 
+//FIxes the frame width for Sly slider, since we are using auto widths on images (children of slider)
+//Be sure that this loads before the sly slider
+//Addition from SD - 4/13/16
+
+  //function singleSlider () {
+  $('.crazy ul li').each(function(){
+    var img_width = $(this).find('img').width();
+    //$(this).width(img_width);
+    console.log(img_width);
+  });
+//}
+
+//$(document).ready(singleSlider);
+//$(window).resize(singleSlider);
+
+//============================================================
+
   var divWidth = jQuery('.content-third').width();
   jQuery('.content-third').height(divWidth);
 
@@ -14,7 +31,7 @@ jQuery(document).ready(function($){
   });
 
   $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
+    $('a[href*=\\#]:not([href=\\#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
