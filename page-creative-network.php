@@ -106,7 +106,8 @@ get_header(); ?>
                   <li><div class="filter-checkbox filter" data-filter=".jefferson"></div><span class="filter-title">Jefferson</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".kanawha"></div><span class="filter-title">Kanawha</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".lewis"></div><span class="filter-title">Lewis</span></li>
-                  <li><div class="filter-checkbox filter" data-filter=".lincoln"></div><span class="filter-title">Logan</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".logan"></div><span class="filter-title">Logan</span></li>
+                  <li><div class="filter-checkbox filter" data-filter=".lincoln"></div><span class="filter-title">Lincoln</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".marion"></div><span class="filter-title">Marion</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".marshall"></div><span class="filter-title">Marshall</span></li>
                   <li><div class="filter-checkbox filter" data-filter=".mcdowell"></div><span class="filter-title">McDowell</span></li>

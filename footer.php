@@ -214,7 +214,7 @@
 		  </div>
 		  <div class="sub-menu-block-item">
 			  <ul>
-				<li><a href="<?php echo get_field('grow_main_link', 'option'); ?>">Grow Creative Industry</a></li>
+				<li><a href="<?php echo get_field('grow_main_link', 'option'); ?>">Grow Creative Communities</a></li>
 
 				<?php
 					if( have_rows('grow_links', 'option') ):
