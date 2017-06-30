@@ -121,7 +121,7 @@
 
 					<div class="home-container">
 
-						
+
 
 						<div class="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/tam_white.png" /></a>
@@ -164,7 +164,7 @@
 									<a href="<?php echo get_field('grow_main_link', 'option'); ?>">
 										<div class="menu-block menu-block-item">
 											<span class="menu-block-primary-text">Grow</span>
-											<span class="menu-block-secondary-text">Creative Industry</span>
+											<span class="menu-block-secondary-text">Creative Communities</span>
 										</div>
 									</a>
 							</div>
