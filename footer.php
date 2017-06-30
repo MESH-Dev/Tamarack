@@ -30,7 +30,7 @@
 					<a href="<?php echo get_field('grow_main_link', 'option'); ?>">
 						<div class="footer-menu-block">
 							<span class="menu-block-primary-text">Grow</span>
-							<span class="menu-block-secondary-text">Creative Industry</span>
+							<span class="menu-block-secondary-text">Creative Communities</span>
 						</div>
 					</a>
 
@@ -210,7 +210,7 @@
 		  <div class="menu-block menu-block-item">
 			  <span class="menu-block-primary-text">Grow</span>
 			  <span class="menu-block-primary-icon"><i class="fa fa-angle-down"></i></span>
-			  <span class="menu-block-secondary-text">Creative Industry</span>
+			  <span class="menu-block-secondary-text">Creative Communities</span>
 		  </div>
 		  <div class="sub-menu-block-item">
 			  <ul>
